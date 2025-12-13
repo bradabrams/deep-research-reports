@@ -303,6 +303,126 @@
       "type": "official_documentation",
       "accessed": "2025-12-13",
       "reliability": "HIGH"
+    },
+    {
+      "id": "S039",
+      "title": "Vibe-Data - OpenAI DevDay 2025 Developer Sentiment Analysis",
+      "url": "https://vibe-data.com/intelligence/posts/openai-devday-october-2025-data-analysis",
+      "type": "community_analysis",
+      "accessed": "2025-12-13",
+      "reliability": "COMMUNITY"
+    },
+    {
+      "id": "S040",
+      "title": "Medium - OpenAI AgentKit Review",
+      "url": "https://medium.com/@leucopsis/openais-agentkit-review-c83bee3c3d02",
+      "type": "community_review",
+      "accessed": "2025-12-13",
+      "reliability": "COMMUNITY"
+    },
+    {
+      "id": "S041",
+      "title": "Unite.AI - AgentKit Review",
+      "url": "https://www.unite.ai/agentkit-by-openai-review/",
+      "type": "technical_review",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S042",
+      "title": "InfoQ - MCP Protocol Technical Analysis",
+      "url": "https://www.infoq.com/news/2024/12/anthropic-model-context-protocol/",
+      "type": "technical_news",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S043",
+      "title": "The Hacker News - MCP Critical Vulnerability",
+      "url": "https://thehackernews.com/2025/07/critical-vulnerability-in-anthropics.html",
+      "type": "security_news",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S044",
+      "title": "Medium - AI Agent Framework Landscape 2025",
+      "url": "https://medium.com/@hieutrantrung.it/the-ai-agent-framework-landscape-in-2025-what-changed-and-what-matters-3cd9b07ef2c3",
+      "type": "community_analysis",
+      "accessed": "2025-12-13",
+      "reliability": "COMMUNITY"
+    },
+    {
+      "id": "S045",
+      "title": "LangWatch - Best AI Agent Frameworks 2025",
+      "url": "https://langwatch.ai/blog/best-ai-agent-frameworks-in-2025-comparing-langgraph-dspy-crewai-agno-and-more",
+      "type": "technical_comparison",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S046",
+      "title": "Medium - Production Engineer's Honest Comparison",
+      "url": "https://python.plainenglish.io/autogen-vs-langgraph-vs-crewai-a-production-engineers-honest-comparison-d557b3b9262c",
+      "type": "community_review",
+      "accessed": "2025-12-13",
+      "reliability": "COMMUNITY"
+    },
+    {
+      "id": "S047",
+      "title": "Xcelore - LangGraph vs CrewAI Production Guide",
+      "url": "https://xcelore.com/blog/langgraph-vs-crewai/",
+      "type": "technical_comparison",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S048",
+      "title": "AWS re:Post - Bedrock Agents Scalability Assessment",
+      "url": "https://repost.aws/questions/QUlkYiyUQkQKqTMlK4oapyUQ/scalability-assessment-amazon-bedrock-agents-as-backend-service-for-production-web-application-hitting-quota-limits-in-development",
+      "type": "community_discussion",
+      "accessed": "2025-12-13",
+      "reliability": "COMMUNITY"
+    },
+    {
+      "id": "S049",
+      "title": "Medium - Developer's Honest Take on AWS Bedrock",
+      "url": "https://aws.plainenglish.io/diving-deep-into-aws-bedrock-a-developers-honest-take-on-the-future-of-llms-e9fb70dfd852",
+      "type": "community_review",
+      "accessed": "2025-12-13",
+      "reliability": "COMMUNITY"
+    },
+    {
+      "id": "S050",
+      "title": "G2 - AWS Bedrock Reviews 2025",
+      "url": "https://www.g2.com/products/aws-bedrock/reviews",
+      "type": "user_reviews",
+      "accessed": "2025-12-13",
+      "reliability": "COMMUNITY"
+    },
+    {
+      "id": "S051",
+      "title": "Google Developers Blog - Context-Aware Multi-Agent Framework",
+      "url": "https://developers.googleblog.com/architecting-efficient-context-aware-multi-agent-framework-for-production/",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S052",
+      "title": "The New Stack - More AI More Problems 2025",
+      "url": "https://thenewstack.io/more-ai-more-problems-for-software-developers-in-2025/",
+      "type": "industry_analysis",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S053",
+      "title": "Composio - Why AI Agent Pilots Fail",
+      "url": "https://composio.dev/blog/why-ai-agent-pilots-fail-2026-integration-roadmap",
+      "type": "industry_analysis",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
     }
   ],
   "last_updated": "2025-12-13"

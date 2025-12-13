@@ -105,6 +105,89 @@
 
 ---
 
+## Community & Social Insights (Phase 2b)
+
+### Developer Sentiment Analysis
+
+#### OpenAI AgentKit - Community Feedback
+**Positives:**
+- Documentation quality praised as "excellent"
+- Ramp reported building procurement agent in "hours instead of months"
+- Reviewers liked how quickly they could connect agents with visual tools
+
+**Criticisms:**
+- Rate limits are a significant concern: OpenAI free tier offers 3 RPM vs Anthropic's 50 RPM (17x difference)
+- AgentKit, Guardrails, Evals still don't have NPM packages
+- Locks you into OpenAI ecosystem - no model flexibility
+- Characterized as "not a strong tool for building highly custom agents"
+- Complements rather than replaces tools like n8n, Zapier
+
+#### MCP Protocol - HackerNews Discussion
+- Justin Spahr-Summers (Anthropic developer) joined HN discussion
+- Positive: praise for open-source releases
+- Cautious: Some questioned value of yet another standard
+- **Critical vulnerability disclosed July 2025** exposing developer machines to remote exploits
+- **97M+ monthly SDK downloads** across Python and TypeScript
+
+#### CrewAI - Community Consensus
+- **$18M Series A funding**, $3.2M revenue by July 2025
+- 100,000+ agent executions per day
+- **60% of Fortune 500 companies** now use CrewAI
+- "Prototype with CrewAI, produce with LangGraph" emerging pattern
+- Teams ship production agents in 2 weeks with CrewAI vs 2 months with LangGraph
+- Pain point: CrewAI's opinionated design becomes constraining at 6-12 months
+
+#### LangGraph - Production Feedback
+- **LangGraph 1.0** released October 2025 (first stable major release)
+- ~6.17 million monthly downloads
+- Praised for sophisticated state transitions and debugging via LangSmith
+- Criticism: "Tough to begin with - had to learn about graphs and states just for a simple agent"
+
+#### AWS Bedrock - Developer Experience
+**Positives:**
+- Model diversity strongest selling point
+- "Easy to use for building AI agents"
+- Ability to swap models with minimal code changes
+
+**Negatives:**
+- UI for managing agents "feels a bit basic"
+- Scalability/quota concerns: hitting limits during single-user development
+- Latency issues with multi-iteration tasks
+- "Bedrock not available in all regions"
+- "Bedrock pricing model needs improvement"
+
+### Common Developer Frustrations (Cross-Framework)
+
+1. **Context Management Crisis**
+   - As agents run longer, tracking history/tool outputs/reasoning explodes
+   - "Naive pattern of appending everything into one giant prompt collapses"
+
+2. **Prototype-to-Production Gap**
+   - "The gap between a working demo and a reliable production system is where projects die"
+   - Most AI agent pilots fail due to lack of "Operating System" for memory/I/O/permissions
+
+3. **Integration Bottleneck**
+   - "The biggest, most overlooked bottleneck is integration"
+   - Streaming responses, live tool progress, human feedback without losing context
+
+4. **Framework Lock-in Fear**
+   - Each framework has own stream formats, state logic, tool-call APIs
+   - "Need to rewrite everything if you switch stacks"
+
+5. **AI Code Accountability**
+   - Developers responsible for code they didn't create or fully understand
+   - "When something goes wrong, the AI doesn't take the blame"
+
+### Emerging Patterns from Community
+
+1. **"Prototype with CrewAI, Produce with LangGraph"** - common migration pattern
+2. **Human-in-the-Loop gaining traction** - escalate when confidence low, allow overrides
+3. **Framework consolidation** - chaos settling into clarity by late 2025
+4. **Microsoft unification** - AutoGen + Semantic Kernel merging, GA Q1 2026
+5. **OpenAI Swarm warning** - "Great for learning. Terrible for production."
+
+---
+
 ## Key Statistics Summary
 
 | Metric | Value | Source Confidence |
@@ -116,7 +199,11 @@
 | Average ROI | 171% | MEDIUM |
 | 2024 Startup Funding | $3.8B | MEDIUM |
 | MCP Servers | 10,000+ | HIGH |
+| MCP SDK Downloads | 97M+/month | HIGH |
 | AGENTS.md Adoption | 60,000+ projects | HIGH |
+| LangGraph Downloads | 6.17M/month | HIGH |
+| CrewAI Fortune 500 Usage | 60% | MEDIUM |
+| CrewAI Daily Executions | 100,000+ | MEDIUM |
 
 ---
 
@@ -124,7 +211,7 @@
 - [ ] Detailed latency/cost benchmarks in production
 - [ ] Framework migration case studies
 - [ ] Computer Use capabilities comparison
-- [ ] Developer satisfaction surveys
+- [x] Developer satisfaction surveys (covered via community insights)
 - [ ] Enterprise TCO analysis
 
 ---
