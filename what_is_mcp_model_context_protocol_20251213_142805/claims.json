@@ -1,0 +1,183 @@
+{
+  "claims": [
+    {
+      "id": 1,
+      "claim": "MCP was announced and open-sourced by Anthropic on November 25, 2024",
+      "source_urls": ["https://www.anthropic.com/news/model-context-protocol", "https://en.wikipedia.org/wiki/Model_Context_Protocol"],
+      "confidence": "high",
+      "category": "timeline"
+    },
+    {
+      "id": 2,
+      "claim": "MCP is an open protocol that enables AI systems to connect with external data sources, tools, and services",
+      "source_urls": ["https://www.anthropic.com/news/model-context-protocol", "https://modelcontextprotocol.io/docs/concepts/architecture", "https://www.ibm.com/think/topics/model-context-protocol"],
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": 3,
+      "claim": "MCP architecture consists of three components: Host, Client, and Server",
+      "source_urls": ["https://modelcontextprotocol.io/docs/concepts/architecture", "https://modelcontextprotocol.io/docs/learn/architecture"],
+      "confidence": "high",
+      "category": "technical"
+    },
+    {
+      "id": 4,
+      "claim": "MCP uses JSON-RPC 2.0 protocol for message exchange",
+      "source_urls": ["https://modelcontextprotocol.io/docs/concepts/architecture", "https://en.wikipedia.org/wiki/Model_Context_Protocol"],
+      "confidence": "high",
+      "category": "technical"
+    },
+    {
+      "id": 5,
+      "claim": "MCP servers expose three primitives: Tools, Resources, and Prompts",
+      "source_urls": ["https://modelcontextprotocol.io/docs/concepts/architecture", "https://www.anthropic.com/news/model-context-protocol"],
+      "confidence": "high",
+      "category": "technical"
+    },
+    {
+      "id": 6,
+      "claim": "MCP supports two transport mechanisms: stdio (local) and Streamable HTTP (remote)",
+      "source_urls": ["https://modelcontextprotocol.io/docs/concepts/architecture", "https://modelcontextprotocol.io/docs/learn/architecture"],
+      "confidence": "high",
+      "category": "technical"
+    },
+    {
+      "id": 7,
+      "claim": "OpenAI officially adopted MCP in March 2025",
+      "source_urls": ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://openai.com/index/agentic-ai-foundation/"],
+      "confidence": "high",
+      "category": "adoption"
+    },
+    {
+      "id": 8,
+      "claim": "Early adopters include Block, Apollo, Zed, Replit, Codeium, and Sourcegraph",
+      "source_urls": ["https://www.anthropic.com/news/model-context-protocol"],
+      "confidence": "high",
+      "category": "adoption"
+    },
+    {
+      "id": 9,
+      "claim": "Anthropic donated MCP to the Linux Foundation's Agentic AI Foundation on December 9, 2025",
+      "source_urls": ["https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation", "https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation"],
+      "confidence": "high",
+      "category": "governance"
+    },
+    {
+      "id": 10,
+      "claim": "AAIF was co-founded by Anthropic, Block, and OpenAI with support from Google, Microsoft, AWS, Cloudflare, and Bloomberg",
+      "source_urls": ["https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation", "https://openai.com/index/agentic-ai-foundation/"],
+      "confidence": "high",
+      "category": "governance"
+    },
+    {
+      "id": 11,
+      "claim": "MCP has over 97 million monthly SDK downloads and 10,000+ active servers as of December 2025",
+      "source_urls": ["https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation"],
+      "confidence": "high",
+      "category": "adoption"
+    },
+    {
+      "id": 12,
+      "claim": "Pre-built MCP servers exist for Google Drive, Slack, GitHub, Git, Postgres, Puppeteer, and Stripe",
+      "source_urls": ["https://www.anthropic.com/news/model-context-protocol"],
+      "confidence": "high",
+      "category": "ecosystem"
+    },
+    {
+      "id": 13,
+      "claim": "MCP SDKs are available in Python, TypeScript, C#, and Java",
+      "source_urls": ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://github.com/modelcontextprotocol/typescript-sdk", "https://github.com/modelcontextprotocol/python-sdk"],
+      "confidence": "high",
+      "category": "technical"
+    },
+    {
+      "id": 14,
+      "claim": "MCP is often described as 'USB-C for AI' - a universal connector standard",
+      "source_urls": ["https://blog.dailydoseofds.com/p/visual-guide-to-model-context-protocol", "https://www.keywordsai.co/blog/introduction-to-mcp"],
+      "confidence": "high",
+      "category": "description"
+    },
+    {
+      "id": 15,
+      "claim": "MCP was designed to solve the 'N×M' integration problem in AI systems",
+      "source_urls": ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://www.anthropic.com/news/model-context-protocol"],
+      "confidence": "high",
+      "category": "purpose"
+    },
+    {
+      "id": 16,
+      "claim": "MCP is vulnerable to prompt injection attacks that can trigger unauthorized actions",
+      "source_urls": ["https://www.pillar.security/blog/the-security-risks-of-model-context-protocol-mcp", "https://hiddenlayer.com/innovation-hub/mcp-model-context-pitfalls-in-an-agentic-world/"],
+      "confidence": "high",
+      "category": "security"
+    },
+    {
+      "id": 17,
+      "claim": "Academic study found 7.2% of 1,899 open-source MCP servers contain vulnerabilities",
+      "source_urls": ["https://arxiv.org/abs/2506.13538"],
+      "confidence": "high",
+      "category": "security"
+    },
+    {
+      "id": 18,
+      "claim": "MCP tools can mutate their definitions after installation (tool mutation/rug pull attacks)",
+      "source_urls": ["https://strobes.co/blog/mcp-model-context-protocol-and-its-critical-vulnerabilities/", "https://hiddenlayer.com/innovation-hub/mcp-model-context-pitfalls-in-an-agentic-world/"],
+      "confidence": "medium",
+      "category": "security"
+    },
+    {
+      "id": 19,
+      "claim": "Critics argue MCP lacks enterprise features like cost attribution and distributed tracing",
+      "source_urls": ["https://biggo.com/news/202508100114_MCP_Protocol_Enterprise_Criticism", "https://blog.sshh.io/p/everything-wrong-with-mcp"],
+      "confidence": "medium",
+      "category": "criticism"
+    },
+    {
+      "id": 20,
+      "claim": "MCP complements but does not replace agent frameworks like LangChain, LlamaIndex, and crewAI",
+      "source_urls": ["https://www.ibm.com/think/topics/model-context-protocol", "https://www.philschmid.de/mcp-introduction"],
+      "confidence": "high",
+      "category": "technical"
+    },
+    {
+      "id": 21,
+      "claim": "Microsoft partnered with Anthropic to develop an official C# SDK for MCP",
+      "source_urls": ["https://en.wikipedia.org/wiki/Model_Context_Protocol"],
+      "confidence": "medium",
+      "category": "adoption"
+    },
+    {
+      "id": 22,
+      "claim": "MCP is supported by ChatGPT, Claude, Cursor, Gemini, Microsoft Copilot, and VS Code",
+      "source_urls": ["https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation"],
+      "confidence": "high",
+      "category": "adoption"
+    },
+    {
+      "id": 23,
+      "claim": "Developers had created over 1,000 MCP servers by February 2025",
+      "source_urls": ["https://rickxie.cn/blog/MCP/"],
+      "confidence": "medium",
+      "category": "ecosystem"
+    },
+    {
+      "id": 24,
+      "claim": "MCP specification recommends 'human in the loop' for tool invocations for security",
+      "source_urls": ["https://modelcontextprotocol.io/specification/draft/basic/security_best_practices"],
+      "confidence": "high",
+      "category": "security"
+    },
+    {
+      "id": 25,
+      "claim": "MCP is distinct from OpenAI function calling - MCP standardizes execution while function calling expresses intent",
+      "source_urls": ["https://www.ikangai.com/model-context-protocol-comparison-mcp-vs-function-calling-plugins-apis/", "https://zilliz.com/blog/function-calling-vs-mcp-vs-a2a-developers-guide-to-ai-agent-protocols"],
+      "confidence": "high",
+      "category": "comparison"
+    }
+  ],
+  "total_claims": 25,
+  "high_confidence_count": 20,
+  "categories": ["timeline", "definition", "technical", "adoption", "governance", "ecosystem", "security", "criticism", "comparison", "description", "purpose"],
+  "last_updated": "2025-12-13"
+}

@@ -1,0 +1,188 @@
+{
+  "sources": [
+    {
+      "id": 1,
+      "title": "Introducing the Model Context Protocol - Anthropic",
+      "url": "https://www.anthropic.com/news/model-context-protocol",
+      "type": "primary",
+      "credibility": "high",
+      "date": "2024-11-25",
+      "description": "Official Anthropic announcement of MCP"
+    },
+    {
+      "id": 2,
+      "title": "Core Architecture - Model Context Protocol",
+      "url": "https://modelcontextprotocol.io/docs/concepts/architecture",
+      "type": "primary",
+      "credibility": "high",
+      "date": "2024",
+      "description": "Official MCP technical documentation on architecture"
+    },
+    {
+      "id": 3,
+      "title": "Model Context Protocol - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol",
+      "type": "secondary",
+      "credibility": "medium",
+      "date": "2025",
+      "description": "Wikipedia overview of MCP history and adoption"
+    },
+    {
+      "id": 4,
+      "title": "Donating MCP to Agentic AI Foundation - Anthropic",
+      "url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation",
+      "type": "primary",
+      "credibility": "high",
+      "date": "2025-12-09",
+      "description": "Announcement of MCP donation to Linux Foundation"
+    },
+    {
+      "id": 5,
+      "title": "Linux Foundation Announces Agentic AI Foundation",
+      "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation",
+      "type": "primary",
+      "credibility": "high",
+      "date": "2025-12-09",
+      "description": "Official Linux Foundation press release on AAIF"
+    },
+    {
+      "id": 6,
+      "title": "OpenAI co-founds the Agentic AI Foundation",
+      "url": "https://openai.com/index/agentic-ai-foundation/",
+      "type": "primary",
+      "credibility": "high",
+      "date": "2025-12-09",
+      "description": "OpenAI's announcement of joining AAIF"
+    },
+    {
+      "id": 7,
+      "title": "What is Model Context Protocol (MCP) - IBM",
+      "url": "https://www.ibm.com/think/topics/model-context-protocol",
+      "type": "secondary",
+      "credibility": "high",
+      "date": "2025",
+      "description": "IBM's technical overview of MCP"
+    },
+    {
+      "id": 8,
+      "title": "MCP Security Risks - Pillar Security",
+      "url": "https://www.pillar.security/blog/the-security-risks-of-model-context-protocol-mcp",
+      "type": "analysis",
+      "credibility": "high",
+      "date": "2025",
+      "description": "Security analysis of MCP vulnerabilities"
+    },
+    {
+      "id": 9,
+      "title": "MCP Security Best Practices - Official Docs",
+      "url": "https://modelcontextprotocol.io/specification/draft/basic/security_best_practices",
+      "type": "primary",
+      "credibility": "high",
+      "date": "2025",
+      "description": "Official security guidelines from MCP specification"
+    },
+    {
+      "id": 10,
+      "title": "MCP Critical Vulnerabilities - Strobes",
+      "url": "https://strobes.co/blog/mcp-model-context-protocol-and-its-critical-vulnerabilities/",
+      "type": "analysis",
+      "credibility": "medium",
+      "date": "2025",
+      "description": "Analysis of MCP security vulnerabilities"
+    },
+    {
+      "id": 11,
+      "title": "MCP vs Function Calling Comparison - iKangai",
+      "url": "https://www.ikangai.com/model-context-protocol-comparison-mcp-vs-function-calling-plugins-apis/",
+      "type": "analysis",
+      "credibility": "medium",
+      "date": "2025",
+      "description": "Comparison of MCP with other approaches"
+    },
+    {
+      "id": 12,
+      "title": "TypeScript SDK - GitHub",
+      "url": "https://github.com/modelcontextprotocol/typescript-sdk",
+      "type": "primary",
+      "credibility": "high",
+      "date": "2024-2025",
+      "description": "Official TypeScript SDK repository"
+    },
+    {
+      "id": 13,
+      "title": "Python SDK - GitHub",
+      "url": "https://github.com/modelcontextprotocol/python-sdk",
+      "type": "primary",
+      "credibility": "high",
+      "date": "2024-2025",
+      "description": "Official Python SDK repository"
+    },
+    {
+      "id": 14,
+      "title": "Visual Guide to MCP - Daily Dose of DS",
+      "url": "https://blog.dailydoseofds.com/p/visual-guide-to-model-context-protocol",
+      "type": "educational",
+      "credibility": "medium",
+      "date": "2025",
+      "description": "Visual architecture explanation"
+    },
+    {
+      "id": 15,
+      "title": "MCP Architecture Patterns - ML Architect",
+      "url": "https://themlarchitect.com/blog/the-architectural-elegance-of-model-context-protocol-mcp/",
+      "type": "analysis",
+      "credibility": "medium",
+      "date": "2025",
+      "description": "Deep dive into MCP architectural patterns"
+    },
+    {
+      "id": 16,
+      "title": "MCP Protocol Criticism - sshh.io",
+      "url": "https://blog.sshh.io/p/everything-wrong-with-mcp",
+      "type": "criticism",
+      "credibility": "medium",
+      "date": "2025",
+      "description": "Critical analysis of MCP limitations"
+    },
+    {
+      "id": 17,
+      "title": "MCP Enterprise Criticism - BigGo News",
+      "url": "https://biggo.com/news/202508100114_MCP_Protocol_Enterprise_Criticism",
+      "type": "criticism",
+      "credibility": "medium",
+      "date": "2025-08",
+      "description": "Analysis of MCP enterprise feature gaps"
+    },
+    {
+      "id": 18,
+      "title": "TechCrunch - Agentic AI Foundation",
+      "url": "https://techcrunch.com/2025/12/09/openai-anthropic-and-block-join-new-linux-foundation-effort-to-standardize-the-ai-agent-era/",
+      "type": "news",
+      "credibility": "high",
+      "date": "2025-12-09",
+      "description": "News coverage of AAIF formation"
+    },
+    {
+      "id": 19,
+      "title": "MCP Academic Security Study - arXiv",
+      "url": "https://arxiv.org/abs/2506.13538",
+      "type": "academic",
+      "credibility": "high",
+      "date": "2025-06",
+      "description": "Academic study of MCP server security and maintainability"
+    },
+    {
+      "id": 20,
+      "title": "HiddenLayer - MCP Security Pitfalls",
+      "url": "https://hiddenlayer.com/innovation-hub/mcp-model-context-pitfalls-in-an-agentic-world/",
+      "type": "security",
+      "credibility": "high",
+      "date": "2025",
+      "description": "Security research on MCP attack vectors"
+    }
+  ],
+  "total_sources": 20,
+  "high_credibility_count": 12,
+  "primary_source_count": 9,
+  "last_updated": "2025-12-13"
+}
