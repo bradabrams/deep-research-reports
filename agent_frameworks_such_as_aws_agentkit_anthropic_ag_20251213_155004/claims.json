@@ -1,0 +1,74 @@
+{
+  "claims": [
+    {
+      "id": "market-size-2025",
+      "claim": "The global AI agent market is valued at $7.38-7.92 billion in 2025",
+      "confidence": "HIGH",
+      "sources": ["index-dev-stats", "gm-insights-market"],
+      "verification_notes": "Multiple market research sources confirm similar figures"
+    },
+    {
+      "id": "market-projection-2032",
+      "claim": "AI agent market projected to reach $103.6 billion by 2032",
+      "confidence": "MEDIUM",
+      "sources": ["index-dev-stats"],
+      "verification_notes": "Single source projection, CAGR calculations appear reasonable"
+    },
+    {
+      "id": "enterprise-adoption-85",
+      "claim": "85% of organizations have integrated AI agents in at least one workflow",
+      "confidence": "MEDIUM",
+      "sources": ["index-dev-stats"],
+      "verification_notes": "Survey-based data, methodology unclear"
+    },
+    {
+      "id": "roi-171-percent",
+      "claim": "Organizations project average ROI of 171% from agentic AI deployments",
+      "confidence": "MEDIUM",
+      "sources": ["index-dev-stats"],
+      "verification_notes": "Projected ROI, not realized - interpret with caution"
+    },
+    {
+      "id": "mcp-linux-foundation",
+      "claim": "MCP was donated to Agentic AI Foundation under Linux Foundation in December 2025",
+      "confidence": "HIGH",
+      "sources": ["mcp-anthropic"],
+      "verification_notes": "Confirmed by multiple news sources"
+    },
+    {
+      "id": "agentcore-downloads",
+      "claim": "AgentCore SDK downloaded over 2 million times in 5 months since preview",
+      "confidence": "HIGH",
+      "sources": ["aws-agentcore-blog"],
+      "verification_notes": "Official AWS blog statement"
+    },
+    {
+      "id": "security-concerns-80",
+      "claim": "80% of organizations have encountered risky behaviors from AI agents",
+      "confidence": "MEDIUM",
+      "sources": ["unit42-threats"],
+      "verification_notes": "Survey-based, Palo Alto Networks research"
+    },
+    {
+      "id": "iam-concerns-41",
+      "claim": "41% of organizations report security/reliability concerns with IAM for agents",
+      "confidence": "MEDIUM",
+      "sources": ["aws-security-matrix"],
+      "verification_notes": "Survey-based data"
+    },
+    {
+      "id": "openai-agentkit-launch",
+      "claim": "OpenAI launched AgentKit at Dev Day on October 6, 2025",
+      "confidence": "HIGH",
+      "sources": ["openai-agentkit"],
+      "verification_notes": "Official announcement, widely reported"
+    },
+    {
+      "id": "claude-agent-sdk-launch",
+      "claim": "Claude Agent SDK published on September 29, 2025",
+      "confidence": "HIGH",
+      "sources": ["anthropic-agent-sdk"],
+      "verification_notes": "Official Anthropic documentation"
+    }
+  ]
+}

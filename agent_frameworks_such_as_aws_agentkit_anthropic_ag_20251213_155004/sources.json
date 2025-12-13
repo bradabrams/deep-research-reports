@@ -1,0 +1,124 @@
+{
+  "sources": [
+    {
+      "id": "anthropic-agent-sdk",
+      "title": "Building agents with the Claude Agent SDK",
+      "url": "https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk",
+      "type": "official_documentation",
+      "publisher": "Anthropic",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "aws-agentcore",
+      "title": "Amazon Bedrock AgentCore",
+      "url": "https://aws.amazon.com/bedrock/agentcore/",
+      "type": "official_documentation",
+      "publisher": "AWS",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "openai-agentkit",
+      "title": "Introducing AgentKit",
+      "url": "https://openai.com/index/introducing-agentkit/",
+      "type": "official_documentation",
+      "publisher": "OpenAI",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "turing-comparison",
+      "title": "A Detailed Comparison of Top 6 AI Agent Frameworks in 2025",
+      "url": "https://www.turing.com/resources/ai-agent-frameworks",
+      "type": "industry_analysis",
+      "publisher": "Turing",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "langfuse-comparison",
+      "title": "Comparing Open-Source AI Agent Frameworks",
+      "url": "https://langfuse.com/blog/2025-03-19-ai-agent-comparison",
+      "type": "industry_analysis",
+      "publisher": "Langfuse",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "mcp-anthropic",
+      "title": "Introducing the Model Context Protocol",
+      "url": "https://www.anthropic.com/news/model-context-protocol",
+      "type": "official_documentation",
+      "publisher": "Anthropic",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "aws-agentcore-blog",
+      "title": "Introducing Amazon Bedrock AgentCore",
+      "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-bedrock-agentcore-securely-deploy-and-operate-ai-agents-at-any-scale/",
+      "type": "official_blog",
+      "publisher": "AWS",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "mckinsey-state-of-ai",
+      "title": "The state of AI in 2025: Agents, innovation, and transformation",
+      "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+      "type": "industry_report",
+      "publisher": "McKinsey",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "index-dev-stats",
+      "title": "50+ Key AI Agent Statistics and Adoption Trends in 2025",
+      "url": "https://www.index.dev/blog/ai-agents-statistics",
+      "type": "market_research",
+      "publisher": "Index.dev",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "acm-security-survey",
+      "title": "AI Agents Under Threat: A Survey of Key Security Challenges",
+      "url": "https://dl.acm.org/doi/10.1145/3716628",
+      "type": "academic_paper",
+      "publisher": "ACM Computing Surveys",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "aws-security-matrix",
+      "title": "The Agentic AI Security Scoping Matrix",
+      "url": "https://aws.amazon.com/blogs/security/the-agentic-ai-security-scoping-matrix-a-framework-for-securing-autonomous-ai-systems/",
+      "type": "security_guidance",
+      "publisher": "AWS",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "unit42-threats",
+      "title": "AI Agents Are Here. So Are the Threats.",
+      "url": "https://unit42.paloaltonetworks.com/agentic-ai-threats/",
+      "type": "security_research",
+      "publisher": "Palo Alto Networks Unit 42",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "ibm-frameworks",
+      "title": "AI Agent Frameworks: Choosing the Right Foundation",
+      "url": "https://www.ibm.com/think/insights/top-ai-agent-frameworks",
+      "type": "industry_analysis",
+      "publisher": "IBM",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "venturebeat-anthropic",
+      "title": "Anthropic says it solved the long-running AI agent problem",
+      "url": "https://venturebeat.com/ai/anthropic-says-it-solved-the-long-running-ai-agent-problem-with-a-new-multi",
+      "type": "news",
+      "publisher": "VentureBeat",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "gm-insights-market",
+      "title": "AI Agents Market Size & Share, Growth Opportunity 2025-2034",
+      "url": "https://www.gminsights.com/industry-analysis/ai-agents-market",
+      "type": "market_research",
+      "publisher": "GM Insights",
+      "date_accessed": "2025-12-13"
+    }
+  ]
+}
