@@ -1,0 +1,146 @@
+{
+  "sources": [
+    {
+      "id": "meta-ai-2020",
+      "title": "Retrieval Augmented Generation: Streamlining the creation of intelligent natural language processing models",
+      "url": "https://ai.meta.com/blog/retrieval-augmented-generation-streamlining-the-creation-of-intelligent-natural-language-processing-models/",
+      "type": "primary",
+      "category": "foundational",
+      "credibility": "high",
+      "date": "2020"
+    },
+    {
+      "id": "arxiv-2005.11401",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "type": "primary",
+      "category": "academic",
+      "credibility": "high",
+      "date": "2020-05-22"
+    },
+    {
+      "id": "aws-rag",
+      "title": "What is RAG? - Retrieval-Augmented Generation AI Explained",
+      "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+      "type": "primary",
+      "category": "documentation",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "ibm-rag",
+      "title": "What is retrieval-augmented generation (RAG)?",
+      "url": "https://research.ibm.com/blog/retrieval-augmented-generation-RAG",
+      "type": "primary",
+      "category": "documentation",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "nvidia-rag",
+      "title": "What Is Retrieval-Augmented Generation aka RAG",
+      "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/",
+      "type": "primary",
+      "category": "documentation",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "wikipedia-rag",
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "type": "secondary",
+      "category": "reference",
+      "credibility": "medium",
+      "date": "2024"
+    },
+    {
+      "id": "grandview-market",
+      "title": "Retrieval Augmented Generation Market Size Report, 2030",
+      "url": "https://www.grandviewresearch.com/industry-analysis/retrieval-augmented-generation-rag-market-report",
+      "type": "primary",
+      "category": "market-analysis",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "marketsandmarkets-rag",
+      "title": "RAG Market worth $9.86 billion by 2030",
+      "url": "https://www.prnewswire.com/news-releases/retrieval-augmented-generation-rag-market-worth-9-86-billion-by-2030--marketsandmarkets-302580695.html",
+      "type": "primary",
+      "category": "market-analysis",
+      "credibility": "high",
+      "date": "2025"
+    },
+    {
+      "id": "ibm-rag-vs-finetuning",
+      "title": "RAG vs. Fine-tuning",
+      "url": "https://www.ibm.com/think/topics/rag-vs-fine-tuning",
+      "type": "primary",
+      "category": "comparison",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "redhat-rag-vs-finetuning",
+      "title": "RAG vs. fine-tuning",
+      "url": "https://www.redhat.com/en/topics/ai/rag-vs-fine-tuning",
+      "type": "primary",
+      "category": "comparison",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "ragflow-2024-review",
+      "title": "The Rise and Evolution of RAG in 2024: A Year in Review",
+      "url": "https://ragflow.io/blog/the-rise-and-evolution-of-rag-in-2024-a-year-in-review",
+      "type": "secondary",
+      "category": "analysis",
+      "credibility": "medium",
+      "date": "2024"
+    },
+    {
+      "id": "galileo-enterprise-rag",
+      "title": "Mastering RAG: How To Architect An Enterprise RAG System",
+      "url": "https://galileo.ai/blog/mastering-rag-how-to-architect-an-enterprise-rag-system",
+      "type": "secondary",
+      "category": "best-practices",
+      "credibility": "medium",
+      "date": "2024"
+    },
+    {
+      "id": "vectara-predictions-2025",
+      "title": "Enterprise RAG Predictions for 2025",
+      "url": "https://www.vectara.com/blog/top-enterprise-rag-predictions",
+      "type": "secondary",
+      "category": "analysis",
+      "credibility": "medium",
+      "date": "2024"
+    },
+    {
+      "id": "promptingguide-rag",
+      "title": "Retrieval Augmented Generation (RAG) for LLMs",
+      "url": "https://www.promptingguide.ai/research/rag",
+      "type": "secondary",
+      "category": "documentation",
+      "credibility": "medium",
+      "date": "2024"
+    },
+    {
+      "id": "edenai-guide-2025",
+      "title": "The 2025 Guide to Retrieval-Augmented Generation (RAG)",
+      "url": "https://www.edenai.co/post/the-2025-guide-to-retrieval-augmented-generation-rag",
+      "type": "secondary",
+      "category": "guide",
+      "credibility": "medium",
+      "date": "2025"
+    }
+  ],
+  "metadata": {
+    "topic": "RAG (Retrieval Augmented Generation)",
+    "created": "2025-12-13",
+    "total_sources": 15,
+    "high_credibility_count": 10,
+    "medium_credibility_count": 5
+  }
+}
