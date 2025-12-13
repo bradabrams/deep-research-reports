@@ -1,0 +1,110 @@
+{
+  "claims": [
+    {
+      "id": "C001",
+      "claim": "Global agentic AI market valued at $7-8 billion in 2025",
+      "sources": ["S008", "S009", "S015"],
+      "confidence": "HIGH",
+      "category": "market_size"
+    },
+    {
+      "id": "C002",
+      "claim": "Agentic AI market projected to reach $93-107 billion by 2032",
+      "sources": ["S008", "S015"],
+      "confidence": "HIGH",
+      "category": "market_projection"
+    },
+    {
+      "id": "C003",
+      "claim": "85% of enterprises expected to implement AI agents by end of 2025",
+      "sources": ["S016"],
+      "confidence": "MEDIUM",
+      "category": "adoption"
+    },
+    {
+      "id": "C004",
+      "claim": "93% of IT leaders have implemented or plan to implement AI agents within 2 years",
+      "sources": ["S016"],
+      "confidence": "MEDIUM",
+      "category": "adoption"
+    },
+    {
+      "id": "C005",
+      "claim": "Average projected ROI of 171% from agentic AI deployments",
+      "sources": ["S016"],
+      "confidence": "MEDIUM",
+      "category": "roi"
+    },
+    {
+      "id": "C006",
+      "claim": "OpenAI launched AgentKit on October 6, 2025",
+      "sources": ["S002"],
+      "confidence": "HIGH",
+      "category": "timeline"
+    },
+    {
+      "id": "C007",
+      "claim": "Anthropic released Agent SDK on September 29, 2025",
+      "sources": ["S001", "S018"],
+      "confidence": "HIGH",
+      "category": "timeline"
+    },
+    {
+      "id": "C008",
+      "claim": "LangChain has 80K+ GitHub stars and 600+ integrations",
+      "sources": ["S004", "S005"],
+      "confidence": "HIGH",
+      "category": "ecosystem"
+    },
+    {
+      "id": "C009",
+      "claim": "Top 3 agentic AI security concerns: Memory Poisoning, Tool Misuse, Privilege Compromise",
+      "sources": ["S010", "S011", "S017"],
+      "confidence": "HIGH",
+      "category": "security"
+    },
+    {
+      "id": "C010",
+      "claim": "80% of organizations have encountered risky AI agent behaviors",
+      "sources": ["S017"],
+      "confidence": "MEDIUM",
+      "category": "security"
+    },
+    {
+      "id": "C011",
+      "claim": "ReAct framework introduced by Yao et al. in 2022",
+      "sources": ["S013", "S014"],
+      "confidence": "HIGH",
+      "category": "history"
+    },
+    {
+      "id": "C012",
+      "claim": "North America holds 39.63% of AI agents market revenue share in 2025",
+      "sources": ["S009", "S015"],
+      "confidence": "HIGH",
+      "category": "regional"
+    },
+    {
+      "id": "C013",
+      "claim": "AI agent startups raised $3.8 billion in 2024",
+      "sources": ["S016"],
+      "confidence": "MEDIUM",
+      "category": "investment"
+    },
+    {
+      "id": "C014",
+      "claim": "Gartner forecasts 33% of enterprise software will incorporate agentic AI by 2028",
+      "sources": ["S004"],
+      "confidence": "HIGH",
+      "category": "projection"
+    },
+    {
+      "id": "C015",
+      "claim": "Microsoft released AutoGen in late 2023",
+      "sources": ["S006", "S007"],
+      "confidence": "HIGH",
+      "category": "timeline"
+    }
+  ],
+  "last_updated": "2025-12-13"
+}

@@ -1,0 +1,149 @@
+{
+  "sources": [
+    {
+      "id": "S001",
+      "title": "Anthropic Agent SDK Documentation",
+      "url": "https://docs.claude.com/en/api/agent-sdk/overview",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S002",
+      "title": "OpenAI AgentKit Introduction",
+      "url": "https://openai.com/index/introducing-agentkit/",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S003",
+      "title": "AWS Comparing Agentic AI Frameworks",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-frameworks/comparing-agentic-ai-frameworks.html",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S004",
+      "title": "Langflow Complete Guide to AI Agent Frameworks 2025",
+      "url": "https://www.langflow.org/blog/the-complete-guide-to-choosing-an-ai-agent-framework-in-2025",
+      "type": "technical_blog",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S005",
+      "title": "Langfuse Open-Source AI Agent Comparison",
+      "url": "https://langfuse.com/blog/2025-03-19-ai-agent-comparison",
+      "type": "technical_blog",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S006",
+      "title": "Turing Top 6 AI Agent Frameworks",
+      "url": "https://www.turing.com/resources/ai-agent-frameworks",
+      "type": "technical_blog",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S007",
+      "title": "DataCamp CrewAI vs LangGraph vs AutoGen",
+      "url": "https://www.datacamp.com/tutorial/crewai-vs-langgraph-vs-autogen",
+      "type": "technical_tutorial",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S008",
+      "title": "Precedence Research Agentic AI Market",
+      "url": "https://www.precedenceresearch.com/agentic-ai-market",
+      "type": "market_research",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S009",
+      "title": "Grand View Research Enterprise Agentic AI Market",
+      "url": "https://www.grandviewresearch.com/industry-analysis/enterprise-agentic-ai-market-report",
+      "type": "market_research",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S010",
+      "title": "McKinsey Agentic AI Security & Governance",
+      "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/deploying-agentic-ai-with-safety-and-security-a-playbook-for-technology-leaders",
+      "type": "consulting_report",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S011",
+      "title": "AWS Agentic AI Security Scoping Matrix",
+      "url": "https://aws.amazon.com/blogs/security/the-agentic-ai-security-scoping-matrix-a-framework-for-securing-autonomous-ai-systems/",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S012",
+      "title": "IBM AI Agents 2025: Expectations vs Reality",
+      "url": "https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality",
+      "type": "industry_analysis",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S013",
+      "title": "IBM What is a ReAct Agent",
+      "url": "https://www.ibm.com/think/topics/react-agent",
+      "type": "educational",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S014",
+      "title": "Prompt Engineering Guide - ReAct",
+      "url": "https://www.promptingguide.ai/techniques/react",
+      "type": "educational",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S015",
+      "title": "MarketsandMarkets AI Agents Market Report",
+      "url": "https://www.marketsandmarkets.com/Market-Reports/ai-agents-market-15761548.html",
+      "type": "market_research",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S016",
+      "title": "Warmly AI Agents Statistics",
+      "url": "https://www.warmly.ai/p/blog/ai-agents-statistics",
+      "type": "statistics_aggregator",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S017",
+      "title": "Akto State of Agentic AI Security 2025",
+      "url": "https://www.akto.io/blog/state-of-agentic-ai-security-2025",
+      "type": "security_research",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S018",
+      "title": "Medium - Claude Agent SDK vs OpenAI AgentKit",
+      "url": "https://medium.com/@richardhightower/claude-agent-sdk-vs-openai-agentkit-a-developers-guide-to-building-ai-agents-95780ec777ea",
+      "type": "technical_blog",
+      "accessed": "2025-12-13",
+      "reliability": "LOW"
+    }
+  ],
+  "last_updated": "2025-12-13"
+}
