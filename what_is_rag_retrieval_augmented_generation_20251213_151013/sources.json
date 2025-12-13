@@ -134,13 +134,167 @@
       "category": "guide",
       "credibility": "medium",
       "date": "2025"
+    },
+    {
+      "id": "microsoft-graphrag",
+      "title": "GraphRAG: Unlocking LLM discovery on narrative private data",
+      "url": "https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/",
+      "type": "primary",
+      "category": "research",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "microsoft-graphrag-docs",
+      "title": "GraphRAG Official Documentation",
+      "url": "https://microsoft.github.io/graphrag/",
+      "type": "primary",
+      "category": "documentation",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "arxiv-agentic-rag",
+      "title": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+      "url": "https://arxiv.org/abs/2501.09136",
+      "type": "primary",
+      "category": "academic",
+      "credibility": "high",
+      "date": "2025-01"
+    },
+    {
+      "id": "ibm-graphrag",
+      "title": "What is GraphRAG?",
+      "url": "https://www.ibm.com/think/topics/graphrag",
+      "type": "primary",
+      "category": "documentation",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "weaviate-chunking",
+      "title": "Chunking Strategies to Improve Your RAG Performance",
+      "url": "https://weaviate.io/blog/chunking-strategies-for-rag",
+      "type": "secondary",
+      "category": "best-practices",
+      "credibility": "medium",
+      "date": "2024"
+    },
+    {
+      "id": "stackoverflow-chunking",
+      "title": "Breaking up is hard to do: Chunking in RAG applications",
+      "url": "https://stackoverflow.blog/2024/12/27/breaking-up-is-hard-to-do-chunking-in-rag-applications/",
+      "type": "secondary",
+      "category": "best-practices",
+      "credibility": "medium",
+      "date": "2024-12"
+    },
+    {
+      "id": "chroma-chunking-research",
+      "title": "Evaluating Chunking Strategies for Retrieval",
+      "url": "https://research.trychroma.com/evaluating-chunking",
+      "type": "primary",
+      "category": "research",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "stanford-legal-rag",
+      "title": "Legal RAG Hallucinations Study",
+      "url": "https://dho.stanford.edu/wp-content/uploads/Legal_RAG_Hallucinations.pdf",
+      "type": "primary",
+      "category": "academic",
+      "credibility": "high",
+      "date": "2025"
+    },
+    {
+      "id": "vectara-hallucinations",
+      "title": "Measuring Hallucinations in RAG Systems",
+      "url": "https://www.vectara.com/blog/measuring-hallucinations-in-rag-systems",
+      "type": "secondary",
+      "category": "research",
+      "credibility": "medium",
+      "date": "2024"
+    },
+    {
+      "id": "arxiv-ragtruth",
+      "title": "RAGTruth: A Hallucination Corpus for Developing Trustworthy RAG",
+      "url": "https://arxiv.org/html/2401.00396v1",
+      "type": "primary",
+      "category": "academic",
+      "credibility": "high",
+      "date": "2024-01"
+    },
+    {
+      "id": "liquidmetal-vectordb",
+      "title": "Vector Database Comparison: Pinecone vs Weaviate vs Qdrant vs FAISS vs Milvus vs Chroma (2025)",
+      "url": "https://liquidmetal.ai/casesAndBlogs/vector-comparison/",
+      "type": "secondary",
+      "category": "comparison",
+      "credibility": "medium",
+      "date": "2025"
+    },
+    {
+      "id": "qdrant-benchmarks",
+      "title": "Vector Database Benchmarks",
+      "url": "https://qdrant.tech/benchmarks/",
+      "type": "primary",
+      "category": "benchmarks",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "evidentlyai-rag-examples",
+      "title": "10 RAG examples and use cases from real companies",
+      "url": "https://www.evidentlyai.com/blog/rag-examples",
+      "type": "secondary",
+      "category": "use-cases",
+      "credibility": "medium",
+      "date": "2024"
+    },
+    {
+      "id": "nvidia-multimodal-rag",
+      "title": "An Easy Introduction to Multimodal Retrieval-Augmented Generation",
+      "url": "https://developer.nvidia.com/blog/an-easy-introduction-to-multimodal-retrieval-augmented-generation/",
+      "type": "primary",
+      "category": "documentation",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "ibm-multimodal-rag",
+      "title": "What is Multimodal RAG?",
+      "url": "https://www.ibm.com/think/topics/multimodal-rag",
+      "type": "primary",
+      "category": "documentation",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "ibm-architecture-rag",
+      "title": "Retrieval Augmented Generation Architecture Pattern",
+      "url": "https://www.ibm.com/architectures/patterns/genai-rag",
+      "type": "primary",
+      "category": "architecture",
+      "credibility": "high",
+      "date": "2024"
+    },
+    {
+      "id": "azure-rag-architecture",
+      "title": "Design and Develop a RAG Solution - Azure Architecture Center",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-solution-design-and-evaluation-guide",
+      "type": "primary",
+      "category": "architecture",
+      "credibility": "high",
+      "date": "2024"
     }
   ],
   "metadata": {
     "topic": "RAG (Retrieval Augmented Generation)",
     "created": "2025-12-13",
-    "total_sources": 15,
-    "high_credibility_count": 10,
-    "medium_credibility_count": 5
+    "updated": "2025-12-13",
+    "total_sources": 32,
+    "high_credibility_count": 21,
+    "medium_credibility_count": 11
   }
 }
