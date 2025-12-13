@@ -69,6 +69,90 @@
       "confidence": "HIGH",
       "sources": ["anthropic-agent-sdk"],
       "verification_notes": "Official Anthropic documentation"
+    },
+    {
+      "id": "dify-github-stars",
+      "claim": "Dify has ~93,000 GitHub stars, making it the most starred AI agent platform",
+      "confidence": "HIGH",
+      "sources": ["firecrawl-frameworks"],
+      "verification_notes": "GitHub star counts are publicly verifiable"
+    },
+    {
+      "id": "crewai-popularity",
+      "claim": "CrewAI has over 30,000 GitHub stars with nearly 1 million monthly downloads",
+      "confidence": "HIGH",
+      "sources": ["firecrawl-frameworks"],
+      "verification_notes": "GitHub and npm/pip download stats are verifiable"
+    },
+    {
+      "id": "langgraph-downloads",
+      "claim": "LangGraph has over 14,000 stars and 4.2 million monthly downloads",
+      "confidence": "HIGH",
+      "sources": ["firecrawl-frameworks"],
+      "verification_notes": "Package manager download stats verifiable"
+    },
+    {
+      "id": "openai-sdk-stars",
+      "claim": "OpenAI Agents SDK has over 11,000 GitHub stars since March 2025 release",
+      "confidence": "HIGH",
+      "sources": ["firecrawl-frameworks"],
+      "verification_notes": "GitHub metrics publicly available"
+    },
+    {
+      "id": "enterprise-implementation-cost",
+      "claim": "Enterprise AI agent implementations range from $100,000-$2,000,000 depending on scope",
+      "confidence": "HIGH",
+      "sources": ["agentman-pricing"],
+      "verification_notes": "Consistent with multiple enterprise software implementation benchmarks"
+    },
+    {
+      "id": "ai-vs-human-cost",
+      "claim": "AI agent costs have decreased to under $0.50 per interaction vs $4-8 for human agents",
+      "confidence": "MEDIUM",
+      "sources": ["agentman-pricing"],
+      "verification_notes": "Depends on use case complexity and implementation quality"
+    },
+    {
+      "id": "salesforce-pricing",
+      "claim": "Salesforce charges $2 per conversation for AI agents",
+      "confidence": "HIGH",
+      "sources": ["agentman-pricing"],
+      "verification_notes": "Public pricing information from Salesforce Agentforce"
+    },
+    {
+      "id": "microsoft-pricing",
+      "claim": "Microsoft charges $4 per hour for Copilot AI agents",
+      "confidence": "HIGH",
+      "sources": ["agentman-pricing"],
+      "verification_notes": "Public Microsoft pricing"
+    },
+    {
+      "id": "gartner-2027-prediction",
+      "claim": "Gartner predicts by 2028, 33% of enterprise software will incorporate agentic AI",
+      "confidence": "HIGH",
+      "sources": ["gartner-ai-platforms"],
+      "verification_notes": "Official Gartner forecast, widely cited"
+    },
+    {
+      "id": "developer-ai-tools",
+      "claim": "92% of developers now use AI tools, with 30% productivity boost reported",
+      "confidence": "MEDIUM",
+      "sources": ["firecrawl-frameworks"],
+      "verification_notes": "GitHub Octoverse 2025 data"
+    },
+    {
+      "id": "aws-agentcore-ga",
+      "claim": "Amazon Bedrock AgentCore reached general availability in late 2025",
+      "confidence": "HIGH",
+      "sources": ["aws-agentcore-blog"],
+      "verification_notes": "Official AWS announcement"
+    },
+    {
+      "id": "mcp-adoption-openai-google",
+      "claim": "OpenAI adopted MCP in March 2025, Google confirmed support in April 2025",
+      "confidence": "HIGH",
+      "sources": ["mcp-anthropic"],
+      "verification_notes": "Official announcements from both companies"
     }
   ]
 }

@@ -119,6 +119,102 @@
       "type": "market_research",
       "publisher": "GM Insights",
       "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "latenode-comparison",
+      "title": "LangGraph vs AutoGen vs CrewAI: Complete AI Agent Framework Comparison",
+      "url": "https://latenode.com/blog/langgraph-vs-autogen-vs-crewai-complete-ai-agent-framework-comparison-architecture-analysis-2025",
+      "type": "technical_comparison",
+      "publisher": "Latenode",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "datacamp-comparison",
+      "title": "CrewAI vs LangGraph vs AutoGen: Choosing the Right Multi-Agent AI Framework",
+      "url": "https://www.datacamp.com/tutorial/crewai-vs-langgraph-vs-autogen",
+      "type": "tutorial",
+      "publisher": "DataCamp",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "openai-responses-api",
+      "title": "New tools and features in the Responses API",
+      "url": "https://openai.com/index/new-tools-and-features-in-the-responses-api/",
+      "type": "official_documentation",
+      "publisher": "OpenAI",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "aws-strands-comparison",
+      "title": "Bedrock Agents vs Bedrock AgentCore",
+      "url": "https://repost.aws/questions/QUjkf4WbikQ6WrpuH9sppjnw/bedrock-agents-vs-bedrock-agentcore",
+      "type": "official_forum",
+      "publisher": "AWS re:Post",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "glama-aws-comparison",
+      "title": "Comparing AWS Strands, Bedrock Agents, and AgentCore for MCP-Based AI Deployments",
+      "url": "https://glama.ai/blog/2025-07-22-understanding-aws-agents-strands-bedrock-agents-and-agent-core-with-mcp",
+      "type": "technical_analysis",
+      "publisher": "Glama",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "agentman-pricing",
+      "title": "The complete guide to AI Agent Pricing Models in 2025",
+      "url": "https://medium.com/agentman/the-complete-guide-to-ai-agent-pricing-models-in-2025-ff65501b2802",
+      "type": "industry_analysis",
+      "publisher": "Agentman/Medium",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "swarms-architectures",
+      "title": "Multi-Agent Architectures",
+      "url": "https://docs.swarms.world/en/latest/swarms/concept/swarm_architectures/",
+      "type": "technical_documentation",
+      "publisher": "Swarms",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "aws-multi-agent-patterns",
+      "title": "Multi-Agent collaboration patterns with Strands Agents and Amazon Nova",
+      "url": "https://aws.amazon.com/blogs/machine-learning/multi-agent-collaboration-patterns-with-strands-agents-and-amazon-nova/",
+      "type": "official_blog",
+      "publisher": "AWS",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "gartner-ai-platforms",
+      "title": "IBM named a Leader in the 2025 Gartner Magic Quadrant for AI Application Development Platforms",
+      "url": "https://www.ibm.com/new/announcements/ibm-named-a-leader-in-the-2025-gartner-magic-quadrant-for-ai-application-development-platforms",
+      "type": "industry_report",
+      "publisher": "IBM/Gartner",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "firecrawl-frameworks",
+      "title": "The Best Open Source Frameworks For Building AI Agents in 2025",
+      "url": "https://www.firecrawl.dev/blog/best-open-source-agent-frameworks-2025",
+      "type": "technical_analysis",
+      "publisher": "Firecrawl",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "anthropic-long-running",
+      "title": "Effective harnesses for long-running agents",
+      "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+      "type": "official_documentation",
+      "publisher": "Anthropic",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "composio-comparison",
+      "title": "OpenAI Agents SDK vs LangGraph vs Autogen vs CrewAI",
+      "url": "https://composio.dev/blog/openai-agents-sdk-vs-langgraph-vs-autogen-vs-crewai",
+      "type": "technical_comparison",
+      "publisher": "Composio",
+      "date_accessed": "2025-12-13"
     }
   ]
 }
