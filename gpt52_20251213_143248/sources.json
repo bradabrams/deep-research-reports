@@ -1,0 +1,259 @@
+{
+  "sources": [
+    {
+      "id": 1,
+      "title": "Introducing GPT-5.2 | OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-5-2/",
+      "type": "primary",
+      "publisher": "OpenAI",
+      "date": "2025-12-11",
+      "credibility": "high",
+      "notes": "Official announcement - primary source"
+    },
+    {
+      "id": 2,
+      "title": "GPT-5.2 System Card Update",
+      "url": "https://cdn.openai.com/pdf/3a4153c8-c748-4b71-8e31-aecbde944f8d/oai_5_2_system-card.pdf",
+      "type": "primary",
+      "publisher": "OpenAI",
+      "date": "2025-12-11",
+      "credibility": "high",
+      "notes": "Official safety documentation"
+    },
+    {
+      "id": 3,
+      "title": "Advancing science and math with GPT-5.2",
+      "url": "https://openai.com/index/gpt-5-2-for-science-and-math/",
+      "type": "primary",
+      "publisher": "OpenAI",
+      "date": "2025-12-11",
+      "credibility": "high",
+      "notes": "Official benchmarks for science/math"
+    },
+    {
+      "id": 4,
+      "title": "Sam Altman declares 'Code Red' as Google's Gemini 3...",
+      "url": "https://fortune.com/2025/12/02/sam-altman-declares-code-red-google-gemini-ceo-sundar-pichai/",
+      "type": "news",
+      "publisher": "Fortune",
+      "date": "2025-12-02",
+      "credibility": "high",
+      "notes": "First reporting on code red memo"
+    },
+    {
+      "id": 5,
+      "title": "OpenAI fires back at Google with GPT-5.2 after 'code red' memo",
+      "url": "https://techcrunch.com/2025/12/11/openai-fires-back-at-google-with-gpt-5-2-after-code-red-memo/",
+      "type": "news",
+      "publisher": "TechCrunch",
+      "date": "2025-12-11",
+      "credibility": "high",
+      "notes": "Tech news coverage of launch"
+    },
+    {
+      "id": 6,
+      "title": "OpenAI releases GPT-5.2 after code red Google threat alert",
+      "url": "https://arstechnica.com/information-technology/2025/12/openai-releases-gpt-5-2-after-code-red-google-threat-alert/",
+      "type": "news",
+      "publisher": "Ars Technica",
+      "date": "2025-12-11",
+      "credibility": "high",
+      "notes": "Technical news coverage"
+    },
+    {
+      "id": 7,
+      "title": "OpenAI launches GPT-5.2 after 'code red' push",
+      "url": "https://www.reuters.com/technology/openai-launches-gpt-52-ai-model-with-improved-capabilities-2025-12-11/",
+      "type": "news",
+      "publisher": "Reuters",
+      "date": "2025-12-11",
+      "credibility": "high",
+      "notes": "Wire service coverage"
+    },
+    {
+      "id": 8,
+      "title": "Sam Altman expects OpenAI to exit 'code red' by January",
+      "url": "https://www.cnbc.com/2025/12/11/openai-intros-new-ai-model-gpt-5point2-says-better-at-professional-tasks.html",
+      "type": "news",
+      "publisher": "CNBC",
+      "date": "2025-12-11",
+      "credibility": "high",
+      "notes": "Altman interview, business perspective"
+    },
+    {
+      "id": 9,
+      "title": "GPT-5.2 Benchmarks (Explained)",
+      "url": "https://www.vellum.ai/blog/gpt-5-2-benchmarks",
+      "type": "analysis",
+      "publisher": "Vellum",
+      "date": "2025-12-11",
+      "credibility": "medium",
+      "notes": "Detailed benchmark analysis"
+    },
+    {
+      "id": 10,
+      "title": "GPT-5.2 vs Gemini 3 — How they compare",
+      "url": "https://mashable.com/article/openai-gpt-5-2-vs-google-gemini-3-how-they-compare",
+      "type": "analysis",
+      "publisher": "Mashable",
+      "date": "2025-12-11",
+      "credibility": "medium",
+      "notes": "Head-to-head comparison"
+    },
+    {
+      "id": 11,
+      "title": "GPT-5.2 vs Grok 4: Comparing benchmarks, price, and features",
+      "url": "https://mashable.com/article/gpt-5-2-versus-grok-4-1-benchmarks-rankings-price",
+      "type": "analysis",
+      "publisher": "Mashable",
+      "date": "2025-12-12",
+      "credibility": "medium",
+      "notes": "Grok comparison"
+    },
+    {
+      "id": 12,
+      "title": "OpenAI's GPT-5.2 is here: what enterprises need to know",
+      "url": "https://venturebeat.com/ai/openais-gpt-5-2-is-here-what-enterprises-need-to-know",
+      "type": "analysis",
+      "publisher": "VentureBeat",
+      "date": "2025-12-11",
+      "credibility": "high",
+      "notes": "Enterprise focus"
+    },
+    {
+      "id": 13,
+      "title": "OpenAI is under pressure as Google, Anthropic gain ground",
+      "url": "https://www.cnbc.com/2025/12/02/open-ai-code-red-google-anthropic.html",
+      "type": "news",
+      "publisher": "CNBC",
+      "date": "2025-12-02",
+      "credibility": "high",
+      "notes": "Competitive context"
+    },
+    {
+      "id": 14,
+      "title": "OpenAI Launches GPT-5.2 as It Navigates 'Code Red'",
+      "url": "https://www.wired.com/story/openai-gpt-launch-gemini-code-red/",
+      "type": "news",
+      "publisher": "WIRED",
+      "date": "2025-12-11",
+      "credibility": "high",
+      "notes": "In-depth feature coverage"
+    },
+    {
+      "id": 15,
+      "title": "GPT‑5.2 Official Release: Capabilities, Context Window, Model Variants",
+      "url": "https://www.datastudios.org/post/gpt-5-2-official-release-capabilities-context-window-model-variants-pricing-and-workflow-power",
+      "type": "analysis",
+      "publisher": "DataStudios",
+      "date": "2025-12-11",
+      "credibility": "medium",
+      "notes": "Technical breakdown"
+    },
+    {
+      "id": 16,
+      "title": "LLM API Pricing Comparison (2025)",
+      "url": "https://intuitionlabs.ai/articles/llm-api-pricing-comparison-2025",
+      "type": "analysis",
+      "publisher": "IntuitionLabs",
+      "date": "2025-12",
+      "credibility": "medium",
+      "notes": "Pricing comparison data"
+    },
+    {
+      "id": 17,
+      "title": "The Complete History of OpenAI Models: From GPT-1 to GPT-5",
+      "url": "https://datasciencedojo.com/blog/the-complete-history-of-openai-models/",
+      "type": "reference",
+      "publisher": "Data Science Dojo",
+      "date": "2025",
+      "credibility": "medium",
+      "notes": "Historical timeline"
+    },
+    {
+      "id": 18,
+      "title": "OpenAI & ChatGPT Timeline: From GPT-1 to GPT-5.2",
+      "url": "https://www.scriptbyai.com/timeline-of-chatgpt/",
+      "type": "reference",
+      "publisher": "ScriptByAI",
+      "date": "2025-12",
+      "credibility": "medium",
+      "notes": "Updated timeline with GPT-5.2"
+    },
+    {
+      "id": 19,
+      "title": "GPT-5 Safety Flaws: Slurs & AI Bias Persist",
+      "url": "https://www.archyde.com/gpt-5-safety-flaws-slurs-ai-bias-persist/",
+      "type": "analysis",
+      "publisher": "Archyde",
+      "date": "2025",
+      "credibility": "medium",
+      "notes": "Safety criticism perspective"
+    },
+    {
+      "id": 20,
+      "title": "OpenAI's GPT-5.2 is now in public preview for GitHub Copilot",
+      "url": "https://github.blog/changelog/2025-12-11-openais-gpt-5-2-is-now-in-public-preview-for-github-copilot/",
+      "type": "primary",
+      "publisher": "GitHub",
+      "date": "2025-12-11",
+      "credibility": "high",
+      "notes": "GitHub Copilot integration"
+    }
+    ,
+    {
+      "id": 21,
+      "title": "GPT‑5.2 in Microsoft Foundry: Enterprise AI Reinvented",
+      "url": "https://azure.microsoft.com/en-us/blog/introducing-gpt-5-2-in-microsoft-foundry-the-new-standard-for-enterprise-ai/",
+      "type": "primary",
+      "publisher": "Microsoft Azure",
+      "date": "2025-12-11",
+      "credibility": "high",
+      "notes": "Microsoft official Azure integration"
+    },
+    {
+      "id": 22,
+      "title": "How GPT-5.2 stacks up against Gemini 3.0 and Claude Opus 4.5",
+      "url": "https://www.rdworldonline.com/how-gpt-5-2-stacks-up-against-gemini-3-0-and-claude-opus-4-5/",
+      "type": "analysis",
+      "publisher": "R&D World",
+      "date": "2025-12-11",
+      "credibility": "medium",
+      "notes": "Detailed benchmark comparison table"
+    },
+    {
+      "id": 23,
+      "title": "GPT-5.2: Pricing, Context Window, Benchmarks, and More",
+      "url": "https://llm-stats.com/models/gpt-5.2-2025-12-11",
+      "type": "reference",
+      "publisher": "LLM Stats",
+      "date": "2025-12-11",
+      "credibility": "medium",
+      "notes": "Technical specifications database"
+    },
+    {
+      "id": 24,
+      "title": "The EU AI Act Newsletter #86: Concerns Around GPT-5 Compliance",
+      "url": "https://artificialintelligenceact.substack.com/p/the-eu-ai-act-newsletter-86-concerns",
+      "type": "analysis",
+      "publisher": "AI Act Newsletter",
+      "date": "2025",
+      "credibility": "medium",
+      "notes": "Regulatory compliance concerns"
+    },
+    {
+      "id": 25,
+      "title": "AI Model Benchmarks Dec 2025",
+      "url": "https://lmcouncil.ai/benchmarks",
+      "type": "reference",
+      "publisher": "LM Council",
+      "date": "2025-12",
+      "credibility": "medium",
+      "notes": "Independent benchmark tracker"
+    }
+  ],
+  "total_sources": 25,
+  "primary_sources": 5,
+  "news_sources": 8,
+  "analysis_sources": 12
+}

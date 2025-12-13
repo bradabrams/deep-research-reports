@@ -1,0 +1,382 @@
+{
+  "claims": [
+    {
+      "id": 1,
+      "category": "release",
+      "claim": "GPT-5.2 was released on December 11, 2025",
+      "confidence": "high",
+      "sources": [1, 5, 6, 7, 8],
+      "notes": "Confirmed by 5+ sources including OpenAI"
+    },
+    {
+      "id": 2,
+      "category": "technical",
+      "claim": "GPT-5.2 has a 400,000-token context window",
+      "confidence": "high",
+      "sources": [1, 9, 15],
+      "notes": "Confirmed by OpenAI and multiple sources"
+    },
+    {
+      "id": 3,
+      "category": "technical",
+      "claim": "GPT-5.2 has a 128,000 max output token limit",
+      "confidence": "high",
+      "sources": [1, 9, 15],
+      "notes": "Confirmed by multiple sources"
+    },
+    {
+      "id": 4,
+      "category": "technical",
+      "claim": "GPT-5.2 knowledge cutoff is August 31, 2025",
+      "confidence": "high",
+      "sources": [1, 6],
+      "notes": "Confirmed by OpenAI announcement"
+    },
+    {
+      "id": 5,
+      "category": "variants",
+      "claim": "GPT-5.2 comes in three variants: Instant, Thinking, and Pro",
+      "confidence": "high",
+      "sources": [1, 6, 9, 15],
+      "notes": "Universally reported"
+    },
+    {
+      "id": 6,
+      "category": "variants",
+      "claim": "GPT-5.2 Instant is optimized for speed and everyday tasks like writing and translation",
+      "confidence": "high",
+      "sources": [1, 6, 15],
+      "notes": "Confirmed by multiple sources"
+    },
+    {
+      "id": 7,
+      "category": "variants",
+      "claim": "GPT-5.2 Thinking is designed for complex structured work like coding and math",
+      "confidence": "high",
+      "sources": [1, 6, 9, 15],
+      "notes": "Confirmed by multiple sources"
+    },
+    {
+      "id": 8,
+      "category": "variants",
+      "claim": "GPT-5.2 Pro delivers maximum accuracy for difficult questions",
+      "confidence": "high",
+      "sources": [1, 6, 9],
+      "notes": "Confirmed by multiple sources"
+    },
+    {
+      "id": 9,
+      "category": "benchmark",
+      "claim": "GPT-5.2 achieves 92.4% on GPQA Diamond (Thinking variant)",
+      "confidence": "high",
+      "sources": [3, 9, 10],
+      "notes": "Confirmed by OpenAI and independent analysis"
+    },
+    {
+      "id": 10,
+      "category": "benchmark",
+      "claim": "GPT-5.2 Pro achieves 93.2% on GPQA Diamond",
+      "confidence": "high",
+      "sources": [3, 9],
+      "notes": "Confirmed by multiple sources"
+    },
+    {
+      "id": 11,
+      "category": "benchmark",
+      "claim": "GPT-5.2 achieves 100% on AIME 2025 without tools",
+      "confidence": "high",
+      "sources": [3, 9],
+      "notes": "First model to reach this milestone"
+    },
+    {
+      "id": 12,
+      "category": "benchmark",
+      "claim": "GPT-5.2 achieves 40.3% on FrontierMath Tiers 1-3",
+      "confidence": "high",
+      "sources": [3, 9],
+      "notes": "~10% improvement over GPT-5.1"
+    },
+    {
+      "id": 13,
+      "category": "benchmark",
+      "claim": "GPT-5.2 achieves 52.9% on ARC-AGI-2 (Thinking)",
+      "confidence": "high",
+      "sources": [9, 10],
+      "notes": "Major improvement in abstract reasoning"
+    },
+    {
+      "id": 14,
+      "category": "benchmark",
+      "claim": "GPT-5.2 achieves 55.6% on SWE-Bench Pro (new state of the art)",
+      "confidence": "high",
+      "sources": [9, 10],
+      "notes": "Agentic coding benchmark"
+    },
+    {
+      "id": 15,
+      "category": "benchmark",
+      "claim": "GPT-5.2 achieves 80.0% on SWE-Bench Verified",
+      "confidence": "high",
+      "sources": [9],
+      "notes": "Close to Claude Opus 4.5's 80.9%"
+    },
+    {
+      "id": 16,
+      "category": "benchmark",
+      "claim": "GPT-5.2 beats/ties industry professionals on 70.9% of GDPval tasks",
+      "confidence": "high",
+      "sources": [1, 9],
+      "notes": "Across 44 occupations"
+    },
+    {
+      "id": 17,
+      "category": "pricing",
+      "claim": "GPT-5.2 API pricing is $1.75/1M input tokens, $14/1M output tokens",
+      "confidence": "high",
+      "sources": [1, 9, 16],
+      "notes": "For base model"
+    },
+    {
+      "id": 18,
+      "category": "pricing",
+      "claim": "GPT-5.2 represents a 40% price increase over GPT-5.1",
+      "confidence": "high",
+      "sources": [8, 16],
+      "notes": "Confirmed by CNBC and others"
+    },
+    {
+      "id": 19,
+      "category": "pricing",
+      "claim": "GPT-5.2 Pro costs $21/1M input, $168/1M output tokens",
+      "confidence": "medium",
+      "sources": [9, 16],
+      "notes": "Pro tier premium pricing"
+    },
+    {
+      "id": 20,
+      "category": "competitive",
+      "claim": "Sam Altman issued 'code red' memo in early December 2025",
+      "confidence": "high",
+      "sources": [4, 5, 6, 8, 13, 14],
+      "notes": "Widely reported across major outlets"
+    },
+    {
+      "id": 21,
+      "category": "competitive",
+      "claim": "Code red was triggered by Google Gemini 3 release and competitive threat",
+      "confidence": "high",
+      "sources": [4, 5, 13],
+      "notes": "Multiple sources confirm"
+    },
+    {
+      "id": 22,
+      "category": "competitive",
+      "claim": "Google Gemini reached 650 million monthly users in October 2025",
+      "confidence": "high",
+      "sources": [4, 13],
+      "notes": "Reported by Fortune, CNBC"
+    },
+    {
+      "id": 23,
+      "category": "competitive",
+      "claim": "OpenAI deprioritized health, shopping, advertising projects for ChatGPT focus",
+      "confidence": "high",
+      "sources": [4, 13],
+      "notes": "Part of code red response"
+    },
+    {
+      "id": 24,
+      "category": "safety",
+      "claim": "GPT-5.2 Thinking has 10.9% hallucination rate (vs 16.8% for GPT-5 Thinking)",
+      "confidence": "high",
+      "sources": [6, 9],
+      "notes": "Significant improvement"
+    },
+    {
+      "id": 25,
+      "category": "safety",
+      "claim": "GPT-5.2 Thinking responses contain 38% fewer errors than predecessor",
+      "confidence": "high",
+      "sources": [1, 8],
+      "notes": "Confirmed by OpenAI"
+    },
+    {
+      "id": 26,
+      "category": "availability",
+      "claim": "GPT-5.2 available in ChatGPT for Plus, Pro, Go, Business, Enterprise plans",
+      "confidence": "high",
+      "sources": [1, 6, 8],
+      "notes": "Rolling out December 11"
+    },
+    {
+      "id": 27,
+      "category": "availability",
+      "claim": "GPT-5.2 available in GitHub Copilot public preview",
+      "confidence": "high",
+      "sources": [20],
+      "notes": "GitHub official announcement"
+    },
+    {
+      "id": 28,
+      "category": "availability",
+      "claim": "GPT-5.1 will be sunset after 3 months",
+      "confidence": "high",
+      "sources": [1, 8],
+      "notes": "Legacy model deprecation"
+    },
+    {
+      "id": 29,
+      "category": "business",
+      "claim": "OpenAI has committed $1.4 trillion for AI infrastructure over next few years",
+      "confidence": "medium",
+      "sources": [4],
+      "notes": "Single source - Fortune"
+    },
+    {
+      "id": 30,
+      "category": "business",
+      "claim": "Altman told CNBC that Gemini 3 had 'less impact on metrics than feared'",
+      "confidence": "high",
+      "sources": [8],
+      "notes": "Direct interview quote"
+    },
+    {
+      "id": 31,
+      "category": "benchmark",
+      "claim": "GPT-5.2 outperforms Gemini 3 Pro on GPQA Diamond (92.4% vs 91.9%)",
+      "confidence": "high",
+      "sources": [9, 10],
+      "notes": "Head-to-head comparison"
+    },
+    {
+      "id": 32,
+      "category": "benchmark",
+      "claim": "GPT-5.2 significantly outperforms Gemini 3 Pro on ARC-AGI-2 (52.9% vs 31.1%)",
+      "confidence": "high",
+      "sources": [9, 10],
+      "notes": "Major reasoning advantage"
+    },
+    {
+      "id": 33,
+      "category": "benchmark",
+      "claim": "Gemini 3 Pro outperforms GPT-5.2 on hardest FrontierMath tier (18.8% vs 14.6%)",
+      "confidence": "medium",
+      "sources": [9, 10],
+      "notes": "Google advantage on hardest math"
+    },
+    {
+      "id": 34,
+      "category": "vision",
+      "claim": "GPT-5.2 Thinking achieves 88.7% on CharXiv with Python (vs Gemini 3 Pro 81.4%)",
+      "confidence": "high",
+      "sources": [9],
+      "notes": "Chart reasoning benchmark"
+    },
+    {
+      "id": 35,
+      "category": "safety",
+      "claim": "Security researchers bypassed GPT-5 safety features within 24 hours of launch",
+      "confidence": "medium",
+      "sources": [19],
+      "notes": "Refers to GPT-5, likely applies to 5.2"
+    },
+    {
+      "id": 36,
+      "category": "enterprise",
+      "claim": "GPT-5.2 is generally available in Microsoft Foundry/Azure AI Foundry",
+      "confidence": "high",
+      "sources": [21],
+      "notes": "Official Microsoft announcement"
+    },
+    {
+      "id": 37,
+      "category": "release",
+      "claim": "GPT-5.2 internal codename was 'Garlic'",
+      "confidence": "medium",
+      "sources": [5],
+      "notes": "Reported by TechCrunch/Bloomberg"
+    },
+    {
+      "id": 38,
+      "category": "timeline",
+      "claim": "GPT-5.2 released less than one month after GPT-5.1 (Nov 12 to Dec 11)",
+      "confidence": "high",
+      "sources": [5, 6],
+      "notes": "Accelerated release cadence"
+    },
+    {
+      "id": 39,
+      "category": "benchmark",
+      "claim": "GPT-5.2 achieves 34.5-36.6% on Humanity's Last Exam",
+      "confidence": "high",
+      "sources": [22],
+      "notes": "Thinking: 34.5%, Pro: 36.6%"
+    },
+    {
+      "id": 40,
+      "category": "benchmark",
+      "claim": "Gemini 3 Deep Think outperforms GPT-5.2 Pro on Humanity's Last Exam (41.0% vs 36.6%)",
+      "confidence": "high",
+      "sources": [22],
+      "notes": "Google advantage on hardest benchmark"
+    },
+    {
+      "id": 41,
+      "category": "technical",
+      "claim": "GPT-5.2 latency is approximately 2 seconds with ~100 tokens/second throughput",
+      "confidence": "medium",
+      "sources": [23],
+      "notes": "From LLM Stats database"
+    },
+    {
+      "id": 42,
+      "category": "regulatory",
+      "claim": "GPT-5 likely qualifies for 'systemic risk' classification under EU AI Act",
+      "confidence": "medium",
+      "sources": [24],
+      "notes": "Expert analysis, not confirmed"
+    },
+    {
+      "id": 43,
+      "category": "regulatory",
+      "claim": "OpenAI signed EU AI Act Code of Practice in July 2025",
+      "confidence": "high",
+      "sources": [24],
+      "notes": "Voluntary compliance commitment"
+    },
+    {
+      "id": 44,
+      "category": "competitive",
+      "claim": "Gemini 3 Pro became first model to break 1500 LMArena Elo rating",
+      "confidence": "medium",
+      "sources": [25],
+      "notes": "Industry benchmark leadership"
+    },
+    {
+      "id": 45,
+      "category": "executive",
+      "claim": "Fidji Simo (CPO) stated GPT-5.2 designed to 'unlock even more economic value'",
+      "confidence": "high",
+      "sources": [5],
+      "notes": "Direct executive quote"
+    }
+  ],
+  "total_claims": 45,
+  "high_confidence": 35,
+  "medium_confidence": 10,
+  "categories": {
+    "technical": 5,
+    "variants": 4,
+    "benchmark": 14,
+    "pricing": 3,
+    "competitive": 5,
+    "safety": 3,
+    "availability": 3,
+    "business": 2,
+    "enterprise": 1,
+    "release": 2,
+    "timeline": 1,
+    "regulatory": 2,
+    "executive": 1
+  }
+}
