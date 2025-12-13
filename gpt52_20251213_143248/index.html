@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT-5.2: A Comprehensive Research Report</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --text: #e6edf3;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --border: #30363d;
+            --success: #3fb950;
+            --warning: #d29922;
+            --danger: #f85149;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            background: linear-gradient(135deg, #1a1f35 0%, #0d1117 100%);
+            padding: 3rem 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #58a6ff, #a371f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        header .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        header .meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .toc {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .toc h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+        .toc ul { list-style: none; }
+        .toc li { margin: 0.5rem 0; }
+        .toc a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .toc a:hover { opacity: 0.8; }
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h2:hover { color: var(--accent); }
+        h2::after {
+            content: '−';
+            font-size: 1.5rem;
+            color: var(--text-muted);
+        }
+        .collapsed h2::after {
+            content: '+';
+        }
+        h3 { font-size: 1.2rem; margin: 1.5rem 0 0.75rem; color: var(--accent); }
+        h4 { font-size: 1.1rem; margin: 1.2rem 0 0.6rem; color: var(--text); }
+        p { margin-bottom: 1rem; }
+        ul, ol { margin: 1rem 0 1rem 1.5rem; }
+        li { margin: 0.5rem 0; }
+        a { color: var(--accent); }
+        code {
+            background: rgba(110,118,129,0.2);
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        pre {
+            background: #0d1117;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1rem;
+            color: var(--text-muted);
+            margin: 1rem 0;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        th { background: rgba(110,118,129,0.1); font-weight: 600; }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .figure {
+            background: var(--bg);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        .figure img {
+            margin: 0;
+        }
+        .figure figcaption {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 0.75rem;
+            font-style: italic;
+        }
+        .citation {
+            color: var(--accent);
+            font-size: 0.85em;
+            cursor: pointer;
+        }
+        .confidence-high {
+            color: var(--success);
+            font-weight: 600;
+        }
+        .confidence-medium {
+            color: var(--warning);
+            font-weight: 600;
+        }
+        .confidence-low {
+            color: var(--danger);
+            font-weight: 600;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.2em 0.6em;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .badge-high {
+            background: rgba(63, 185, 80, 0.2);
+            color: var(--success);
+        }
+        .badge-medium {
+            background: rgba(210, 153, 34, 0.2);
+            color: var(--warning);
+        }
+        .badge-low {
+            background: rgba(248, 81, 73, 0.2);
+            color: var(--danger);
+        }
+        .badge-disputed {
+            background: rgba(248, 81, 73, 0.3);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+        .sources-list {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        .sources-list li { margin: 0.75rem 0; }
+        .collapsible { display: block; }
+        .collapsed .collapsible { display: none; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        .key-takeaway {
+            background: linear-gradient(135deg, rgba(88, 166, 255, 0.1) 0%, rgba(163, 113, 247, 0.1) 100%);
+            border: 1px solid var(--accent);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .key-takeaway strong {
+            color: var(--accent);
+        }
+        .warning-box {
+            background: rgba(210, 153, 34, 0.1);
+            border: 1px solid var(--warning);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .stat-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+        .stat-card .value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .stat-card .label {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+        @media (max-width: 768px) {
+            .container { padding: 1rem; }
+            header { padding: 2rem 1rem; }
+            header h1 { font-size: 1.8rem; }
+            section { padding: 1.25rem; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>GPT-5.2: A Comprehensive Research Report</h1>
+            <p class="subtitle">OpenAI's "Code Red" Response to the 2025 AI Model Wars</p>
+            <p class="meta">Generated by Deep Research Agent | December 13, 2025 | 28 sources consulted | 50 claims documented</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#executive-summary">Executive Summary</a></li>
+                <li><a href="#methodology">Methodology & Limitations</a></li>
+                <li><a href="#technical-specs">1. Technical Specifications and Architecture</a></li>
+                <li><a href="#model-variants">2. Model Variants: Instant, Thinking, and Pro</a></li>
+                <li><a href="#benchmarks">3. Benchmark Performance: Claims vs. Reality</a></li>
+                <li><a href="#code-red">4. The "Code Red" Competitive Context</a></li>
+                <li><a href="#pricing">5. Pricing and Enterprise Availability</a></li>
+                <li><a href="#user-reception">6. User Reception and Critical Perspectives</a></li>
+                <li><a href="#safety">7. Safety and Regulatory Considerations</a></li>
+                <li><a href="#history">8. Historical Context: The GPT Evolution</a></li>
+                <li><a href="#uncertainty">Areas of Uncertainty</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#sources">Sources</a></li>
+            </ul>
+        </nav>
+
+        <section id="executive-summary">
+            <h2>Executive Summary</h2>
+            <div class="collapsible">
+                <p>On December 11, 2025, OpenAI released GPT-5.2, its latest large language model, marking a significant competitive response to Google's Gemini 3 and Anthropic's Claude Opus 4.5. The release came just nine days after CEO Sam Altman issued an internal "code red" memo, directing the company to deprioritize other initiatives and focus resources on improving ChatGPT amid intensifying competition.</p>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="value">400K</div>
+                        <div class="label">Context Window (tokens)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value">128K</div>
+                        <div class="label">Max Output (tokens)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value">3</div>
+                        <div class="label">Model Variants</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value">+40%</div>
+                        <div class="label">Price Increase</div>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <strong>However, this research reveals significant caveats.</strong> Many benchmark claims are vendor-reported and pending independent verification. The 100% AIME 2025 score is actively disputed by critics who argue potential data contamination. Additionally, GPT-5.2's proprietary GDPval benchmark has not been independently validated. Early user reviews have been mixed, with many characterizing the release as "incremental," "boring," and in some cases "a step backwards" from GPT-5.1.
+                </div>
+
+                <div class="key-takeaway">
+                    <strong>Key takeaway:</strong> GPT-5.2 offers meaningful technical improvements and competitive benchmark performance, but claims should be viewed with appropriate skepticism until independently verified. The gap between benchmark performance and real-world user experience suggests that headline numbers may not translate directly to practical utility.
+                </div>
+            </div>
+        </section>
+
+        <section id="methodology">
+            <h2>Methodology & Limitations</h2>
+            <div class="collapsible">
+                <h3>Research Approach</h3>
+                <p>This report synthesizes information from 28 sources gathered between December 11-13, 2025, immediately following GPT-5.2's public release. Research involved:</p>
+                <ul>
+                    <li>Systematic web searches across technical, news, business, and critical perspectives</li>
+                    <li>Full-text retrieval of key primary and secondary sources</li>
+                    <li>Adversarial searches to identify contradicting evidence</li>
+                    <li>Cross-referencing claims across multiple independent sources</li>
+                    <li>Confidence-level assignment based on source corroboration</li>
+                </ul>
+
+                <h3>Source Breakdown</h3>
+                <table>
+                    <thead>
+                        <tr><th>Source Type</th><th>Count</th><th>Examples</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Primary (Official)</td><td>5</td><td>OpenAI, Microsoft Azure, GitHub</td></tr>
+                        <tr><td>Major News</td><td>8</td><td>Reuters, CNBC, TechCrunch, Wired</td></tr>
+                        <tr><td>Technical Analysis</td><td>12</td><td>Vellum, R&D World, DataCamp</td></tr>
+                        <tr><td>Critical/Adversarial</td><td>3</td><td>Substack analyses, user reviews</td></tr>
+                    </tbody>
+                </table>
+
+                <h3>Known Limitations</h3>
+                <ol>
+                    <li><strong>Recency Bias:</strong> GPT-5.2 was released only 2 days before this report; long-term performance data unavailable</li>
+                    <li><strong>Vendor-Reported Benchmarks:</strong> Most performance claims come from OpenAI; independent verification pending</li>
+                    <li><strong>Training Data Opacity:</strong> OpenAI does not publish training data, making data contamination impossible to rule out</li>
+                    <li><strong>Selection Bias in Reviews:</strong> Early user reviews may not represent broader user experience</li>
+                    <li><strong>Competitive Context:</strong> All major AI labs have incentives to present favorable comparisons</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="technical-specs">
+            <h2>1. Technical Specifications and Architecture</h2>
+            <div class="collapsible">
+                <p>GPT-5.2 represents a significant technical evolution in the GPT series. Research confirms the following specifications:</p>
+
+                <table>
+                    <thead>
+                        <tr><th>Specification</th><th>GPT-5.2 Value</th><th>Comparison</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Context Window</td><td>400,000 tokens</td><td>5x GPT-4 (32K), 1.5x GPT-5 (256K)</td></tr>
+                        <tr><td>Max Output</td><td>128,000 tokens</td><td>2x GPT-5</td></tr>
+                        <tr><td>Knowledge Cutoff</td><td>August 31, 2025</td><td>~3.5 months before release</td></tr>
+                        <tr><td>Latency</td><td>~2 seconds</td><td>Similar to GPT-5.1</td></tr>
+                        <tr><td>Throughput</td><td>~100 tokens/sec</td><td>Industry standard</td></tr>
+                    </tbody>
+                </table>
+
+                <p>The model architecture retains the transformer-based foundation with reinforcement learning from human feedback (RLHF), but includes "architectural micro-tweaks such as attention improvements and dynamic routing for longer context" that improve chain-of-thought coherence.</p>
+
+                <p><strong>Parameter Count:</strong> OpenAI has not disclosed GPT-5.2's parameter count. Industry estimates for GPT-5 placed it at approximately 1-1.8 trillion parameters, but specific figures for GPT-5.2 remain undisclosed.</p>
+
+                <div class="figure">
+                    <img src="./images/gpt_timeline.png" alt="GPT Model Evolution Timeline">
+                    <figcaption>Figure 1: Evolution of OpenAI GPT Models (2018-2025). Generated from source data.</figcaption>
+                </div>
+            </div>
+        </section>
+
+        <section id="model-variants">
+            <h2>2. Model Variants: Instant, Thinking, and Pro</h2>
+            <div class="collapsible">
+                <p>GPT-5.2 introduces a three-tier model structure, each optimized for different use cases:</p>
+
+                <h4>GPT-5.2 Instant</h4>
+                <ul>
+                    <li>Optimized for speed and low latency</li>
+                    <li>Best for: Writing, translation, information-seeking, routine queries</li>
+                    <li>Features clearer explanations that "surface key information upfront"</li>
+                </ul>
+
+                <h4>GPT-5.2 Thinking</h4>
+                <ul>
+                    <li>Designed for complex structured work with deeper reasoning chains</li>
+                    <li>Best for: Coding, math, planning, long document analysis</li>
+                    <li>Achieves state-of-the-art on GDPval benchmark <span class="badge badge-disputed">DISPUTED</span></li>
+                    <li>Hallucination rate: 10.9% (vendor-reported, down from 16.8% in GPT-5 Thinking)</li>
+                </ul>
+
+                <h4>GPT-5.2 Pro</h4>
+                <ul>
+                    <li>Maximum accuracy for difficult, mission-critical questions</li>
+                    <li>Best for: Legal review, financial modeling, drug discovery, scientific research</li>
+                    <li>Uses parallel test-time compute for maximum rigor</li>
+                    <li>Premium pricing: $21/1M input tokens, $168/1M output tokens</li>
+                </ul>
+
+                <div class="figure">
+                    <img src="./images/variants_radar.png" alt="Model Variants Radar Chart">
+                    <figcaption>Figure 2: GPT-5.2 Variants Capability Comparison. Generated from source data.</figcaption>
+                </div>
+            </div>
+        </section>
+
+        <section id="benchmarks">
+            <h2>3. Benchmark Performance: Claims vs. Reality</h2>
+            <div class="collapsible">
+                <p>OpenAI reports that GPT-5.2 "sets a new state of the art across many benchmarks." However, this research identified significant caveats that warrant careful interpretation.</p>
+
+                <h3>Verified Benchmark Performance <span class="badge badge-high">HIGH CONFIDENCE</span></h3>
+                <table>
+                    <thead>
+                        <tr><th>Benchmark</th><th>GPT-5.2 Score</th><th>Competitor Best</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>SWE-Bench Verified</td><td>80.0%</td><td>Claude Opus 4.5: 80.9%</td><td><span class="confidence-high">Independently verified</span></td></tr>
+                        <tr><td>Humanity's Last Exam</td><td>36.6% (Pro)</td><td>Gemini 3 Deep Think: 41.0%</td><td><span class="confidence-high">Independently verified</span></td></tr>
+                    </tbody>
+                </table>
+
+                <h3>Vendor-Reported (Pending Verification) <span class="badge badge-medium">MEDIUM CONFIDENCE</span></h3>
+                <table>
+                    <thead>
+                        <tr><th>Benchmark</th><th>GPT-5.2 Claim</th><th>Competitor</th><th>Notes</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>GPQA Diamond</td><td>92.4-93.2%</td><td>Gemini 3 Pro: 91.9%</td><td>Vendor-reported</td></tr>
+                        <tr><td>ARC-AGI-2</td><td>52.9-54.2%</td><td>Gemini 3 Pro: 31.1%</td><td>Vendor-reported</td></tr>
+                        <tr><td>FrontierMath T1-3</td><td>40.3%</td><td>GPT-5.1: ~30%</td><td>Vendor-reported</td></tr>
+                        <tr><td>CharXiv (Python)</td><td>88.7%</td><td>Gemini 3 Pro: 81.4%</td><td>Vendor-reported</td></tr>
+                    </tbody>
+                </table>
+
+                <h3>Disputed Claims <span class="badge badge-disputed">DISPUTED</span></h3>
+
+                <h4>AIME 2025: 100% Score</h4>
+                <p>OpenAI claims GPT-5.2 achieved a perfect 100% on AIME 2025 without tools, the first AI model to do so. However, this claim is actively disputed:</p>
+                <blockquote>
+                    "Could OpenAI fine-tune their model on AIME 2025 to get 100%? They don't even need to. The questions and answers are all over the internet. These thirty questions are public—they could have just trained on them." — Maria Sukhareva
+                </blockquote>
+
+                <h4>GDPval: 70.9% Expert-Level Performance</h4>
+                <p>OpenAI claims GPT-5.2 Thinking "beats or ties industry professionals on 70.9% of well-specified knowledge work tasks spanning 44 occupations." This claim has <span class="confidence-low">LOW confidence</span> because:</p>
+                <ul>
+                    <li>GDPval is OpenAI's proprietary benchmark</li>
+                    <li>It has not been independently validated</li>
+                    <li>No external organizations have verified the methodology or results</li>
+                </ul>
+
+                <div class="figure">
+                    <img src="./images/benchmark_comparison.png" alt="Benchmark Comparison Chart">
+                    <figcaption>Figure 3: GPT-5.2 vs Competitors Benchmark Comparison. Generated from source data. Note: Most scores are vendor-reported.</figcaption>
+                </div>
+            </div>
+        </section>
+
+        <section id="code-red">
+            <h2>4. The "Code Red" Competitive Context</h2>
+            <div class="collapsible">
+                <p>The GPT-5.2 release cannot be understood without its competitive context. Research confirms that Sam Altman issued an internal "code red" memo in early December 2025, directing OpenAI to prioritize ChatGPT improvements above all other initiatives.</p>
+
+                <h3>Timeline of Events</h3>
+                <table>
+                    <thead>
+                        <tr><th>Date</th><th>Event</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Mid-November 2025</td><td>Google releases Gemini 3 Pro</td></tr>
+                        <tr><td>November 24, 2025</td><td>Anthropic releases Claude Opus 4.5</td></tr>
+                        <tr><td>October 2025</td><td>Google Gemini reaches 650 million monthly users</td></tr>
+                        <tr><td>Early December 2025</td><td>Sam Altman issues "code red" memo</td></tr>
+                        <tr><td>December 2, 2025</td><td>Fortune, CNBC report on code red</td></tr>
+                        <tr><td>December 11, 2025</td><td>OpenAI releases GPT-5.2</td></tr>
+                    </tbody>
+                </table>
+
+                <h3>Strategic Implications</h3>
+                <p>The code red response involved significant organizational changes:</p>
+                <ul>
+                    <li><strong>Delayed initiatives:</strong> Advertising plans, health applications, shopping features</li>
+                    <li><strong>Resource reallocation:</strong> Teams redirected to ChatGPT improvement</li>
+                    <li><strong>Accelerated timeline:</strong> GPT-5.2 released less than one month after GPT-5.1 (November 12 → December 11)</li>
+                </ul>
+
+                <p>The irony of this situation has not been lost on industry observers. Three years ago, Google declared its own "code red" in response to ChatGPT's launch. Now the competitive dynamics have reversed, with OpenAI responding to Gemini's resurgence.</p>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2>5. Pricing and Enterprise Availability</h2>
+            <div class="collapsible">
+                <p>GPT-5.2's pricing represents a significant increase over its predecessor:</p>
+
+                <table>
+                    <thead>
+                        <tr><th>Model</th><th>Input ($/1M tokens)</th><th>Output ($/1M tokens)</th><th>Change vs. GPT-5.1</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>GPT-5.2 Base</td><td>$1.75</td><td>$14.00</td><td>+40%</td></tr>
+                        <tr><td>GPT-5.2 Pro</td><td>$21.00</td><td>$168.00</td><td>Premium tier</td></tr>
+                        <tr><td>Cached Inputs</td><td>90% discount</td><td>—</td><td>New feature</td></tr>
+                    </tbody>
+                </table>
+
+                <h3>Competitor Pricing Comparison</h3>
+                <table>
+                    <thead>
+                        <tr><th>Provider</th><th>Input</th><th>Output</th><th>Notes</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>GPT-5.2</td><td>$1.75</td><td>$14.00</td><td>40% increase</td></tr>
+                        <tr><td>Claude Opus 4.5</td><td>$15.00</td><td>$75.00</td><td>Most expensive</td></tr>
+                        <tr><td>Gemini 3 Pro</td><td>$1.25-2.50</td><td>$10-15</td><td>Tiered pricing</td></tr>
+                    </tbody>
+                </table>
+
+                <div class="figure">
+                    <img src="./images/pricing_comparison.png" alt="Pricing Comparison Chart">
+                    <figcaption>Figure 4: LLM API Pricing Comparison (December 2025). Generated from source data.</figcaption>
+                </div>
+
+                <h3>Availability</h3>
+                <p>Research confirms GPT-5.2 is available through:</p>
+                <ul>
+                    <li><strong>ChatGPT:</strong> Rolling out to Plus ($20/mo), Pro ($200/mo), Team, Business, Enterprise</li>
+                    <li><strong>API:</strong> Available to all developers</li>
+                    <li><strong>GitHub Copilot:</strong> Public preview for Pro, Pro+, Business, Enterprise</li>
+                    <li><strong>Microsoft Azure AI Foundry:</strong> Generally available with enterprise controls</li>
+                    <li><strong>Legacy:</strong> GPT-5.1 will be sunset in 3 months</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="user-reception">
+            <h2>6. User Reception and Critical Perspectives</h2>
+            <div class="collapsible">
+                <p>Evidence suggests significant user disappointment with GPT-5.2, contrasting sharply with OpenAI's benchmark claims.</p>
+
+                <h3>User Criticism</h3>
+                <p>TechRadar reported that "ChatGPT 5.2 was released as OpenAI tried to flex its muscles to combat Google's impressive Gemini 3, but some users aren't very happy." Common complaints include:</p>
+
+                <blockquote>"It's everything I hate about 5 and 5.1, but worse."</blockquote>
+                <blockquote>"Too corporate, too 'safe'. A step backwards from 5.1."</blockquote>
+                <blockquote>"Boring. No spark. Ambivalent about engagement. Feels like a corporate bot."</blockquote>
+                <blockquote>"I hate it. It's so... robotic. Boring."</blockquote>
+
+                <h3>Benchmark vs. Reality Gap</h3>
+                <p>Multiple sources document a gap between benchmark performance and real-world utility:</p>
+                <ul>
+                    <li><strong>Long-context claims vs. messy documents:</strong> While GPT-5.2 shows "near-perfect multi-needle performance" on benchmarks, it struggles with "actual messy documents (contracts, mixed-format notes, PDFs)"</li>
+                    <li><strong>Financial modeling failure:</strong> One tester reported GPT-5.2 built a 5,000-cell financial model where "none of the numbers added up"—the DCF valued a lemonade stand at $2.7 billion</li>
+                    <li><strong>Coding inconsistency:</strong> Independent testing found that "in some cases, GPT-5.1 managed to create a working game while GPT-5.2 failed"</li>
+                </ul>
+
+                <h3>Critical Analysis Perspective</h3>
+                <blockquote>"A rushed release stitched together on top of ambitious research milestones... The numbers look great. The real-world behavior does not always match." — Maria Sukhareva</blockquote>
+            </div>
+        </section>
+
+        <section id="safety">
+            <h2>7. Safety and Regulatory Considerations</h2>
+            <div class="collapsible">
+                <h3>Safety Improvements (Vendor-Reported)</h3>
+                <p>OpenAI claims GPT-5.2 includes significant safety improvements:</p>
+                <ul>
+                    <li>38% fewer errors than predecessor (vendor-reported)</li>
+                    <li>35% reduction in hallucination rate across GPT-5 series</li>
+                    <li>8x reduction in hallucinations vs. o3</li>
+                    <li>Chain-of-thought reasoning to resist jailbreaks</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong>However, research on the broader GPT-5 series identified security concerns:</strong>
+                    <ul>
+                        <li>Security researchers bypassed GPT-5 safety features within 24 hours of launch</li>
+                        <li>SPLX testing showed poor scores on default configuration (security: 2.4%, safety: 13.6%)</li>
+                        <li>NeuralTrust jailbroke GPT-5 using "Echo Chamber and Storytelling" technique</li>
+                    </ul>
+                </div>
+
+                <h3>Regulatory Context</h3>
+                <p>GPT-5/5.2 faces regulatory scrutiny under the EU AI Act:</p>
+                <ul>
+                    <li>GPT-5 likely qualifies for "systemic risk" classification</li>
+                    <li>Models released after August 2, 2025 must comply immediately</li>
+                    <li>OpenAI signed EU Code of Practice in July 2025</li>
+                    <li>Concerns raised about training data transparency and summary requirements</li>
+                </ul>
+
+                <div class="figure">
+                    <img src="./images/hallucination_reduction.png" alt="Hallucination Reduction Chart">
+                    <figcaption>Figure 5: Hallucination Rate Reduction in GPT-5 Series. Generated from source data.</figcaption>
+                </div>
+            </div>
+        </section>
+
+        <section id="history">
+            <h2>8. Historical Context: The GPT Evolution</h2>
+            <div class="collapsible">
+                <p>GPT-5.2 represents the latest step in a seven-year evolution:</p>
+
+                <table>
+                    <thead>
+                        <tr><th>Model</th><th>Release</th><th>Key Advancement</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>GPT-1</td><td>June 2018</td><td>Transformer architecture, 117M params</td></tr>
+                        <tr><td>GPT-2</td><td>Feb 2019</td><td>Coherent text, 1.5B params</td></tr>
+                        <tr><td>GPT-3</td><td>May 2020</td><td>Few-shot learning, 175B params</td></tr>
+                        <tr><td>GPT-3.5/ChatGPT</td><td>Nov 2022</td><td>Instruction tuning, RLHF</td></tr>
+                        <tr><td>GPT-4</td><td>Mar 2023</td><td>Multimodal, ~1.8T params</td></tr>
+                        <tr><td>GPT-4o</td><td>May 2024</td><td>Unified multimodal</td></tr>
+                        <tr><td>GPT-5</td><td>Aug 2025</td><td>Router architecture, 256K context</td></tr>
+                        <tr><td>GPT-5.1</td><td>Nov 2025</td><td>Conversational improvements</td></tr>
+                        <tr><td>GPT-5.2</td><td>Dec 2025</td><td>Professional knowledge work, 400K context</td></tr>
+                    </tbody>
+                </table>
+
+                <p>The acceleration from GPT-5 (August) to GPT-5.2 (December)—three major releases in four months—reflects unprecedented competitive pressure in the AI industry.</p>
+            </div>
+        </section>
+
+        <section id="uncertainty">
+            <h2>Areas of Uncertainty</h2>
+            <div class="collapsible">
+                <h3>Where Sources Conflict</h3>
+                <ol>
+                    <li><strong>Benchmark Validity:</strong> OpenAI reports strong benchmark scores; critics argue potential data contamination and question methodology</li>
+                    <li><strong>User Experience:</strong> OpenAI claims "most capable model yet"; user reviews describe "step backwards" and "boring"</li>
+                    <li><strong>Release Motivation:</strong> OpenAI says GPT-5.2 was "in development for months"; timing suggests code red acceleration</li>
+                    <li><strong>Error Reduction:</strong> OpenAI claims 38% fewer errors; independent testing shows inconsistent results</li>
+                </ol>
+
+                <h3>Where Evidence Is Weak</h3>
+                <ol>
+                    <li><strong>Parameter count and architecture details:</strong> Not disclosed</li>
+                    <li><strong>Training data composition:</strong> Not disclosed, making contamination claims impossible to verify</li>
+                    <li><strong>Long-term reliability:</strong> Only 2 days since release</li>
+                    <li><strong>Enterprise performance:</strong> Limited production deployment data</li>
+                </ol>
+
+                <h3>Where Experts Disagree</h3>
+                <ol>
+                    <li><strong>Benchmark meaningfulness:</strong> Whether AIME, ARC-AGI-2 scores reflect real-world capability</li>
+                    <li><strong>Model comparison methodology:</strong> Whether vendor-reported comparisons are fair</li>
+                    <li><strong>Safety trade-offs:</strong> Whether accelerated release compromised safety evaluation</li>
+                    <li><strong>Market positioning:</strong> Whether GPT-5.2 maintains OpenAI's competitive position</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <div class="collapsible">
+                <h3>What Is Established <span class="badge badge-high">HIGH CONFIDENCE</span></h3>
+                <ul>
+                    <li>GPT-5.2 was released December 11, 2025, with 400,000-token context window</li>
+                    <li>Three variants exist: Instant, Thinking, and Pro</li>
+                    <li>Pricing represents 40% increase over GPT-5.1</li>
+                    <li>Sam Altman issued "code red" memo in response to Gemini 3 competition</li>
+                    <li>GPT-5.2 is competitive on SWE-Bench Verified (~80%)</li>
+                    <li>Significant user dissatisfaction exists despite benchmark claims</li>
+                </ul>
+
+                <h3>What Remains Uncertain <span class="badge badge-medium">MEDIUM/LOW CONFIDENCE</span></h3>
+                <ul>
+                    <li>Exact benchmark scores (most are vendor-reported)</li>
+                    <li>100% AIME 2025 claim (disputed due to data contamination concerns)</li>
+                    <li>70.9% GDPval expert-level performance (proprietary benchmark)</li>
+                    <li>Real-world reliability improvements</li>
+                    <li>Long-term competitive positioning</li>
+                </ul>
+
+                <h3>Suggestions for Further Research</h3>
+                <ol>
+                    <li><strong>Independent benchmark verification:</strong> Third-party testing of GPT-5.2 on standard benchmarks</li>
+                    <li><strong>Production deployment studies:</strong> Enterprise performance in real-world applications</li>
+                    <li><strong>Longitudinal user satisfaction:</strong> Tracking user sentiment beyond initial release</li>
+                    <li><strong>Safety evaluation:</strong> Independent red-teaming and security assessment</li>
+                    <li><strong>Competitive dynamics:</strong> Impact on OpenAI market share and enterprise adoption</li>
+                </ol>
+
+                <div class="key-takeaway">
+                    <strong>Final Assessment:</strong> GPT-5.2 represents a technically capable model with meaningful improvements in context window and multi-step reasoning. However, the gap between benchmark performance and user experience, combined with disputed claims and accelerated release timing, suggests that headline numbers should be interpreted cautiously. The "code red" context is perhaps the most important finding: GPT-5.2 is as much a competitive response as a technical advancement.
+                </div>
+            </div>
+        </section>
+
+        <section id="sources">
+            <h2>Sources</h2>
+            <div class="collapsible">
+                <ol class="sources-list">
+                    <li>[1] OpenAI. "Introducing GPT-5.2." <a href="https://openai.com/index/introducing-gpt-5-2/">openai.com</a></li>
+                    <li>[2] OpenAI. "Update to GPT-5 System Card: GPT-5.2." <a href="https://cdn.openai.com/pdf/3a4153c8-c748-4b71-8e31-aecbde944f8d/oai_5_2_system-card.pdf">cdn.openai.com</a></li>
+                    <li>[3] OpenAI. "Advancing science and math with GPT-5.2." <a href="https://openai.com/index/gpt-5-2-for-science-and-math/">openai.com</a></li>
+                    <li>[4] Fortune. "Sam Altman declares 'Code Red' as Google's Gemini 3..." <a href="https://fortune.com/2025/12/02/sam-altman-declares-code-red-google-gemini-ceo-sundar-pichai/">fortune.com</a></li>
+                    <li>[5] TechCrunch. "OpenAI fires back at Google with GPT-5.2 after 'code red' memo." <a href="https://techcrunch.com/2025/12/11/openai-fires-back-at-google-with-gpt-5-2-after-code-red-memo/">techcrunch.com</a></li>
+                    <li>[6] Ars Technica. "OpenAI releases GPT-5.2 after 'code red' Google threat alert." <a href="https://arstechnica.com/information-technology/2025/12/openai-releases-gpt-5-2-after-code-red-google-threat-alert/">arstechnica.com</a></li>
+                    <li>[7] Reuters. "OpenAI launches GPT-5.2 after 'code red' push to counter Google's Gemini 3." <a href="https://www.reuters.com/technology/openai-launches-gpt-52-ai-model-with-improved-capabilities-2025-12-11/">reuters.com</a></li>
+                    <li>[8] CNBC. "Sam Altman expects OpenAI to exit 'code red' by January after launch of GPT-5.2 model." <a href="https://www.cnbc.com/2025/12/11/openai-intros-new-ai-model-gpt-5point2-says-better-at-professional-tasks.html">cnbc.com</a></li>
+                    <li>[9] Vellum. "GPT-5.2 Benchmarks (Explained)." <a href="https://www.vellum.ai/blog/gpt-5-2-benchmarks">vellum.ai</a></li>
+                    <li>[10] Mashable. "GPT-5.2 vs Gemini 3 — How they compare." <a href="https://mashable.com/article/openai-gpt-5-2-vs-google-gemini-3-how-they-compare">mashable.com</a></li>
+                    <li>[11] Mashable. "GPT-5.2 vs Grok 4: Comparing benchmarks, price, and features." <a href="https://mashable.com/article/gpt-5-2-versus-grok-4-1-benchmarks-rankings-price">mashable.com</a></li>
+                    <li>[12] VentureBeat. "OpenAI's GPT-5.2 is here: what enterprises need to know." <a href="https://venturebeat.com/ai/openais-gpt-5-2-is-here-what-enterprises-need-to-know">venturebeat.com</a></li>
+                    <li>[13] CNBC. "OpenAI is under pressure as Google, Anthropic gain ground." <a href="https://www.cnbc.com/2025/12/02/open-ai-code-red-google-anthropic.html">cnbc.com</a></li>
+                    <li>[14] WIRED. "OpenAI Launches GPT-5.2 as It Navigates 'Code Red.'" <a href="https://www.wired.com/story/openai-gpt-launch-gemini-code-red/">wired.com</a></li>
+                    <li>[15] DataStudios. "GPT-5.2 Official Release: Capabilities, Context Window, Model Variants." <a href="https://www.datastudios.org/post/gpt-5-2-official-release-capabilities-context-window-model-variants-pricing-and-workflow-power">datastudios.org</a></li>
+                    <li>[16] IntuitionLabs. "LLM API Pricing Comparison (2025)." <a href="https://intuitionlabs.ai/articles/llm-api-pricing-comparison-2025">intuitionlabs.ai</a></li>
+                    <li>[17] Data Science Dojo. "The Complete History of OpenAI Models." <a href="https://datasciencedojo.com/blog/the-complete-history-of-openai-models/">datasciencedojo.com</a></li>
+                    <li>[18] ScriptByAI. "OpenAI & ChatGPT Timeline: From GPT-1 to GPT-5.2." <a href="https://www.scriptbyai.com/timeline-of-chatgpt/">scriptbyai.com</a></li>
+                    <li>[19] Archyde. "GPT-5 Safety Flaws: Slurs & AI Bias Persist." <a href="https://www.archyde.com/gpt-5-safety-flaws-slurs-ai-bias-persist/">archyde.com</a></li>
+                    <li>[20] GitHub. "OpenAI's GPT-5.2 is now in public preview for GitHub Copilot." <a href="https://github.blog/changelog/2025-12-11-openais-gpt-5-2-is-now-in-public-preview-for-github-copilot/">github.blog</a></li>
+                    <li>[21] Microsoft Azure. "GPT-5.2 in Microsoft Foundry: Enterprise AI Reinvented." <a href="https://azure.microsoft.com/en-us/blog/introducing-gpt-5-2-in-microsoft-foundry-the-new-standard-for-enterprise-ai/">azure.microsoft.com</a></li>
+                    <li>[22] R&D World. "How GPT-5.2 stacks up against Gemini 3.0 and Claude Opus 4.5." <a href="https://www.rdworldonline.com/how-gpt-5-2-stacks-up-against-gemini-3-0-and-claude-opus-4-5/">rdworldonline.com</a></li>
+                    <li>[23] LLM Stats. "GPT-5.2: Pricing, Context Window, Benchmarks, and More." <a href="https://llm-stats.com/models/gpt-5.2-2025-12-11">llm-stats.com</a></li>
+                    <li>[24] AI Act Newsletter. "Concerns Around GPT-5 Compliance." <a href="https://artificialintelligenceact.substack.com/p/the-eu-ai-act-newsletter-86-concerns">substack.com</a></li>
+                    <li>[25] LM Council. "AI Model Benchmarks Dec 2025." <a href="https://lmcouncil.ai/benchmarks">lmcouncil.ai</a></li>
+                    <li>[26] Sukhareva, M. "GPT-5.2 and Meaningless Benchmarks." <a href="https://msukhareva.substack.com/p/gpt-52-and-meaningless-benchmarks">substack.com</a></li>
+                    <li>[27] TechRadar. "ChatGPT users disappointed by 5.2." <a href="https://www.techradar.com/ai-platforms-assistants/openai/chatgpt-5-2-branded-a-step-backwards-by-disappointed-early-users-heres-why">techradar.com</a></li>
+                    <li>[28] Every. "Vibe Check: GPT-5.2 Is an Incremental Upgrade." <a href="https://every.to/vibe-check/vibe-check-gpt-5-2-is-an-incremental-upgrade">every.to</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <footer>
+            <p>Generated by Deep Research Agent | December 13, 2025</p>
+            <p><a href="report.md">View raw markdown</a> | <a href="sources.json">View sources JSON</a> | <a href="claims.json">View claims JSON</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Collapsible sections
+        document.querySelectorAll('section h2').forEach(h2 => {
+            h2.addEventListener('click', () => {
+                h2.parentElement.classList.toggle('collapsed');
+            });
+        });
+    </script>
+</body>
+</html>
