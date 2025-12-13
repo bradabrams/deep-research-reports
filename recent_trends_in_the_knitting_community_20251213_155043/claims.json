@@ -1,0 +1,333 @@
+{
+  "claims": [
+    {
+      "id": "claim_001",
+      "category": "market_size",
+      "claim": "The global yarn market is expected to grow by USD 39.9 billion from 2025-2029, at a CAGR of 5.3%",
+      "confidence": "HIGH",
+      "sources": ["src_004"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_002",
+      "category": "market_size",
+      "claim": "The global knitting yarn market was valued at USD 7,177.3 million in 2024 and is expected to reach USD 9,965.3 million by 2031 (CAGR 4.8%)",
+      "confidence": "MEDIUM",
+      "sources": ["src_005"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_003",
+      "category": "market_size",
+      "claim": "The global Knitting and Crochet Market is expected to grow USD 12,279.9 million from 2025-2029, at a CAGR of 6.9%",
+      "confidence": "HIGH",
+      "sources": ["src_006"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_004",
+      "category": "pandemic_impact",
+      "claim": "Swiss online retailer Galaxus reported that sales of knitting needles, sewing machines, fabric scissors and wool rose by 646% from April 2020 to March 2021",
+      "confidence": "HIGH",
+      "sources": ["src_009"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_005",
+      "category": "pandemic_impact",
+      "claim": "Knitting pattern sales increased by 25% during the COVID-19 pandemic in 2020",
+      "confidence": "MEDIUM",
+      "sources": ["src_010"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_006",
+      "category": "pandemic_impact",
+      "claim": "Lion Brand (143-year-old yarn company) sales were up 80% since coronavirus lockdowns began",
+      "confidence": "HIGH",
+      "sources": ["src_009"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_007",
+      "category": "pandemic_impact",
+      "claim": "In 2020, The Guardian reported a 140% increase in the number of people taking up crochet",
+      "confidence": "HIGH",
+      "sources": ["src_011"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_008",
+      "category": "pandemic_impact",
+      "claim": "We Are Knitters sales increased 75% each week during the pandemic crisis, with social media following growing by 50%",
+      "confidence": "MEDIUM",
+      "sources": ["src_010"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_009",
+      "category": "pandemic_impact",
+      "claim": "Etsy more than doubled its revenues in 2020, with sales up 39% for first nine months of 2021",
+      "confidence": "HIGH",
+      "sources": ["src_009"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_010",
+      "category": "demographics",
+      "claim": "The average age of yarn consumers is 58 (median 59); 98% are female with household income between $72,000-$91,500",
+      "confidence": "HIGH",
+      "sources": ["src_003"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_011",
+      "category": "demographics",
+      "claim": "48% of yarn consumers are retired; 31% employed full-time; 73% crochet, 84% knit, 58% do both",
+      "confidence": "HIGH",
+      "sources": ["src_003"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_012",
+      "category": "demographics",
+      "claim": "There are over 7.3 million knitters in the UK and 53 million knitters in the USA",
+      "confidence": "MEDIUM",
+      "sources": ["src_010"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_013",
+      "category": "social_media",
+      "claim": "The hashtag #knittok has over 1.1 billion views on TikTok",
+      "confidence": "MEDIUM",
+      "sources": ["src_010", "src_012"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_014",
+      "category": "social_media",
+      "claim": "The hashtag #crochet has 13.9 billion views on TikTok",
+      "confidence": "MEDIUM",
+      "sources": ["src_011"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_015",
+      "category": "social_media",
+      "claim": "PetiteKnit (Mette Wendelboe Okkels) has over 1 million Instagram followers",
+      "confidence": "HIGH",
+      "sources": ["src_021"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_016",
+      "category": "social_media",
+      "claim": "Crochet influencer Monet Nejon has 3.3 million TikTok followers",
+      "confidence": "HIGH",
+      "sources": ["src_007"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_017",
+      "category": "trends_2024_2025",
+      "claim": "European shoulder construction remains a top trend, popularized by Scandinavian designs like PetiteKnit's Lyon Sweater",
+      "confidence": "HIGH",
+      "sources": ["src_001", "src_002"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_018",
+      "category": "trends_2024_2025",
+      "claim": "Texture techniques are trending: cables, popcorn stitches, brioche, Fishermen's Rib, bobbles",
+      "confidence": "HIGH",
+      "sources": ["src_001", "src_002"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_019",
+      "category": "trends_2024_2025",
+      "claim": "Chunky and oversized knitting projects continue trending in 2025 as statement pieces",
+      "confidence": "HIGH",
+      "sources": ["src_001", "src_002"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_020",
+      "category": "trends_2024_2025",
+      "claim": "Pantone Color of the Year 2025 is Mocha Mousse (earthy brown)",
+      "confidence": "HIGH",
+      "sources": ["src_001", "src_002"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_021",
+      "category": "trends_2024_2025",
+      "claim": "Blue paired with white is a standout color combination for colorwork in 2024-2025",
+      "confidence": "HIGH",
+      "sources": ["src_001"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_022",
+      "category": "trends_2024_2025",
+      "claim": "Marling technique (pairing two contrasting colors for heathered look) is trending",
+      "confidence": "MEDIUM",
+      "sources": ["src_001"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_023",
+      "category": "trends_2024_2025",
+      "claim": "Dickies/collars/cowls are trending as the evolution from balaclavas popularity",
+      "confidence": "MEDIUM",
+      "sources": ["src_001"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_024",
+      "category": "sustainability",
+      "claim": "Eco-friendly yarns (organic cotton, bamboo, recycled) are increasingly popular due to ecological benefits",
+      "confidence": "HIGH",
+      "sources": ["src_002", "src_006", "src_019"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_025",
+      "category": "sustainability",
+      "claim": "Upcycling trend: crafters repurposing old knits, using yarn from thrifted garments for patchwork pieces",
+      "confidence": "HIGH",
+      "sources": ["src_001", "src_002"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_026",
+      "category": "sustainability",
+      "claim": "Quiet luxury trend: minimalist silhouettes, premium natural fibers, understated elegance",
+      "confidence": "HIGH",
+      "sources": ["src_001"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_027",
+      "category": "mental_health",
+      "claim": "90% of surveyed knitters/crocheters reported feeling calmer; 80% reported increased happiness (University of Wollongong study, n=8,000)",
+      "confidence": "HIGH",
+      "sources": ["src_010"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_028",
+      "category": "mental_health",
+      "claim": "10% of mental health clinics have integrated knitting into therapeutic programs",
+      "confidence": "LOW",
+      "sources": ["src_010"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_029",
+      "category": "mental_health",
+      "claim": "70% of new knitters cite relaxation and stress relief as their primary reason for starting",
+      "confidence": "MEDIUM",
+      "sources": ["src_010"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_030",
+      "category": "controversy",
+      "claim": "Ravelry's June 2020 redesign caused reports of seizures (~8 users), migraines, eye strain, and accessibility issues",
+      "confidence": "HIGH",
+      "sources": ["src_013", "src_014", "src_015"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_031",
+      "category": "controversy",
+      "claim": "Ravelry has 9 million registered users and 1 million monthly active users",
+      "confidence": "HIGH",
+      "sources": ["src_015"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_032",
+      "category": "controversy",
+      "claim": "Ravelry accessibility issues remain unresolved as of late 2024",
+      "confidence": "HIGH",
+      "sources": ["src_013", "src_014"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_033",
+      "category": "diversity",
+      "claim": "BIPOC in Fiber directory (originally created by Jeanette Sloan in 2018) supports Black, Indigenous and POC fiber artists",
+      "confidence": "HIGH",
+      "sources": ["src_017"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_034",
+      "category": "diversity",
+      "claim": "Vogue Knitting established a Diversity Advisory Council (DAC) - first of its kind in the knitting community",
+      "confidence": "HIGH",
+      "sources": ["src_023"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_035",
+      "category": "diversity",
+      "claim": "#blackpeopledoknit hashtag created by designer Lorna Hamilton Brown to promote Black visibility in knitting",
+      "confidence": "HIGH",
+      "sources": ["src_016"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_036",
+      "category": "cultural",
+      "claim": "Tom Daley went viral at 2020 Tokyo Olympics for crocheting poolside, creating his famous Tokyo 2020 Cardigan",
+      "confidence": "HIGH",
+      "sources": ["src_011"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_037",
+      "category": "preferences",
+      "claim": "Wool yarns most popular among consumers, followed by blended fibers, synthetic, cotton; only 2% prefer luxury yarns",
+      "confidence": "HIGH",
+      "sources": ["src_003"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_038",
+      "category": "trends_2024_2025",
+      "claim": "Modern granny squares featuring geometric patterns, hexagons, floral designs, and bold colors are trending",
+      "confidence": "HIGH",
+      "sources": ["src_002"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_039",
+      "category": "trends_2024_2025",
+      "claim": "Gender-inclusive patterns with broader sizing and universal appeal are a growing trend",
+      "confidence": "MEDIUM",
+      "sources": ["src_002"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_040",
+      "category": "trends_2024_2025",
+      "claim": "Multi-craft combinations blending knitting/crochet with applique, cross stitch, embroidery, beadwork are trending",
+      "confidence": "HIGH",
+      "sources": ["src_001", "src_002"],
+      "date_verified": "2025-12-13"
+    }
+  ],
+  "total_claims": 40,
+  "confidence_summary": {
+    "HIGH": 28,
+    "MEDIUM": 10,
+    "LOW": 2,
+    "DISPUTED": 0
+  },
+  "date_compiled": "2025-12-13",
+  "research_phase": "Collection 1"
+}

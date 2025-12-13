@@ -1,0 +1,237 @@
+{
+  "sources": [
+    {
+      "id": "src_001",
+      "title": "Fall 2024 and Winter 2025 Knitting Trends",
+      "url": "https://www.susannawinter.net/post/fall-2024-and-winter-2025-knitting-trends",
+      "type": "blog",
+      "author": "Susanna Winter",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["trends", "patterns", "techniques", "colors"]
+    },
+    {
+      "id": "src_002",
+      "title": "Knitting and Crochet Trends for 2025",
+      "url": "https://www.knitpro.eu/en/blog/knitting-and-crochet-trends-for-2025",
+      "type": "industry_blog",
+      "author": "KnitPro",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["trends", "techniques", "sustainability", "colors"]
+    },
+    {
+      "id": "src_003",
+      "title": "The Size of the Yarn Market: Yarn Consumer Survey Results 2024",
+      "url": "https://craftindustryalliance.org/the-size-of-the-yarn-market-yarn-consumer-survey-results-2024/",
+      "type": "industry_report",
+      "author": "Craft Industry Alliance / Jan Hurwitz (Berroco)",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["market_data", "demographics", "consumer_behavior"]
+    },
+    {
+      "id": "src_004",
+      "title": "Yarn Market Growth Analysis - Size and Forecast 2025-2029",
+      "url": "https://www.technavio.com/report/yarn-market-industry-analysis",
+      "type": "market_research",
+      "author": "Technavio",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["market_size", "growth", "forecasts"]
+    },
+    {
+      "id": "src_005",
+      "title": "Knitting Yarn Market Size, Trends, Growth Insights 2030",
+      "url": "https://www.precisionbusinessinsights.com/market-reports/knitting-yarn-market",
+      "type": "market_research",
+      "author": "Precision Business Insights",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["market_size", "growth"]
+    },
+    {
+      "id": "src_006",
+      "title": "Knitting and Crochet Market Growth Analysis 2025-2029",
+      "url": "https://www.technavio.com/report/knitting-and-crochet-market-industry-analysis",
+      "type": "market_research",
+      "author": "Technavio",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["market_size", "growth"]
+    },
+    {
+      "id": "src_007",
+      "title": "Top 20 Knitting Influencers in 2025",
+      "url": "https://www.favikon.com/blog/top-knitting-influencers",
+      "type": "analysis",
+      "author": "Favikon",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["social_media", "influencers"]
+    },
+    {
+      "id": "src_008",
+      "title": "Spring's Hottest TikTok Trends Are Coquette Bows, Knitting",
+      "url": "https://wwd.com/business-news/business-features/tiktok-spring-trends-2024-coquette-beauty-1236289723/",
+      "type": "news",
+      "author": "WWD",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["social_media", "trends", "TikTok"]
+    },
+    {
+      "id": "src_009",
+      "title": "DIY home decor: Pandemic prompts big boom in homemade crafts",
+      "url": "https://www.mercurynews.com/2022/03/10/diy-decor-pandemic-prompts-big-boom-in-homemade-crafts/",
+      "type": "news",
+      "author": "Mercury News",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["pandemic", "sales", "DIY"]
+    },
+    {
+      "id": "src_010",
+      "title": "Knitting Statistics & Data: How Many People Knit",
+      "url": "https://knitlikegranny.com/knitting-statistics/",
+      "type": "analysis",
+      "author": "Knit Like Granny",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["statistics", "demographics"]
+    },
+    {
+      "id": "src_011",
+      "title": "Covid and crochet: the rise of a new craze",
+      "url": "https://theboar.org/2021/09/covid-crochet/",
+      "type": "news",
+      "author": "The Boar",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["pandemic", "crochet", "Gen_Z"]
+    },
+    {
+      "id": "src_012",
+      "title": "Move over nana: the Gen Z'ers who have swapped clubbing for crochet",
+      "url": "https://thelinc.co.uk/2023/02/move-over-nana-the-gen-zers-who-have-swapped-clubbing-for-crochet/",
+      "type": "news",
+      "author": "The Linc",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["Gen_Z", "demographics", "social_trends"]
+    },
+    {
+      "id": "src_013",
+      "title": "Disabled users say Ravelry's new site design has given them seizures",
+      "url": "https://www.dailydot.com/irl/ravelry-disabled-website/",
+      "type": "news",
+      "author": "Daily Dot",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["Ravelry", "accessibility", "controversy"]
+    },
+    {
+      "id": "src_014",
+      "title": "Ravelry's Accessibility Blunder--and Why You Should Care",
+      "url": "https://www.mediaperuana.com/blog1/ravelrysaccessibilityblunder",
+      "type": "blog",
+      "author": "Kristen Jancuk",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["Ravelry", "accessibility"]
+    },
+    {
+      "id": "src_015",
+      "title": "How rebranding cost Ravelry the trust of their community",
+      "url": "https://silviamaggidesign.com/design/ravelry-rebranding/",
+      "type": "analysis",
+      "author": "Silvia Maggi",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["Ravelry", "design", "community"]
+    },
+    {
+      "id": "src_016",
+      "title": "Diversity in knitting: Are we any further ahead?",
+      "url": "https://www.craftyarncouncil.com/blog/diversity-knitting-are-we-any-further-ahead",
+      "type": "industry_blog",
+      "author": "Craft Yarn Council",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["diversity", "inclusion", "BIPOC"]
+    },
+    {
+      "id": "src_017",
+      "title": "BIPOC in Fiber Directory",
+      "url": "https://www.bipocinfiber.com/",
+      "type": "resource",
+      "author": "BIPOC in Fiber",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["diversity", "BIPOC", "designers"]
+    },
+    {
+      "id": "src_018",
+      "title": "Diversity in Craft Report",
+      "url": "https://www.blackgirlknitclub.com/diversity-in-craft-report",
+      "type": "report",
+      "author": "Black Girl Knit Club",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["diversity", "inclusion", "research"]
+    },
+    {
+      "id": "src_019",
+      "title": "10 Types of Sustainable Yarn and Their Environmental Impacts",
+      "url": "https://environment.co/types-of-sustainable-yarn-and-their-environmental-impacts/",
+      "type": "article",
+      "author": "Environment Co",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["sustainability", "environment", "yarn_types"]
+    },
+    {
+      "id": "src_020",
+      "title": "7 Sustainable Yarn Brands Knitting You An Eco-Friendly Future",
+      "url": "https://www.sustainablejungle.com/sustainable-yarn/",
+      "type": "article",
+      "author": "Sustainable Jungle",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["sustainability", "brands", "ethics"]
+    },
+    {
+      "id": "src_021",
+      "title": "PetiteKnit – The Epitome of Danish Knitwear design",
+      "url": "https://lainepublishing.com/en-us/blogs/journal/petiteknit-the-epitome-of-danish-knitwear-design",
+      "type": "profile",
+      "author": "Laine Publishing",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["designers", "Scandinavian", "trends"]
+    },
+    {
+      "id": "src_022",
+      "title": "Exploring Why Crochet Is So Popular Now",
+      "url": "https://www.kheyo.com/exploring-the-trend-why-is-crochet-so-popular-now/",
+      "type": "analysis",
+      "author": "Khe-Yo",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["crochet", "trends", "social_media"]
+    },
+    {
+      "id": "src_023",
+      "title": "Vogue Knitting Diversity Advisory Council",
+      "url": "https://www.vogueknittinglive.com/portal/dac",
+      "type": "official",
+      "author": "Vogue Knitting",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["diversity", "inclusion", "industry_initiative"]
+    }
+  ],
+  "total_sources": 23,
+  "date_compiled": "2025-12-13",
+  "research_phase": "Collection 1"
+}
