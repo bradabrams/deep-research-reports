@@ -143,6 +143,166 @@
       "type": "technical_blog",
       "accessed": "2025-12-13",
       "reliability": "LOW"
+    },
+    {
+      "id": "S019",
+      "title": "Anthropic Introducing Model Context Protocol",
+      "url": "https://www.anthropic.com/news/model-context-protocol",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S020",
+      "title": "Linux Foundation Agentic AI Foundation Announcement",
+      "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation",
+      "type": "press_release",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S021",
+      "title": "GitHub Blog - MCP Joins Linux Foundation",
+      "url": "https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/",
+      "type": "official_blog",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S022",
+      "title": "TechCrunch - OpenAI, Anthropic join Linux Foundation",
+      "url": "https://techcrunch.com/2025/12/09/openai-anthropic-and-block-join-new-linux-foundation-effort-to-standardize-the-ai-agent-era/",
+      "type": "news",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S023",
+      "title": "OpenAI Co-founds Agentic AI Foundation",
+      "url": "https://openai.com/index/agentic-ai-foundation/",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S024",
+      "title": "AWS Bedrock Multi-Agent Collaboration",
+      "url": "https://aws.amazon.com/blogs/aws/introducing-multi-agent-collaboration-capability-for-amazon-bedrock/",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S025",
+      "title": "Amazon Bedrock Agents Product Page",
+      "url": "https://aws.amazon.com/bedrock/agents/",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S026",
+      "title": "VentureBeat - OpenAI Unveils AgentKit",
+      "url": "https://venturebeat.com/ai/openai-unveils-agentkit-that-lets-developers-drag-and-drop-to-build-ai-agents/",
+      "type": "news",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S027",
+      "title": "TechCrunch - OpenAI Launches AgentKit",
+      "url": "https://techcrunch.com/2025/10/06/openai-launches-agentkit-to-help-developers-build-and-ship-ai-agents/",
+      "type": "news",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S028",
+      "title": "Superprompt - OpenAI AgentKit Guide",
+      "url": "https://superprompt.com/blog/openai-agentkit-agent-builder-guide",
+      "type": "technical_blog",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S029",
+      "title": "Skywork AI Agent Case Studies 2025",
+      "url": "https://skywork.ai/blog/ai-agents-case-studies-2025/",
+      "type": "case_study",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S030",
+      "title": "McKinsey Seizing the Agentic AI Advantage",
+      "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/seizing-the-agentic-ai-advantage",
+      "type": "consulting_report",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S031",
+      "title": "Latenode - LangGraph vs AutoGen vs CrewAI Comparison",
+      "url": "https://latenode.com/blog/langgraph-vs-autogen-vs-crewai-complete-ai-agent-framework-comparison-architecture-analysis-2025",
+      "type": "technical_comparison",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S032",
+      "title": "Victor Dibia - Multi-Agent Framework Comparison",
+      "url": "https://newsletter.victordibia.com/p/autogen-vs-crewai-vs-langgraph-vs",
+      "type": "technical_blog",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S033",
+      "title": "Composio - OpenAI Agents SDK Comparison",
+      "url": "https://composio.dev/blog/openai-agents-sdk-vs-langgraph-vs-autogen-vs-crewai",
+      "type": "technical_comparison",
+      "accessed": "2025-12-13",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S034",
+      "title": "CrewAI Official Documentation - Flows",
+      "url": "https://docs.crewai.com/en/concepts/flows",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S035",
+      "title": "CrewAI GitHub Repository",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S036",
+      "title": "AWS Build Agentic Systems with CrewAI",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-systems-with-crewai-and-amazon-bedrock/",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S037",
+      "title": "Model Context Protocol GitHub",
+      "url": "https://github.com/modelcontextprotocol",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S038",
+      "title": "Microsoft C# SDK for MCP Partnership",
+      "url": "https://developer.microsoft.com/blog/microsoft-partners-with-anthropic-to-create-official-c-sdk-for-model-context-protocol",
+      "type": "official_documentation",
+      "accessed": "2025-12-13",
+      "reliability": "HIGH"
     }
   ],
   "last_updated": "2025-12-13"

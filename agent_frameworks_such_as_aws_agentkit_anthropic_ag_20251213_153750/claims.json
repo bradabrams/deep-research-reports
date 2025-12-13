@@ -37,8 +37,8 @@
     },
     {
       "id": "C006",
-      "claim": "OpenAI launched AgentKit on October 6, 2025",
-      "sources": ["S002"],
+      "claim": "OpenAI launched AgentKit on October 6, 2025 at DevDay",
+      "sources": ["S002", "S026", "S027"],
       "confidence": "HIGH",
       "category": "timeline"
     },
@@ -104,6 +104,146 @@
       "sources": ["S006", "S007"],
       "confidence": "HIGH",
       "category": "timeline"
+    },
+    {
+      "id": "C016",
+      "claim": "Anthropic released MCP (Model Context Protocol) in November 2024",
+      "sources": ["S019", "S020", "S021"],
+      "confidence": "HIGH",
+      "category": "timeline"
+    },
+    {
+      "id": "C017",
+      "claim": "MCP has over 10,000 published servers as of December 2025",
+      "sources": ["S020", "S021"],
+      "confidence": "HIGH",
+      "category": "ecosystem"
+    },
+    {
+      "id": "C018",
+      "claim": "Agentic AI Foundation (AAIF) launched December 9, 2025 under Linux Foundation",
+      "sources": ["S020", "S021", "S022", "S023"],
+      "confidence": "HIGH",
+      "category": "timeline"
+    },
+    {
+      "id": "C019",
+      "claim": "OpenAI adopted MCP protocol in March 2025",
+      "sources": ["S019"],
+      "confidence": "HIGH",
+      "category": "timeline"
+    },
+    {
+      "id": "C020",
+      "claim": "Google confirmed MCP support for Gemini in April 2025",
+      "sources": ["S019"],
+      "confidence": "HIGH",
+      "category": "timeline"
+    },
+    {
+      "id": "C021",
+      "claim": "OpenAI AgentKit has 4 components: Agent Builder, ChatKit, Evals for Agents, Connector Registry",
+      "sources": ["S002", "S026", "S027", "S028"],
+      "confidence": "HIGH",
+      "category": "technical"
+    },
+    {
+      "id": "C022",
+      "claim": "Amazon Bedrock multi-agent collaboration became GA on March 10, 2025",
+      "sources": ["S024", "S025"],
+      "confidence": "HIGH",
+      "category": "timeline"
+    },
+    {
+      "id": "C023",
+      "claim": "AGENTS.md adopted by over 60,000 open source projects",
+      "sources": ["S020"],
+      "confidence": "HIGH",
+      "category": "ecosystem"
+    },
+    {
+      "id": "C024",
+      "claim": "Klarna AI assistant handled 2.3 million conversations in first month, cutting resolution time from 11 min to under 2 min",
+      "sources": ["S029"],
+      "confidence": "MEDIUM",
+      "category": "case_study"
+    },
+    {
+      "id": "C025",
+      "claim": "79% of organizations say they have adopted AI agents to some extent (PwC 2025 survey)",
+      "sources": ["S029"],
+      "confidence": "MEDIUM",
+      "category": "adoption"
+    },
+    {
+      "id": "C026",
+      "claim": "LangGraph excels in managing complex iterative workflows with graph-based approach",
+      "sources": ["S003", "S007", "S031"],
+      "confidence": "HIGH",
+      "category": "technical"
+    },
+    {
+      "id": "C027",
+      "claim": "AutoGen from Microsoft distinguishes itself as enterprise-focused with actor model architecture",
+      "sources": ["S003", "S007", "S031", "S032"],
+      "confidence": "HIGH",
+      "category": "technical"
+    },
+    {
+      "id": "C028",
+      "claim": "CrewAI prioritizes rapid prototyping and developer experience with role-based agents",
+      "sources": ["S007", "S031", "S034"],
+      "confidence": "HIGH",
+      "category": "technical"
+    },
+    {
+      "id": "C029",
+      "claim": "MCP uses JSON-RPC 2.0 transport with stdio and HTTP/SSE mechanisms",
+      "sources": ["S019", "S037"],
+      "confidence": "HIGH",
+      "category": "technical"
+    },
+    {
+      "id": "C030",
+      "claim": "MCP has three core primitives: tools (model-controlled), resources (app-controlled), prompts (user-controlled)",
+      "sources": ["S019"],
+      "confidence": "HIGH",
+      "category": "technical"
+    },
+    {
+      "id": "C031",
+      "claim": "CrewAI architecture consists of Crews (autonomous collaboration) and Flows (deterministic orchestration)",
+      "sources": ["S034", "S035", "S036"],
+      "confidence": "HIGH",
+      "category": "technical"
+    },
+    {
+      "id": "C032",
+      "claim": "AWS Bedrock Agents supports supervisor mode and supervisor-with-routing mode for multi-agent collaboration",
+      "sources": ["S024", "S025"],
+      "confidence": "HIGH",
+      "category": "technical"
+    },
+    {
+      "id": "C033",
+      "claim": "Security researchers identified MCP vulnerabilities including prompt injection, tool permissions issues in April 2025",
+      "sources": ["S019"],
+      "confidence": "MEDIUM",
+      "category": "security"
+    },
+    {
+      "id": "C034",
+      "claim": "Global AI agents market projected to reach $216.8 billion by 2035 (CAGR 40.15%)",
+      "sources": ["S029"],
+      "confidence": "MEDIUM",
+      "category": "market_projection"
+    },
+    {
+      "id": "C035",
+      "claim": "45% of enterprises run at least one production AI agent with access to critical business systems (Gartner), a 300% increase from 2023",
+      "sources": ["S017"],
+      "confidence": "MEDIUM",
+      "category": "adoption"
     }
   ],
   "last_updated": "2025-12-13"
