@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Frameworks: Research Report</title>
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+            --accent-blue: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-yellow: #d29922;
+            --accent-red: #f85149;
+            --accent-purple: #a371f7;
+            --border-color: #30363d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+        }
+
+        /* Header */
+        header {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .meta-badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .badge-high { background: rgba(63, 185, 80, 0.2); color: var(--accent-green); }
+        .badge-medium { background: rgba(210, 153, 34, 0.2); color: var(--accent-yellow); }
+        .badge-low { background: rgba(248, 81, 73, 0.2); color: var(--accent-red); }
+        .badge-disputed { background: rgba(163, 113, 247, 0.2); color: var(--accent-purple); }
+        .badge-date { background: rgba(88, 166, 255, 0.2); color: var(--accent-blue); }
+
+        /* Table of Contents */
+        .toc {
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 900px) {
+            .toc {
+                position: relative;
+                top: 0;
+            }
+        }
+
+        .toc h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            padding: 5px 10px;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue);
+            background: var(--bg-tertiary);
+        }
+
+        .toc .toc-h3 {
+            padding-left: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* Main Content */
+        main {
+            min-width: 0;
+        }
+
+        /* Sections */
+        .section {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 25px;
+            cursor: pointer;
+            background: var(--bg-secondary);
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .section-header h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-header .icon {
+            font-size: 1.2rem;
+        }
+
+        .collapse-icon {
+            transition: transform 0.3s;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        .section.collapsed .collapse-icon {
+            transform: rotate(-90deg);
+        }
+
+        .section-content {
+            padding: 0 25px 25px;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s;
+        }
+
+        .section.collapsed .section-content {
+            max-height: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        /* Typography */
+        h3 {
+            font-size: 1.2rem;
+            margin: 25px 0 15px;
+            color: var(--accent-blue);
+        }
+
+        h4 {
+            font-size: 1.05rem;
+            margin: 20px 0 12px;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Blockquotes */
+        blockquote {
+            border-left: 4px solid var(--accent-purple);
+            background: var(--bg-tertiary);
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        /* Tables */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        th {
+            background: var(--bg-tertiary);
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        tr:hover td {
+            background: var(--bg-tertiary);
+        }
+
+        /* Citations */
+        .citation {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent-blue);
+            color: var(--bg-primary);
+            font-size: 0.7rem;
+            font-weight: 700;
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            margin: 0 2px;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+            vertical-align: super;
+        }
+
+        .citation:hover {
+            transform: scale(1.1);
+            background: var(--accent-purple);
+        }
+
+        /* Key Findings Cards */
+        .findings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .finding-card {
+            background: var(--bg-tertiary);
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .finding-card h4 {
+            margin-top: 0;
+            font-size: 1rem;
+            color: var(--accent-blue);
+        }
+
+        .finding-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* Takeaway Pills */
+        .takeaways {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .takeaway {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            background: var(--bg-tertiary);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .takeaway-label {
+            background: var(--accent-green);
+            color: var(--bg-primary);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .takeaway p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Sources Section */
+        .sources-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-list li {
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            font-size: 0.85rem;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .source-num {
+            background: var(--accent-blue);
+            color: var(--bg-primary);
+            min-width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+
+        .source-content a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        .source-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Confidence Indicators */
+        .confidence {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .confidence-high { background: rgba(63, 185, 80, 0.2); color: var(--accent-green); }
+        .confidence-medium { background: rgba(210, 153, 34, 0.2); color: var(--accent-yellow); }
+        .confidence-low { background: rgba(248, 81, 73, 0.2); color: var(--accent-red); }
+
+        /* Footer */
+        footer {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        /* Code style */
+        code {
+            background: var(--bg-tertiary);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'SF Mono', 'Consolas', monospace;
+            font-size: 0.9em;
+            color: var(--accent-purple);
+        }
+
+        /* Scroll to top */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--accent-blue);
+            color: var(--bg-primary);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5rem;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            transition: transform 0.2s, background 0.2s;
+            z-index: 1000;
+        }
+
+        .scroll-top:hover {
+            transform: scale(1.1);
+            background: var(--accent-purple);
+        }
+
+        .scroll-top.visible {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Agent Frameworks</h1>
+            <p class="subtitle">A Comprehensive Analysis of AWS AgentCore, Anthropic Claude Agent SDK, OpenAI AgentKit, and Open-Source Alternatives</p>
+            <div class="meta-badges">
+                <span class="badge badge-date">December 13, 2025</span>
+                <span class="badge badge-high">16 HIGH</span>
+                <span class="badge badge-medium">4 MEDIUM</span>
+                <span class="badge badge-low">1 LOW</span>
+                <span class="badge badge-disputed">2 DISPUTED</span>
+            </div>
+        </header>
+
+        <nav class="toc">
+            <h2>Contents</h2>
+            <ul>
+                <li><a href="#executive-summary">Executive Summary</a></li>
+                <li><a href="#methodology" class="toc-h3">Methodology & Limitations</a></li>
+                <li><a href="#findings">Findings</a></li>
+                <li><a href="#framework-landscape" class="toc-h3">1. Framework Landscape</a></li>
+                <li><a href="#mcp" class="toc-h3">2. MCP Standardization</a></li>
+                <li><a href="#orchestration" class="toc-h3">3. Orchestration Patterns</a></li>
+                <li><a href="#economics" class="toc-h3">4. Market Economics</a></li>
+                <li><a href="#developer-experience" class="toc-h3">5. Developer Experience</a></li>
+                <li><a href="#security" class="toc-h3">6. Security Landscape</a></li>
+                <li><a href="#uncertainty">Areas of Uncertainty</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#sources">Sources</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Executive Summary -->
+            <section class="section" id="executive-summary">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2><span class="icon">📊</span> Executive Summary</h2>
+                    <span class="collapse-icon">▼</span>
+                </div>
+                <div class="section-content">
+                    <p>The AI agent framework landscape in 2025 is characterized by rapid evolution, significant fragmentation, and a widening gap between vendor promises and production reality. This report examines the major frameworks available for building autonomous AI agents.</p>
+
+                    <h3>Key Findings</h3>
+                    <div class="findings-grid">
+                        <div class="finding-card">
+                            <h4>Market Reality</h4>
+                            <p>The AI agent market is valued at <strong>$7.4-7.9 billion</strong> in 2025. Long-term projections vary dramatically ($50B to $236B by 2030-2034).<span class="citation" title="Index.dev">1</span><span class="citation" title="GM Insights">2</span><span class="citation" title="Grand View Research">3</span></p>
+                        </div>
+                        <div class="finding-card">
+                            <h4>Adoption vs. Hype Gap</h4>
+                            <p>While 85% plan to adopt, McKinsey shows only <strong>62% engagement</strong> (23% scaling + 39% experimenting). 95% of AI pilots fail to deliver ROI.<span class="citation" title="McKinsey">4</span><span class="citation" title="MIT Sloan">5</span></p>
+                        </div>
+                        <div class="finding-card">
+                            <h4>Framework Consolidation</h4>
+                            <p>The <strong>Model Context Protocol (MCP)</strong> donated to Linux Foundation in Dec 2025, adopted by OpenAI, Google, and AWS.<span class="citation" title="Anthropic">6</span></p>
+                        </div>
+                        <div class="finding-card">
+                            <h4>Developer Challenges</h4>
+                            <p>All frameworks face criticism: LangChain for over-abstraction, AWS for IAM complexity, CrewAI for pricing ($99-$120K/year).<span class="citation" title="Designveloper">7</span><span class="citation" title="Max Woolf">8</span></p>
+                        </div>
+                        <div class="finding-card">
+                            <h4>Security Concerns</h4>
+                            <p>MCP has documented vulnerabilities (prompt injection, tool mutation). <strong>80%</strong> of organizations report risky agent behaviors.<span class="citation" title="Simon Willison">11</span><span class="citation" title="Unit 42">13</span></p>
+                        </div>
+                    </div>
+
+                    <h3>Primary Takeaways</h3>
+                    <div class="takeaways">
+                        <div class="takeaway">
+                            <span class="takeaway-label">Prototyping</span>
+                            <p><strong>CrewAI</strong> (40K+ GitHub stars, beginner-friendly) or <strong>LangChain</strong> (122K stars, extensive integrations)</p>
+                        </div>
+                        <div class="takeaway">
+                            <span class="takeaway-label">Production</span>
+                            <p><strong>OpenAI Agents SDK</strong> (lighter abstraction) or custom implementations</p>
+                        </div>
+                        <div class="takeaway">
+                            <span class="takeaway-label">Enterprise/AWS</span>
+                            <p><strong>Bedrock AgentCore</strong> (model-agnostic, but expect steep learning curve)</p>
+                        </div>
+                        <div class="takeaway">
+                            <span class="takeaway-label">Long-Running</span>
+                            <p><strong>Claude Agent SDK</strong> (innovative multi-session memory architecture)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Methodology -->
+            <section class="section" id="methodology">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2><span class="icon">🔬</span> Methodology & Limitations</h2>
+                    <span class="collapse-icon">▼</span>
+                </div>
+                <div class="section-content">
+                    <h3>Source Types Used</h3>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Source Type</th>
+                                    <th>Count</th>
+                                    <th>Examples</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Official Documentation</td><td>12</td><td>AWS, Anthropic, OpenAI docs</td></tr>
+                                <tr><td>Industry Reports</td><td>8</td><td>McKinsey, Gartner, GM Insights</td></tr>
+                                <tr><td>Technical Comparisons</td><td>7</td><td>Turing, Langfuse, DataCamp</td></tr>
+                                <tr><td>Community Sources</td><td>10</td><td>Hacker News, DEV Community, Medium</td></tr>
+                                <tr><td>Security Research</td><td>5</td><td>Red Hat, Microsoft, Palo Alto</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Research Limitations</h3>
+                    <ul>
+                        <li><strong>Recency Bias:</strong> Framework features change rapidly; some information may be outdated within weeks</li>
+                        <li><strong>Vendor Self-Reporting:</strong> GitHub stars and download counts are self-reported metrics</li>
+                        <li><strong>Survey Methodology:</strong> Adoption and ROI statistics rely on surveys with varying methodologies</li>
+                        <li><strong>Community Bias:</strong> Developer forums over-represent vocal critics and enthusiasts</li>
+                        <li><strong>Missing Data:</strong> Limited independent benchmarks comparing framework performance</li>
+                    </ul>
+
+                    <h3>Terminology Clarification</h3>
+                    <blockquote>
+                        <strong>Important:</strong> The original research topic mentioned "AWS AgentKit"—this is actually <strong>OpenAI's AgentKit</strong>. AWS's agent offerings are: Amazon Bedrock Agents (fully managed), Amazon Bedrock AgentCore (enterprise platform), and Strands Agents (open-source SDK).
+                    </blockquote>
+                </div>
+            </section>
+
+            <!-- Findings -->
+            <section class="section" id="findings">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2><span class="icon">📋</span> Findings</h2>
+                    <span class="collapse-icon">▼</span>
+                </div>
+                <div class="section-content">
+
+                    <h3 id="framework-landscape">1. Framework Landscape Overview</h3>
+                    <p>The AI agent framework market has consolidated around several major categories, each with distinct architectural approaches and trade-offs.</p>
+
+                    <h4>Cloud Provider Platforms</h4>
+                    <p><strong>Amazon Bedrock AgentCore</strong> reached general availability in late 2025 after a July preview, accumulating over 2 million SDK downloads in five months.<span class="citation">14</span> AgentCore is model-agnostic, supporting OpenAI, Google, Anthropic, Meta, and Mistral models. Key components include:</p>
+                    <ul>
+                        <li><strong>Runtime:</strong> Serverless with microVM session isolation</li>
+                        <li><strong>Memory:</strong> Persistent and episodic memory capabilities</li>
+                        <li><strong>Gateway:</strong> Tool integration hub</li>
+                        <li><strong>Policy (preview):</strong> Natural language to Cedar policy conversion</li>
+                        <li><strong>Evaluations:</strong> 13 built-in quality evaluators</li>
+                    </ul>
+                    <blockquote>"Slow responses, buggy experiences, and missing key features"<span class="citation">9</span></blockquote>
+
+                    <h4>AI Company SDKs</h4>
+                    <p><strong>Anthropic Claude Agent SDK</strong>, published September 29, 2025, introduces an innovative two-part architecture for long-running agents:<span class="citation">16</span></p>
+                    <ol>
+                        <li><strong>Initializer Agent:</strong> Sets up environment, creates progress logs, commits state via Git</li>
+                        <li><strong>Coding Agent:</strong> Reads progress logs, makes incremental updates, maintains documentation</li>
+                    </ol>
+                    <p><strong>OpenAI AgentKit</strong>, launched at Dev Day on October 6, 2025, consolidates agent building with a unified Responses API.<span class="citation">18</span> Built-in tools include WebSearchTool, FileSearchTool, ComputerTool, and CodeInterpreterTool ($0.03/container).</p>
+
+                    <h4>Open-Source Frameworks</h4>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr><th>Framework</th><th>GitHub Stars</th><th>Architecture</th><th>Best For</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>LangChain</td><td>~122,000</td><td>Modular chains</td><td>Wide integrations</td></tr>
+                                <tr><td>LangGraph</td><td>~22,000</td><td>Graph-based</td><td>Complex stateful workflows</td></tr>
+                                <tr><td>CrewAI</td><td>40,000+</td><td>Role-based teams</td><td>Rapid prototyping</td></tr>
+                                <tr><td>AutoGen</td><td>Growing</td><td>Conversational</td><td>Microsoft ecosystem</td></tr>
+                                <tr><td>Dify</td><td>~93,000</td><td>Low-code</td><td>Non-technical users</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 id="mcp">2. Model Context Protocol (MCP) Standardization</h3>
+                    <p>MCP is an open standard introduced by Anthropic in November 2024 to standardize LLM integration with external tools and data sources.<span class="citation">6</span> The protocol was donated to the Agentic AI Foundation under the Linux Foundation in December 2025.</p>
+
+                    <h4>Adoption Timeline</h4>
+                    <ul>
+                        <li><strong>November 2024:</strong> Anthropic launches MCP</li>
+                        <li><strong>March 2025:</strong> OpenAI adopts MCP</li>
+                        <li><strong>April 2025:</strong> Google confirms Gemini support</li>
+                        <li><strong>December 2025:</strong> Linux Foundation transfer</li>
+                    </ul>
+
+                    <h4>Security Vulnerabilities</h4>
+                    <ul>
+                        <li><strong>Prompt Injection:</strong> LLMs trust any convincing tokens, enabling confused deputy attacks</li>
+                        <li><strong>Tool Mutation:</strong> Tools can modify their definitions post-installation</li>
+                        <li><strong>Data Exfiltration:</strong> Mixing private data with untrusted instructions creates attack vectors</li>
+                        <li><strong>Command Injection:</strong> Many MCP servers pass unescaped input to system commands</li>
+                    </ul>
+                    <blockquote>"Model Context Protocol is powerful but dangerous. It wasn't designed with security first"<span class="citation">21</span></blockquote>
+
+                    <h3 id="orchestration">3. Multi-Agent Orchestration Patterns</h3>
+                    <p>Three primary orchestration patterns have emerged for multi-agent systems:<span class="citation">22</span><span class="citation">23</span></p>
+
+                    <div class="findings-grid">
+                        <div class="finding-card">
+                            <h4>Supervisor Pattern</h4>
+                            <p>Central orchestrator coordinates all agents. Predictable control flow, easier debugging. Best for enterprise workflows requiring compliance.</p>
+                        </div>
+                        <div class="finding-card">
+                            <h4>Hierarchical Architecture</h4>
+                            <p>Three layers: Strategy → Planning → Execution. Top-down control and decision-making. Best for complex decomposable tasks.</p>
+                        </div>
+                        <div class="finding-card">
+                            <h4>Swarm Pattern</h4>
+                            <p>Decentralized peer-to-peer communication. Better scalability, harder to debug. Best for emergent behavior and exploration.</p>
+                        </div>
+                    </div>
+
+                    <h3 id="economics">4. Market Economics</h3>
+                    <p><strong>Current Market Size:</strong> The AI agent market is valued at $7.38-7.92 billion in 2025.<span class="citation">1</span><span class="citation">2</span><span class="citation">3</span></p>
+
+                    <h4>Enterprise Implementation Costs<span class="citation">26</span></h4>
+                    <ul>
+                        <li>Basic implementations: <strong>$100,000-$200,000</strong></li>
+                        <li>Comprehensive enterprise: <strong>$500,000-$2,000,000</strong></li>
+                        <li>Setup fees: $50,000-$150,000</li>
+                        <li>Implementation timeline: 3-6 months</li>
+                    </ul>
+
+                    <h4>Vendor Pricing Models</h4>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead><tr><th>Vendor</th><th>Model</th><th>Price</th></tr></thead>
+                            <tbody>
+                                <tr><td>Salesforce Agentforce</td><td>Per conversation</td><td>$2</td></tr>
+                                <tr><td>Microsoft Copilot</td><td>Per hour</td><td>$4</td></tr>
+                                <tr><td>Intercom</td><td>Per resolution</td><td>$0.99</td></tr>
+                                <tr><td>CrewAI</td><td>Subscription</td><td>$99/mo - $120K/yr</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 id="developer-experience">5. Developer Experience & Community Sentiment</h3>
+
+                    <h4>LangChain Criticism<span class="citation">7</span><span class="citation">8</span><span class="citation">19</span></h4>
+                    <blockquote>"You have to learn a bunch of custom classes and abstractions, even for things that could be done with plain Python or JavaScript"</blockquote>
+                    <ul>
+                        <li>Over-abstraction and steep learning curve</li>
+                        <li>Dependency bloat ("dependency hell")</li>
+                        <li>Frequently outdated documentation</li>
+                        <li>API instability with breaking changes</li>
+                    </ul>
+
+                    <h4>AWS Bedrock Pain Points<span class="citation">9</span><span class="citation">15</span></h4>
+                    <blockquote>"Slow responses, buggy experiences, and missing key features"</blockquote>
+                    <ul>
+                        <li>Each tool requires separate Lambda function management</li>
+                        <li>AgentCore CLI unreliable with cryptic IAM errors</li>
+                        <li>Intermittent failures in long-running workflows</li>
+                    </ul>
+
+                    <h4>General Developer Sentiment<span class="citation">28</span></h4>
+                    <blockquote>"The transition from deterministic systems to probabilistic agents is uncomfortable... handing over control flow to a non-deterministic model feels wrong to a mind trained on strict interfaces."</blockquote>
+                    <p>Developers report spending <strong>60-70%</strong> of AI development time on prompt engineering.</p>
+
+                    <h3 id="security">6. Security Landscape</h3>
+                    <p>Security concerns are substantial across all agent frameworks:<span class="citation">13</span><span class="citation">29</span><span class="citation">30</span></p>
+
+                    <h4>Top Threats</h4>
+                    <ol>
+                        <li>Memory Poisoning</li>
+                        <li>Tool Misuse</li>
+                        <li>Privilege Compromise</li>
+                        <li>Prompt Injection</li>
+                        <li>Cascading Hallucinations</li>
+                    </ol>
+
+                    <h4>Statistics</h4>
+                    <ul>
+                        <li><strong>80%</strong> of organizations report encountering risky agent behaviors<span class="citation">13</span></li>
+                        <li><strong>41%</strong> report IAM concerns for autonomous agents<span class="citation">29</span></li>
+                        <li><strong>62%</strong> of practitioners cite security as top challenge<span class="citation">30</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Areas of Uncertainty -->
+            <section class="section" id="uncertainty">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2><span class="icon">❓</span> Areas of Uncertainty</h2>
+                    <span class="collapse-icon">▼</span>
+                </div>
+                <div class="section-content">
+                    <h3>Disputed Claims</h3>
+                    <p><strong>Long-Term Market Projections:</strong> Sources disagree significantly on market size beyond 2025. Estimates for 2030-2034 range from approximately <strong>$50 billion to over $236 billion</strong>—nearly a 5x difference.<span class="citation">1</span><span class="citation">2</span><span class="citation">3</span></p>
+
+                    <p><strong>ROI Expectations vs. Reality:</strong> One report indicates organizations project <strong>171% average ROI</strong> from agentic AI,<span class="citation">31</span> but this contradicts research showing <strong>70-95%</strong> of enterprise AI projects fail to deliver measurable returns.<span class="citation">5</span><span class="citation">32</span></p>
+
+                    <h3>Weak Evidence Areas</h3>
+                    <ul>
+                        <li><strong>Actual Production Deployment Rates:</strong> Most adoption statistics are based on surveys asking about plans, not verified deployments</li>
+                        <li><strong>Framework Performance Benchmarks:</strong> No independent, comprehensive benchmarks comparing framework performance exist</li>
+                        <li><strong>Total Cost of Ownership:</strong> Hidden costs (security, compliance, maintenance) are poorly documented</li>
+                        <li><strong>Long-Term Maintenance Burden:</strong> Insufficient longitudinal data on framework stability over multi-year deployments</li>
+                    </ul>
+
+                    <h3>Rapid Evolution Risks</h3>
+                    <ul>
+                        <li>Whether MCP will achieve true standardization or fragment</li>
+                        <li>How cloud providers will differentiate as features converge</li>
+                        <li>Whether open-source frameworks will maintain pace with commercial offerings</li>
+                        <li>Impact of potential AI regulation on agent autonomy</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="section" id="conclusion">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2><span class="icon">✅</span> Conclusion</h2>
+                    <span class="collapse-icon">▼</span>
+                </div>
+                <div class="section-content">
+                    <h3>What Is Established</h3>
+                    <ol>
+                        <li><strong>Market Fundamentals:</strong> The AI agent market is real and growing, with current valuations around $7.5B.</li>
+                        <li><strong>Framework Differentiation:</strong> Clear architectural differences exist between frameworks.</li>
+                        <li><strong>MCP as Emerging Standard:</strong> The Model Context Protocol is gaining industry-wide adoption.</li>
+                        <li><strong>Security Challenges:</strong> Agent security is a genuine concern requiring explicit attention.</li>
+                        <li><strong>Developer Experience Gap:</strong> All frameworks have significant usability challenges.</li>
+                    </ol>
+
+                    <h3>What Remains Uncertain</h3>
+                    <ol>
+                        <li><strong>Actual ROI:</strong> The gap between projected (171%) and realized ROI remains unresolved.</li>
+                        <li><strong>Optimal Architecture:</strong> Which orchestration patterns will dominate is unclear.</li>
+                        <li><strong>Market Trajectory:</strong> Long-term projections vary by nearly 5x.</li>
+                        <li><strong>Framework Longevity:</strong> Which frameworks will survive consolidation is unknown.</li>
+                    </ol>
+
+                    <h3>Recommendations by Use Case</h3>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr><th>Use Case</th><th>Recommended Framework</th><th>Confidence</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Quick POC/Demo</td><td>LangChain or CrewAI</td><td><span class="confidence confidence-high">HIGH</span></td></tr>
+                                <tr><td>Production deployment</td><td>OpenAI Agents SDK or custom</td><td><span class="confidence confidence-medium">MEDIUM</span></td></tr>
+                                <tr><td>Multi-agent collaboration</td><td>CrewAI</td><td><span class="confidence confidence-high">HIGH</span></td></tr>
+                                <tr><td>Complex stateful workflows</td><td>LangGraph</td><td><span class="confidence confidence-medium">MEDIUM</span></td></tr>
+                                <tr><td>Enterprise/AWS workloads</td><td>Bedrock AgentCore</td><td><span class="confidence confidence-medium">MEDIUM</span></td></tr>
+                                <tr><td>Long-running coding tasks</td><td>Claude Agent SDK</td><td><span class="confidence confidence-high">HIGH</span></td></tr>
+                                <tr><td>Maximum control</td><td>Strands Agents or custom</td><td><span class="confidence confidence-high">HIGH</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sources -->
+            <section class="section" id="sources">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2><span class="icon">📚</span> Sources</h2>
+                    <span class="collapse-icon">▼</span>
+                </div>
+                <div class="section-content">
+                    <ul class="sources-list">
+                        <li><span class="source-num">1</span><div class="source-content">Index.dev. "50+ Key AI Agent Statistics and Adoption Trends in 2025." 2025. <a href="https://www.index.dev/blog/ai-agents-statistics" target="_blank">index.dev</a></div></li>
+                        <li><span class="source-num">2</span><div class="source-content">GM Insights. "AI Agents Market Size & Share, Growth Opportunity 2025-2034." 2025. <a href="https://www.gminsights.com/industry-analysis/ai-agents-market" target="_blank">gminsights.com</a></div></li>
+                        <li><span class="source-num">3</span><div class="source-content">Grand View Research. "AI Agents Market Size And Share | Industry Report, 2033." 2025. <a href="https://www.grandviewresearch.com/industry-analysis/ai-agents-market-report" target="_blank">grandviewresearch.com</a></div></li>
+                        <li><span class="source-num">4</span><div class="source-content">McKinsey. "The state of AI in 2025: Agents, innovation, and transformation." 2025. <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank">mckinsey.com</a></div></li>
+                        <li><span class="source-num">5</span><div class="source-content">MIT Sloan. "The GenAI Divide: State of AI in Business 2025." 2025.</div></li>
+                        <li><span class="source-num">6</span><div class="source-content">Anthropic. "Introducing the Model Context Protocol." 2024. <a href="https://www.anthropic.com/news/model-context-protocol" target="_blank">anthropic.com</a></div></li>
+                        <li><span class="source-num">7</span><div class="source-content">Designveloper. "Why Developers Say LangChain Is 'Bad': An Honest Look." 2025. <a href="https://www.designveloper.com/blog/is-langchain-bad/" target="_blank">designveloper.com</a></div></li>
+                        <li><span class="source-num">8</span><div class="source-content">Woolf, Max. "The Problem With LangChain." 2023. <a href="https://minimaxir.com/2023/07/langchain-problem/" target="_blank">minimaxir.com</a></div></li>
+                        <li><span class="source-num">9</span><div class="source-content">Team Blind. "Sad state of Amazon Bedrock and AWS AI." 2025. <a href="https://www.teamblind.com/post/sad-state-of-amazon-bedrock-and-aws-ai-1ugw0bvr" target="_blank">teamblind.com</a></div></li>
+                        <li><span class="source-num">10</span><div class="source-content">Lindy. "CrewAI Review 2025: Is It Really Worth Your Money?" 2025. <a href="https://www.lindy.ai/blog/crew-ai" target="_blank">lindy.ai</a></div></li>
+                        <li><span class="source-num">11</span><div class="source-content">Willison, Simon. "Model Context Protocol has prompt injection security problems." April 2025. <a href="https://simonwillison.net/2025/Apr/9/mcp-prompt-injection/" target="_blank">simonwillison.net</a></div></li>
+                        <li><span class="source-num">12</span><div class="source-content">Red Hat. "Model Context Protocol (MCP): Understanding security risks and controls." 2025. <a href="https://www.redhat.com/en/blog/model-context-protocol-mcp-understanding-security-risks-and-controls" target="_blank">redhat.com</a></div></li>
+                        <li><span class="source-num">13</span><div class="source-content">Palo Alto Networks Unit 42. "AI Agents Are Here. So Are the Threats." 2025. <a href="https://unit42.paloaltonetworks.com/agentic-ai-threats/" target="_blank">unit42.paloaltonetworks.com</a></div></li>
+                        <li><span class="source-num">14</span><div class="source-content">AWS. "Introducing Amazon Bedrock AgentCore." 2025. <a href="https://aws.amazon.com/blogs/aws/introducing-amazon-bedrock-agentcore-securely-deploy-and-operate-ai-agents-at-any-scale/" target="_blank">aws.amazon.com</a></div></li>
+                        <li><span class="source-num">15</span><div class="source-content">DEV Community. "Breaking Bedrock: What Really Happens When Your Agent Doesn't Work." 2025. <a href="https://dev.to/sinariver/i-built-a-bedrock-agent-for-learning-and-it-definitely-took-that-mission-seriously-kf3" target="_blank">dev.to</a></div></li>
+                        <li><span class="source-num">16</span><div class="source-content">Anthropic. "Building agents with the Claude Agent SDK." 2025. <a href="https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk" target="_blank">anthropic.com</a></div></li>
+                        <li><span class="source-num">17</span><div class="source-content">PromptLayer. "Building Agents with Claude Code's SDK." 2025. <a href="https://blog.promptlayer.com/building-agents-with-claude-codes-sdk/" target="_blank">promptlayer.com</a></div></li>
+                        <li><span class="source-num">18</span><div class="source-content">OpenAI. "Introducing AgentKit." October 2025. <a href="https://openai.com/index/introducing-agentkit/" target="_blank">openai.com</a></div></li>
+                        <li><span class="source-num">19</span><div class="source-content">Medium. "6 Reasons why Langchain Sucks." 2025. <a href="https://medium.com/@woyera/6-reasons-why-langchain-sucks-b6c99c98efbe" target="_blank">medium.com</a></div></li>
+                        <li><span class="source-num">20</span><div class="source-content">CrewAI Blog. "CrewAI OSS 1.0 - We are going GA." October 2025. <a href="https://blog.crewai.com/crewai-oss-1-0-we-are-going-ga/" target="_blank">crewai.com</a></div></li>
+                        <li><span class="source-num">21</span><div class="source-content">Embrace The Red. "Model Context Protocol Untrusted Servers & Confused Clients." 2025. <a href="https://embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/" target="_blank">embracethered.com</a></div></li>
+                        <li><span class="source-num">22</span><div class="source-content">Swarms Documentation. "Multi-Agent Architectures." 2025. <a href="https://docs.swarms.world/en/latest/swarms/concept/swarm_architectures/" target="_blank">docs.swarms.world</a></div></li>
+                        <li><span class="source-num">23</span><div class="source-content">AWS. "Multi-Agent collaboration patterns with Strands Agents and Amazon Nova." 2025. <a href="https://aws.amazon.com/blogs/machine-learning/multi-agent-collaboration-patterns-with-strands-agents-and-amazon-nova/" target="_blank">aws.amazon.com</a></div></li>
+                        <li><span class="source-num">24</span><div class="source-content">Latenode. "LangGraph vs AutoGen vs CrewAI: Complete AI Agent Framework Comparison." 2025. <a href="https://latenode.com/blog/langgraph-vs-autogen-vs-crewai-complete-ai-agent-framework-comparison-architecture-analysis-2025" target="_blank">latenode.com</a></div></li>
+                        <li><span class="source-num">25</span><div class="source-content">Turing. "A Detailed Comparison of Top 6 AI Agent Frameworks in 2025." 2025. <a href="https://www.turing.com/resources/ai-agent-frameworks" target="_blank">turing.com</a></div></li>
+                        <li><span class="source-num">26</span><div class="source-content">Agentman/Medium. "The complete guide to AI Agent Pricing Models in 2025." 2025. <a href="https://medium.com/agentman/the-complete-guide-to-ai-agent-pricing-models-in-2025-ff65501b2802" target="_blank">medium.com</a></div></li>
+                        <li><span class="source-num">27</span><div class="source-content">Sider. "CrewAI Review 2025: Is This Multi-Agent Framework Worth Your Build?" 2025. <a href="https://sider.ai/blog/ai-tools/crewai-review-2025-is-this-multi-agent-framework-worth-your-build" target="_blank">sider.ai</a></div></li>
+                        <li><span class="source-num">28</span><div class="source-content">Phil Schmid. "Why (Senior) Engineers Struggle to Build AI Agents." 2025. <a href="https://www.philschmid.de/why-engineers-struggle-building-agents" target="_blank">philschmid.de</a></div></li>
+                        <li><span class="source-num">29</span><div class="source-content">AWS. "The Agentic AI Security Scoping Matrix." 2025. <a href="https://aws.amazon.com/blogs/security/the-agentic-ai-security-scoping-matrix-a-framework-for-securing-autonomous-ai-systems/" target="_blank">aws.amazon.com</a></div></li>
+                        <li><span class="source-num">30</span><div class="source-content">ACM Computing Surveys. "AI Agents Under Threat: A Survey of Key Security Challenges." 2025. <a href="https://dl.acm.org/doi/10.1145/3716628" target="_blank">dl.acm.org</a></div></li>
+                        <li><span class="source-num">31</span><div class="source-content">PagerDuty. "2025 Agentic AI ROI Survey Results." 2025. <a href="https://www.pagerduty.com/resources/ai/learn/companies-expecting-agentic-ai-roi-2025/" target="_blank">pagerduty.com</a></div></li>
+                        <li><span class="source-num">32</span><div class="source-content">BCG. "AI Adoption in 2024: 74% of Companies Struggle to Achieve and Scale Value." 2024. <a href="https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value" target="_blank">bcg.com</a></div></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Report generated: December 13, 2025 | AI Agent Frameworks Research</p>
+        </footer>
+    </div>
+
+    <button class="scroll-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Toggle section collapse
+        function toggleSection(header) {
+            const section = header.parentElement;
+            section.classList.toggle('collapsed');
+        }
+
+        // Scroll to top button
+        const scrollBtn = document.querySelector('.scroll-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Smooth scroll for TOC links
+        document.querySelectorAll('.toc a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    // Expand section if collapsed
+                    const section = target.closest('.section');
+                    if (section && section.classList.contains('collapsed')) {
+                        section.classList.remove('collapsed');
+                    }
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Citation hover tooltips
+        document.querySelectorAll('.citation').forEach(cite => {
+            cite.addEventListener('click', () => {
+                const sourceNum = cite.textContent;
+                const sourceElement = document.querySelector(`#sources .source-num:nth-child(1)`);
+                document.querySelector('#sources').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
