@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Trends in the Knitting Community - Research Report</title>
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+            --accent-blue: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-yellow: #d29922;
+            --accent-red: #f85149;
+            --accent-purple: #a371f7;
+            --border-color: #30363d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+        }
+
+        /* Header */
+        header {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        header .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        header .meta {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        header .meta-item {
+            background: var(--bg-primary);
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        header .meta-item .label {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        header .meta-item .value {
+            font-weight: 600;
+            color: var(--accent-blue);
+        }
+
+        /* Table of Contents */
+        .toc {
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 900px) {
+            .toc {
+                position: relative;
+                top: 0;
+            }
+        }
+
+        .toc h2 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .toc a:hover {
+            background: var(--bg-tertiary);
+            color: var(--accent-blue);
+        }
+
+        .toc .toc-h3 {
+            padding-left: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* Main Content */
+        .content {
+            min-width: 0;
+        }
+
+        /* Sections */
+        .section {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .section-header {
+            padding: 20px 25px;
+            background: var(--bg-tertiary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            transition: background 0.2s ease;
+        }
+
+        .section-header:hover {
+            background: #282e36;
+        }
+
+        .section-header h2 {
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-header .icon {
+            font-size: 1.2rem;
+        }
+
+        .section-header .toggle {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            transition: transform 0.3s ease;
+        }
+
+        .section.collapsed .toggle {
+            transform: rotate(-90deg);
+        }
+
+        .section-content {
+            padding: 25px;
+            max-height: 5000px;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .section.collapsed .section-content {
+            max-height: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        /* Typography */
+        h3 {
+            font-size: 1.2rem;
+            margin: 25px 0 15px 0;
+            color: var(--accent-blue);
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+            color: var(--accent-purple);
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Citations */
+        .citation {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent-blue);
+            color: var(--bg-primary);
+            font-size: 0.7rem;
+            font-weight: 700;
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            margin: 0 2px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            vertical-align: super;
+        }
+
+        .citation:hover {
+            background: var(--accent-purple);
+            transform: scale(1.1);
+        }
+
+        /* Tables */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background: var(--bg-primary);
+            color: var(--text-secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: rgba(88, 166, 255, 0.05);
+        }
+
+        /* Confidence Badges */
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge-high {
+            background: rgba(63, 185, 80, 0.2);
+            color: var(--accent-green);
+        }
+
+        .badge-medium {
+            background: rgba(210, 153, 34, 0.2);
+            color: var(--accent-yellow);
+        }
+
+        .badge-low {
+            background: rgba(248, 81, 73, 0.2);
+            color: var(--accent-red);
+        }
+
+        .badge-disputed {
+            background: rgba(163, 113, 247, 0.2);
+            color: var(--accent-purple);
+        }
+
+        /* Key Findings Cards */
+        .findings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .finding-card {
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .finding-card h4 {
+            margin: 0 0 10px 0;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        .finding-card p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .stat-card {
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .stat-card .number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+        }
+
+        .stat-card .label {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+
+        /* Callout boxes */
+        .callout {
+            background: var(--bg-tertiary);
+            border-left: 4px solid var(--accent-yellow);
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .callout.warning {
+            border-color: var(--accent-red);
+        }
+
+        .callout.info {
+            border-color: var(--accent-blue);
+        }
+
+        .callout-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--accent-yellow);
+        }
+
+        .callout.warning .callout-title {
+            color: var(--accent-red);
+        }
+
+        .callout.info .callout-title {
+            color: var(--accent-blue);
+        }
+
+        /* Sources */
+        .source-item {
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .source-number {
+            background: var(--accent-blue);
+            color: var(--bg-primary);
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .source-details {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .source-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+            word-wrap: break-word;
+        }
+
+        .source-meta {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .source-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-size: 0.85rem;
+            word-break: break-all;
+        }
+
+        .source-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            margin-top: 20px;
+        }
+
+        /* Mobile menu toggle */
+        .mobile-toc-toggle {
+            display: none;
+            width: 100%;
+            padding: 15px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 1rem;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 900px) {
+            .mobile-toc-toggle {
+                display: block;
+            }
+
+            .toc {
+                display: none;
+            }
+
+            .toc.mobile-open {
+                display: block;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .section-header h2 {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Recent Trends in the Knitting Community</h1>
+            <p class="subtitle">Comprehensive Research Report</p>
+            <div class="meta">
+                <div class="meta-item">
+                    <div class="label">Research Date</div>
+                    <div class="value">December 13, 2025</div>
+                </div>
+                <div class="meta-item">
+                    <div class="label">Sources</div>
+                    <div class="value">40 Sources</div>
+                </div>
+                <div class="meta-item">
+                    <div class="label">Claims Verified</div>
+                    <div class="value">54 Claims</div>
+                </div>
+            </div>
+        </header>
+
+        <button class="mobile-toc-toggle" onclick="toggleMobileToc()">
+            Table of Contents
+        </button>
+
+        <nav class="toc" id="toc">
+            <h2>Contents</h2>
+            <ul>
+                <li><a href="#executive-summary">Executive Summary</a></li>
+                <li><a href="#methodology">Methodology & Limitations</a></li>
+                <li><a href="#findings">Findings</a></li>
+                <li class="toc-h3"><a href="#pandemic">1. Post-Pandemic Landscape</a></li>
+                <li class="toc-h3"><a href="#tiktok">2. TikTok Revolution</a></li>
+                <li class="toc-h3"><a href="#demographics">3. Demographics</a></li>
+                <li class="toc-h3"><a href="#trends">4. Style Trends 2024-25</a></li>
+                <li class="toc-h3"><a href="#sustainability">5. Sustainability</a></li>
+                <li class="toc-h3"><a href="#mental-health">6. Mental Health</a></li>
+                <li class="toc-h3"><a href="#controversies">7. Controversies</a></li>
+                <li class="toc-h3"><a href="#lys">8. Local Yarn Shops</a></li>
+                <li><a href="#uncertainty">Areas of Uncertainty</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#sources">Sources</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <!-- Executive Summary -->
+            <section class="section" id="executive-summary">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2><span class="icon">📊</span> Executive Summary</h2>
+                    <span class="toggle">▼</span>
+                </div>
+                <div class="section-content">
+                    <p>The knitting and crochet community has undergone significant transformation in recent years, driven by the COVID-19 pandemic, social media platforms (particularly TikTok), generational shifts, and ongoing debates about inclusivity and accessibility. This report synthesizes findings from 40 sources across market research, news media, industry publications, and community forums.</p>
+
+                    <h3>Key Findings</h3>
+                    <div class="findings-grid">
+                        <div class="finding-card">
+                            <h4>Market Growth</h4>
+                            <p>Global market expected to expand by ~$12.3B from 2025-2029 at 6.9% CAGR. <span class="citation" title="Source 6">6</span></p>
+                        </div>
+                        <div class="finding-card">
+                            <h4>Pandemic Impact</h4>
+                            <p>Retailers reported sales increases of 80-646% during COVID-19. <span class="citation" title="Source 4">4</span><span class="citation" title="Source 9">9</span></p>
+                        </div>
+                        <div class="finding-card">
+                            <h4>Generational Shift</h4>
+                            <p>86% of Gen Z identify as "hands-on creatives." TikTok transformed crafting culture. <span class="citation" title="Source 38">38</span></p>
+                        </div>
+                        <div class="finding-card">
+                            <h4>Community Tensions</h4>
+                            <p>Major controversies: Ravelry bans, accessibility issues, racial reckoning discussions. <span class="citation" title="Source 25">25</span><span class="citation" title="Source 13">13</span></p>
+                        </div>
+                        <div class="finding-card">
+                            <h4>Style Trends 2024-25</h4>
+                            <p>European shoulder construction, texture-rich techniques, chunky oversized pieces. <span class="citation" title="Source 1">1</span><span class="citation" title="Source 2">2</span></p>
+                        </div>
+                    </div>
+
+                    <h3>Confidence Assessment</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="number">36</div>
+                            <div class="label"><span class="badge badge-high">HIGH</span> Confidence</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="number">13</div>
+                            <div class="label"><span class="badge badge-medium">MEDIUM</span> Confidence</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="number">4</div>
+                            <div class="label"><span class="badge badge-low">LOW</span> Confidence</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="number">1</div>
+                            <div class="label"><span class="badge badge-disputed">DISPUTED</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Methodology -->
+            <section class="section" id="methodology">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2><span class="icon">🔬</span> Methodology & Limitations</h2>
+                    <span class="toggle">▼</span>
+                </div>
+                <div class="section-content">
+                    <h3>Source Types Used</h3>
+                    <ul>
+                        <li><strong>Market Research Reports:</strong> Technavio, Precision Business Insights, Business Research Insights</li>
+                        <li><strong>Industry Surveys:</strong> Craft Industry Alliance 2024 Yarn Consumer Survey (n=7,000+)</li>
+                        <li><strong>News Media:</strong> NPR, MIT Technology Review, Daily Beast, Quartz, The Forward</li>
+                        <li><strong>Industry Publications:</strong> Laine Publishing, KnitPro, Interweave</li>
+                        <li><strong>Community Sources:</strong> Reddit (r/craftsnark), Indie Untangled, designer blogs</li>
+                        <li><strong>Podcasts:</strong> Slate ICYMI</li>
+                    </ul>
+
+                    <h3>Limitations</h3>
+                    <div class="callout warning">
+                        <div class="callout-title">Data Inconsistencies</div>
+                        <p>Knitting yarn market size estimates range from $4.7B to $18.5B across different research firms—nearly a 4x discrepancy.</p>
+                    </div>
+                    <ol>
+                        <li><strong>Demographic survey bias:</strong> The 2024 Craft Industry Alliance survey (average respondent age 58, 98% female) may not capture younger/casual crafters</li>
+                        <li><strong>Social media metrics volatility:</strong> TikTok view counts change rapidly; figures represent point-in-time snapshots</li>
+                        <li><strong>Limited international perspective:</strong> Research primarily reflects US and European markets</li>
+                        <li><strong>Mental health research limitations:</strong> Academic reviews note methodological weaknesses in craft-mental health studies</li>
+                    </ol>
+
+                    <h3>Research Gaps</h3>
+                    <ul>
+                        <li>Subscription box market specifics</li>
+                        <li>AI/technology impact on pattern design</li>
+                        <li>Fiber festival attendance trends</li>
+                        <li>Indie dyer market dynamics</li>
+                        <li>Non-Western knitting communities</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Findings -->
+            <section class="section" id="findings">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2><span class="icon">📈</span> Findings</h2>
+                    <span class="toggle">▼</span>
+                </div>
+                <div class="section-content">
+
+                    <h3 id="pandemic">1. The Post-Pandemic Landscape</h3>
+                    <p>The COVID-19 pandemic fundamentally reshaped the knitting community. Lion Brand, a 143-year-old yarn company, reported sales increases of 80% during lockdowns <span class="citation">4</span>. Swiss retailer Galaxus saw craft supply sales surge by 646% from April 2020 to March 2021 <span class="citation">4</span>. The Guardian reported a 140% increase in people taking up crochet in 2020 <span class="citation">11</span>.</p>
+
+                    <p>Evidence suggests the pandemic boom created lasting changes:</p>
+                    <ul>
+                        <li>Etsy more than doubled its revenues in 2020 <span class="citation">9</span></li>
+                        <li>"We Are Knitters" saw 75% weekly sales increases during the crisis <span class="citation">10</span></li>
+                        <li>NPD Group reported a 70% increase in arts and crafts sales in April 2020</li>
+                    </ul>
+
+                    <div class="callout info">
+                        <div class="callout-title">Nuanced Picture</div>
+                        <p>Not all retailers benefited equally—results varied by location and product mix. Some industry vendors reported doing "only 10% of the business they are accustomed to" at virtual events.</p>
+                    </div>
+
+                    <h3 id="tiktok">2. The TikTok Revolution and Gen Z Adoption</h3>
+                    <p>TikTok has been the primary driver of knitting and crochet's transformation from "grandma hobbies" to Gen Z trends. The platform's impact is substantial:</p>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="number">15-37B</div>
+                            <div class="label">#crochet views</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="number">1.1B</div>
+                            <div class="label">#knittok views</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="number">3.3M</div>
+                            <div class="label">Top influencer followers</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="number">86%</div>
+                            <div class="label">Gen Z "hands-on creatives"</div>
+                        </div>
+                    </div>
+
+                    <p>Factors driving Gen Z's embrace of yarn crafts:</p>
+                    <ol>
+                        <li><strong>Mental health benefits:</strong> Crafting provides therapeutic relief from screen-dominated lives</li>
+                        <li><strong>Sustainability alignment:</strong> Handmade clothing offers an alternative to fast fashion</li>
+                        <li><strong>Aesthetic appeal:</strong> Crochet aligns with cottagecore and grandmacore aesthetics <span class="citation">37</span><span class="citation">38</span></li>
+                        <li><strong>Accessibility:</strong> Low barrier to entry—just a hook and yarn required</li>
+                        <li><strong>Social connection:</strong> Online communities provide belonging and inspiration</li>
+                    </ol>
+
+                    <div class="callout warning">
+                        <div class="callout-title">Area of Uncertainty</div>
+                        <p>Sources disagree significantly on the percentage of young crafters. Crochet Penguin claims 73% of crocheters are ages 18-34, while Creative Industries Association data suggests only 34%.</p>
+                    </div>
+
+                    <h3 id="demographics">3. Demographics: A Complex Picture</h3>
+                    <p>The 2024 Craft Industry Alliance Yarn Consumer Survey provides the most rigorous recent demographic data, with over 7,000 respondents <span class="citation">3</span>:</p>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <tr><th>Metric</th><th>Value</th></tr>
+                            <tr><td>Average age</td><td>58 years (median 59)</td></tr>
+                            <tr><td>Gender</td><td>98% female</td></tr>
+                            <tr><td>Household income</td><td>$72,000-$91,500</td></tr>
+                            <tr><td>Employment</td><td>48% retired, 31% full-time</td></tr>
+                            <tr><td>Craft overlap</td><td>84% knit, 73% crochet, 58% both</td></tr>
+                            <tr><td>Fiber preference</td><td>Wool most popular; only 2% luxury</td></tr>
+                        </table>
+                    </div>
+
+                    <p>However, this survey likely captures the most engaged segment of yarn consumers. Other sources suggest a more even age distribution: 34% ages 18-34, 36% ages 35-54, and 30% ages 55+ <span class="citation">40</span>.</p>
+
+                    <h3 id="trends">4. 2024-2025 Style and Technique Trends</h3>
+                    <p>Multiple industry sources confirm the following trends <span class="citation">1</span><span class="citation">2</span>:</p>
+
+                    <h4>Construction & Techniques</h4>
+                    <ul>
+                        <li><strong>European shoulder construction:</strong> Shoulder seam shifted toward the back, popularized by Scandinavian designers like PetiteKnit</li>
+                        <li><strong>Texture emphasis:</strong> Cables, brioche, popcorn stitches, Fishermen's Rib, and bobbles</li>
+                        <li><strong>Chunky and oversized:</strong> Statement pieces including oversized scarves, sweaters, and cardigans</li>
+                        <li><strong>Marling:</strong> Pairing two contrasting colors for a heathered effect</li>
+                        <li><strong>Multi-craft combinations:</strong> Blending knitting/crochet with appliqué, embroidery, and beadwork</li>
+                    </ul>
+
+                    <h4>Colors</h4>
+                    <ul>
+                        <li>Pantone 2025 Color of the Year: <strong>Mocha Mousse</strong> (earthy brown)</li>
+                        <li>Blue and white combinations for colorwork</li>
+                        <li>Trending hues: sage green, terracotta, sun-washed lilac, butter yellow</li>
+                    </ul>
+
+                    <h4>Key Designers</h4>
+                    <p><strong>PetiteKnit</strong> (Mette Wendelboe Okkels) has emerged as a dominant influence, with over 1 million Instagram followers <span class="citation">21</span>. Her patterns including the Lyon Sweater, No Frills Sweater, and Sunday series have shaped Scandinavian-influenced trends.</p>
+
+                    <h3 id="sustainability">5. Sustainability and the Slow Fashion Connection</h3>
+                    <p>The knitting community has increasingly aligned with sustainability values <span class="citation">1</span><span class="citation">2</span><span class="citation">19</span><span class="citation">20</span>:</p>
+                    <ul>
+                        <li><strong>Eco-friendly yarn demand:</strong> Rising interest in organic cotton, bamboo, hemp, and recycled fibers</li>
+                        <li><strong>Upcycling movement:</strong> Crafters repurposing thrifted garments and using reclaimed yarn</li>
+                        <li><strong>"Quiet luxury" aesthetic:</strong> Minimalist silhouettes with premium natural fibers</li>
+                        <li><strong>Slow fashion philosophy:</strong> Handmade as an opt-out from fast fashion's waste cycle</li>
+                    </ul>
+
+                    <h3 id="mental-health">6. Mental Health and Wellness</h3>
+                    <p>Evidence suggests knitting and crochet provide mental health benefits, though claims should be viewed with appropriate nuance:</p>
+                    <ul>
+                        <li>A University of Wollongong study of 8,000 crafters found 90% reported feeling calmer and 80% reported increased happiness <span class="citation">10</span></li>
+                        <li>70% of new knitters cite relaxation and stress relief as their primary motivation</li>
+                        <li>A 2024 University of Gothenburg study found knitting brings "a sense of calm and gives life structure"</li>
+                    </ul>
+
+                    <div class="callout warning">
+                        <div class="callout-title">Important Caveat</div>
+                        <p>A 2024 systematic review noted that while "there is some evidence that crafts-based interventions may benefit mental health and well-being," more high-quality research is needed. Critics note that crafting can also be "highly stressful and anxiety causing" for some people.</p>
+                    </div>
+
+                    <h3 id="controversies">7. Community Controversies and Platform Dynamics</h3>
+
+                    <h4>Ravelry Trump Ban (June 2019)</h4>
+                    <p>Ravelry, with approximately 9 million registered users and 1 million monthly active users <span class="citation">15</span>, banned all pro-Trump patterns and content <span class="citation">25</span><span class="citation">26</span>. The ban made national headlines, sparked polarized reactions, and led to creation of alternative platforms including Freedom Knits and Fiberkind (18,000 members).</p>
+
+                    <h4>Ravelry Accessibility Crisis (June 2020-present)</h4>
+                    <p>Ravelry's website redesign caused reports of seizures (~8 users), migraines, eye strain, and screen reader failures <span class="citation">13</span><span class="citation">14</span><span class="citation">15</span>. Despite introducing alternative viewing modes, the accessibility issues remain unresolved as of late 2024.</p>
+
+                    <h4>Racial Reckoning (2019-ongoing)</h4>
+                    <p>A 2019 Instagram blog post sparked a multi-year examination of racism in the knitting community <span class="citation">16</span><span class="citation">31</span>. Responses included creation of BIPOC in Fiber directory <span class="citation">17</span>, Vogue Knitting's Diversity Advisory Council <span class="citation">23</span>, and the #blackpeopledoknit movement.</p>
+
+                    <h4>Knitting.com Debacle (2022)</h4>
+                    <p>Two e-commerce entrepreneurs purchased the knitting.com domain for $80,000 and described existing businesses as "grandmas with little blogs" <span class="citation">27</span><span class="citation">28</span><span class="citation">29</span>. The backlash was swift and severe, becoming a case study for online community platform revolts.</p>
+
+                    <h3 id="lys">8. Local Yarn Shop (LYS) Ecosystem</h3>
+                    <p>Brick-and-mortar yarn stores face ongoing challenges:</p>
+                    <ul>
+                        <li>In 2017, US yarn store count dropped below 1,000 (from 1,034 to 970)—losing 64 stores in one year <span class="citation">35</span></li>
+                        <li>Online competition and changing shopping habits threaten traditional retail</li>
+                    </ul>
+                    <p>Community support efforts include <strong>Local Yarn Store Day (LYS Day)</strong>, established by TNNA with its 7th annual event in April 2024 <span class="citation">36</span>.</p>
+                </div>
+            </section>
+
+            <!-- Areas of Uncertainty -->
+            <section class="section" id="uncertainty">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2><span class="icon">⚠️</span> Areas of Uncertainty</h2>
+                    <span class="toggle">▼</span>
+                </div>
+                <div class="section-content">
+                    <h3>Conflicting Data Points</h3>
+                    <div class="table-wrapper">
+                        <table>
+                            <tr>
+                                <th>Topic</th>
+                                <th>Conflict</th>
+                                <th>Assessment</th>
+                            </tr>
+                            <tr>
+                                <td>Gen Z crafter percentage</td>
+                                <td>34% vs 73% ages 18-34</td>
+                                <td><span class="badge badge-disputed">DISPUTED</span></td>
+                            </tr>
+                            <tr>
+                                <td>Market size</td>
+                                <td>$4.7B to $18.5B</td>
+                                <td><span class="badge badge-low">LOW</span></td>
+                            </tr>
+                            <tr>
+                                <td>Total US knitters</td>
+                                <td>28.8M vs 53M</td>
+                                <td><span class="badge badge-low">LOW</span></td>
+                            </tr>
+                            <tr>
+                                <td>Gender split</td>
+                                <td>71% vs 98% female</td>
+                                <td><span class="badge badge-medium">MEDIUM</span></td>
+                            </tr>
+                            <tr>
+                                <td>TikTok #crochet views</td>
+                                <td>2B to 37.3B</td>
+                                <td><span class="badge badge-medium">MEDIUM</span></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <h3>Weak Evidence Areas</h3>
+                    <ol>
+                        <li><strong>10% of mental health clinics integrating knitting:</strong> Original source unclear; rated LOW confidence</li>
+                        <li><strong>Specific market size projections:</strong> Research firm methodologies vary substantially</li>
+                        <li><strong>Long-term pandemic effects:</strong> Whether craft boom represents permanent shift or temporary spike remains unclear</li>
+                        <li><strong>International perspectives:</strong> Non-US/European community dynamics underrepresented</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="section" id="conclusion">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2><span class="icon">✅</span> Conclusion</h2>
+                    <span class="toggle">▼</span>
+                </div>
+                <div class="section-content">
+                    <h3>What Is Established</h3>
+                    <ol>
+                        <li><strong>The pandemic transformed the community:</strong> Massive influx of new crafters, particularly younger demographics, fundamentally changed community composition</li>
+                        <li><strong>TikTok drives cultural relevance:</strong> Social media has repositioned knitting and crochet as trendy, creative pursuits</li>
+                        <li><strong>The market is growing:</strong> All sources agree the market is expanding, driven by DIY trends, sustainability, and mental health awareness</li>
+                        <li><strong>Scandinavian design dominates:</strong> PetiteKnit and Danish designers have established aesthetic trends</li>
+                        <li><strong>Community controversies reflect broader social tensions:</strong> Political polarization, racial equity, accessibility rights all manifest in the knitting community</li>
+                        <li><strong>Sustainability matters:</strong> Eco-friendly materials and slow fashion philosophy are increasingly central to community values</li>
+                    </ol>
+
+                    <h3>What Remains Uncertain</h3>
+                    <ol>
+                        <li><strong>Exact market size and growth rates:</strong> Different research methodologies produce widely varying figures</li>
+                        <li><strong>True demographic composition:</strong> Whether the community skews older or is more evenly distributed remains unclear</li>
+                        <li><strong>Permanence of Gen Z adoption:</strong> Whether young crafters represent a lasting demographic shift is unknown</li>
+                        <li><strong>Mental health benefit magnitude:</strong> While benefits exist, research quality is limited</li>
+                        <li><strong>Platform future:</strong> Ravelry's dominance despite accessibility failures, and what alternatives may emerge, remains in flux</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Sources -->
+            <section class="section" id="sources">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2><span class="icon">📚</span> Sources</h2>
+                    <span class="toggle">▼</span>
+                </div>
+                <div class="section-content">
+                    <div class="source-item">
+                        <span class="source-number">1</span>
+                        <div class="source-details">
+                            <div class="source-title">Fall 2024 and Winter 2025 Knitting Trends</div>
+                            <div class="source-meta">Winter, Susanna. Talvi Knits, 2024</div>
+                            <a class="source-link" href="https://www.susannawinter.net/post/fall-2024-and-winter-2025-knitting-trends" target="_blank">susannawinter.net</a>
+                        </div>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-number">2</span>
+                        <div class="source-details">
+                            <div class="source-title">Knitting and Crochet Trends for 2025</div>
+                            <div class="source-meta">KnitPro Blog, 2024</div>
+                            <a class="source-link" href="https://www.knitpro.eu/en/blog/knitting-and-crochet-trends-for-2025" target="_blank">knitpro.eu</a>
+                        </div>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-number">3</span>
+                        <div class="source-details">
+                            <div class="source-title">The Size of the Yarn Market: Yarn Consumer Survey Results 2024</div>
+                            <div class="source-meta">Glassenberg, Abby. Craft Industry Alliance, May 2024</div>
+                            <a class="source-link" href="https://craftindustryalliance.org/the-size-of-the-yarn-market-yarn-consumer-survey-results-2024/" target="_blank">craftindustryalliance.org</a>
+                        </div>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-number">4</span>
+                        <div class="source-details">
+                            <div class="source-title">DIY home decor: Pandemic prompts big boom in homemade crafts</div>
+                            <div class="source-meta">Mercury News, March 2022</div>
+                            <a class="source-link" href="https://www.mercurynews.com/2022/03/10/diy-decor-pandemic-prompts-big-boom-in-homemade-crafts/" target="_blank">mercurynews.com</a>
+                        </div>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-number">6</span>
+                        <div class="source-details">
+                            <div class="source-title">Knitting and Crochet Market Growth Analysis 2025-2029</div>
+                            <div class="source-meta">Technavio</div>
+                            <a class="source-link" href="https://www.technavio.com/report/knitting-and-crochet-market-industry-analysis" target="_blank">technavio.com</a>
+                        </div>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-number">13</span>
+                        <div class="source-details">
+                            <div class="source-title">Disabled users say Ravelry's new site design has given them seizures</div>
+                            <div class="source-meta">Daily Dot, 2020</div>
+                            <a class="source-link" href="https://www.dailydot.com/irl/ravelry-disabled-website/" target="_blank">dailydot.com</a>
+                        </div>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-number">25</span>
+                        <div class="source-details">
+                            <div class="source-title">How a ban on pro-Trump patterns unraveled the online knitting world</div>
+                            <div class="source-meta">MIT Technology Review, March 2020</div>
+                            <a class="source-link" href="https://www.technologyreview.com/2020/03/06/905472/ravelry-ban-on-pro-trump-patterns-unraveled-the-online-knitting-world-censorship-free/" target="_blank">technologyreview.com</a>
+                        </div>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-number">26</span>
+                        <div class="source-details">
+                            <div class="source-title">Ravelry, The Knitting Website, Bans Trump Talk And Patterns</div>
+                            <div class="source-meta">NPR, June 2019</div>
+                            <a class="source-link" href="https://www.npr.org/2019/06/24/735460674/ravelry-the-knitting-website-bans-trump-talk-and-patterns" target="_blank">npr.org</a>
+                        </div>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-number">27</span>
+                        <div class="source-details">
+                            <div class="source-title">The all-out revolt against Knitting.com helps explain boycotts at Reddit and Etsy</div>
+                            <div class="source-meta">Quartz, 2023</div>
+                            <a class="source-link" href="https://qz.com/knitting-ecomcrew-reddit-etsy-boycott-online-community-1850864449" target="_blank">qz.com</a>
+                        </div>
+                    </div>
+                    <div class="source-item">
+                        <span class="source-number">38</span>
+                        <div class="source-details">
+                            <div class="source-title">How TikTok and 'knit-fluencers' are making knitting and crochet 'trendy and cool again'</div>
+                            <div class="source-meta">Big Issue</div>
+                            <a class="source-link" href="https://www.bigissue.com/life/tiktok-knitting-crochet-gen-z-fashion/" target="_blank">bigissue.com</a>
+                        </div>
+                    </div>
+                    <p style="margin-top: 20px; color: var(--text-muted); text-align: center;"><em>Showing key sources. Full source list contains 40 references.</em></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Report compiled by AI Deep Research Agent</p>
+            <p>Total sources consulted: 40 | Total claims verified: 54</p>
+            <p style="margin-top: 10px; font-size: 0.85rem;">36 HIGH | 13 MEDIUM | 4 LOW | 1 DISPUTED</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleSection(header) {
+            const section = header.parentElement;
+            section.classList.toggle('collapsed');
+        }
+
+        function toggleMobileToc() {
+            const toc = document.getElementById('toc');
+            toc.classList.toggle('mobile-open');
+        }
+
+        // Smooth scroll for TOC links
+        document.querySelectorAll('.toc a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    // Expand section if collapsed
+                    const section = targetElement.closest('.section');
+                    if (section && section.classList.contains('collapsed')) {
+                        section.classList.remove('collapsed');
+                    }
+
+                    // Scroll to element
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                    // Close mobile TOC
+                    document.getElementById('toc').classList.remove('mobile-open');
+                }
+            });
+        });
+
+        // Citation tooltips
+        document.querySelectorAll('.citation').forEach(citation => {
+            citation.addEventListener('click', function() {
+                const sourcesSection = document.getElementById('sources');
+                if (sourcesSection.classList.contains('collapsed')) {
+                    sourcesSection.classList.remove('collapsed');
+                }
+                sourcesSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
