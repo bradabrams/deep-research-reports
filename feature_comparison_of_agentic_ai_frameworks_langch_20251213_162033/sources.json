@@ -2,7 +2,177 @@
   "metadata": {
     "research_topic": "Feature Comparison of Agentic AI Frameworks",
     "created": "2024-12-14",
-    "status": "initialized"
+    "last_updated": "2024-12-14",
+    "status": "collecting"
   },
-  "sources": []
+  "sources": [
+    {
+      "id": "S001",
+      "title": "Autogen vs LangChain vs CrewAI: AI Engineers' Ultimate Comparison Guide",
+      "url": "https://www.instinctools.com/blog/autogen-vs-langchain-vs-crewai/",
+      "type": "industry_analysis",
+      "credibility": "medium-high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S002",
+      "title": "OpenAI Agents SDK vs LangGraph vs Autogen vs CrewAI - Composio",
+      "url": "https://composio.dev/blog/openai-agents-sdk-vs-langgraph-vs-autogen-vs-crewai",
+      "type": "industry_analysis",
+      "credibility": "medium-high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S003",
+      "title": "OpenAI Agents SDK Official Documentation",
+      "url": "https://openai.github.io/openai-agents-python/",
+      "type": "official_documentation",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S004",
+      "title": "New tools for building agents - OpenAI",
+      "url": "https://openai.com/index/new-tools-for-building-agents/",
+      "type": "official_announcement",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S005",
+      "title": "OpenAI Agents SDK GitHub Repository",
+      "url": "https://github.com/openai/openai-agents-python",
+      "type": "source_code",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S006",
+      "title": "Building agents with the Claude Agent SDK - Anthropic",
+      "url": "https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk",
+      "type": "official_documentation",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S007",
+      "title": "Claude Agent SDK Overview - Claude Docs",
+      "url": "https://docs.claude.com/en/api/agent-sdk/overview",
+      "type": "official_documentation",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S008",
+      "title": "Claude Agent SDK Python GitHub Repository",
+      "url": "https://github.com/anthropics/claude-agent-sdk-python",
+      "type": "source_code",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S009",
+      "title": "Amazon Bedrock AgentCore - AWS",
+      "url": "https://aws.amazon.com/bedrock/agentcore/",
+      "type": "official_documentation",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S010",
+      "title": "AI Agents - Amazon Bedrock Agents - AWS",
+      "url": "https://aws.amazon.com/bedrock/agents/",
+      "type": "official_documentation",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S011",
+      "title": "LangChain Business Breakdown - Contrary Research",
+      "url": "https://research.contrary.com/company/langchain",
+      "type": "industry_analysis",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S012",
+      "title": "LangChain GitHub Organization",
+      "url": "https://github.com/langchain-ai",
+      "type": "source_code",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S013",
+      "title": "CrewAI GitHub Repository",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "type": "source_code",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S014",
+      "title": "How CrewAI is orchestrating the next generation of AI Agents - Insight Partners",
+      "url": "https://www.insightpartners.com/ideas/crewai-scaleup-ai-story/",
+      "type": "investor_report",
+      "credibility": "medium-high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S015",
+      "title": "CrewAI Enterprise Launch Press Release",
+      "url": "https://www.globenewswire.com/news-release/2024/10/22/2966872/0/en/CrewAI-Launches-Multi-Agentic-Platform-to-Deliver-on-the-Promise-of-Generative-AI-for-Enterprise.html",
+      "type": "press_release",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S016",
+      "title": "Microsoft AutoGen GitHub Repository",
+      "url": "https://github.com/microsoft/autogen",
+      "type": "source_code",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S017",
+      "title": "Introducing AutoGen Studio - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/blog/introducing-autogen-studio-a-low-code-interface-for-building-multi-agent-workflows/",
+      "type": "official_announcement",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S018",
+      "title": "The Best Open Source Frameworks For Building AI Agents in 2025 - Firecrawl",
+      "url": "https://www.firecrawl.dev/blog/best-open-source-agent-frameworks-2025",
+      "type": "industry_analysis",
+      "credibility": "medium-high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S019",
+      "title": "Agentic AI Adoption Trends & Enterprise ROI Statistics - Arcade.dev",
+      "url": "https://blog.arcade.dev/agentic-framework-adoption-trends",
+      "type": "industry_analysis",
+      "credibility": "medium-high",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S020",
+      "title": "Top 100 Agentic AI Facts & Statistics 2025 - DigitalDefynd",
+      "url": "https://digitaldefynd.com/IQ/agentic-ai-statistics/",
+      "type": "industry_analysis",
+      "credibility": "medium",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S021",
+      "title": "Agentic AI frameworks for enterprise scale: A 2025 guide - Akka.io",
+      "url": "https://akka.io/blog/agentic-ai-frameworks",
+      "type": "industry_analysis",
+      "credibility": "medium-high",
+      "retrieved": "2024-12-14"
+    }
+  ]
 }
