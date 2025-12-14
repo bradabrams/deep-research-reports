@@ -162,15 +162,96 @@
       "source_ids": ["S006"],
       "confidence": "HIGH",
       "verification_status": "confirmed"
+    },
+    {
+      "id": "C021",
+      "category": "community_feedback",
+      "claim": "G2 enterprise reviewers rate AWS Bedrock 4/5 stars, praising ease of embeddings creation and model variety, but citing high costs (18 mentions) and complexity for newcomers (6 mentions) as primary concerns",
+      "source_ids": ["S017"],
+      "confidence": "COMMUNITY",
+      "verification_status": "community_reported"
+    },
+    {
+      "id": "C022",
+      "category": "community_feedback",
+      "claim": "Developers report intermittent latency issues with Bedrock - same requests sometimes complete in under 10 seconds but occasionally timeout after 1+ minute, suggesting server-side inconsistencies",
+      "source_ids": ["S019", "S023"],
+      "confidence": "COMMUNITY",
+      "verification_status": "community_reported"
+    },
+    {
+      "id": "C023",
+      "category": "community_feedback",
+      "claim": "Large prompt requests (>10K tokens) with AWS Java SDK experience 45+ second latencies or 2-minute timeouts, requiring socketTimeout increases to 480 seconds",
+      "source_ids": ["S023", "S022"],
+      "confidence": "MEDIUM",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C024",
+      "category": "limitations",
+      "claim": "Bedrock Knowledge Base has a hard limit of 50 knowledge bases per account per region, problematic for multi-tenant enterprise scenarios",
+      "source_ids": ["S020"],
+      "confidence": "COMMUNITY",
+      "verification_status": "community_reported"
+    },
+    {
+      "id": "C025",
+      "category": "limitations",
+      "claim": "Bedrock Knowledge Base evaluation jobs can fail silently with 'No failure reason available', creating debugging challenges",
+      "source_ids": ["S021"],
+      "confidence": "COMMUNITY",
+      "verification_status": "community_reported"
+    },
+    {
+      "id": "C026",
+      "category": "community_feedback",
+      "claim": "HackerNews discussion (2023) showed lukewarm developer sentiment toward Bedrock GA, with concerns about feature gaps vs marketing claims (e.g., Llama 2 listed as 'coming soon' despite being advertised)",
+      "source_ids": ["S015"],
+      "confidence": "COMMUNITY",
+      "verification_status": "community_reported"
+    },
+    {
+      "id": "C027",
+      "category": "enterprise_adoption",
+      "claim": "GitHub (Microsoft entity) chose Amazon Bedrock to run Claude, demonstrating enterprise cross-cloud adoption patterns",
+      "source_ids": ["S016"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C028",
+      "category": "community_feedback",
+      "claim": "Gartner Peer Insights reviewers describe Bedrock as 'powerful but not super user intuitive' for RAG applications, though praising smooth transition for existing AWS ecosystem users",
+      "source_ids": ["S018"],
+      "confidence": "COMMUNITY",
+      "verification_status": "community_reported"
+    },
+    {
+      "id": "C029",
+      "category": "limitations",
+      "claim": "Bedrock throttling exceptions are triggered easily, requiring service quota increase requests which add administrative overhead",
+      "source_ids": ["S021"],
+      "confidence": "COMMUNITY",
+      "verification_status": "community_reported"
+    },
+    {
+      "id": "C030",
+      "category": "community_feedback",
+      "claim": "Some practitioners recommend bypassing Bedrock Knowledge Base entirely and implementing custom RAG with S3 + Lambda + vector DB to avoid quota limits and gain full control",
+      "source_ids": ["S021"],
+      "confidence": "COMMUNITY",
+      "verification_status": "community_reported"
     }
   ],
   "last_updated": "2024-12-14",
   "status": "active_research",
-  "total_claims": 20,
+  "total_claims": 30,
   "confidence_summary": {
-    "HIGH": 14,
-    "MEDIUM": 6,
+    "HIGH": 15,
+    "MEDIUM": 5,
     "LOW": 0,
+    "COMMUNITY": 10,
     "DISPUTED": 0
   }
 }

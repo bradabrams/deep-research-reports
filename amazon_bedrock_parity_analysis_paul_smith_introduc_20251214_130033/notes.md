@@ -13,6 +13,13 @@
 - Fetched 4 key sources for detailed analysis
 - Compiled 14 sources and 20 claims with confidence ratings
 
+### 2024-12-14 - Community & Social Insights
+- Searched HackerNews, G2, Gartner, AWS re:Post for practitioner perspectives
+- Added 9 community sources and 10 community-sourced claims
+- Total sources: 23 | Total claims: 30
+
+---
+
 ## Key Findings Summary
 
 ### 1. Compliance Certifications (BEDROCK ADVANTAGE)
@@ -47,6 +54,55 @@
 - CloudFormation support gaps
 - Steeper learning curve
 - Fragmented platform (Strands, Q, Bedrock, SageMaker unclear)
+
+---
+
+## Community & Social Insights
+
+### Sentiment Analysis
+
+**Overall G2 Rating**: 4/5 stars
+
+**Positive Themes** (Agreement across sources):
+1. Easy integration for existing AWS customers
+2. Good model variety and selection
+3. Powerful when properly configured
+4. Consolidates billing/compliance for enterprises
+
+**Negative Themes** (Agreement across sources):
+1. **Cost concerns** - 18 mentions on G2 citing high prices
+2. **Complexity for newcomers** - Steep learning curve vs direct APIs
+3. **Latency inconsistencies** - Intermittent 10s to 1+ minute response times
+4. **Knowledge Base limitations** - 50 KB limit, silent failures, throttling
+
+### Developer Experience Quotes
+
+> "What takes five minutes with Anthropic API might take an afternoon with Bedrock"
+> — Technical blog comparison
+
+> "Powerful but not super user intuitive"
+> — Gartner Peer Insights reviewer
+
+> "If you are already in AWS ecosystem, the transition seems smooth"
+> — Gartner Peer Insights reviewer
+
+### Critical Issues Reported by Practitioners
+
+| Issue | Source | Impact |
+|-------|--------|--------|
+| Intermittent 45s+ latencies | AWS re:Post, GitHub Issues | Production reliability |
+| 50 Knowledge Base limit | AWS re:Post | Multi-tenant scaling |
+| Silent evaluation job failures | Practitioners | Debugging difficulty |
+| Throttling exceptions | Multiple | Requires quota increases |
+
+### Workarounds Mentioned
+
+1. **Bypass Knowledge Base**: Implement custom RAG with S3 + Lambda + vector DB
+2. **Increase socketTimeout**: Set to 480s for large prompt requests
+3. **Use streaming APIs**: ConverseStream instead of Converse for latency
+4. **Request quota increases**: Proactive for production workloads
+
+---
 
 ## Key Terms Defined
 - **1P (First-Party)**: Direct API access to AI model provider

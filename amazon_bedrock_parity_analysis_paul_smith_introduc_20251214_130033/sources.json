@@ -139,9 +139,105 @@
       "date": "current",
       "credibility": "HIGH",
       "key_topics": ["FedRAMP services", "compliance scope"]
+    },
+    {
+      "id": "S015",
+      "title": "HackerNews: Amazon Bedrock Is Now Generally Available",
+      "url": "https://news.ycombinator.com/item?id=37690189",
+      "type": "community_discussion",
+      "publisher": "Hacker News",
+      "date": "2023-09",
+      "credibility": "COMMUNITY",
+      "key_topics": ["developer sentiment", "feature availability concerns", "SDK delays"]
+    },
+    {
+      "id": "S016",
+      "title": "HackerNews: GitHub will use Amazon Bedrock to run Claude",
+      "url": "https://news.ycombinator.com/item?id=41991254",
+      "type": "community_discussion",
+      "publisher": "Hacker News",
+      "date": "2024-10",
+      "credibility": "COMMUNITY",
+      "key_topics": ["enterprise adoption", "Microsoft/GitHub choice", "cloud provider dynamics"]
+    },
+    {
+      "id": "S017",
+      "title": "AWS Bedrock Reviews 2025 - G2",
+      "url": "https://www.g2.com/products/aws-bedrock/reviews",
+      "type": "enterprise_reviews",
+      "publisher": "G2",
+      "date": "2024-2025",
+      "credibility": "COMMUNITY",
+      "key_topics": ["enterprise feedback", "pros/cons", "ease of use", "pricing concerns"]
+    },
+    {
+      "id": "S018",
+      "title": "Amazon Bedrock Reviews - Gartner Peer Insights",
+      "url": "https://www.gartner.com/reviews/product/amazon-bedrock",
+      "type": "enterprise_reviews",
+      "publisher": "Gartner",
+      "date": "2024-2025",
+      "credibility": "MEDIUM",
+      "key_topics": ["enterprise deployment", "scalability", "user experience"]
+    },
+    {
+      "id": "S019",
+      "title": "Unexpected Delay in Amazon Bedrock Response - AWS re:Post",
+      "url": "https://repost.aws/questions/QU7emYZMABQIS7-FD0rw9Ljg/unexpected-delay-in-amazon-bedrock-response",
+      "type": "community_support",
+      "publisher": "AWS re:Post",
+      "date": "2024",
+      "credibility": "COMMUNITY",
+      "key_topics": ["latency issues", "intermittent delays", "timeout problems"]
+    },
+    {
+      "id": "S020",
+      "title": "Amazon Bedrock Knowledge Base - Limit of 50 - AWS re:Post",
+      "url": "https://repost.aws/questions/QUq5_BeCo-Sd2rJ7SGZG0hPA/amazon-bedrock-knowledge-base-limit-of-50-knowledge-base",
+      "type": "community_support",
+      "publisher": "AWS re:Post",
+      "date": "2024",
+      "credibility": "COMMUNITY",
+      "key_topics": ["knowledge base limits", "multi-tenant challenges", "enterprise scaling"]
+    },
+    {
+      "id": "S021",
+      "title": "Common Issues When Setting Up AWS Bedrock Knowledge Bases",
+      "url": "https://shawnesquivel.com/common-issues-when-setting-up-aws-bedrock-knowledge-bases/",
+      "type": "practitioner_blog",
+      "publisher": "AI Agency Blog",
+      "date": "2024",
+      "credibility": "COMMUNITY",
+      "key_topics": ["setup issues", "region problems", "permissions", "throttling"]
+    },
+    {
+      "id": "S022",
+      "title": "AWS Bedrock Latency Optimization Guide",
+      "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-ai-responsiveness-a-practical-guide-to-amazon-bedrock-latency-optimized-inference/",
+      "type": "official_blog",
+      "publisher": "AWS Machine Learning Blog",
+      "date": "2024",
+      "credibility": "HIGH",
+      "key_topics": ["latency optimization", "performance tuning", "streaming"]
+    },
+    {
+      "id": "S023",
+      "title": "Spring AI - Bedrock Increased Latency Issue",
+      "url": "https://github.com/spring-projects/spring-ai/issues/3835",
+      "type": "github_issue",
+      "publisher": "GitHub",
+      "date": "2024",
+      "credibility": "COMMUNITY",
+      "key_topics": ["latency", "timeout", "large requests", "Java SDK"]
     }
   ],
   "last_updated": "2024-12-14",
   "status": "active_research",
-  "total_sources": 14
+  "total_sources": 23,
+  "source_breakdown": {
+    "official": 10,
+    "industry_analysis": 1,
+    "technical_comparison": 4,
+    "community": 8
+  }
 }
