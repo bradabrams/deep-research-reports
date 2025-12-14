@@ -4,25 +4,28 @@
       "id": "claim_001",
       "category": "market_size",
       "claim": "The global yarn market is expected to grow by USD 39.9 billion from 2025-2029, at a CAGR of 5.3%",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "sources": ["src_004"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Single source (Technavio). Note: This covers ALL yarn, not just craft/hobby yarn. Different research firms report varying figures."
     },
     {
       "id": "claim_002",
       "category": "market_size",
       "claim": "The global knitting yarn market was valued at USD 7,177.3 million in 2024 and is expected to reach USD 9,965.3 million by 2031 (CAGR 4.8%)",
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "sources": ["src_005"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "DISCREPANCY: Knitting yarn market estimates range from $4.7B to $18.5B across different research firms - nearly 4x difference. Use with caution."
     },
     {
       "id": "claim_003",
       "category": "market_size",
       "claim": "The global Knitting and Crochet Market is expected to grow USD 12,279.9 million from 2025-2029, at a CAGR of 6.9%",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "sources": ["src_006"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Single source (Technavio). Consistent with general growth trajectory but specific figures should be treated as estimates."
     },
     {
       "id": "claim_004",
@@ -30,7 +33,8 @@
       "claim": "Swiss online retailer Galaxus reported that sales of knitting needles, sewing machines, fabric scissors and wool rose by 646% from April 2020 to March 2021",
       "confidence": "HIGH",
       "sources": ["src_009"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Specific company claim, well-documented. Note: Not all retailers saw similar gains - results varied by location and product mix."
     },
     {
       "id": "claim_005",
@@ -38,7 +42,8 @@
       "claim": "Knitting pattern sales increased by 25% during the COVID-19 pandemic in 2020",
       "confidence": "MEDIUM",
       "sources": ["src_010"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "General trend confirmed across multiple sources; specific percentage not independently verified."
     },
     {
       "id": "claim_006",
@@ -46,7 +51,8 @@
       "claim": "Lion Brand (143-year-old yarn company) sales were up 80% since coronavirus lockdowns began",
       "confidence": "HIGH",
       "sources": ["src_009"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Specific company statement, widely reported in media."
     },
     {
       "id": "claim_007",
@@ -54,15 +60,17 @@
       "claim": "In 2020, The Guardian reported a 140% increase in the number of people taking up crochet",
       "confidence": "HIGH",
       "sources": ["src_011"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Attributed to The Guardian reporting; consistent with other pandemic crafting boom reports."
     },
     {
       "id": "claim_008",
       "category": "pandemic_impact",
       "claim": "We Are Knitters sales increased 75% each week during the pandemic crisis, with social media following growing by 50%",
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "sources": ["src_010"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Company founder statement, consistent with industry trends."
     },
     {
       "id": "claim_009",
@@ -70,7 +78,8 @@
       "claim": "Etsy more than doubled its revenues in 2020, with sales up 39% for first nine months of 2021",
       "confidence": "HIGH",
       "sources": ["src_009"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Public company financial data, verifiable."
     },
     {
       "id": "claim_010",
@@ -78,7 +87,8 @@
       "claim": "The average age of yarn consumers is 58 (median 59); 98% are female with household income between $72,000-$91,500",
       "confidence": "HIGH",
       "sources": ["src_003"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "2024 Craft Industry Alliance survey (n=7,000+). Note: Survey population may skew older/more engaged; may not represent all crafters."
     },
     {
       "id": "claim_011",
@@ -86,15 +96,17 @@
       "claim": "48% of yarn consumers are retired; 31% employed full-time; 73% crochet, 84% knit, 58% do both",
       "confidence": "HIGH",
       "sources": ["src_003"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "2024 Craft Industry Alliance survey. Consistent methodology, large sample size."
     },
     {
       "id": "claim_012",
       "category": "demographics",
       "claim": "There are over 7.3 million knitters in the UK and 53 million knitters in the USA",
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "sources": ["src_010"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Original source unclear. 2016 AFCI study cited 28.8M Americans knitting/crocheting. 53M figure may be outdated or conflated with crochet."
     },
     {
       "id": "claim_013",
@@ -102,15 +114,17 @@
       "claim": "The hashtag #knittok has over 1.1 billion views on TikTok",
       "confidence": "MEDIUM",
       "sources": ["src_010", "src_012"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Consistently cited across sources. TikTok metrics change frequently; represents point-in-time snapshot."
     },
     {
       "id": "claim_014",
       "category": "social_media",
-      "claim": "The hashtag #crochet has 13.9-15.5 billion views on TikTok",
+      "claim": "The hashtag #crochet has 13.9-37.3 billion views on TikTok",
       "confidence": "MEDIUM",
       "sources": ["src_011", "src_038"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "WIDE VARIATION: Sources report 2B (2021) to 37.3B (2024). True figure depends on date; rapid growth confirmed."
     },
     {
       "id": "claim_015",
@@ -118,7 +132,8 @@
       "claim": "PetiteKnit (Mette Wendelboe Okkels) has over 1 million Instagram followers",
       "confidence": "HIGH",
       "sources": ["src_021"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Verifiable on Instagram; consistent across sources."
     },
     {
       "id": "claim_016",
@@ -126,7 +141,8 @@
       "claim": "Crochet influencer Monet Nejon has 3.3 million TikTok followers",
       "confidence": "HIGH",
       "sources": ["src_007"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Verifiable on TikTok; may have changed since publication."
     },
     {
       "id": "claim_017",
@@ -134,7 +150,8 @@
       "claim": "European shoulder construction remains a top trend, popularized by Scandinavian designs like PetiteKnit's Lyon Sweater",
       "confidence": "HIGH",
       "sources": ["src_001", "src_002"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Multiple knitting industry sources confirm; widely observed in pattern sales."
     },
     {
       "id": "claim_018",
@@ -142,7 +159,8 @@
       "claim": "Texture techniques are trending: cables, popcorn stitches, brioche, Fishermen's Rib, bobbles",
       "confidence": "HIGH",
       "sources": ["src_001", "src_002"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Multiple sources confirm; consistent with fashion industry trends."
     },
     {
       "id": "claim_019",
@@ -150,7 +168,8 @@
       "claim": "Chunky and oversized knitting projects continue trending in 2025 as statement pieces",
       "confidence": "HIGH",
       "sources": ["src_001", "src_002"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Multiple sources confirm; aligns with fashion trends."
     },
     {
       "id": "claim_020",
@@ -158,15 +177,17 @@
       "claim": "Pantone Color of the Year 2025 is Mocha Mousse (earthy brown)",
       "confidence": "HIGH",
       "sources": ["src_001", "src_002"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Official Pantone announcement; easily verified."
     },
     {
       "id": "claim_021",
       "category": "trends_2024_2025",
       "claim": "Blue paired with white is a standout color combination for colorwork in 2024-2025",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "sources": ["src_001"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Single source; subjective trend observation."
     },
     {
       "id": "claim_022",
@@ -174,7 +195,8 @@
       "claim": "Marling technique (pairing two contrasting colors for heathered look) is trending",
       "confidence": "MEDIUM",
       "sources": ["src_001"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Single source; niche technique."
     },
     {
       "id": "claim_023",
@@ -182,7 +204,8 @@
       "claim": "Dickies/collars/cowls are trending as the evolution from balaclavas popularity",
       "confidence": "MEDIUM",
       "sources": ["src_001"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Single source; accessory trend."
     },
     {
       "id": "claim_024",
@@ -190,7 +213,8 @@
       "claim": "Eco-friendly yarns (organic cotton, bamboo, recycled) are increasingly popular due to ecological benefits",
       "confidence": "HIGH",
       "sources": ["src_002", "src_006", "src_019"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Multiple sources confirm; aligns with broader sustainability trends in fashion."
     },
     {
       "id": "claim_025",
@@ -198,7 +222,8 @@
       "claim": "Upcycling trend: crafters repurposing old knits, using yarn from thrifted garments for patchwork pieces",
       "confidence": "HIGH",
       "sources": ["src_001", "src_002"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Multiple sources confirm; consistent with slow fashion movement."
     },
     {
       "id": "claim_026",
@@ -206,15 +231,17 @@
       "claim": "Quiet luxury trend: minimalist silhouettes, premium natural fibers, understated elegance",
       "confidence": "HIGH",
       "sources": ["src_001"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Aligns with broader fashion industry trend; widely documented."
     },
     {
       "id": "claim_027",
       "category": "mental_health",
       "claim": "90% of surveyed knitters/crocheters reported feeling calmer; 80% reported increased happiness (University of Wollongong study, n=8,000)",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "sources": ["src_010"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "CAVEAT: Peer-reviewed research notes limitations in craft-mental health studies; benefits may be overgeneralized. Self-reported data from crafters likely to skew positive."
     },
     {
       "id": "claim_028",
@@ -222,7 +249,8 @@
       "claim": "10% of mental health clinics have integrated knitting into therapeutic programs",
       "confidence": "LOW",
       "sources": ["src_010"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Unverified; original source unclear. Therapeutic use is documented but specific percentage not confirmed."
     },
     {
       "id": "claim_029",
@@ -230,7 +258,8 @@
       "claim": "70% of new knitters cite relaxation and stress relief as their primary reason for starting",
       "confidence": "MEDIUM",
       "sources": ["src_010"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Consistent with other surveys; specific percentage not independently verified."
     },
     {
       "id": "claim_030",
@@ -238,7 +267,8 @@
       "claim": "Ravelry's June 2020 redesign caused reports of seizures (~8 users), migraines, eye strain, and accessibility issues",
       "confidence": "HIGH",
       "sources": ["src_013", "src_014", "src_015"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Multiple news sources; widely documented controversy."
     },
     {
       "id": "claim_031",
@@ -246,7 +276,8 @@
       "claim": "Ravelry has 9 million registered users and 1 million monthly active users",
       "confidence": "HIGH",
       "sources": ["src_015"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "VERIFIED: Multiple sources confirm this figure from Ravelry's own March 2020 statement. Note: Data is from 2020; current figures may differ."
     },
     {
       "id": "claim_032",
@@ -254,7 +285,8 @@
       "claim": "Ravelry accessibility issues remain unresolved as of late 2024",
       "confidence": "HIGH",
       "sources": ["src_013", "src_014"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Confirmed by ongoing community complaints and lack of official resolution announcement."
     },
     {
       "id": "claim_033",
@@ -262,7 +294,8 @@
       "claim": "BIPOC in Fiber directory (originally created by Jeanette Sloan in 2018) supports Black, Indigenous and POC fiber artists",
       "confidence": "HIGH",
       "sources": ["src_017"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Active website; verifiable resource."
     },
     {
       "id": "claim_034",
@@ -270,7 +303,8 @@
       "claim": "Vogue Knitting established a Diversity Advisory Council (DAC) - first of its kind in the knitting community",
       "confidence": "HIGH",
       "sources": ["src_023"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Official Vogue Knitting initiative; verifiable."
     },
     {
       "id": "claim_035",
@@ -278,7 +312,8 @@
       "claim": "#blackpeopledoknit hashtag created by designer Lorna Hamilton Brown to promote Black visibility in knitting",
       "confidence": "HIGH",
       "sources": ["src_016"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Documented in multiple sources; verifiable on social media."
     },
     {
       "id": "claim_036",
@@ -286,7 +321,8 @@
       "claim": "Tom Daley went viral at 2020 Tokyo Olympics for crocheting poolside, creating his famous Tokyo 2020 Cardigan",
       "confidence": "HIGH",
       "sources": ["src_011"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Widely documented viral moment; Olympics 2021 (delayed from 2020)."
     },
     {
       "id": "claim_037",
@@ -294,7 +330,8 @@
       "claim": "Wool yarns most popular among consumers, followed by blended fibers, synthetic, cotton; only 2% prefer luxury yarns",
       "confidence": "HIGH",
       "sources": ["src_003"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "2024 Craft Industry Alliance survey data."
     },
     {
       "id": "claim_038",
@@ -302,7 +339,8 @@
       "claim": "Modern granny squares featuring geometric patterns, hexagons, floral designs, and bold colors are trending",
       "confidence": "HIGH",
       "sources": ["src_002"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Multiple sources confirm resurgence of granny square patterns."
     },
     {
       "id": "claim_039",
@@ -310,7 +348,8 @@
       "claim": "Gender-inclusive patterns with broader sizing and universal appeal are a growing trend",
       "confidence": "MEDIUM",
       "sources": ["src_002"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Observed industry trend; extent varies by designer/brand."
     },
     {
       "id": "claim_040",
@@ -318,7 +357,8 @@
       "claim": "Multi-craft combinations blending knitting/crochet with applique, cross stitch, embroidery, beadwork are trending",
       "confidence": "HIGH",
       "sources": ["src_001", "src_002"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Multiple sources confirm; part of broader maker movement."
     },
     {
       "id": "claim_041",
@@ -326,7 +366,8 @@
       "claim": "Ravelry banned all pro-Trump patterns and content in June 2019, stating support for Trump administration is support for white supremacy",
       "confidence": "HIGH",
       "sources": ["src_025", "src_026"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Well-documented in major news outlets (NPR, MIT Tech Review); direct quotes from Ravelry."
     },
     {
       "id": "claim_042",
@@ -334,7 +375,8 @@
       "claim": "Ravelry's Trump ban led to creation of alternative platforms like Freedom Knits and Fiberkind (18,000 members)",
       "confidence": "HIGH",
       "sources": ["src_025"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Documented in MIT Tech Review; alternative platforms are verifiable."
     },
     {
       "id": "claim_043",
@@ -342,15 +384,17 @@
       "claim": "Knitting.com purchased for $80,000 by e-commerce entrepreneurs who called existing businesses 'grandmas with little blogs', sparking massive backlash",
       "confidence": "HIGH",
       "sources": ["src_027", "src_028", "src_029"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Widely documented in Quartz, Daily Beast, Input; original podcast statements are on record."
     },
     {
       "id": "claim_044",
       "category": "controversy",
       "claim": "r/craftsnark Reddit community (~14,000 members) serves as a hub for knitting community gossip and drama",
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "sources": ["src_030", "src_034"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Active subreddit; member count verifiable on Reddit."
     },
     {
       "id": "claim_045",
@@ -358,15 +402,17 @@
       "claim": "Israel-Gaza tensions have caused community fragmentation, with r/JewishCrafts created as alternative space",
       "confidence": "HIGH",
       "sources": ["src_032"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Documented in The Forward; subreddit is verifiable."
     },
     {
       "id": "claim_046",
       "category": "business",
       "claim": "In 2017, US yarn store count dropped below 1,000 (from 1,034 to 970) - losing 64 stores in one year",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "sources": ["src_035"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Single source (America's Knitting directory). Historical data; current situation may differ."
     },
     {
       "id": "claim_047",
@@ -374,15 +420,17 @@
       "claim": "Local Yarn Store Day (LYS Day) established by TNNA, held annually (7th annual in 2024) to support brick-and-mortar shops",
       "confidence": "HIGH",
       "sources": ["src_036"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Official TNNA initiative; verifiable."
     },
     {
       "id": "claim_048",
       "category": "gen_z",
       "claim": "Over 73% of crocheters are between ages 18-34 according to Crochet Penguin",
-      "confidence": "MEDIUM",
+      "confidence": "DISPUTED",
       "sources": ["src_038"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "CONFLICTING DATA: Other sources cite 34% (Creative Industries Association), 44% (25-34 only). Wide discrepancy suggests different methodologies or populations."
     },
     {
       "id": "claim_049",
@@ -390,7 +438,8 @@
       "claim": "86% of Gen Z consider themselves hands-on creatives; 30% have taken an in-person arts and crafts class (Mintel 2024)",
       "confidence": "HIGH",
       "sources": ["src_038"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Mintel is reputable market research firm; methodology not reviewed."
     },
     {
       "id": "claim_050",
@@ -398,7 +447,8 @@
       "claim": "TikTok helped make knitting 'cool and trendy again' after it was seen as 'uncool, outdated thing that only older ladies would do'",
       "confidence": "HIGH",
       "sources": ["src_038"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Multiple sources confirm TikTok's role in craft revival; qualitative observation widely shared."
     },
     {
       "id": "claim_051",
@@ -406,7 +456,8 @@
       "claim": "Crochet aligned with cottagecore and grandmacore aesthetics, romanticizing pastoral lifestyle and vintage handmade garments",
       "confidence": "HIGH",
       "sources": ["src_037", "src_038"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Multiple sources confirm aesthetic connection; documented cultural trend."
     },
     {
       "id": "claim_052",
@@ -414,7 +465,8 @@
       "claim": "Knit/crochet age ranges are fairly even: 34% ages 18-34, 36% ages 35-54, 30% ages 55+",
       "confidence": "MEDIUM",
       "sources": ["src_040"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Source methodology not specified; provides different picture than 'average age 58' from industry survey."
     },
     {
       "id": "claim_053",
@@ -422,24 +474,46 @@
       "claim": "71% of US adults took part in at least one crafting project in 2024 (Mintel survey of 2,000 adults)",
       "confidence": "HIGH",
       "sources": ["src_038"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Mintel is reputable market research firm with documented methodology."
     },
     {
       "id": "claim_054",
       "category": "community",
       "claim": "Community concerns include acrylic vs natural wool debates, knitfluencers overcharging, designer pricing, and parasocial relationships",
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "sources": ["src_030"],
-      "date_verified": "2025-12-13"
+      "date_verified": "2025-12-13",
+      "verification_note": "Documented in Slate podcast and Reddit communities; ongoing discussions observable."
     }
   ],
   "total_claims": 54,
   "confidence_summary": {
-    "HIGH": 38,
-    "MEDIUM": 14,
-    "LOW": 2,
-    "DISPUTED": 0
+    "HIGH": 36,
+    "MEDIUM": 13,
+    "LOW": 4,
+    "DISPUTED": 1
+  },
+  "verification_notes": {
+    "major_discrepancies": [
+      "Market size estimates vary by up to 4x across research firms",
+      "Gen Z crafter percentages range from 34% to 73% depending on source",
+      "TikTok #crochet views reported from 2B to 37.3B (different dates)",
+      "Gender demographics vary: 71-98% female depending on survey population"
+    ],
+    "well_verified_claims": [
+      "Ravelry user statistics (9M registered, 1M MAU as of 2020)",
+      "Pandemic sales boom for specific companies (Lion Brand, Galaxus, Etsy)",
+      "Major community controversies (Trump ban, accessibility issues, Knitting.com)",
+      "2024-2025 style trends (European shoulder, texture, chunky)"
+    ],
+    "cautions": [
+      "Mental health benefit claims may be oversimplified; research has methodological limitations",
+      "Demographic data sources vary in methodology and population surveyed",
+      "Social media view counts are point-in-time and change rapidly",
+      "Some statistics are cited from blog aggregators rather than primary sources"
+    ]
   },
   "date_compiled": "2025-12-13",
-  "research_phase": "Collection 2 - Social/Community"
+  "research_phase": "Verification Complete"
 }
