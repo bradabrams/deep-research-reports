@@ -2,7 +2,7 @@
 
 ## Session Log
 
-### December 14, 2024 - Iteration 1
+### December 14, 2024 - Iteration 1 & Social Insights
 
 ## Key Findings Summary
 
@@ -67,7 +67,7 @@
 ### 10. Social Media & Community
 - TikTok: Knitting as Spring 2024 trend
 - #knitting: 970K+ TikTok posts, 23M+ Instagram posts
-- #KnitTok community thriving
+- #KnitTok community thriving (1.1 billion views!)
 - Local Yarn Store Day 2024: April 27th
 
 ### 11. Craftivism & Activism
@@ -76,15 +76,74 @@
 - Yarn Mission (Black Liberation focus)
 - 2024 Charity Knitting Drive (TKGA)
 
-## Sources Collected: 25
-## Claims Documented: 30
-- HIGH confidence: 18
-- MEDIUM confidence: 12
+---
 
-## Still To Research (Iteration 2)
-- [ ] More on specific popular patterns/designers
-- [ ] Yarn festival attendance trends
-- [ ] International knitting trends (beyond US/UK)
-- [ ] Ravelry controversies and alternatives
-- [ ] Men in knitting movement
-- [ ] Celebrity knitters influence
+## Social & Community Insights (Phase 2b)
+
+### Reddit Community (r/knitting)
+- **563,000+ members** - one of the largest knitting communities online
+- High activity, supportive environment for beginners
+- Popular for pattern advice, troubleshooting, project sharing
+- Related subs: r/casualknitting, r/knittingpatterns, r/YarnSwap
+
+### Tom Daley - 2024 Viral Moment
+- **Paris Olympics 2024**: Spotted knitting between diving events
+- Created red/white/blue "Paris 24" sweater with France+UK flags
+- Called knitting his "mindfulness, meditation, calm"
+- Inspired global interest, especially among new knitters
+- Has 5 Olympic medals, Britain's most decorated diver
+
+### KnitTok & Gen Z Revival
+- Over **1.1 billion #KnitTok views** on TikTok
+- Gen Z leading the crafting revolution
+- Young "knit-fluencers" gaining massive followings
+- Reimagining knitting with modern designs
+- Global resurgence of **Stitch 'n Bitch clubs**
+
+### Ravelry Controversies
+- **2019**: Banned pro-Trump patterns, calling support "undeniably support for white supremacy"
+- Created lasting community divisions
+- Alternative platforms emerged: **Fiberkind** (18,000 members), **Freedom Knits**
+- Some designers removed Harry Potter patterns in solidarity with trans community
+- **2024**: Israel-Gaza tensions led Jewish crafters to create r/JewishCrafts
+
+### Male Knitters Growing
+- LoveCrafts reports **1/3 of young men** taking up knitting/crochet
+- Historical context: Men were primary knitters in medieval guilds
+- Notable male knitters: Jonah's Hands, Michael Sellick (The Crochet Crowd)
+- Men's Knitting Retreats held in NY, Seattle, Great Lakes, Southeast, Rocky Mountain
+- Academic research on r/knitting shows community working to minimize stigma
+
+### Yarn Stash & Destashing Culture
+- Common 2024 resolution: "Shop your stash"
+- **Tinkknit** - platform for selling unwanted yarn at cost
+- Destash options: Ravelry, Etsy, Facebook groups, r/YarnSwap
+- Community sentiment: "Keep a stash that works for you without overwhelming"
+
+### Mental Health Benefits
+- Triggers **dopamine release** - "feel good" chemical
+- Described as mindfulness/meditation practice
+- Tom Daley: "My calm and way to escape stress"
+- Community describes "warm, fuzzy feeling" while knitting
+
+### Most Popular Free Patterns (Community Favorites)
+- **Hermione's Everyday Socks**: 40,000+ projects
+- **Sockhead Slouch Hat**: 30,000+ projects
+- **Flax Sweater** (Tincanknits): 30,000 projects
+- **Honey Cowl**: 28,000 projects
+- **Clapotis** shawl: 23,000+ projects
+
+---
+
+## Sources Collected: 38
+## Claims Documented: 40
+- HIGH confidence: 24
+- MEDIUM confidence: 16
+
+## Research Status
+- [x] Trend sources gathered
+- [x] Market/demographic data collected
+- [x] Social media insights documented
+- [x] Community perspectives captured
+- [ ] Data visualization pending
+- [ ] Final report compilation

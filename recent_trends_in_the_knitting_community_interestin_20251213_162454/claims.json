@@ -239,15 +239,95 @@
       "confidence": "MEDIUM",
       "sources": [1, 3],
       "notes": "Eco-friendly, budget-conscious using leftover yarn"
+    },
+    {
+      "id": 31,
+      "category": "Community",
+      "claim": "r/knitting subreddit has 563,000+ members with high activity",
+      "confidence": "HIGH",
+      "sources": [26],
+      "notes": "Reddit is a major hub for knitting community discussions"
+    },
+    {
+      "id": 32,
+      "category": "Celebrity",
+      "claim": "Tom Daley's Olympic knitting at Paris 2024 went viral, inspiring new knitters",
+      "confidence": "HIGH",
+      "sources": [28, 29],
+      "notes": "Knit a France/UK themed sweater during diving events"
+    },
+    {
+      "id": 33,
+      "category": "Social Media",
+      "claim": "#KnitTok has over 1.1 billion views, with Gen Z leading the revival",
+      "confidence": "HIGH",
+      "sources": [37],
+      "notes": "Young 'knit-fluencers' gaining massive followings"
+    },
+    {
+      "id": 34,
+      "category": "Community",
+      "claim": "Ravelry's 2019 pro-Trump ban created lasting community divisions and alternative platforms",
+      "confidence": "HIGH",
+      "sources": [30, 31],
+      "notes": "Fiberkind (18,000 members), Freedom Knits emerged as alternatives"
+    },
+    {
+      "id": 35,
+      "category": "Community",
+      "claim": "Global resurgence of Stitch 'n Bitch clubs and knitting meetups in 2024",
+      "confidence": "MEDIUM",
+      "sources": [37],
+      "notes": "In-person crafting communities making comeback"
+    },
+    {
+      "id": 36,
+      "category": "Demographics",
+      "claim": "More than 1/3 of young men taking up knitting/crochet according to LoveCrafts",
+      "confidence": "MEDIUM",
+      "sources": [32],
+      "notes": "Male knitters growing, historically men were primary knitters in medieval guilds"
+    },
+    {
+      "id": 37,
+      "category": "Community",
+      "claim": "Destashing culture growing: Tinkknit platform and community sales help manage yarn stashes",
+      "confidence": "MEDIUM",
+      "sources": [34, 35],
+      "notes": "Many knitters making 2024 the year to reduce stash"
+    },
+    {
+      "id": 38,
+      "category": "Popular Patterns",
+      "claim": "Hermione's Everyday Socks has 40,000+ projects on Ravelry, Flax Sweater has 30,000+",
+      "confidence": "HIGH",
+      "sources": [36],
+      "notes": "Free patterns with massive community adoption"
+    },
+    {
+      "id": 39,
+      "category": "Mental Health",
+      "claim": "Knitting described as mindfulness/meditation that triggers dopamine release",
+      "confidence": "MEDIUM",
+      "sources": [28],
+      "notes": "Tom Daley and others cite stress relief benefits"
+    },
+    {
+      "id": 40,
+      "category": "Community Tensions",
+      "claim": "Post-Oct 7 tensions led to Jewish crafters creating separate spaces (r/JewishCrafts)",
+      "confidence": "HIGH",
+      "sources": [27],
+      "notes": "Political discussions creating divisions in craft communities"
     }
   ],
   "last_updated": "2024-12-14",
-  "total_claims": 30,
+  "total_claims": 40,
   "confidence_summary": {
-    "HIGH": 18,
-    "MEDIUM": 12,
+    "HIGH": 24,
+    "MEDIUM": 16,
     "LOW": 0,
     "DISPUTED": 0
   },
-  "status": "iteration_1_complete"
+  "status": "social_insights_complete"
 }

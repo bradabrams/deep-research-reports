@@ -5,6 +5,7 @@
       "title": "Our Top Knitting Trends For 2024: Patterns & Colours",
       "url": "https://www.stitchesandcream.co.uk/post/knitting-trends-for-2024",
       "type": "blog",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["trends", "colors", "patterns"]
     },
@@ -13,6 +14,7 @@
       "title": "Fall 2024 and Winter 2025 Knitting Trends",
       "url": "https://www.susannawinter.net/post/fall-2024-and-winter-2025-knitting-trends",
       "type": "blog",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["trends", "techniques", "seasonal"]
     },
@@ -21,6 +23,7 @@
       "title": "Knitting Techniques and Trends for 2024 – CamelliaYarns",
       "url": "https://www.camelliayarns.com/en-eu/blogs/news/knitting-techniques-and-trends-for-2024",
       "type": "blog",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["techniques", "trends"]
     },
@@ -29,6 +32,7 @@
       "title": "Knitting Statistics & Data: How Many People Knit",
       "url": "https://knitlikegranny.com/knitting-statistics/",
       "type": "statistics",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["demographics", "market", "statistics"]
     },
@@ -37,6 +41,7 @@
       "title": "The Size of the Yarn Market: Yarn Consumer Survey Results 2024",
       "url": "https://craftindustryalliance.org/the-size-of-the-yarn-market-yarn-consumer-survey-results-2024/",
       "type": "industry report",
+      "credibility": "high",
       "accessed": "2024-12-14",
       "topics": ["market", "demographics", "consumer behavior"]
     },
@@ -45,6 +50,7 @@
       "title": "15 Surprising & Interesting Knitting Statistics 2024",
       "url": "https://thecreativeshour.com/knitting-statistics/",
       "type": "statistics",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["statistics", "demographics"]
     },
@@ -53,6 +59,7 @@
       "title": "TikTok Spring Trends 2024 - WWD",
       "url": "https://wwd.com/business-news/business-features/tiktok-spring-trends-2024-coquette-beauty-1236289723/",
       "type": "news",
+      "credibility": "high",
       "accessed": "2024-12-14",
       "topics": ["social media", "TikTok", "trends"]
     },
@@ -61,6 +68,7 @@
       "title": "Knitting and Crochet Market to Grow by USD 10.69 Billion - Technavio",
       "url": "https://www.prnewswire.com/news-releases/knitting-and-crochet-market-to-grow-by-usd-10-69-billion-2024-2028-driven-by-training-and-employment-initiatives-report-highlights-ai-impact-on-market-trends---technavio-302357358.html",
       "type": "market report",
+      "credibility": "high",
       "accessed": "2024-12-14",
       "topics": ["market growth", "forecasts"]
     },
@@ -69,6 +77,7 @@
       "title": "7 Sustainable Yarn Brands Knitting You An Eco-Friendly Future",
       "url": "https://www.sustainablejungle.com/sustainable-yarn/",
       "type": "guide",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["sustainability", "eco-friendly", "yarn brands"]
     },
@@ -77,6 +86,7 @@
       "title": "Knitting for Olive No Waste Wool",
       "url": "https://knittingforolive.com/collections/knitting-for-olive-no-waste-wool",
       "type": "product",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["sustainable yarn", "recycled"]
     },
@@ -85,6 +95,7 @@
       "title": "Top Eco Yarn Swaps of 2024",
       "url": "https://thecraftytherapist.com/2024/12/31/top-eco-yarn-swaps-of-2024-for-more-sustainable-crochet/",
       "type": "blog",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["sustainability", "eco-friendly yarn"]
     },
@@ -93,6 +104,7 @@
       "title": "Top 10 Indie Yarn Dyers 2024 - Arcane Fibre Works",
       "url": "https://arcanefibreworks.ca/blogs/fibre-for-thought/top-10-indie-yarn-dyers-you-need-to-see-in-2024",
       "type": "blog",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["indie dyers", "small business"]
     },
@@ -101,6 +113,7 @@
       "title": "How Much Money Indie Dyers Make",
       "url": "https://henliahandmade.com/how-much-money-indie-dyers-make/",
       "type": "blog",
+      "credibility": "low",
       "accessed": "2024-12-14",
       "topics": ["indie dyers", "business economics"]
     },
@@ -109,6 +122,7 @@
       "title": "Understanding Why Yarn is Getting Expensive",
       "url": "https://www.kheyo.com/understanding-why-is-yarn-getting-expensive-factors-behind-the-rising-costs/",
       "type": "article",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["pricing", "supply chain", "inflation"]
     },
@@ -117,6 +131,7 @@
       "title": "Does Yarn Cost Too Much? - Sandi Rosner",
       "url": "https://sandirosner.substack.com/p/does-yarn-cost-too-much",
       "type": "newsletter",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["pricing", "economics"]
     },
@@ -125,6 +140,7 @@
       "title": "Festivals and Fiber Events 2024",
       "url": "https://livingdreamsfiberandyarn.com/2024/01/25/festivals-and-fiber-events-to-attend-this-year/",
       "type": "guide",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["fiber festivals", "events"]
     },
@@ -133,6 +149,7 @@
       "title": "2024 U.S. Fiber Arts Festivals - Thatched Roof Cottage",
       "url": "https://thatchedroofcottage.com/blogs/artisans-nook/2024-fiber-arts-festivals",
       "type": "guide",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["festivals", "events"]
     },
@@ -141,6 +158,7 @@
       "title": "Craftivism: Empowerment, Resistance, and Activism Through History",
       "url": "https://morningcrafter.com/blog-posts/craftivism-through-history/",
       "type": "article",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["activism", "social justice", "craftivism"]
     },
@@ -149,6 +167,7 @@
       "title": "Local Yarn Store Day 2024",
       "url": "https://www.localyarnstoreday.com/",
       "type": "official",
+      "credibility": "high",
       "accessed": "2024-12-14",
       "topics": ["LYS", "retail", "community"]
     },
@@ -157,6 +176,7 @@
       "title": "Knitting Should Be Size Inclusive - YarnMeUp",
       "url": "https://www.yarnmeup.com/en/post/knitting-should-be-size-inclusive",
       "type": "article",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["size inclusivity", "diversity"]
     },
@@ -165,6 +185,7 @@
       "title": "Resources for Fat Knitters - Victoria Marchant Knits",
       "url": "https://www.victoriamarchantknits.com/resources-for-fat-knitters/",
       "type": "resource",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["size inclusivity", "resources"]
     },
@@ -173,6 +194,7 @@
       "title": "Best Knitting Software and Apps Review",
       "url": "https://blog.youtalent.com/review-best-knitting-software-apps-designing-patterns-tracking-progress-connecting-with-knitting-community/",
       "type": "review",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["technology", "apps", "software"]
     },
@@ -181,6 +203,7 @@
       "title": "Knitrino: App Poised to Disrupt the Knitting World",
       "url": "https://craftindustryalliance.org/knitrino-is-an-app-poised-to-disrupt-the-knitting-world/",
       "type": "article",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["technology", "apps", "innovation"]
     },
@@ -189,6 +212,7 @@
       "title": "Textured Knitting Patterns Roundup Fall 2024",
       "url": "https://youngfolkknits.com/textured-knitting-patterns-roundup-for-fall-2024/",
       "type": "roundup",
+      "credibility": "medium",
       "accessed": "2024-12-14",
       "topics": ["patterns", "texture", "trends"]
     },
@@ -197,11 +221,135 @@
       "title": "Knitting Yarn Market Size Report 2024-2033",
       "url": "https://www.businessresearchinsights.com/market-reports/knitting-yarn-market-118996",
       "type": "market report",
+      "credibility": "high",
       "accessed": "2024-12-14",
       "topics": ["market size", "forecasts", "industry"]
+    },
+    {
+      "id": 26,
+      "title": "r/knitting Subreddit Stats",
+      "url": "https://subredditstats.com/r/knitting",
+      "type": "community",
+      "credibility": "community",
+      "accessed": "2024-12-14",
+      "topics": ["reddit", "community", "statistics"]
+    },
+    {
+      "id": 27,
+      "title": "How the online knitting world unraveled over Israel and Gaza – The Forward",
+      "url": "https://forward.com/news/764371/knitting-reddit-israel-jewish-gaza/",
+      "type": "news",
+      "credibility": "high",
+      "accessed": "2024-12-14",
+      "topics": ["community tensions", "politics", "reddit"]
+    },
+    {
+      "id": 28,
+      "title": "Tom Daley Paris 2024 Olympics Knitting - NPR",
+      "url": "https://www.npr.org/2024/07/29/nx-s1-5055677/tom-daley-olympics-2024-diving-knitting",
+      "type": "news",
+      "credibility": "high",
+      "accessed": "2024-12-14",
+      "topics": ["celebrity", "Olympics", "viral"]
+    },
+    {
+      "id": 29,
+      "title": "Tom Daley unveils Olympic knitting - CNN",
+      "url": "https://www.cnn.com/2024/08/01/style/tom-daley-knitting-paris-olympics",
+      "type": "news",
+      "credibility": "high",
+      "accessed": "2024-12-14",
+      "topics": ["celebrity", "Olympics", "trends"]
+    },
+    {
+      "id": 30,
+      "title": "Ravelry Trump Ban - NPR",
+      "url": "https://www.npr.org/2019/06/24/735460674/ravelry-the-knitting-website-bans-trump-talk-and-patterns",
+      "type": "news",
+      "credibility": "high",
+      "accessed": "2024-12-14",
+      "topics": ["Ravelry", "controversy", "politics"]
+    },
+    {
+      "id": 31,
+      "title": "Ravelry Ban Aftermath - MIT Technology Review",
+      "url": "https://www.technologyreview.com/2020/03/06/905472/ravelry-ban-on-pro-trump-patterns-unraveled-the-online-knitting-world-censorship-free/",
+      "type": "analysis",
+      "credibility": "high",
+      "accessed": "2024-12-14",
+      "topics": ["Ravelry", "community", "platform governance"]
+    },
+    {
+      "id": 32,
+      "title": "Men Who Knit - Young Male Knitters",
+      "url": "https://jamescoxknits.com/blogs/news/knitting-was-seen-as-what-old-ladies-do-now-meet-young-male-knitters",
+      "type": "blog",
+      "credibility": "medium",
+      "accessed": "2024-12-14",
+      "topics": ["male knitters", "demographics", "trends"]
+    },
+    {
+      "id": 33,
+      "title": "Men who Knit - Reddit Study (ResearchGate)",
+      "url": "https://www.researchgate.net/publication/349226505_Men_who_Knit_A_Social_Media_Critical_Discourse_Study_SM-CDS_on_the_Legitimisation_of_Men_within_Reddit's_rknitting_Community",
+      "type": "academic",
+      "credibility": "high",
+      "accessed": "2024-12-14",
+      "topics": ["male knitters", "reddit", "gender"]
+    },
+    {
+      "id": 34,
+      "title": "Yarn Stash Destash Tips - Reddit r/knitting",
+      "url": "https://www.reddit.com/r/knitting/comments/14o3ih9/best_place_to_destash/",
+      "type": "community",
+      "credibility": "community",
+      "accessed": "2024-12-14",
+      "topics": ["stash", "destash", "buying habits"]
+    },
+    {
+      "id": 35,
+      "title": "Tinkknit Destash Platform - Craft Industry Alliance",
+      "url": "https://craftindustryalliance.org/how-tinkknit-helping-destashers-find-a-good-home-for-unwanted-yarn/",
+      "type": "article",
+      "credibility": "medium",
+      "accessed": "2024-12-14",
+      "topics": ["destash", "platform", "sustainability"]
+    },
+    {
+      "id": 36,
+      "title": "Top 6 FREE Ravelry Patterns with 20K+ Projects",
+      "url": "https://www.skeinsisters.com.au/blog/sisters-yarn-tales/top-6-free-ravelry-knitting-patterns-with-20k-proj/",
+      "type": "blog",
+      "credibility": "medium",
+      "accessed": "2024-12-14",
+      "topics": ["Ravelry", "popular patterns", "free patterns"]
+    },
+    {
+      "id": 37,
+      "title": "Why Knitting Is Becoming the Next Big Trend",
+      "url": "https://easylivingmom.com/knitting-the-new-big-thing/",
+      "type": "blog",
+      "credibility": "low",
+      "accessed": "2024-12-14",
+      "topics": ["trends", "Gen Z", "KnitTok"]
+    },
+    {
+      "id": 38,
+      "title": "The Fuzzy, Tangled Politics of Knitting - New America",
+      "url": "https://www.newamerica.org/weekly/fuzzy-tangled-politics-knitting/",
+      "type": "analysis",
+      "credibility": "high",
+      "accessed": "2024-12-14",
+      "topics": ["politics", "community", "social dynamics"]
     }
   ],
   "last_updated": "2024-12-14",
-  "total_sources": 25,
-  "status": "iteration_1_complete"
+  "total_sources": 38,
+  "credibility_breakdown": {
+    "high": 12,
+    "medium": 21,
+    "low": 2,
+    "community": 3
+  },
+  "status": "social_insights_complete"
 }
