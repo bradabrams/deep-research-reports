@@ -4,155 +4,175 @@
       "id": "market-size-2025",
       "claim": "The global AI agent market is valued at $7.38-7.92 billion in 2025",
       "confidence": "HIGH",
-      "sources": ["index-dev-stats", "gm-insights-market"],
-      "verification_notes": "Multiple market research sources confirm similar figures"
+      "sources": ["index-dev-stats", "gm-insights-market", "grandview-research", "marketsandmarkets"],
+      "verification_notes": "Multiple market research firms (Grand View, MarketsandMarkets, Precedence Research, Index.dev) cluster estimates between $7.38-7.92B. One outlier (LitsLink) claims $150B but appears unreliable."
     },
     {
-      "id": "market-projection-2032",
-      "claim": "AI agent market projected to reach $103.6 billion by 2032",
-      "confidence": "MEDIUM",
-      "sources": ["index-dev-stats"],
-      "verification_notes": "Single source projection, CAGR calculations appear reasonable"
+      "id": "market-projection-divergence",
+      "claim": "Long-term market projections vary dramatically: $50B to $236B by 2030-2034",
+      "confidence": "DISPUTED",
+      "sources": ["index-dev-stats", "gm-insights-market", "grandview-research"],
+      "verification_notes": "Sources disagree significantly on long-term projections. Range is nearly 5x between lowest and highest estimates. Treat any specific projection with caution."
     },
     {
       "id": "enterprise-adoption-85",
-      "claim": "85% of organizations have integrated AI agents in at least one workflow",
+      "claim": "85% of organizations plan to adopt AI agents by end of 2025",
       "confidence": "MEDIUM",
-      "sources": ["index-dev-stats"],
-      "verification_notes": "Survey-based data, methodology unclear"
+      "sources": ["index-dev-stats", "warmly-stats"],
+      "verification_notes": "This is a PROJECTION, not current adoption. McKinsey shows actual deployment at 23% scaling + 39% experimenting = 62% engaged. Survey methodology unclear. Actual adoption likely lower than 85%."
     },
     {
       "id": "roi-171-percent",
       "claim": "Organizations project average ROI of 171% from agentic AI deployments",
-      "confidence": "MEDIUM",
-      "sources": ["index-dev-stats"],
-      "verification_notes": "Projected ROI, not realized - interpret with caution"
+      "confidence": "LOW",
+      "sources": ["index-dev-stats", "pagerduty-survey"],
+      "verification_notes": "This is PROJECTED ROI, not realized. Critical context: 95% of AI pilots fail to deliver measurable returns (MIT study), 80% of AI projects fail (RAND). Actual ROI likely far lower than expectations."
+    },
+    {
+      "id": "ai-project-failure-rate",
+      "claim": "70-95% of enterprise AI projects fail to deliver measurable ROI",
+      "confidence": "HIGH",
+      "sources": ["mit-study", "rand-study", "bcg-report"],
+      "verification_notes": "Multiple credible sources (MIT, RAND, BCG) confirm high failure rates. MIT specifically notes 95% of AI pilots fail. This contradicts optimistic ROI projections."
     },
     {
       "id": "mcp-linux-foundation",
       "claim": "MCP was donated to Agentic AI Foundation under Linux Foundation in December 2025",
       "confidence": "HIGH",
-      "sources": ["mcp-anthropic"],
-      "verification_notes": "Confirmed by multiple news sources"
+      "sources": ["mcp-anthropic", "wikipedia-mcp"],
+      "verification_notes": "Confirmed by multiple news sources and Wikipedia. Co-founders: Anthropic, Block, OpenAI."
+    },
+    {
+      "id": "mcp-security-issues",
+      "claim": "MCP has significant security vulnerabilities including prompt injection, tool mutation, and data exfiltration risks",
+      "confidence": "HIGH",
+      "sources": ["simonwillison-mcp", "redhat-mcp", "microsoft-mcp-security"],
+      "verification_notes": "Multiple security researchers (Simon Willison, Red Hat, Microsoft, Pillar Security) have documented MCP vulnerabilities. MCP team acknowledges these in specification."
     },
     {
       "id": "agentcore-downloads",
       "claim": "AgentCore SDK downloaded over 2 million times in 5 months since preview",
       "confidence": "HIGH",
       "sources": ["aws-agentcore-blog"],
-      "verification_notes": "Official AWS blog statement"
+      "verification_notes": "Official AWS blog statement. Self-reported but credible source."
     },
     {
       "id": "security-concerns-80",
       "claim": "80% of organizations have encountered risky behaviors from AI agents",
       "confidence": "MEDIUM",
       "sources": ["unit42-threats"],
-      "verification_notes": "Survey-based, Palo Alto Networks research"
-    },
-    {
-      "id": "iam-concerns-41",
-      "claim": "41% of organizations report security/reliability concerns with IAM for agents",
-      "confidence": "MEDIUM",
-      "sources": ["aws-security-matrix"],
-      "verification_notes": "Survey-based data"
+      "verification_notes": "Survey-based, Palo Alto Networks research. Methodology not fully transparent."
     },
     {
       "id": "openai-agentkit-launch",
       "claim": "OpenAI launched AgentKit at Dev Day on October 6, 2025",
       "confidence": "HIGH",
-      "sources": ["openai-agentkit"],
-      "verification_notes": "Official announcement, widely reported"
+      "sources": ["openai-agentkit", "winbuzzer-devday"],
+      "verification_notes": "Official announcement, widely reported across tech media."
     },
     {
       "id": "claude-agent-sdk-launch",
       "claim": "Claude Agent SDK published on September 29, 2025",
       "confidence": "HIGH",
       "sources": ["anthropic-agent-sdk"],
-      "verification_notes": "Official Anthropic documentation"
+      "verification_notes": "Official Anthropic documentation."
     },
     {
-      "id": "dify-github-stars",
-      "claim": "Dify has ~93,000 GitHub stars, making it the most starred AI agent platform",
+      "id": "langchain-github-stars",
+      "claim": "LangChain main repository has ~122,000 GitHub stars as of December 2025",
       "confidence": "HIGH",
-      "sources": ["firecrawl-frameworks"],
-      "verification_notes": "GitHub star counts are publicly verifiable"
+      "sources": ["github-langchain", "releasealert"],
+      "verification_notes": "Verified via GitHub. Previously reported lower numbers (~70K in July 2025) showing rapid growth."
     },
     {
       "id": "crewai-popularity",
-      "claim": "CrewAI has over 30,000 GitHub stars with nearly 1 million monthly downloads",
+      "claim": "CrewAI has over 40,000 GitHub stars with 1.8M+ monthly downloads",
       "confidence": "HIGH",
-      "sources": ["firecrawl-frameworks"],
-      "verification_notes": "GitHub and npm/pip download stats are verifiable"
+      "sources": ["crewai-blog", "github-crewai"],
+      "verification_notes": "Official CrewAI announcement (Oct 2025) confirms 40K stars. Previous claim of 30K was an underestimate."
     },
     {
-      "id": "langgraph-downloads",
-      "claim": "LangGraph has over 14,000 stars and 4.2 million monthly downloads",
+      "id": "langgraph-stats",
+      "claim": "LangGraph has over 22,000 stars and 4.2 million monthly downloads",
       "confidence": "HIGH",
-      "sources": ["firecrawl-frameworks"],
-      "verification_notes": "Package manager download stats verifiable"
-    },
-    {
-      "id": "openai-sdk-stars",
-      "claim": "OpenAI Agents SDK has over 11,000 GitHub stars since March 2025 release",
-      "confidence": "HIGH",
-      "sources": ["firecrawl-frameworks"],
-      "verification_notes": "GitHub metrics publicly available"
+      "sources": ["github-langgraph", "firecrawl-frameworks"],
+      "verification_notes": "GitHub metrics publicly verifiable. Download stats from package managers."
     },
     {
       "id": "enterprise-implementation-cost",
       "claim": "Enterprise AI agent implementations range from $100,000-$2,000,000 depending on scope",
       "confidence": "HIGH",
-      "sources": ["agentman-pricing"],
-      "verification_notes": "Consistent with multiple enterprise software implementation benchmarks"
+      "sources": ["agentman-pricing", "ampcome-costs"],
+      "verification_notes": "Consistent with multiple enterprise software implementation benchmarks across sources."
     },
     {
       "id": "ai-vs-human-cost",
       "claim": "AI agent costs have decreased to under $0.50 per interaction vs $4-8 for human agents",
       "confidence": "MEDIUM",
       "sources": ["agentman-pricing"],
-      "verification_notes": "Depends on use case complexity and implementation quality"
+      "verification_notes": "Depends heavily on use case complexity, implementation quality, and interaction type. General benchmark only."
     },
     {
       "id": "salesforce-pricing",
       "claim": "Salesforce charges $2 per conversation for AI agents",
       "confidence": "HIGH",
-      "sources": ["agentman-pricing"],
-      "verification_notes": "Public pricing information from Salesforce Agentforce"
+      "sources": ["agentman-pricing", "salesforce-agentforce"],
+      "verification_notes": "Public pricing information from Salesforce Agentforce."
     },
     {
-      "id": "microsoft-pricing",
-      "claim": "Microsoft charges $4 per hour for Copilot AI agents",
-      "confidence": "HIGH",
-      "sources": ["agentman-pricing"],
-      "verification_notes": "Public Microsoft pricing"
-    },
-    {
-      "id": "gartner-2027-prediction",
+      "id": "gartner-2028-prediction",
       "claim": "Gartner predicts by 2028, 33% of enterprise software will incorporate agentic AI",
       "confidence": "HIGH",
       "sources": ["gartner-ai-platforms"],
-      "verification_notes": "Official Gartner forecast, widely cited"
+      "verification_notes": "Official Gartner forecast, widely cited in industry reports."
     },
     {
       "id": "developer-ai-tools",
       "claim": "92% of developers now use AI tools, with 30% productivity boost reported",
       "confidence": "MEDIUM",
-      "sources": ["firecrawl-frameworks"],
-      "verification_notes": "GitHub Octoverse 2025 data"
+      "sources": ["github-octoverse"],
+      "verification_notes": "GitHub Octoverse 2025 data. Self-reported productivity gains may be inflated."
     },
     {
       "id": "aws-agentcore-ga",
       "claim": "Amazon Bedrock AgentCore reached general availability in late 2025",
       "confidence": "HIGH",
       "sources": ["aws-agentcore-blog"],
-      "verification_notes": "Official AWS announcement"
+      "verification_notes": "Official AWS announcement confirmed GA status."
     },
     {
       "id": "mcp-adoption-openai-google",
       "claim": "OpenAI adopted MCP in March 2025, Google confirmed support in April 2025",
       "confidence": "HIGH",
-      "sources": ["mcp-anthropic"],
-      "verification_notes": "Official announcements from both companies"
+      "sources": ["mcp-anthropic", "wikipedia-mcp"],
+      "verification_notes": "Official announcements from both companies, widely reported."
+    },
+    {
+      "id": "langchain-criticism-widespread",
+      "claim": "LangChain faces significant developer criticism for over-abstraction, dependency bloat, and instability",
+      "confidence": "HIGH",
+      "sources": ["hn-why-no-langchain", "designveloper-langchain-bad", "medium-langchain-sucks", "minimaxir-langchain-problem"],
+      "verification_notes": "Consistent criticism across multiple independent community sources (HN, Medium, tech blogs). Pattern clear despite anecdotal nature."
+    },
+    {
+      "id": "aws-bedrock-developer-challenges",
+      "claim": "AWS Bedrock Agents/AgentCore has significant developer experience challenges including CLI issues, IAM complexity, and debugging difficulties",
+      "confidence": "HIGH",
+      "sources": ["dev-agentcore-challenges", "teamblind-bedrock", "aws-strands-comparison"],
+      "verification_notes": "Multiple independent developer reports confirm pain points. AWS acknowledged challenges in AgentCore updates."
     }
-  ]
+  ],
+  "verification_summary": {
+    "total_claims": 23,
+    "high_confidence": 16,
+    "medium_confidence": 4,
+    "low_confidence": 1,
+    "disputed": 2,
+    "key_corrections": [
+      "CrewAI has 40K+ stars, not 30K as initially reported",
+      "85% adoption is a projection, not current state (actual ~62%)",
+      "171% ROI is projected expectation; 95% of AI pilots fail to deliver ROI",
+      "MCP has documented security vulnerabilities that should be highlighted"
+    ]
+  }
 }
