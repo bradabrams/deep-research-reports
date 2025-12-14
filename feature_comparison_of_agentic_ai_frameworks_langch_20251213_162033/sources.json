@@ -173,6 +173,110 @@
       "type": "industry_analysis",
       "credibility": "medium-high",
       "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S022",
+      "title": "AutoGen HackerNews Discussion - Enable next-gen LLM applications",
+      "url": "https://news.ycombinator.com/item?id=37926741",
+      "type": "community",
+      "credibility": "low",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S023",
+      "title": "AutoGen HackerNews - Possible plagiarism discussion",
+      "url": "https://news.ycombinator.com/item?id=38398775",
+      "type": "community",
+      "credibility": "low",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S024",
+      "title": "AutoGen Studio 2.0 HackerNews Discussion",
+      "url": "https://news.ycombinator.com/item?id=39736779",
+      "type": "community",
+      "credibility": "low",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S025",
+      "title": "Why Developers Say LangChain Is Bad - Designveloper",
+      "url": "https://www.designveloper.com/blog/is-langchain-bad/",
+      "type": "community",
+      "credibility": "low",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S026",
+      "title": "6 Reasons Why Langchain Sucks - Medium",
+      "url": "https://medium.com/@woyera/6-reasons-why-langchain-sucks-b6c99c98efbe",
+      "type": "community",
+      "credibility": "low",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S027",
+      "title": "The Decline of LangChain - Medium",
+      "url": "https://medium.com/@jhoansfuentes1999/the-decline-of-langchain-why-are-developers-abandoning-this-tool-a6f981566e03",
+      "type": "community",
+      "credibility": "low",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S028",
+      "title": "Why Developers are Quitting LangChain - Analytics India Magazine",
+      "url": "https://analyticsindiamag.com/ai-features/why-developers-are-quitting-langchain/",
+      "type": "community",
+      "credibility": "low",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S029",
+      "title": "LangChain GitHub Discussion - Bad Design",
+      "url": "https://github.com/langchain-ai/langchain/discussions/16169",
+      "type": "community",
+      "credibility": "low",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S030",
+      "title": "CrewAI Review 2025 - Reddit Sentiment - Toksta",
+      "url": "https://www.toksta.com/products/crewai",
+      "type": "community",
+      "credibility": "low",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S031",
+      "title": "CrewAI Multi-Agent Platform: Honest Review - Medium",
+      "url": "https://ondrej-popelka.medium.com/crewai-practical-lessons-learned-b696baa67242",
+      "type": "community",
+      "credibility": "low",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S032",
+      "title": "CrewAI vs AutoGen Comparison - Helicone",
+      "url": "https://www.helicone.ai/blog/crewai-vs-autogen",
+      "type": "industry_analysis",
+      "credibility": "medium",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S033",
+      "title": "Production Engineer's Honest Comparison - Medium",
+      "url": "https://python.plainenglish.io/autogen-vs-langgraph-vs-crewai-a-production-engineers-honest-comparison-d557b3b9262c",
+      "type": "community",
+      "credibility": "low",
+      "retrieved": "2024-12-14"
+    },
+    {
+      "id": "S034",
+      "title": "AWS Bedrock AgentCore GA Announcement",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-is-now-generally-available/",
+      "type": "official_announcement",
+      "credibility": "high",
+      "retrieved": "2024-12-14"
     }
   ]
 }
