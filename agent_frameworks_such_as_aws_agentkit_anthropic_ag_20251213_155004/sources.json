@@ -215,6 +215,128 @@
       "type": "technical_comparison",
       "publisher": "Composio",
       "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "hn-sick-of-frameworks",
+      "title": "Sick of AI Agent Frameworks | Hacker News",
+      "url": "https://news.ycombinator.com/item?id=42691946",
+      "type": "community",
+      "credibility": "low",
+      "publisher": "Hacker News",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "hn-framework-preferences",
+      "title": "Ask HN: Which agentic framework/tool do you prefer and why?",
+      "url": "https://news.ycombinator.com/item?id=43491351",
+      "type": "community",
+      "credibility": "low",
+      "publisher": "Hacker News",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "hn-why-no-langchain",
+      "title": "Why we no longer use LangChain for building our AI agents",
+      "url": "https://news.ycombinator.com/item?id=40739982",
+      "type": "community",
+      "credibility": "low",
+      "publisher": "Hacker News",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "hn-openai-sdk-comparison",
+      "title": "Ask HN: OpenAI Agents SDK vs. LangGraph, CrewAI, etc.",
+      "url": "https://news.ycombinator.com/item?id=44571730",
+      "type": "community",
+      "credibility": "low",
+      "publisher": "Hacker News",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "designveloper-langchain-bad",
+      "title": "Why Developers Say LangChain Is 'Bad': An Honest Look",
+      "url": "https://www.designveloper.com/blog/is-langchain-bad/",
+      "type": "community",
+      "credibility": "medium",
+      "publisher": "Designveloper",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "medium-langchain-sucks",
+      "title": "6 Reasons why Langchain Sucks",
+      "url": "https://medium.com/@woyera/6-reasons-why-langchain-sucks-b6c99c98efbe",
+      "type": "community",
+      "credibility": "low",
+      "publisher": "Medium",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "minimaxir-langchain-problem",
+      "title": "The Problem With LangChain",
+      "url": "https://minimaxir.com/2023/07/langchain-problem/",
+      "type": "community",
+      "credibility": "medium",
+      "publisher": "Max Woolf Blog",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "lindy-crewai-review",
+      "title": "CrewAI Review 2025: Is It Really Worth Your Money?",
+      "url": "https://www.lindy.ai/blog/crew-ai",
+      "type": "industry_analysis",
+      "publisher": "Lindy",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "sider-crewai-review",
+      "title": "CrewAI Review 2025: Is This Multi-Agent Framework Worth Your Build?",
+      "url": "https://sider.ai/blog/ai-tools/crewai-review-2025-is-this-multi-agent-framework-worth-your-build",
+      "type": "industry_analysis",
+      "publisher": "Sider",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "teamblind-bedrock",
+      "title": "Sad state of Amazon Bedrock and AWS AI",
+      "url": "https://www.teamblind.com/post/sad-state-of-amazon-bedrock-and-aws-ai-1ugw0bvr",
+      "type": "community",
+      "credibility": "low",
+      "publisher": "Team Blind",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "dev-agentcore-challenges",
+      "title": "Breaking Bedrock: What Really Happens When Your Agent Doesn't Work",
+      "url": "https://dev.to/sinariver/i-built-a-bedrock-agent-for-learning-and-it-definitely-took-that-mission-seriously-kf3",
+      "type": "community",
+      "credibility": "low",
+      "publisher": "DEV Community",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "philschmid-engineer-struggle",
+      "title": "Why (Senior) Engineers Struggle to Build AI Agents",
+      "url": "https://www.philschmid.de/why-engineers-struggle-building-agents",
+      "type": "community",
+      "credibility": "medium",
+      "publisher": "Phil Schmid Blog",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "dev-ai-agents-fail",
+      "title": "The 2025 AI Agent Report: Why AI Agents Fail in Production",
+      "url": "https://dev.to/composiodev/the-2025-ai-agent-report-why-ai-agents-fail-in-production-and-the-2026-integration-roadmap-3d6n",
+      "type": "industry_analysis",
+      "publisher": "DEV Community/Composio",
+      "date_accessed": "2025-12-13"
+    },
+    {
+      "id": "promptlayer-claude-sdk",
+      "title": "Building Agents with Claude Code's SDK",
+      "url": "https://blog.promptlayer.com/building-agents-with-claude-codes-sdk/",
+      "type": "tutorial",
+      "publisher": "PromptLayer",
+      "date_accessed": "2025-12-13"
     }
   ]
 }

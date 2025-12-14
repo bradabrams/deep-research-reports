@@ -235,6 +235,125 @@ Most vulnerabilities arise from:
 
 ---
 
+## Community & Social Insights
+
+### Hacker News Discussions
+
+**Key Thread: "Sick of AI Agent Frameworks"**
+- Developers express frustration with framework fragmentation
+- Common complaint: "5 layers of abstraction just to change a minute detail"
+- AutoGen noted as popular but "not production-ready, undergoing rapid changes"
+
+**Key Thread: "Which agentic framework/tool do you prefer?"**
+- Community consensus: CrewAI for multi-agent collaboration ease, OpenAI SDK for lean production
+- LangGraph praised for complex workflows but criticized for steep learning curve
+- Many prefer rolling own solutions over framework lock-in
+
+### LangChain Criticism (Common Themes)
+
+**Over-Abstraction**
+> "You have to learn a bunch of custom classes and abstractions, even for things that could be done with plain Python or JavaScript"
+
+**Dependency Bloat**
+- Described as "bloated" and prone to "dependency hell"
+- Even basic features require installing many dependencies
+
+**Documentation Issues**
+- Frequently outdated documentation
+- Missing explanations of default parameters
+- Developers "scavenge through various resources"
+
+**Instability**
+> "It's unstable, the interface constantly changes, the documentation is regularly out of date..."
+
+**Production Concerns**
+- Good for prototyping, not recommended for production
+- Code gets messy, hard to scale and maintain
+
+**Vendor Lock-in**
+- Creates inherent lock-in to only use LangChain-based code
+- "$30 million" VC investment creates misaligned incentives
+
+### CrewAI Criticism
+
+**Pricing Concerns**
+- Starting at $99/month, up to $120,000/year for enterprise
+- Considered "expensive" for smaller businesses
+
+**Technical Limitations**
+- Framework rigidity makes dynamic role adjustment difficult
+- Inconsistent results for specific use cases
+- Several unresolved high-severity bugs
+
+**Resource Issues**
+- API rate limits hit during concurrent agent testing
+- Context window constraints limit scalability
+
+### AWS Bedrock Agents Pain Points
+
+**Developer Experience**
+> "Slow responses, buggy experiences, and missing key features"
+
+**Complexity**
+- Each tool requires separate Lambda function management
+- "Code-intensive" compared to alternatives
+- Very large learning curve with confusing terminology
+
+**AgentCore CLI Issues**
+- `agentcore deploy` command unreliable
+- Cryptic IAM errors even with admin permissions
+- Broken deployments hard to clean up
+
+**Debugging Challenges**
+- Intermittent failures in long-running workflows
+- No clear explanation when agents stop mid-execution
+- Silent runtime restarts with no logs
+
+### Developer Sentiment (General)
+
+**The Paradigm Shift Problem**
+> "The transition from deterministic systems to probabilistic agents is uncomfortable... handing over control flow to a non-deterministic model feels wrong to a mind trained on strict interfaces."
+
+**Overengineering by AI**
+> "Like asking someone for a cup of tea and getting a 12-piece tea set, imported leaves, a handwritten guide on brewing, and a three-course snack pairing."
+
+**Time Sink**
+- 60-70% of AI development time spent on prompt engineering
+- Compared to "trying to fix a broken database with better SQL comments"
+
+**New Developer Role**
+> "I've promoted myself from coder to manager of robots... Managing those robots isn't a simple task."
+
+### Positive Community Feedback
+
+**Claude Agent SDK**
+- Developers praise: "I use it as my default agent framework over tools like LangChain/CrewAI"
+- Time savings: "23 hours to 5 hours for complex content"
+- Good for rapid prototyping of agentic tasks
+
+**OpenAI Agents SDK**
+- Lighter than LangChain's abstractions
+- Better debugging than Auto-GPT
+- Guardrails add safety absent in earlier autonomous agents
+
+**CrewAI**
+- Excellent for rapid prototyping
+- Beginner-friendly documentation
+- Clean API design
+
+### Community Recommendations Summary
+
+| Use Case | Community Preference |
+|----------|---------------------|
+| Quick POC/Demo | LangChain (despite criticisms) |
+| Production deployment | OpenAI Agents SDK, custom code |
+| Multi-agent collaboration | CrewAI |
+| Complex stateful workflows | LangGraph (if you accept learning curve) |
+| Enterprise/compliance | AWS AgentCore (with patience) |
+| Coding/development agents | Claude Agent SDK |
+
+---
+
 ## Images Downloaded
 - `json_logo.png` - For MCP JSON-RPC documentation
 - `langgraph_logo.svg` - LangGraph branding
