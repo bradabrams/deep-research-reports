@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knitting Community Trends 2024 | Research Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --yarn-blue: #4A90A4;
+            --yarn-blue-dark: #3A7A8E;
+            --yarn-pink: #E8A4B8;
+            --yarn-pink-light: #F5D5DE;
+            --yarn-cream: #FDF8F5;
+            --yarn-lavender: #B8A9C9;
+            --yarn-peach: #FFBE98;
+            --yarn-sage: #A8C5A8;
+            --text-dark: #2D3436;
+            --text-medium: #636E72;
+            --text-light: #B2BEC3;
+            --card-shadow: 0 4px 20px rgba(74, 144, 164, 0.12);
+            --card-shadow-hover: 0 8px 30px rgba(74, 144, 164, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--yarn-cream);
+            color: var(--text-dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--yarn-blue), var(--yarn-pink), var(--yarn-lavender));
+            z-index: 1000;
+            transition: width 0.1s ease;
+        }
+
+        /* Yarn Ball SVG Pattern */
+        .yarn-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.03;
+            z-index: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c13.8 0 25 11.2 25 25S43.8 55 30 55 5 43.8 5 30 16.2 5 30 5zm0 5c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20z' fill='%234A90A4' fill-opacity='1'/%3E%3Cpath d='M30 15c8.3 0 15 6.7 15 15s-6.7 15-15 15-15-6.7-15-15 6.7-15 15-15z' fill='none' stroke='%234A90A4' stroke-width='1'/%3E%3C/svg%3E");
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--yarn-blue) 0%, var(--yarn-blue-dark) 50%, #2D5A6A 100%);
+            color: white;
+            padding: 80px 40px 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(232,164,184,0.2) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(184,169,201,0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .hero-badge svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            max-width: 700px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px 30px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.15);
+            min-width: 140px;
+        }
+
+        .stat-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Main Layout */
+        .main-container {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+            padding: 30px 20px;
+            margin-top: -60px;
+        }
+
+        .sidebar-card {
+            background: white;
+            border-radius: 20px;
+            padding: 24px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .sidebar-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--yarn-blue);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-list {
+            list-style: none;
+        }
+
+        .nav-list li {
+            margin-bottom: 4px;
+        }
+
+        .nav-list a {
+            display: block;
+            padding: 10px 14px;
+            color: var(--text-medium);
+            text-decoration: none;
+            font-size: 0.9rem;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .nav-list a:hover, .nav-list a.active {
+            background: var(--yarn-pink-light);
+            color: var(--yarn-blue-dark);
+            border-left-color: var(--yarn-pink);
+        }
+
+        /* Content */
+        .content {
+            padding: 40px;
+            padding-top: 0;
+            margin-top: -40px;
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        /* Section Headers */
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            cursor: pointer;
+        }
+
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--yarn-blue), var(--yarn-lavender));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .section-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .collapse-icon {
+            margin-left: auto;
+            width: 32px;
+            height: 32px;
+            background: var(--yarn-cream);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .collapse-icon.collapsed {
+            transform: rotate(-90deg);
+        }
+
+        .section-content {
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.3s ease;
+        }
+
+        .section-content.collapsed {
+            max-height: 0 !important;
+            opacity: 0;
+        }
+
+        /* Typography */
+        h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--yarn-blue-dark);
+            margin: 24px 0 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        /* Key Findings Grid */
+        .findings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 24px 0;
+        }
+
+        .finding-card {
+            background: linear-gradient(135deg, var(--yarn-cream) 0%, white 100%);
+            border: 1px solid rgba(74, 144, 164, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .finding-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--card-shadow);
+        }
+
+        .finding-card.blue { border-left: 4px solid var(--yarn-blue); }
+        .finding-card.pink { border-left: 4px solid var(--yarn-pink); }
+        .finding-card.lavender { border-left: 4px solid var(--yarn-lavender); }
+        .finding-card.sage { border-left: 4px solid var(--yarn-sage); }
+        .finding-card.peach { border-left: 4px solid var(--yarn-peach); }
+
+        .finding-title {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .finding-desc {
+            font-size: 0.9rem;
+            color: var(--text-medium);
+        }
+
+        /* Confidence Badges */
+        .confidence-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .confidence-high {
+            background: rgba(168, 197, 168, 0.2);
+            color: #5A8A5A;
+        }
+
+        .confidence-medium {
+            background: rgba(255, 190, 152, 0.2);
+            color: #C07A4A;
+        }
+
+        .confidence-low {
+            background: rgba(232, 164, 184, 0.2);
+            color: #B86B8A;
+        }
+
+        /* Pull Quote */
+        .pull-quote {
+            background: linear-gradient(135deg, var(--yarn-blue) 0%, var(--yarn-lavender) 100%);
+            color: white;
+            padding: 32px;
+            border-radius: 20px;
+            margin: 32px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pull-quote::before {
+            content: '"';
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 8rem;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            opacity: 0.2;
+            line-height: 1;
+        }
+
+        .pull-quote p {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: white;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 12px;
+        }
+
+        .pull-quote cite {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Tables */
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 12px;
+            border: 1px solid rgba(74, 144, 164, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--yarn-blue) 0%, var(--yarn-blue-dark) 100%);
+            color: white;
+            padding: 14px 18px;
+            text-align: left;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 14px 18px;
+            border-bottom: 1px solid rgba(74, 144, 164, 0.08);
+        }
+
+        tr:hover td {
+            background: var(--yarn-pink-light);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 24px 0;
+        }
+
+        .stat-pill {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            border: 1px solid rgba(74, 144, 164, 0.1);
+        }
+
+        .stat-pill-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--yarn-pink-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--yarn-pink);
+        }
+
+        .stat-pill-value {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--yarn-blue-dark);
+        }
+
+        .stat-pill-label {
+            font-size: 0.8rem;
+            color: var(--text-medium);
+        }
+
+        /* Citations */
+        .citation {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background: var(--yarn-blue);
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 600;
+            border-radius: 50%;
+            margin: 0 2px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            vertical-align: super;
+        }
+
+        .citation:hover {
+            background: var(--yarn-pink);
+            transform: scale(1.1);
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: fixed;
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            max-width: 350px;
+            font-size: 0.85rem;
+            z-index: 1000;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            border: 1px solid rgba(74, 144, 164, 0.1);
+        }
+
+        .tooltip.visible {
+            opacity: 1;
+        }
+
+        .tooltip-title {
+            font-weight: 600;
+            color: var(--yarn-blue-dark);
+            margin-bottom: 6px;
+        }
+
+        .tooltip-url {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            word-break: break-all;
+        }
+
+        /* Lists */
+        ul {
+            margin: 16px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        ul li {
+            padding: 8px 0 8px 28px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 16px;
+            width: 12px;
+            height: 12px;
+            background: var(--yarn-pink);
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+
+        /* Color Swatches */
+        .color-swatch {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: white;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .swatch-dot {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+        }
+
+        .swatch-blue { background: #4A90A4; }
+        .swatch-pink { background: #E8A4B8; }
+        .swatch-red { background: #C94C4C; }
+        .swatch-peach { background: #FFBE98; }
+        .swatch-lavender { background: #B8A9C9; }
+
+        /* App Cards */
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .app-card {
+            background: white;
+            border: 1px solid rgba(74, 144, 164, 0.1);
+            border-radius: 14px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--card-shadow);
+        }
+
+        .app-name {
+            font-weight: 600;
+            color: var(--yarn-blue-dark);
+            margin-bottom: 6px;
+        }
+
+        .app-rating {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--yarn-peach);
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+        .app-desc {
+            font-size: 0.85rem;
+            color: var(--text-medium);
+        }
+
+        /* Pattern Cards */
+        .pattern-list {
+            margin: 20px 0;
+        }
+
+        .pattern-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px;
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(74, 144, 164, 0.08);
+            transition: all 0.2s ease;
+        }
+
+        .pattern-item:hover {
+            background: var(--yarn-pink-light);
+        }
+
+        .pattern-rank {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--yarn-blue), var(--yarn-lavender));
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .pattern-info {
+            flex: 1;
+        }
+
+        .pattern-name {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .pattern-projects {
+            font-size: 0.85rem;
+            color: var(--text-medium);
+        }
+
+        /* Sources Section */
+        .sources-list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .source-item {
+            display: flex;
+            gap: 12px;
+            padding: 14px;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid rgba(74, 144, 164, 0.08);
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+        }
+
+        .source-item:hover {
+            background: var(--yarn-cream);
+            border-color: var(--yarn-blue);
+        }
+
+        .source-num {
+            width: 28px;
+            height: 28px;
+            background: var(--yarn-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .source-content {
+            flex: 1;
+        }
+
+        .source-title {
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .source-url {
+            color: var(--yarn-blue);
+            text-decoration: none;
+            font-size: 0.8rem;
+            word-break: break-all;
+        }
+
+        .source-url:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 40px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .footer p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-stats {
+                gap: 16px;
+            }
+
+            .stat-item {
+                min-width: 100px;
+                padding: 14px 20px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .card {
+                padding: 24px;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            animation: fadeInUp 0.5s ease forwards;
+        }
+
+        .card:nth-child(2) { animation-delay: 0.1s; }
+        .card:nth-child(3) { animation-delay: 0.2s; }
+        .card:nth-child(4) { animation-delay: 0.3s; }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="yarn-pattern"></div>
+
+    <!-- Tooltip -->
+    <div class="tooltip" id="tooltip">
+        <div class="tooltip-title"></div>
+        <div class="tooltip-url"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                </svg>
+                Research Report &bull; December 2024
+            </div>
+            <h1>Recent Trends in the Knitting Community</h1>
+            <p class="hero-subtitle">A comprehensive analysis for knitting hobbyists seeking to understand current developments in their craft</p>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">$4.7B</span>
+                    <span class="stat-label">Market Size</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1.1B</span>
+                    <span class="stat-label">#KnitTok Views</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">38</span>
+                    <span class="stat-label">Sources</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">42</span>
+                    <span class="stat-label">Verified Claims</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    Contents
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#summary" class="active">Executive Summary</a></li>
+                    <li><a href="#trends">Style & Color Trends</a></li>
+                    <li><a href="#techniques">Technique Trends</a></li>
+                    <li><a href="#demographics">Demographics & Market</a></li>
+                    <li><a href="#social">Social Media Revolution</a></li>
+                    <li><a href="#sustainability">Sustainability</a></li>
+                    <li><a href="#technology">Technology & Apps</a></li>
+                    <li><a href="#community">Community Dynamics</a></li>
+                    <li><a href="#economics">Economic Factors</a></li>
+                    <li><a href="#inclusivity">Size Inclusivity</a></li>
+                    <li><a href="#patterns">Popular Patterns</a></li>
+                    <li><a href="#uncertainty">Areas of Uncertainty</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                    <li><a href="#sources">Sources</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Executive Summary -->
+            <section class="card" id="summary">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Executive Summary</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <p>The knitting community in 2024 is experiencing a fascinating paradox: while long-term search interest has declined 48% since its 2013 peak, a vibrant revival is underway driven by Gen Z adoption on TikTok and high-profile celebrity endorsements like Tom Daley's viral Olympic knitting.</p>
+
+                    <div class="pull-quote">
+                        <p>Knitting is my mindfulness, my meditation, my calm and my way to escape the stresses of everyday life.</p>
+                        <cite>— Tom Daley, Olympic diver & viral knitter</cite>
+                    </div>
+
+                    <h3>What's Hot in 2024</h3>
+                    <div class="findings-grid">
+                        <div class="finding-card blue">
+                            <div class="finding-title">Blue is the New Pink</div>
+                            <div class="finding-desc">Shades of blue have replaced hot pink as the dominant color trend for 2024</div>
+                        </div>
+                        <div class="finding-card pink">
+                            <div class="finding-title">Cardigans Dominate</div>
+                            <div class="finding-desc">Especially longer lengths—the must-knit garment of 2024</div>
+                        </div>
+                        <div class="finding-card lavender">
+                            <div class="finding-title">Textured Techniques</div>
+                            <div class="finding-desc">Aran, brioche, and Fair Isle colorwork leading technique trends</div>
+                        </div>
+                        <div class="finding-card sage">
+                            <div class="finding-title">Sustainability Focus</div>
+                            <div class="finding-desc">58% of demand driven by eco-conscious choices, especially ages 18-34</div>
+                        </div>
+                    </div>
+
+                    <h3>Confidence Assessment</h3>
+                    <div class="stats-bar">
+                        <div class="stat-pill">
+                            <span class="confidence-badge confidence-high">HIGH</span>
+                            <div>
+                                <div class="stat-pill-value">25</div>
+                                <div class="stat-pill-label">claims (3+ sources)</div>
+                            </div>
+                        </div>
+                        <div class="stat-pill">
+                            <span class="confidence-badge confidence-medium">MEDIUM</span>
+                            <div>
+                                <div class="stat-pill-value">14</div>
+                                <div class="stat-pill-label">claims (2 sources)</div>
+                            </div>
+                        </div>
+                        <div class="stat-pill">
+                            <span class="confidence-badge confidence-low">LOW</span>
+                            <div>
+                                <div class="stat-pill-value">2</div>
+                                <div class="stat-pill-label">claims (1 source)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Style & Color Trends -->
+            <section class="card" id="trends">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon" style="background: linear-gradient(135deg, var(--yarn-blue), var(--yarn-pink));">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 2a10 10 0 0 1 0 20"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Style & Color Trends</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <p><span class="confidence-badge confidence-high">HIGH CONFIDENCE</span></p>
+
+                    <h3>2024 Trending Colors</h3>
+                    <p>Multiple sources confirm that shades of blue have replaced hot pink (2023's dominant color) as the trending choice for knitters. Blue was prominent in Spring 2024 fashion shows and is frequently paired with white for colorwork designs.</p>
+
+                    <div style="margin: 20px 0;">
+                        <span class="color-swatch"><span class="swatch-dot swatch-blue"></span> Blue (2024 Star)</span>
+                        <span class="color-swatch"><span class="swatch-dot swatch-red"></span> Cherry Red</span>
+                        <span class="color-swatch"><span class="swatch-dot swatch-peach"></span> Peach (Pantone 2024)</span>
+                        <span class="color-swatch"><span class="swatch-dot swatch-lavender"></span> Lavender</span>
+                    </div>
+
+                    <h3>Garment Trends</h3>
+                    <p><strong>Cardigans dominate garment trends.</strong> The cardigan has emerged as 2024's must-knit garment, appearing in multiple variations from delicate lacy options perfect for spring layering to the timeless librarian style. Longer lengths are particularly fashionable.</p>
+
+                    <p><strong>Nautical and preppy aesthetics</strong> are influencing knitwear design, driven partly by Miu Miu's fashion influence. This manifests in chunky cables, bold stripes, and argyle patterns.</p>
+                </div>
+            </section>
+
+            <!-- Technique Trends -->
+            <section class="card" id="techniques">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon" style="background: linear-gradient(135deg, var(--yarn-lavender), var(--yarn-sage));">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Technique Trends</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <p><span class="confidence-badge confidence-high">HIGH CONFIDENCE</span></p>
+
+                    <h3>Fair Isle Colorwork</h3>
+                    <p>Fair Isle colorwork continues its multi-year dominance, with sources confirming it "has become the favorite colorwork piece in the fashion industry this season." Large colorwork motifs are particularly popular for fall and winter designs.</p>
+
+                    <h3>Textured Knitting</h3>
+                    <p>Techniques like Aran cables and brioche stitches are in high demand, with knitters drawn to "thick, raised patterns which add depth and a rich look."</p>
+
+                    <h3>Additional Trending Techniques</h3>
+                    <ul>
+                        <li><strong>Marling:</strong> Pairing two contrasting yarns for a heathered effect</li>
+                        <li><strong>Fuzzy yarns with lace:</strong> Creating ethereal "halo effects" with mohair or suri alpaca</li>
+                        <li><strong>European Shoulder Construction:</strong> A Scandinavian-influenced technique shifting shoulder seams toward the back</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Demographics & Market -->
+            <section class="card" id="demographics">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon" style="background: linear-gradient(135deg, var(--yarn-peach), var(--yarn-pink));">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Demographics & Market Size</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <div class="stats-bar">
+                        <div class="stat-pill">
+                            <div class="stat-pill-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="stat-pill-value">71-98%</div>
+                                <div class="stat-pill-label">Female</div>
+                            </div>
+                        </div>
+                        <div class="stat-pill">
+                            <div class="stat-pill-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="stat-pill-value">58 years</div>
+                                <div class="stat-pill-label">Average Age</div>
+                            </div>
+                        </div>
+                        <div class="stat-pill">
+                            <div class="stat-pill-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="stat-pill-value">$4.7B → $7.1B</div>
+                                <div class="stat-pill-label">Market Growth (2024-2033)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Age Distribution</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Age Group</th>
+                                    <th>Percentage</th>
+                                    <th>Trend</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>18-34</td>
+                                    <td>34%</td>
+                                    <td><span class="confidence-badge confidence-high">Growing via TikTok</span></td>
+                                </tr>
+                                <tr>
+                                    <td>35-54</td>
+                                    <td>36%</td>
+                                    <td><span class="confidence-badge confidence-medium">Stable</span></td>
+                                </tr>
+                                <tr>
+                                    <td>55+</td>
+                                    <td>30%</td>
+                                    <td><span class="confidence-badge confidence-medium">Traditional base</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p><span class="confidence-badge confidence-low">LOW CONFIDENCE</span> Evidence suggests male participation is growing—LoveCrafts reported more than one-third of young men are taking up knitting, though this figure comes from a single company survey.</p>
+                </div>
+            </section>
+
+            <!-- Social Media Revolution -->
+            <section class="card" id="social">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon" style="background: linear-gradient(135deg, #E1306C, #405DE6);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">The Social Media Revolution</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <p><span class="confidence-badge confidence-high">HIGH CONFIDENCE</span></p>
+
+                    <div class="findings-grid">
+                        <div class="finding-card blue">
+                            <div class="finding-title">#KnitTok</div>
+                            <div class="finding-desc">1.1 billion+ views on TikTok, with Gen Z driving the revival through "knit-fluencer" content</div>
+                        </div>
+                        <div class="finding-card pink">
+                            <div class="finding-title">#knitting on Instagram</div>
+                            <div class="finding-desc">23 million+ posts, strong visual community presence</div>
+                        </div>
+                        <div class="finding-card lavender">
+                            <div class="finding-title">Ravelry</div>
+                            <div class="finding-desc">74% of knitters use the platform, though declining 48% since 2013 peak</div>
+                        </div>
+                        <div class="finding-card peach">
+                            <div class="finding-title">r/knitting</div>
+                            <div class="finding-desc">563,000+ members on Reddit's supportive knitting community</div>
+                        </div>
+                    </div>
+
+                    <h3>Tom Daley's Olympic Knitting</h3>
+                    <p>The British diver went viral at the Paris 2024 Olympics, spotted knitting a red, white, and blue "Paris 24" sweater featuring French and British flags between diving events. His visibility brought mainstream attention to the craft.</p>
+
+                    <p><em>Note: Daley's TV show "Game of Wool" later faced criticism from Scottish knitters for misrepresenting Fair Isle techniques.</em></p>
+                </div>
+            </section>
+
+            <!-- Sustainability -->
+            <section class="card" id="sustainability">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon" style="background: linear-gradient(135deg, var(--yarn-sage), #7CB342);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Sustainability Movement</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <p><span class="confidence-badge confidence-high">HIGH CONFIDENCE</span> Eco-consciousness is a major driver of 2024 knitting trends. Market research indicates DIY and sustainable materials drive <strong>58% of demand</strong>, particularly among ages 18-34.</p>
+
+                    <h3>Sustainable Yarn Options</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Brand/Product</th>
+                                    <th>Sustainability Feature</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Knitting for Olive No Waste Wool</td>
+                                    <td>50% recycled wool, 50% traceable non-mulesed Merino</td>
+                                </tr>
+                                <tr>
+                                    <td>Rowan Cotton Revive</td>
+                                    <td>Made from regenerated cotton fibers</td>
+                                </tr>
+                                <tr>
+                                    <td>Berroco Seaspun</td>
+                                    <td>Polyester spun from ocean-reclaimed plastic</td>
+                                </tr>
+                                <tr>
+                                    <td>Plant-based alternatives</td>
+                                    <td>Bamboo, hemp, and Lyocell (Tencel)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p><strong>Patchwork-inspired knitting is making a comeback</strong>, influenced by the upcycled fashion movement. This approach uses leftover yarn scraps, making it both eco-friendly and budget-conscious.</p>
+                </div>
+            </section>
+
+            <!-- Technology & Apps -->
+            <section class="card" id="technology">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon" style="background: linear-gradient(135deg, #5C6BC0, var(--yarn-lavender));">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Technology & Digital Tools</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <p><span class="confidence-badge confidence-medium">MEDIUM CONFIDENCE</span> Over 60% of hobbyists now rely on online tutorials, mobile apps, and e-learning platforms.</p>
+
+                    <h3>Popular Knitting Apps</h3>
+                    <div class="app-grid">
+                        <div class="app-card">
+                            <div class="app-name">KnitCompanion</div>
+                            <div class="app-rating">★★★★★ 4.7/5</div>
+                            <div class="app-desc">$9.99/year subscription, updated September 2024</div>
+                        </div>
+                        <div class="app-card">
+                            <div class="app-name">Stitch Fiddle</div>
+                            <div class="app-rating">FREE</div>
+                            <div class="app-desc">Web-based chart maker, works across all platforms</div>
+                        </div>
+                        <div class="app-card">
+                            <div class="app-name">Knitrino</div>
+                            <div class="app-rating">NEW</div>
+                            <div class="app-desc">Interactive patterns with tutorials and marketplace</div>
+                        </div>
+                        <div class="app-card">
+                            <div class="app-name">PatternGenius</div>
+                            <div class="app-rating">Mac & iPad</div>
+                            <div class="app-desc">Vector-based pattern creation tool</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community Dynamics -->
+            <section class="card" id="community">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon" style="background: linear-gradient(135deg, var(--yarn-pink), #E57373);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Community Dynamics & Tensions</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <p><span class="confidence-badge confidence-high">HIGH CONFIDENCE</span></p>
+
+                    <h3>Ravelry Challenges</h3>
+                    <p>The platform experienced a <strong>48% decline</strong> in engagement since its 2013 peak. A controversial 2020 redesign caused an accessibility crisis, with at least eight users reporting seizures and many more experiencing migraines, vertigo, and eyestrain. A complaint thread accumulated over 7,000 replies.</p>
+
+                    <h3>Political Divisions</h3>
+                    <p>Ravelry's 2019 decision to ban pro-Trump content created lasting divisions. Alternative platforms emerged including <strong>Fiberkind</strong> (18,000 members) and <strong>Freedom Knits</strong>.</p>
+
+                    <p>More recently, post-October 7, 2023 tensions led Jewish crafters to create separate spaces like <strong>r/JewishCrafts</strong> (200+ members) where political discussion is explicitly off-limits.</p>
+                </div>
+            </section>
+
+            <!-- Economic Factors -->
+            <section class="card" id="economics">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon" style="background: linear-gradient(135deg, #FFB74D, var(--yarn-peach));">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Economic Factors</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <h3>Rising Raw Material Costs</h3>
+                    <p><span class="confidence-badge confidence-high">HIGH CONFIDENCE</span></p>
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Material</th>
+                                    <th>Price Change</th>
+                                    <th>Period</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cotton</td>
+                                    <td style="color: #C94C4C; font-weight: 600;">+148%</td>
+                                    <td>47.55¢/lb (2020) → 117.87¢/lb (2024)</td>
+                                </tr>
+                                <tr>
+                                    <td>Australian Merino Wool</td>
+                                    <td style="color: #C94C4C; font-weight: 600;">+56%</td>
+                                    <td>Since 2016, now ~$14/kg</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Indie Dyer Challenges</h3>
+                    <p><span class="confidence-badge confidence-low">LOW CONFIDENCE</span> One report indicates indie dyers make approximately <strong>$2 profit per skein</strong>, making it "nearly impossible to sell enough skeins to make a livable wage."</p>
+
+                    <h3>Shopping Behavior</h3>
+                    <p><strong>56% of yarn consumers</strong> report buying more online than in previous years, with pandemic-era shopping habits persisting. However, Local Yarn Store Day (April 27, 2024) continues to support brick-and-mortar shops.</p>
+                </div>
+            </section>
+
+            <!-- Size Inclusivity -->
+            <section class="card" id="inclusivity">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon" style="background: linear-gradient(135deg, var(--yarn-lavender), var(--yarn-pink));">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Size Inclusivity</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <p><span class="confidence-badge confidence-high">HIGH CONFIDENCE</span> Size-inclusive patterns have become an industry expectation. The community consensus is that patterns should extend to at least <strong>5X or 60" bust</strong>, with some designers offering sizes up to 70".</p>
+
+                    <h3>Notable Size-Inclusive Designers</h3>
+                    <ul>
+                        <li>Jessie Maed Designs</li>
+                        <li>Andrea Mowry</li>
+                        <li>Tincanknits</li>
+                        <li>Kristen TenDyke</li>
+                    </ul>
+
+                    <p>Resources like Victoria Marchant Knits maintain databases of inclusive patterns searchable by yarn weight, intended gender, and other criteria.</p>
+                </div>
+            </section>
+
+            <!-- Popular Patterns -->
+            <section class="card" id="patterns">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon" style="background: linear-gradient(135deg, var(--yarn-blue), var(--yarn-sage));">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Popular Patterns & Community Favorites</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <p><span class="confidence-badge confidence-high">HIGH CONFIDENCE</span> Ravelry project counts reveal enduring favorites:</p>
+
+                    <div class="pattern-list">
+                        <div class="pattern-item">
+                            <div class="pattern-rank">1</div>
+                            <div class="pattern-info">
+                                <div class="pattern-name">Hermione's Everyday Socks</div>
+                                <div class="pattern-projects">40,000+ projects</div>
+                            </div>
+                        </div>
+                        <div class="pattern-item">
+                            <div class="pattern-rank">2</div>
+                            <div class="pattern-info">
+                                <div class="pattern-name">Sockhead Slouch Hat</div>
+                                <div class="pattern-projects">30,000+ projects</div>
+                            </div>
+                        </div>
+                        <div class="pattern-item">
+                            <div class="pattern-rank">3</div>
+                            <div class="pattern-info">
+                                <div class="pattern-name">Flax Sweater (Tincanknits)</div>
+                                <div class="pattern-projects">~30,000 projects</div>
+                            </div>
+                        </div>
+                        <div class="pattern-item">
+                            <div class="pattern-rank">4</div>
+                            <div class="pattern-info">
+                                <div class="pattern-name">Honey Cowl</div>
+                                <div class="pattern-projects">28,000 projects</div>
+                            </div>
+                        </div>
+                        <div class="pattern-item">
+                            <div class="pattern-rank">5</div>
+                            <div class="pattern-info">
+                                <div class="pattern-name">Clapotis Shawl</div>
+                                <div class="pattern-projects">23,000+ projects</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Fall 2024 Trending Patterns</h3>
+                    <ul>
+                        <li><strong>Ruth Pullover</strong> by Irene Lin — free, oversized with gentle V-neck</li>
+                        <li><strong>Lines Socks</strong> — Dutch heel construction</li>
+                        <li><strong>Alpine Journey Hat</strong> — combines cables, ribbing, and moss stitch</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Areas of Uncertainty -->
+            <section class="card" id="uncertainty">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon" style="background: linear-gradient(135deg, #90A4AE, #607D8B);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Areas of Uncertainty</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <h3>Conflicting Data</h3>
+                    <ul>
+                        <li><strong>Age Demographics:</strong> Survey data conflicts—one reports average age 58, while another shows even distribution across groups</li>
+                        <li><strong>Market Size:</strong> Valuations range from $4.7B to $7.2B for 2024—treat as estimates</li>
+                        <li><strong>"Dying Hobby" vs Revival:</strong> Both narratives have evidence—long-term decline is real, but recent reversal documented</li>
+                    </ul>
+
+                    <h3>Weak Evidence Areas</h3>
+                    <ul>
+                        <li><strong>Male Knitter Statistics:</strong> "1/3 of young men" claim from single company survey without methodology</li>
+                        <li><strong>Indie Dyer Economics:</strong> $2/skein profit is anecdotal from single blogger</li>
+                        <li><strong>Mental Health Benefits:</strong> Dopamine release claim needs more scientific verification</li>
+                        <li><strong>Stitch 'n Bitch Revival:</strong> "Global resurgence" claims may be geographically specific</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="card" id="conclusion">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon" style="background: linear-gradient(135deg, var(--yarn-blue), var(--yarn-blue-dark));">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Conclusion</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <h3>Established Findings (HIGH Confidence)</h3>
+                    <div class="findings-grid">
+                        <div class="finding-card blue">
+                            <div class="finding-title">Blue is Dominant</div>
+                            <div class="finding-desc">With cardigans and textured knitting as key style trends</div>
+                        </div>
+                        <div class="finding-card pink">
+                            <div class="finding-title">Gen Z Revival</div>
+                            <div class="finding-desc">Driving social media renaissance through #KnitTok (1.1B+ views)</div>
+                        </div>
+                        <div class="finding-card sage">
+                            <div class="finding-title">Sustainability Matters</div>
+                            <div class="finding-desc">To younger knitters, spurring recycled yarn innovation</div>
+                        </div>
+                        <div class="finding-card lavender">
+                            <div class="finding-title">Size Inclusivity</div>
+                            <div class="finding-desc">Has become an industry standard (5X/60"+ expected)</div>
+                        </div>
+                        <div class="finding-card peach">
+                            <div class="finding-title">Rising Prices</div>
+                            <div class="finding-desc">Yarn costs increasing due to raw material cost growth</div>
+                        </div>
+                    </div>
+
+                    <div class="pull-quote" style="background: linear-gradient(135deg, var(--yarn-sage), #7CB342);">
+                        <p>The knitting community in 2024 offers rich opportunities for engagement. The craft continues to evolve while honoring traditional techniques.</p>
+                        <cite>— Research Summary</cite>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sources -->
+            <section class="card" id="sources">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <div class="section-icon" style="background: linear-gradient(135deg, #78909C, #546E7A);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Sources (38 Total)</h2>
+                    <div class="collapse-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <div class="sources-list">
+                        <div class="source-item">
+                            <div class="source-num">1</div>
+                            <div class="source-content">
+                                <div class="source-title">"Our Top Knitting Trends For 2024: Patterns & Colours." Stitches and Cream, 2024.</div>
+                                <a href="https://www.stitchesandcream.co.uk/post/knitting-trends-for-2024" class="source-url" target="_blank">stitchesandcream.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="source-item">
+                            <div class="source-num">2</div>
+                            <div class="source-content">
+                                <div class="source-title">Winter, Susanna. "Fall 2024 and Winter 2025 Knitting Trends." Talvi Knits, 2024.</div>
+                                <a href="https://www.susannawinter.net/post/fall-2024-and-winter-2025-knitting-trends" class="source-url" target="_blank">susannawinter.net</a>
+                            </div>
+                        </div>
+                        <div class="source-item">
+                            <div class="source-num">5</div>
+                            <div class="source-content">
+                                <div class="source-title">"The Size of the Yarn Market: Yarn Consumer Survey Results 2024." Craft Industry Alliance.</div>
+                                <a href="https://craftindustryalliance.org/the-size-of-the-yarn-market-yarn-consumer-survey-results-2024/" class="source-url" target="_blank">craftindustryalliance.org</a>
+                            </div>
+                        </div>
+                        <div class="source-item">
+                            <div class="source-num">7</div>
+                            <div class="source-content">
+                                <div class="source-title">"TikTok Spring Trends 2024." WWD, 2024.</div>
+                                <a href="https://wwd.com/business-news/business-features/tiktok-spring-trends-2024-coquette-beauty-1236289723/" class="source-url" target="_blank">wwd.com</a>
+                            </div>
+                        </div>
+                        <div class="source-item">
+                            <div class="source-num">28</div>
+                            <div class="source-content">
+                                <div class="source-title">"Tom Daley wins Olympic medal, keeps knitting." NPR, July 2024.</div>
+                                <a href="https://www.npr.org/2024/07/29/nx-s1-5055677/tom-daley-olympics-2024-diving-knitting" class="source-url" target="_blank">npr.org</a>
+                            </div>
+                        </div>
+                        <div class="source-item">
+                            <div class="source-num">31</div>
+                            <div class="source-content">
+                                <div class="source-title">"How a ban on pro-Trump patterns unraveled the online knitting world." MIT Technology Review, 2020.</div>
+                                <a href="https://www.technologyreview.com/2020/03/06/905472/ravelry-ban-on-pro-trump-patterns-unraveled-the-online-knitting-world-censorship-free/" class="source-url" target="_blank">technologyreview.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 20px; font-size: 0.9rem; color: var(--text-medium);">View complete source list in <a href="sources.json" style="color: var(--yarn-blue);">sources.json</a></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Research compiled December 2024 &bull; 38 Sources &bull; 42 Verified Claims</p>
+        <p style="margin-top: 10px; opacity: 0.6;">For the most current information, consult primary sources directly.</p>
+    </footer>
+
+    <script>
+        // Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Collapsible Sections
+        function toggleSection(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.collapse-icon');
+
+            if (content.classList.contains('collapsed')) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.classList.remove('collapsed');
+                icon.classList.remove('collapsed');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                requestAnimationFrame(() => {
+                    content.classList.add('collapsed');
+                    icon.classList.add('collapsed');
+                });
+            }
+        }
+
+        // Initialize section heights
+        document.querySelectorAll('.section-content').forEach(content => {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const target = document.getElementById(targetId);
+
+                // Update active state
+                document.querySelectorAll('.nav-list a').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+
+                // Scroll to section
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Update active nav on scroll
+        const sections = document.querySelectorAll('section[id]');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-list a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Citation tooltips
+        const sources = {
+            1: { title: "Our Top Knitting Trends For 2024", url: "stitchesandcream.co.uk" },
+            2: { title: "Fall 2024 and Winter 2025 Knitting Trends", url: "susannawinter.net" },
+            5: { title: "Yarn Consumer Survey Results 2024", url: "craftindustryalliance.org" },
+            7: { title: "TikTok Spring Trends 2024", url: "wwd.com" },
+            28: { title: "Tom Daley Olympic knitting", url: "npr.org" }
+        };
+
+        document.querySelectorAll('.citation').forEach(cite => {
+            cite.addEventListener('mouseenter', function(e) {
+                const num = this.textContent;
+                const source = sources[num];
+                if (source) {
+                    const tooltip = document.getElementById('tooltip');
+                    tooltip.querySelector('.tooltip-title').textContent = source.title;
+                    tooltip.querySelector('.tooltip-url').textContent = source.url;
+                    tooltip.style.left = e.pageX + 10 + 'px';
+                    tooltip.style.top = e.pageY + 10 + 'px';
+                    tooltip.classList.add('visible');
+                }
+            });
+
+            cite.addEventListener('mouseleave', function() {
+                document.getElementById('tooltip').classList.remove('visible');
+            });
+        });
+    </script>
+</body>
+</html>
