@@ -229,9 +229,179 @@
       "date_accessed": "2025-12-13",
       "credibility": "HIGH",
       "topics": ["diversity", "inclusion", "industry_initiative"]
+    },
+    {
+      "id": "src_024",
+      "title": "The Fuzzy, Tangled Politics of Knitting",
+      "url": "https://www.newamerica.org/weekly/fuzzy-tangled-politics-knitting/",
+      "type": "analysis",
+      "author": "New America",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["politics", "community", "controversy"]
+    },
+    {
+      "id": "src_025",
+      "title": "How a ban on pro-Trump patterns unraveled the online knitting world",
+      "url": "https://www.technologyreview.com/2020/03/06/905472/ravelry-ban-on-pro-trump-patterns-unraveled-the-online-knitting-world-censorship-free/",
+      "type": "news",
+      "author": "MIT Technology Review",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["Ravelry", "politics", "controversy"]
+    },
+    {
+      "id": "src_026",
+      "title": "Ravelry, The Knitting Website, Bans Trump Talk And Patterns",
+      "url": "https://www.npr.org/2019/06/24/735460674/ravelry-the-knitting-website-bans-trump-talk-and-patterns",
+      "type": "news",
+      "author": "NPR",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["Ravelry", "politics", "controversy"]
+    },
+    {
+      "id": "src_027",
+      "title": "The all-out revolt against Knitting.com helps explain boycotts at Reddit and Etsy",
+      "url": "https://qz.com/knitting-ecomcrew-reddit-etsy-boycott-online-community-1850864449",
+      "type": "news",
+      "author": "Quartz",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["community", "controversy", "business"]
+    },
+    {
+      "id": "src_028",
+      "title": "A gripping yarn: inside the Knitting.com drama",
+      "url": "https://www.inverse.com/input/culture/knitting-com-ecomcrew-business-vs-community",
+      "type": "news",
+      "author": "Inverse/Input",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["community", "business", "controversy"]
+    },
+    {
+      "id": "src_029",
+      "title": "Tech Bros Dave Bryant and Mike Jackness Bought Knitting.com. It Didn't Go Well.",
+      "url": "https://www.thedailybeast.com/tech-bros-dave-bryant-and-mike-jackness-bought-knittingcom-it-didnt-go-well/",
+      "type": "news",
+      "author": "The Daily Beast",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["community", "business", "controversy"]
+    },
+    {
+      "id": "src_030",
+      "title": "The scandalous discourse of yarn Reddit (ICYMI Podcast)",
+      "url": "https://slate.com/podcasts/icymi/2024/03/the-scandalous-discourse-of-yarn-reddit",
+      "type": "podcast",
+      "author": "Slate",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["community", "Reddit", "drama", "controversy"]
+    },
+    {
+      "id": "src_031",
+      "title": "Kristy Glass and the Racism Drama Unraveling the Knitting World",
+      "url": "https://www.thedailybeast.com/kristy-glass-and-the-racism-drama-unraveling-the-knitting-world/",
+      "type": "news",
+      "author": "The Daily Beast",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["diversity", "controversy", "racism"]
+    },
+    {
+      "id": "src_032",
+      "title": "How the online knitting world unraveled over Israel and Gaza",
+      "url": "https://forward.com/news/764371/knitting-reddit-israel-jewish-gaza/",
+      "type": "news",
+      "author": "The Forward",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["community", "politics", "controversy"]
+    },
+    {
+      "id": "src_033",
+      "title": "knitting.com is capitalism and sexism at its worst",
+      "url": "https://indieuntangled.com/knitting-dot-com-is-capitalism-and-sexism/",
+      "type": "community_blog",
+      "author": "Indie Untangled",
+      "date_accessed": "2025-12-13",
+      "credibility": "COMMUNITY",
+      "topics": ["community", "business", "sexism"]
+    },
+    {
+      "id": "src_034",
+      "title": "r/craftsnark - Reddit Knitting Community",
+      "url": "https://www.reddit.com/r/craftsnark/",
+      "type": "community_forum",
+      "author": "Reddit Community",
+      "date_accessed": "2025-12-13",
+      "credibility": "COMMUNITY",
+      "topics": ["community", "opinions", "drama"]
+    },
+    {
+      "id": "src_035",
+      "title": "How Can We Ensure the Survival of the LYS",
+      "url": "https://cowgirlyarn.com/blogs/news/how-can-we-ensure-the-survival-of-the-lys",
+      "type": "industry_blog",
+      "author": "Cowgirl Yarn",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["LYS", "business", "community"]
+    },
+    {
+      "id": "src_036",
+      "title": "Local Yarn Store Day",
+      "url": "https://www.localyarnstoreday.com/",
+      "type": "official",
+      "author": "TNNA",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["LYS", "community", "events"]
+    },
+    {
+      "id": "src_037",
+      "title": "Subtly Subversive: Is Crochet Gen Z's Answer to Punk?",
+      "url": "https://www.exeterenigma.com/nonfiction/2024/2/3/subtly-subversive-is-crochet-gen-zs-answer-to-punk",
+      "type": "article",
+      "author": "Exeter Enigma",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["Gen_Z", "crochet", "culture"]
+    },
+    {
+      "id": "src_038",
+      "title": "How TikTok and knitfluencers are making knitting and crochet trendy and cool again",
+      "url": "https://www.bigissue.com/life/tiktok-knitting-crochet-gen-z-fashion/",
+      "type": "news",
+      "author": "Big Issue",
+      "date_accessed": "2025-12-13",
+      "credibility": "HIGH",
+      "topics": ["TikTok", "Gen_Z", "influencers", "trends"]
+    },
+    {
+      "id": "src_039",
+      "title": "Why Gen Z Has Become Obsessed With Cozy Hobbies",
+      "url": "https://www.pajiba.com/miscellaneous/why-gen-z-has-become-obsessed-with-cozy-hobbies.php",
+      "type": "analysis",
+      "author": "Pajiba",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["Gen_Z", "mental_health", "hobbies"]
+    },
+    {
+      "id": "src_040",
+      "title": "Knitting and Crochet Today: Statistics, Trends, and More",
+      "url": "https://blog.anthonythomas.com/knitting-and-crochet-today-statistics-trends-and-more",
+      "type": "analysis",
+      "author": "Anthony Thomas",
+      "date_accessed": "2025-12-13",
+      "credibility": "MEDIUM",
+      "topics": ["statistics", "trends", "demographics"]
     }
   ],
-  "total_sources": 23,
+  "total_sources": 40,
   "date_compiled": "2025-12-13",
-  "research_phase": "Collection 1"
+  "research_phase": "Collection 2 - Social/Community"
 }

@@ -107,9 +107,9 @@
     {
       "id": "claim_014",
       "category": "social_media",
-      "claim": "The hashtag #crochet has 13.9 billion views on TikTok",
+      "claim": "The hashtag #crochet has 13.9-15.5 billion views on TikTok",
       "confidence": "MEDIUM",
-      "sources": ["src_011"],
+      "sources": ["src_011", "src_038"],
       "date_verified": "2025-12-13"
     },
     {
@@ -319,15 +319,127 @@
       "confidence": "HIGH",
       "sources": ["src_001", "src_002"],
       "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_041",
+      "category": "controversy",
+      "claim": "Ravelry banned all pro-Trump patterns and content in June 2019, stating support for Trump administration is support for white supremacy",
+      "confidence": "HIGH",
+      "sources": ["src_025", "src_026"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_042",
+      "category": "controversy",
+      "claim": "Ravelry's Trump ban led to creation of alternative platforms like Freedom Knits and Fiberkind (18,000 members)",
+      "confidence": "HIGH",
+      "sources": ["src_025"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_043",
+      "category": "controversy",
+      "claim": "Knitting.com purchased for $80,000 by e-commerce entrepreneurs who called existing businesses 'grandmas with little blogs', sparking massive backlash",
+      "confidence": "HIGH",
+      "sources": ["src_027", "src_028", "src_029"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_044",
+      "category": "controversy",
+      "claim": "r/craftsnark Reddit community (~14,000 members) serves as a hub for knitting community gossip and drama",
+      "confidence": "MEDIUM",
+      "sources": ["src_030", "src_034"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_045",
+      "category": "controversy",
+      "claim": "Israel-Gaza tensions have caused community fragmentation, with r/JewishCrafts created as alternative space",
+      "confidence": "HIGH",
+      "sources": ["src_032"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_046",
+      "category": "business",
+      "claim": "In 2017, US yarn store count dropped below 1,000 (from 1,034 to 970) - losing 64 stores in one year",
+      "confidence": "HIGH",
+      "sources": ["src_035"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_047",
+      "category": "business",
+      "claim": "Local Yarn Store Day (LYS Day) established by TNNA, held annually (7th annual in 2024) to support brick-and-mortar shops",
+      "confidence": "HIGH",
+      "sources": ["src_036"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_048",
+      "category": "gen_z",
+      "claim": "Over 73% of crocheters are between ages 18-34 according to Crochet Penguin",
+      "confidence": "MEDIUM",
+      "sources": ["src_038"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_049",
+      "category": "gen_z",
+      "claim": "86% of Gen Z consider themselves hands-on creatives; 30% have taken an in-person arts and crafts class (Mintel 2024)",
+      "confidence": "HIGH",
+      "sources": ["src_038"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_050",
+      "category": "gen_z",
+      "claim": "TikTok helped make knitting 'cool and trendy again' after it was seen as 'uncool, outdated thing that only older ladies would do'",
+      "confidence": "HIGH",
+      "sources": ["src_038"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_051",
+      "category": "gen_z",
+      "claim": "Crochet aligned with cottagecore and grandmacore aesthetics, romanticizing pastoral lifestyle and vintage handmade garments",
+      "confidence": "HIGH",
+      "sources": ["src_037", "src_038"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_052",
+      "category": "demographics",
+      "claim": "Knit/crochet age ranges are fairly even: 34% ages 18-34, 36% ages 35-54, 30% ages 55+",
+      "confidence": "MEDIUM",
+      "sources": ["src_040"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_053",
+      "category": "demographics",
+      "claim": "71% of US adults took part in at least one crafting project in 2024 (Mintel survey of 2,000 adults)",
+      "confidence": "HIGH",
+      "sources": ["src_038"],
+      "date_verified": "2025-12-13"
+    },
+    {
+      "id": "claim_054",
+      "category": "community",
+      "claim": "Community concerns include acrylic vs natural wool debates, knitfluencers overcharging, designer pricing, and parasocial relationships",
+      "confidence": "MEDIUM",
+      "sources": ["src_030"],
+      "date_verified": "2025-12-13"
     }
   ],
-  "total_claims": 40,
+  "total_claims": 54,
   "confidence_summary": {
-    "HIGH": 28,
-    "MEDIUM": 10,
+    "HIGH": 38,
+    "MEDIUM": 14,
     "LOW": 2,
     "DISPUTED": 0
   },
   "date_compiled": "2025-12-13",
-  "research_phase": "Collection 1"
+  "research_phase": "Collection 2 - Social/Community"
 }
