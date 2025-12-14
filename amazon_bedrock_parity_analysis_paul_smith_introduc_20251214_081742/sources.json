@@ -1,0 +1,218 @@
+```json
+{
+  "sources": [
+    {
+      "id": "S001",
+      "title": "Amazon Bedrock models get FedRAMP High and DoD IL-4/5 approval in AWS GovCloud (US)",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2025/05/amazon-bedrock-models-fedramp-high-dod-il-4-5-govcloud/",
+      "type": "official",
+      "publisher": "AWS",
+      "date": "2025-05-23",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S002",
+      "title": "Claude in Amazon Bedrock - FedRAMP High Approved",
+      "url": "https://www.anthropic.com/news/claude-in-amazon-bedrock-fedramp-high",
+      "type": "official",
+      "publisher": "Anthropic",
+      "date": "2025-06-11",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S003",
+      "title": "Amazon Bedrock Security, Privacy, and Responsible AI",
+      "url": "https://aws.amazon.com/bedrock/security-privacy-responsible-ai/",
+      "type": "official",
+      "publisher": "AWS",
+      "date": "2024",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S004",
+      "title": "Amazon Bedrock Security and Compliance",
+      "url": "https://aws.amazon.com/bedrock/security-compliance/",
+      "type": "official",
+      "publisher": "AWS",
+      "date": "2024",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S005",
+      "title": "Amazon Bedrock Guardrails",
+      "url": "https://aws.amazon.com/bedrock/guardrails/",
+      "type": "official",
+      "publisher": "AWS",
+      "date": "2024",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S006",
+      "title": "Protect your data using Amazon VPC and AWS PrivateLink - Amazon Bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/usingVPC.html",
+      "type": "documentation",
+      "publisher": "AWS",
+      "date": "2024",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S007",
+      "title": "Anthropic Trust Center",
+      "url": "https://trust.anthropic.com/",
+      "type": "official",
+      "publisher": "Anthropic",
+      "date": "2024",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S008",
+      "title": "Anthropic Privacy Center - SOC 2 and HIPAA Certifications",
+      "url": "https://privacy.anthropic.com/en/articles/10015870-do-you-have-a-soc-2-or-hipaa-certifications",
+      "type": "official",
+      "publisher": "Anthropic",
+      "date": "2024",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S009",
+      "title": "FedRAMP Authorization: Process, Timeline, and Costs",
+      "url": "https://secureframe.com/hub/fedramp/authorization",
+      "type": "industry",
+      "publisher": "Secureframe",
+      "date": "2024",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S010",
+      "title": "DoD Impact Level 5 (IL5) - Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-dod-il5",
+      "type": "documentation",
+      "publisher": "Microsoft",
+      "date": "2024",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S011",
+      "title": "What Is IL5 Certification? | Akamai",
+      "url": "https://www.akamai.com/glossary/what-is-il5",
+      "type": "industry",
+      "publisher": "Akamai",
+      "date": "2024",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S012",
+      "title": "Azure OpenAI Service FedRAMP High Authorization",
+      "url": "https://devblogs.microsoft.com/azuregov/azure-openai-fedramp-high-for-government/",
+      "type": "official",
+      "publisher": "Microsoft",
+      "date": "2024-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S013",
+      "title": "Anthropic API vs. AWS Bedrock for Claude Model usage",
+      "url": "https://medium.com/@joohan224/anthropic-api-vs-aws-bedrock-for-claude-model-usage-0f37acd0a588",
+      "type": "analysis",
+      "publisher": "Medium",
+      "date": "2025-10",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S014",
+      "title": "Claude API vs Amazon Bedrock pricing structure",
+      "url": "https://4idiotz.com/tech/artificial-intelligence/claude-api-vs-amazon-bedrock-pricing-structure/",
+      "type": "analysis",
+      "publisher": "4idiotz",
+      "date": "2024",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S015",
+      "title": "AWS GovCloud (US) - DoD SRG",
+      "url": "https://aws.amazon.com/govcloud-us/dodsrg/",
+      "type": "official",
+      "publisher": "AWS",
+      "date": "2024",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S016",
+      "title": "Amazon Bedrock faces revamp pressure amid rising enterprise demands",
+      "url": "https://www.infoworld.com/article/4008135/amazon-bedrock-faces-revamp-pressure-amid-rising-enterprise-demands.html",
+      "type": "industry_analysis",
+      "publisher": "InfoWorld",
+      "date": "2024",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S017",
+      "title": "Hacker News: Amazon Nova Discussion (Bedrock Pricing)",
+      "url": "https://news.ycombinator.com/item?id=42309121",
+      "type": "community",
+      "publisher": "Hacker News",
+      "date": "2024-12",
+      "reliability": "LOW"
+    },
+    {
+      "id": "S018",
+      "title": "AWS Bedrock Reviews 2025 - G2",
+      "url": "https://www.g2.com/products/aws-bedrock/reviews",
+      "type": "community",
+      "publisher": "G2",
+      "date": "2024-2025",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S019",
+      "title": "Our Honest Review of Amazon Bedrock (2024)",
+      "url": "https://www.theneuron.ai/tools/amazon-bedrock",
+      "type": "industry_review",
+      "publisher": "The Neuron",
+      "date": "2024",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S020",
+      "title": "Claude Pricing: A 2025 Guide To Anthropic AI Costs",
+      "url": "https://www.cloudzero.com/blog/claude-pricing/",
+      "type": "industry",
+      "publisher": "CloudZero",
+      "date": "2025",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S021",
+      "title": "Hacker News: Amazon to invest another $4B in Anthropic",
+      "url": "https://news.ycombinator.com/item?id=42215126",
+      "type": "community",
+      "publisher": "Hacker News",
+      "date": "2024-12",
+      "reliability": "LOW"
+    },
+    {
+      "id": "S022",
+      "title": "What Are the Amazon Bedrock Development Challenges?",
+      "url": "https://www.cloudapper.ai/ai-technology/what-are-the-amazon-bedrock-development-challenges/",
+      "type": "industry",
+      "publisher": "CloudApper",
+      "date": "2024",
+      "reliability": "MEDIUM"
+    }
+  ],
+  "metadata": {
+    "created": "2024-12-14",
+    "updated": "2024-12-14",
+    "topic": "Amazon Bedrock Parity Analysis",
+    "status": "research_in_progress",
+    "total_sources": 22,
+    "source_breakdown": {
+      "official": 9,
+      "documentation": 2,
+      "industry": 6,
+      "community": 3,
+      "analysis": 2
+    }
+  }
+}
+```
