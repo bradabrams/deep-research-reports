@@ -6,7 +6,8 @@
       "claim": "Amazon Bedrock achieved FedRAMP High authorization in AWS GovCloud (US-West) Region in August 2024",
       "source_ids": ["S003"],
       "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "Confirmed via multiple AWS official sources. No counter-evidence found."
     },
     {
       "id": "C002",
@@ -14,7 +15,8 @@
       "claim": "Claude 3.5 Sonnet v1 and Claude 3 Haiku achieved FedRAMP High and DoD IL4/5 approval in Amazon Bedrock GovCloud in June 2025",
       "source_ids": ["S001", "S002"],
       "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "Confirmed by both AWS and Anthropic official announcements."
     },
     {
       "id": "C003",
@@ -22,7 +24,8 @@
       "claim": "AWS is the first cloud provider to achieve FedRAMP High and DoD IL4/5 authorization for Anthropic's Claude and Meta's Llama models",
       "source_ids": ["S001"],
       "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "AWS claim; GCP Vertex AI has FedRAMP High + IL2 but not IL4/5 for Claude."
     },
     {
       "id": "C004",
@@ -30,8 +33,8 @@
       "claim": "Anthropic direct API provides immediate access to new features, while Bedrock historically had 6-8 week feature cycles with staggered model support",
       "source_ids": ["S004"],
       "confidence": "MEDIUM",
-      "verification_status": "partially_confirmed",
-      "notes": "Recent releases (Claude 4.x) appear to have simultaneous availability"
+      "verification_status": "PARTIALLY_VERIFIED",
+      "verification_notes": "Recent releases (Claude 4.x) are near-simultaneous, but Bedrock has documented model configuration bugs (incorrect self-identification, wrong knowledge cutoffs)."
     },
     {
       "id": "C005",
@@ -39,24 +42,26 @@
       "claim": "Claude Opus 4 and Sonnet 4 were made generally available in Amazon Bedrock simultaneously with Anthropic's own platform",
       "source_ids": ["S010", "S011"],
       "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "Confirmed by AWS announcements."
     },
     {
       "id": "C006",
       "category": "pricing",
       "claim": "Direct Claude API access saves 15-22% versus Bedrock pricing, but loses AWS integration benefits",
       "source_ids": ["S004", "S008"],
-      "confidence": "MEDIUM",
-      "verification_status": "partially_confirmed",
-      "notes": "Varies by usage volume; at scale (10M+ tokens), Bedrock offers volume discounts"
+      "confidence": "LOW",
+      "verification_status": "DISPUTED",
+      "verification_notes": "Base token pricing is ALIGNED between platforms. The 15-22% savings claim is not supported by official pricing. However, Bedrock has a 10% regional endpoint premium for Claude 4.5+ and additional AWS infrastructure costs."
     },
     {
       "id": "C007",
       "category": "pricing",
       "claim": "At 5M tokens/month, Bedrock becomes 12-18% cheaper than direct API due to volume discounts",
       "source_ids": ["S008"],
-      "confidence": "MEDIUM",
-      "verification_status": "claimed"
+      "confidence": "LOW",
+      "verification_status": "UNVERIFIED",
+      "verification_notes": "Single source claim. Base pricing is aligned; savings would come from AWS EDP credits or provisioned throughput, not inherent platform pricing."
     },
     {
       "id": "C008",
@@ -64,15 +69,17 @@
       "claim": "Bedrock batch inference offers up to 50% lower costs compared to on-demand pricing",
       "source_ids": ["S007"],
       "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "Official AWS pricing documentation."
     },
     {
       "id": "C009",
       "category": "security_features",
       "claim": "Bedrock Guardrails blocks up to 88% of harmful content with 99% accuracy in validation explanations",
       "source_ids": ["S006"],
-      "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "confidence": "MEDIUM",
+      "verification_status": "UNVERIFIED_INDEPENDENTLY",
+      "verification_notes": "AWS official claim. No independent third-party verification found. AWS acknowledges limitations including prompt injection vulnerability."
     },
     {
       "id": "C010",
@@ -80,7 +87,8 @@
       "claim": "Bedrock Guardrails provides six configurable safeguards: content moderation, prompt attack detection, topic classification, PII redaction, contextual grounding, and automated reasoning checks",
       "source_ids": ["S006", "S013"],
       "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "Confirmed across multiple sources including AWS documentation."
     },
     {
       "id": "C011",
@@ -88,7 +96,8 @@
       "claim": "Bedrock Guardrails' ApplyGuardrail API works across Bedrock models, self-hosted models, and third-party providers (OpenAI, Google Gemini)",
       "source_ids": ["S006"],
       "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "Official AWS documentation."
     },
     {
       "id": "C012",
@@ -96,24 +105,26 @@
       "claim": "Bedrock provides native VPC integration, AWS PrivateLink support, IAM-based authentication, and CloudWatch monitoring out of the box",
       "source_ids": ["S004", "S012"],
       "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "Widely documented AWS feature."
     },
     {
       "id": "C013",
       "category": "limitations",
       "claim": "Bedrock lacks CloudFormation support for many resources, requiring 'ClickOps' through AWS Console",
       "source_ids": ["S009"],
-      "confidence": "MEDIUM",
-      "verification_status": "claimed",
-      "notes": "May have improved since publication"
+      "confidence": "LOW",
+      "verification_status": "OUTDATED",
+      "verification_notes": "From early 2024. CloudFormation support has since been added for many Bedrock resources."
     },
     {
       "id": "C014",
       "category": "limitations",
       "claim": "Bedrock lacks higher-level tools for agent orchestration, RAG, and workflow automation compared to Azure AI Foundry and Vertex AI Agent Builder",
       "source_ids": ["S005"],
-      "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "confidence": "MEDIUM",
+      "verification_status": "PARTIALLY_VERIFIED",
+      "verification_notes": "InfoWorld analysis. AWS has since launched AgentCore and improved Bedrock Agents, but criticism about fragmentation remains valid."
     },
     {
       "id": "C015",
@@ -121,15 +132,17 @@
       "claim": "Enterprises cannot access OpenAI models through Bedrock, requiring separate API integration with data egress fees and latency overhead",
       "source_ids": ["S005"],
       "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "OpenAI models remain exclusively on Azure, not AWS Bedrock."
     },
     {
       "id": "C016",
       "category": "limitations",
       "claim": "AWS Strands Agents SDK lacks native Bedrock integration, creating fragmented platform experience",
       "source_ids": ["S005"],
-      "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "confidence": "MEDIUM",
+      "verification_status": "PARTIALLY_VERIFIED",
+      "verification_notes": "Platform fragmentation is acknowledged, though AWS is actively working on integration improvements."
     },
     {
       "id": "C017",
@@ -137,7 +150,8 @@
       "claim": "Initial Bedrock setup requires understanding IAM permissions, service quotas, VPC networking, and Bedrock-specific API formats - what takes 5 minutes with Anthropic API can take an afternoon with Bedrock",
       "source_ids": ["S004"],
       "confidence": "MEDIUM",
-      "verification_status": "claimed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "Consistent feedback across community sources. AWS has added API Keys feature to simplify auth, but overall complexity remains higher."
     },
     {
       "id": "C018",
@@ -145,7 +159,8 @@
       "claim": "Claude Sonnet 4 and 4.5 support 1M token context window on Amazon Bedrock (beta/preview)",
       "source_ids": ["S010", "S011"],
       "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "Official AWS documentation."
     },
     {
       "id": "C019",
@@ -153,7 +168,8 @@
       "claim": "DoD IL4/5 and FedRAMP High represent the highest levels of cloud security certification for unclassified and controlled unclassified information",
       "source_ids": ["S001", "S002"],
       "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "Industry standard definition."
     },
     {
       "id": "C020",
@@ -161,7 +177,8 @@
       "claim": "Companies using Bedrock Guardrails include Chime Financial, KONE, PwC, Strava, and Remitly",
       "source_ids": ["S006"],
       "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "Official AWS customer references."
     },
     {
       "id": "C021",
@@ -169,7 +186,7 @@
       "claim": "G2 enterprise reviewers rate AWS Bedrock 4/5 stars, praising ease of embeddings creation and model variety, but citing high costs (18 mentions) and complexity for newcomers (6 mentions) as primary concerns",
       "source_ids": ["S017"],
       "confidence": "COMMUNITY",
-      "verification_status": "community_reported"
+      "verification_status": "COMMUNITY_REPORTED"
     },
     {
       "id": "C022",
@@ -177,7 +194,7 @@
       "claim": "Developers report intermittent latency issues with Bedrock - same requests sometimes complete in under 10 seconds but occasionally timeout after 1+ minute, suggesting server-side inconsistencies",
       "source_ids": ["S019", "S023"],
       "confidence": "COMMUNITY",
-      "verification_status": "community_reported"
+      "verification_status": "COMMUNITY_REPORTED"
     },
     {
       "id": "C023",
@@ -185,7 +202,8 @@
       "claim": "Large prompt requests (>10K tokens) with AWS Java SDK experience 45+ second latencies or 2-minute timeouts, requiring socketTimeout increases to 480 seconds",
       "source_ids": ["S023", "S022"],
       "confidence": "MEDIUM",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "Documented in AWS knowledge base articles with recommended workarounds."
     },
     {
       "id": "C024",
@@ -193,7 +211,7 @@
       "claim": "Bedrock Knowledge Base has a hard limit of 50 knowledge bases per account per region, problematic for multi-tenant enterprise scenarios",
       "source_ids": ["S020"],
       "confidence": "COMMUNITY",
-      "verification_status": "community_reported"
+      "verification_status": "COMMUNITY_REPORTED"
     },
     {
       "id": "C025",
@@ -201,7 +219,7 @@
       "claim": "Bedrock Knowledge Base evaluation jobs can fail silently with 'No failure reason available', creating debugging challenges",
       "source_ids": ["S021"],
       "confidence": "COMMUNITY",
-      "verification_status": "community_reported"
+      "verification_status": "COMMUNITY_REPORTED"
     },
     {
       "id": "C026",
@@ -209,7 +227,7 @@
       "claim": "HackerNews discussion (2023) showed lukewarm developer sentiment toward Bedrock GA, with concerns about feature gaps vs marketing claims (e.g., Llama 2 listed as 'coming soon' despite being advertised)",
       "source_ids": ["S015"],
       "confidence": "COMMUNITY",
-      "verification_status": "community_reported"
+      "verification_status": "COMMUNITY_REPORTED"
     },
     {
       "id": "C027",
@@ -217,7 +235,8 @@
       "claim": "GitHub (Microsoft entity) chose Amazon Bedrock to run Claude, demonstrating enterprise cross-cloud adoption patterns",
       "source_ids": ["S016"],
       "confidence": "HIGH",
-      "verification_status": "confirmed"
+      "verification_status": "VERIFIED",
+      "verification_notes": "Widely reported announcement."
     },
     {
       "id": "C028",
@@ -225,7 +244,7 @@
       "claim": "Gartner Peer Insights reviewers describe Bedrock as 'powerful but not super user intuitive' for RAG applications, though praising smooth transition for existing AWS ecosystem users",
       "source_ids": ["S018"],
       "confidence": "COMMUNITY",
-      "verification_status": "community_reported"
+      "verification_status": "COMMUNITY_REPORTED"
     },
     {
       "id": "C029",
@@ -233,7 +252,7 @@
       "claim": "Bedrock throttling exceptions are triggered easily, requiring service quota increase requests which add administrative overhead",
       "source_ids": ["S021"],
       "confidence": "COMMUNITY",
-      "verification_status": "community_reported"
+      "verification_status": "COMMUNITY_REPORTED"
     },
     {
       "id": "C030",
@@ -241,17 +260,44 @@
       "claim": "Some practitioners recommend bypassing Bedrock Knowledge Base entirely and implementing custom RAG with S3 + Lambda + vector DB to avoid quota limits and gain full control",
       "source_ids": ["S021"],
       "confidence": "COMMUNITY",
-      "verification_status": "community_reported"
+      "verification_status": "COMMUNITY_REPORTED"
+    },
+    {
+      "id": "C031",
+      "category": "compliance",
+      "claim": "Anthropic's direct API has SOC 2 Type II, HIPAA (with BAA), and ISO 27001:2022 certifications, but NOT FedRAMP - FedRAMP access requires Bedrock or Vertex AI",
+      "source_ids": ["S002"],
+      "confidence": "HIGH",
+      "verification_status": "VERIFIED",
+      "verification_notes": "Confirmed via Anthropic Trust Portal. This is a PRIMARY forcing function for government customers."
+    },
+    {
+      "id": "C032",
+      "category": "limitations",
+      "claim": "Claude models on Bedrock have exhibited configuration bugs where they misidentify themselves as older versions (e.g., Claude 4.5 reporting as Claude 3.5) with incorrect knowledge cutoffs",
+      "source_ids": ["S019"],
+      "confidence": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "verification_notes": "Multiple AWS re:Post reports confirm this issue. Does not occur on direct Anthropic API."
     }
   ],
   "last_updated": "2024-12-14",
-  "status": "active_research",
-  "total_claims": 30,
+  "status": "verified",
+  "total_claims": 32,
   "confidence_summary": {
-    "HIGH": 15,
-    "MEDIUM": 5,
-    "LOW": 0,
-    "COMMUNITY": 10,
+    "HIGH": 16,
+    "MEDIUM": 6,
+    "LOW": 3,
+    "COMMUNITY": 7,
     "DISPUTED": 0
+  },
+  "verification_summary": {
+    "VERIFIED": 17,
+    "PARTIALLY_VERIFIED": 3,
+    "UNVERIFIED_INDEPENDENTLY": 1,
+    "COMMUNITY_REPORTED": 8,
+    "DISPUTED": 1,
+    "OUTDATED": 1,
+    "UNVERIFIED": 1
   }
 }
