@@ -1,5 +1,253 @@
 {
-  "claims": [],
+  "claims": [
+    {
+      "id": 1,
+      "category": "Color Trends",
+      "claim": "Blue is the standout color for 2024, replacing hot pink from 2023",
+      "confidence": "HIGH",
+      "sources": [1, 2, 3],
+      "notes": "Multiple sources confirm blue as dominant color, often paired with white for colorwork"
+    },
+    {
+      "id": 2,
+      "category": "Pattern Trends",
+      "claim": "Cardigans are the most popular garment type in 2024, especially longer lengths",
+      "confidence": "HIGH",
+      "sources": [1, 2, 3],
+      "notes": "From delicate lacy options to librarian style, cardigans dominate"
+    },
+    {
+      "id": 3,
+      "category": "Techniques",
+      "claim": "Fair Isle colorwork continues strong trend from 2023 into 2024",
+      "confidence": "HIGH",
+      "sources": [1, 2, 3],
+      "notes": "Large colorwork designs especially popular for fall"
+    },
+    {
+      "id": 4,
+      "category": "Techniques",
+      "claim": "European Shoulder Construction trending in modern Scandi designs",
+      "confidence": "MEDIUM",
+      "sources": [2],
+      "notes": "Shoulder seam shifted towards back, popular in Scandinavian patterns"
+    },
+    {
+      "id": 5,
+      "category": "Techniques",
+      "claim": "Textured knitting (Aran, brioche) is a major 2024 trend",
+      "confidence": "HIGH",
+      "sources": [1, 2, 3, 24],
+      "notes": "Thick raised patterns add depth and rich look"
+    },
+    {
+      "id": 6,
+      "category": "Yarn Trends",
+      "claim": "Fuzzy yarns with lace patterns creating halo effects are trending",
+      "confidence": "MEDIUM",
+      "sources": [2, 3],
+      "notes": "Ethereal look when combined with openwork lace"
+    },
+    {
+      "id": 7,
+      "category": "Techniques",
+      "claim": "Marling (pairing two contrasting colors for heathered look) is popular",
+      "confidence": "MEDIUM",
+      "sources": [2],
+      "notes": "Common with self-striping sock yarn and solids"
+    },
+    {
+      "id": 8,
+      "category": "Style Trends",
+      "claim": "Nautical/preppy style with chunky cables and bold stripes is trending",
+      "confidence": "MEDIUM",
+      "sources": [2, 7],
+      "notes": "Influenced by Miu Miu fashion and sports-luxe aesthetic"
+    },
+    {
+      "id": 9,
+      "category": "Demographics",
+      "claim": "71-98% of knitters/yarn consumers are female",
+      "confidence": "HIGH",
+      "sources": [4, 5, 6],
+      "notes": "Different surveys show range from 71% to 98% female"
+    },
+    {
+      "id": 10,
+      "category": "Demographics",
+      "claim": "Average age of yarn consumers is 58 years old (2024 survey)",
+      "confidence": "HIGH",
+      "sources": [5],
+      "notes": "Based on 7,000+ respondent survey in 2024"
+    },
+    {
+      "id": 11,
+      "category": "Demographics",
+      "claim": "Age distribution is fairly even: 34% aged 18-34, 36% aged 35-54, 30% aged 55+",
+      "confidence": "MEDIUM",
+      "sources": [4, 6],
+      "notes": "Shows broad appeal across age groups"
+    },
+    {
+      "id": 12,
+      "category": "Market",
+      "claim": "Global knitting yarn market valued at $4.7 billion in 2024, projected to reach $7.11 billion by 2033",
+      "confidence": "HIGH",
+      "sources": [8, 25],
+      "notes": "CAGR of 4.5% projected"
+    },
+    {
+      "id": 13,
+      "category": "Market",
+      "claim": "Knitting and crochet market to grow by $10.69 billion from 2024-2028",
+      "confidence": "HIGH",
+      "sources": [8],
+      "notes": "CAGR of 6.4% from Technavio report"
+    },
+    {
+      "id": 14,
+      "category": "Pandemic Impact",
+      "claim": "COVID-19 pandemic caused 646% sales surge at some retailers (Swiss Galaxus)",
+      "confidence": "HIGH",
+      "sources": [4],
+      "notes": "Lion Brand reported 80% increase, We Are Knitters 75%"
+    },
+    {
+      "id": 15,
+      "category": "Pandemic Impact",
+      "claim": "Long-term interest has declined from 2015 peak, with pandemic providing temporary spike",
+      "confidence": "MEDIUM",
+      "sources": [4],
+      "notes": "Google search trends show 15-year decline overall"
+    },
+    {
+      "id": 16,
+      "category": "Shopping Behavior",
+      "claim": "56% of yarn consumers buy more online now than last year",
+      "confidence": "HIGH",
+      "sources": [5],
+      "notes": "Pandemic shopping changes still present"
+    },
+    {
+      "id": 17,
+      "category": "Digital",
+      "claim": "74% of knitters use Ravelry platform",
+      "confidence": "HIGH",
+      "sources": [4],
+      "notes": "Ravelry remains dominant community platform"
+    },
+    {
+      "id": 18,
+      "category": "Digital",
+      "claim": "23 million+ Instagram posts with #knitting hashtag",
+      "confidence": "MEDIUM",
+      "sources": [4],
+      "notes": "Shows strong social media presence"
+    },
+    {
+      "id": 19,
+      "category": "Social Media",
+      "claim": "Knitting identified as Spring 2024 TikTok trend alongside coquette bows",
+      "confidence": "MEDIUM",
+      "sources": [7],
+      "notes": "Part of broader hands-on crafting revival on social media"
+    },
+    {
+      "id": 20,
+      "category": "Sustainability",
+      "claim": "DIY and sustainable materials drive 58% of demand, especially among ages 18-34",
+      "confidence": "HIGH",
+      "sources": [8, 9, 10, 11],
+      "notes": "Younger consumers prioritize eco-friendly options"
+    },
+    {
+      "id": 21,
+      "category": "Sustainability",
+      "claim": "Recycled yarn options growing: Knitting for Olive No Waste Wool, Rowan Cotton Revive",
+      "confidence": "HIGH",
+      "sources": [9, 10, 11],
+      "notes": "50% recycled wool blends, regenerated cotton fibers"
+    },
+    {
+      "id": 22,
+      "category": "Economics",
+      "claim": "Indie dyers make approximately $2 profit per skein",
+      "confidence": "MEDIUM",
+      "sources": [13],
+      "notes": "Profitability challenges in indie dyer market"
+    },
+    {
+      "id": 23,
+      "category": "Economics",
+      "claim": "Cotton prices increased from 47.55 cents/lb (2020) to 117.87 cents/lb (2024)",
+      "confidence": "HIGH",
+      "sources": [14],
+      "notes": "Raw material cost increases driving yarn prices"
+    },
+    {
+      "id": 24,
+      "category": "Economics",
+      "claim": "Australian merino wool prices up 56% since 2016, reaching ~$14/kg",
+      "confidence": "MEDIUM",
+      "sources": [14],
+      "notes": "Australia produces most merino wool globally"
+    },
+    {
+      "id": 25,
+      "category": "Size Inclusivity",
+      "claim": "Size-inclusive patterns now expected to go to at least 5X or 60\" bust",
+      "confidence": "HIGH",
+      "sources": [20, 21],
+      "notes": "Industry standard has evolved, some go to 70\""
+    },
+    {
+      "id": 26,
+      "category": "Technology",
+      "claim": "KnitCompanion app rated 4.7/5 with subscription at $9.99/year",
+      "confidence": "HIGH",
+      "sources": [22],
+      "notes": "Updated September 2024, popular pattern tracking app"
+    },
+    {
+      "id": 27,
+      "category": "Technology",
+      "claim": "Over 60% of hobbyists rely on online tutorials, mobile apps, and e-learning",
+      "confidence": "HIGH",
+      "sources": [8],
+      "notes": "Digital learning transformed knitting education"
+    },
+    {
+      "id": 28,
+      "category": "Community",
+      "claim": "Local Yarn Store Day 2024 held April 27th",
+      "confidence": "HIGH",
+      "sources": [19],
+      "notes": "Annual celebration supporting brick-and-mortar yarn shops"
+    },
+    {
+      "id": 29,
+      "category": "Activism",
+      "claim": "Craftivism continues as political expression through knitting",
+      "confidence": "HIGH",
+      "sources": [18],
+      "notes": "Examples: Social Justice Sewing Academy, Knitting Nannas Against Gas"
+    },
+    {
+      "id": 30,
+      "category": "Patterns",
+      "claim": "Patchwork-inspired knitting making comeback, influenced by upcycled fashion",
+      "confidence": "MEDIUM",
+      "sources": [1, 3],
+      "notes": "Eco-friendly, budget-conscious using leftover yarn"
+    }
+  ],
   "last_updated": "2024-12-14",
-  "status": "initialized"
+  "total_claims": 30,
+  "confidence_summary": {
+    "HIGH": 18,
+    "MEDIUM": 12,
+    "LOW": 0,
+    "DISPUTED": 0
+  },
+  "status": "iteration_1_complete"
 }

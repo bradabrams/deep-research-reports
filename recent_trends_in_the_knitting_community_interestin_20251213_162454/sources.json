@@ -1,5 +1,207 @@
 {
-  "sources": [],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Our Top Knitting Trends For 2024: Patterns & Colours",
+      "url": "https://www.stitchesandcream.co.uk/post/knitting-trends-for-2024",
+      "type": "blog",
+      "accessed": "2024-12-14",
+      "topics": ["trends", "colors", "patterns"]
+    },
+    {
+      "id": 2,
+      "title": "Fall 2024 and Winter 2025 Knitting Trends",
+      "url": "https://www.susannawinter.net/post/fall-2024-and-winter-2025-knitting-trends",
+      "type": "blog",
+      "accessed": "2024-12-14",
+      "topics": ["trends", "techniques", "seasonal"]
+    },
+    {
+      "id": 3,
+      "title": "Knitting Techniques and Trends for 2024 – CamelliaYarns",
+      "url": "https://www.camelliayarns.com/en-eu/blogs/news/knitting-techniques-and-trends-for-2024",
+      "type": "blog",
+      "accessed": "2024-12-14",
+      "topics": ["techniques", "trends"]
+    },
+    {
+      "id": 4,
+      "title": "Knitting Statistics & Data: How Many People Knit",
+      "url": "https://knitlikegranny.com/knitting-statistics/",
+      "type": "statistics",
+      "accessed": "2024-12-14",
+      "topics": ["demographics", "market", "statistics"]
+    },
+    {
+      "id": 5,
+      "title": "The Size of the Yarn Market: Yarn Consumer Survey Results 2024",
+      "url": "https://craftindustryalliance.org/the-size-of-the-yarn-market-yarn-consumer-survey-results-2024/",
+      "type": "industry report",
+      "accessed": "2024-12-14",
+      "topics": ["market", "demographics", "consumer behavior"]
+    },
+    {
+      "id": 6,
+      "title": "15 Surprising & Interesting Knitting Statistics 2024",
+      "url": "https://thecreativeshour.com/knitting-statistics/",
+      "type": "statistics",
+      "accessed": "2024-12-14",
+      "topics": ["statistics", "demographics"]
+    },
+    {
+      "id": 7,
+      "title": "TikTok Spring Trends 2024 - WWD",
+      "url": "https://wwd.com/business-news/business-features/tiktok-spring-trends-2024-coquette-beauty-1236289723/",
+      "type": "news",
+      "accessed": "2024-12-14",
+      "topics": ["social media", "TikTok", "trends"]
+    },
+    {
+      "id": 8,
+      "title": "Knitting and Crochet Market to Grow by USD 10.69 Billion - Technavio",
+      "url": "https://www.prnewswire.com/news-releases/knitting-and-crochet-market-to-grow-by-usd-10-69-billion-2024-2028-driven-by-training-and-employment-initiatives-report-highlights-ai-impact-on-market-trends---technavio-302357358.html",
+      "type": "market report",
+      "accessed": "2024-12-14",
+      "topics": ["market growth", "forecasts"]
+    },
+    {
+      "id": 9,
+      "title": "7 Sustainable Yarn Brands Knitting You An Eco-Friendly Future",
+      "url": "https://www.sustainablejungle.com/sustainable-yarn/",
+      "type": "guide",
+      "accessed": "2024-12-14",
+      "topics": ["sustainability", "eco-friendly", "yarn brands"]
+    },
+    {
+      "id": 10,
+      "title": "Knitting for Olive No Waste Wool",
+      "url": "https://knittingforolive.com/collections/knitting-for-olive-no-waste-wool",
+      "type": "product",
+      "accessed": "2024-12-14",
+      "topics": ["sustainable yarn", "recycled"]
+    },
+    {
+      "id": 11,
+      "title": "Top Eco Yarn Swaps of 2024",
+      "url": "https://thecraftytherapist.com/2024/12/31/top-eco-yarn-swaps-of-2024-for-more-sustainable-crochet/",
+      "type": "blog",
+      "accessed": "2024-12-14",
+      "topics": ["sustainability", "eco-friendly yarn"]
+    },
+    {
+      "id": 12,
+      "title": "Top 10 Indie Yarn Dyers 2024 - Arcane Fibre Works",
+      "url": "https://arcanefibreworks.ca/blogs/fibre-for-thought/top-10-indie-yarn-dyers-you-need-to-see-in-2024",
+      "type": "blog",
+      "accessed": "2024-12-14",
+      "topics": ["indie dyers", "small business"]
+    },
+    {
+      "id": 13,
+      "title": "How Much Money Indie Dyers Make",
+      "url": "https://henliahandmade.com/how-much-money-indie-dyers-make/",
+      "type": "blog",
+      "accessed": "2024-12-14",
+      "topics": ["indie dyers", "business economics"]
+    },
+    {
+      "id": 14,
+      "title": "Understanding Why Yarn is Getting Expensive",
+      "url": "https://www.kheyo.com/understanding-why-is-yarn-getting-expensive-factors-behind-the-rising-costs/",
+      "type": "article",
+      "accessed": "2024-12-14",
+      "topics": ["pricing", "supply chain", "inflation"]
+    },
+    {
+      "id": 15,
+      "title": "Does Yarn Cost Too Much? - Sandi Rosner",
+      "url": "https://sandirosner.substack.com/p/does-yarn-cost-too-much",
+      "type": "newsletter",
+      "accessed": "2024-12-14",
+      "topics": ["pricing", "economics"]
+    },
+    {
+      "id": 16,
+      "title": "Festivals and Fiber Events 2024",
+      "url": "https://livingdreamsfiberandyarn.com/2024/01/25/festivals-and-fiber-events-to-attend-this-year/",
+      "type": "guide",
+      "accessed": "2024-12-14",
+      "topics": ["fiber festivals", "events"]
+    },
+    {
+      "id": 17,
+      "title": "2024 U.S. Fiber Arts Festivals - Thatched Roof Cottage",
+      "url": "https://thatchedroofcottage.com/blogs/artisans-nook/2024-fiber-arts-festivals",
+      "type": "guide",
+      "accessed": "2024-12-14",
+      "topics": ["festivals", "events"]
+    },
+    {
+      "id": 18,
+      "title": "Craftivism: Empowerment, Resistance, and Activism Through History",
+      "url": "https://morningcrafter.com/blog-posts/craftivism-through-history/",
+      "type": "article",
+      "accessed": "2024-12-14",
+      "topics": ["activism", "social justice", "craftivism"]
+    },
+    {
+      "id": 19,
+      "title": "Local Yarn Store Day 2024",
+      "url": "https://www.localyarnstoreday.com/",
+      "type": "official",
+      "accessed": "2024-12-14",
+      "topics": ["LYS", "retail", "community"]
+    },
+    {
+      "id": 20,
+      "title": "Knitting Should Be Size Inclusive - YarnMeUp",
+      "url": "https://www.yarnmeup.com/en/post/knitting-should-be-size-inclusive",
+      "type": "article",
+      "accessed": "2024-12-14",
+      "topics": ["size inclusivity", "diversity"]
+    },
+    {
+      "id": 21,
+      "title": "Resources for Fat Knitters - Victoria Marchant Knits",
+      "url": "https://www.victoriamarchantknits.com/resources-for-fat-knitters/",
+      "type": "resource",
+      "accessed": "2024-12-14",
+      "topics": ["size inclusivity", "resources"]
+    },
+    {
+      "id": 22,
+      "title": "Best Knitting Software and Apps Review",
+      "url": "https://blog.youtalent.com/review-best-knitting-software-apps-designing-patterns-tracking-progress-connecting-with-knitting-community/",
+      "type": "review",
+      "accessed": "2024-12-14",
+      "topics": ["technology", "apps", "software"]
+    },
+    {
+      "id": 23,
+      "title": "Knitrino: App Poised to Disrupt the Knitting World",
+      "url": "https://craftindustryalliance.org/knitrino-is-an-app-poised-to-disrupt-the-knitting-world/",
+      "type": "article",
+      "accessed": "2024-12-14",
+      "topics": ["technology", "apps", "innovation"]
+    },
+    {
+      "id": 24,
+      "title": "Textured Knitting Patterns Roundup Fall 2024",
+      "url": "https://youngfolkknits.com/textured-knitting-patterns-roundup-for-fall-2024/",
+      "type": "roundup",
+      "accessed": "2024-12-14",
+      "topics": ["patterns", "texture", "trends"]
+    },
+    {
+      "id": 25,
+      "title": "Knitting Yarn Market Size Report 2024-2033",
+      "url": "https://www.businessresearchinsights.com/market-reports/knitting-yarn-market-118996",
+      "type": "market report",
+      "accessed": "2024-12-14",
+      "topics": ["market size", "forecasts", "industry"]
+    }
+  ],
   "last_updated": "2024-12-14",
-  "status": "initialized"
+  "total_sources": 25,
+  "status": "iteration_1_complete"
 }
