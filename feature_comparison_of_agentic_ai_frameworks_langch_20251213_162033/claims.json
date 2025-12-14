@@ -3,16 +3,17 @@
     "research_topic": "Feature Comparison of Agentic AI Frameworks",
     "created": "2024-12-14",
     "last_updated": "2024-12-14",
-    "status": "collecting"
+    "status": "verified"
   },
   "claims": [
     {
       "id": "C001",
       "category": "adoption_metrics",
       "framework": "LangChain",
-      "claim": "LangChain has over 96K-99K GitHub stars as of late 2024/early 2025",
+      "claim": "LangChain has approximately 122K GitHub stars as of late 2024",
       "sources": ["S011", "S012"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verified via GitHub - actual count ~122K, growing from ~65K in early 2024"
     },
     {
       "id": "C002",
@@ -20,7 +21,8 @@
       "framework": "LangChain",
       "claim": "LangChain has 28 million monthly downloads and 130M+ total downloads",
       "sources": ["S011"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Consistent across multiple sources including Contrary Research"
     },
     {
       "id": "C003",
@@ -28,7 +30,8 @@
       "framework": "LangChain",
       "claim": "Over 132K LLM applications built using LangChain with 4K+ open-source contributors",
       "sources": ["S011"],
-      "confidence": "HIGH"
+      "confidence": "MEDIUM",
+      "verification_notes": "Self-reported metric from company, difficult to independently verify"
     },
     {
       "id": "C004",
@@ -36,15 +39,17 @@
       "framework": "LangChain",
       "claim": "LangChain has 600+ integrations connecting to major LLMs, tools, and databases",
       "sources": ["S001", "S018"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Widely cited across multiple independent sources"
     },
     {
       "id": "C005",
       "category": "adoption_metrics",
       "framework": "CrewAI",
-      "claim": "CrewAI has approximately 41.3K GitHub stars (30.5K-41.3K range reported)",
+      "claim": "CrewAI has approximately 41K GitHub stars",
       "sources": ["S013", "S018"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verifiable via GitHub repository"
     },
     {
       "id": "C006",
@@ -52,63 +57,71 @@
       "framework": "CrewAI",
       "claim": "CrewAI averages close to 1 million monthly downloads",
       "sources": ["S014", "S018"],
-      "confidence": "HIGH"
+      "confidence": "MEDIUM-HIGH",
+      "verification_notes": "Cited by multiple sources including investor reports"
     },
     {
       "id": "C007",
       "category": "enterprise_adoption",
       "framework": "CrewAI",
-      "claim": "CrewAI has achieved 60% adoption by Fortune 500 companies within 6 months of launch",
+      "claim": "CrewAI claims 40-60% Fortune 500 adoption, though many may be pilot projects",
       "sources": ["S014", "S015"],
-      "confidence": "MEDIUM"
+      "confidence": "LOW",
+      "verification_notes": "DISPUTED: Claims vary (40% to 60%+), self-reported by company and investors (Insight Partners). eMarketer clarified these are 'pilot projects' not production deployments. Figures escalated from 40% to 60%+ within months. Cannot independently verify."
     },
     {
       "id": "C008",
       "category": "enterprise_adoption",
       "framework": "CrewAI",
-      "claim": "Major CrewAI customers include IBM, Microsoft, Procter & Gamble, Walmart, SAP, Adobe, and PayPal",
+      "claim": "CrewAI customers include IBM, PwC, and has AWS partnership",
       "sources": ["S014", "S015"],
-      "confidence": "MEDIUM-HIGH"
+      "confidence": "MEDIUM",
+      "verification_notes": "Some customers verified via case studies page, but full customer list is self-reported"
     },
     {
       "id": "C009",
       "category": "funding",
       "framework": "CrewAI",
-      "claim": "CrewAI raised $18M by October 2024, including Series A led by Insight Partners",
+      "claim": "CrewAI raised $18M by October 2024, Series A led by Insight Partners",
       "sources": ["S014", "S015"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verified via press releases and investor announcements from multiple sources"
     },
     {
       "id": "C010",
       "category": "adoption_metrics",
       "framework": "AutoGen",
-      "claim": "AutoGen has over 33K-43.6K GitHub stars (varying by source timing)",
+      "claim": "AutoGen has over 33K GitHub stars with 290+ contributors",
       "sources": ["S016", "S018"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verifiable via GitHub repository"
     },
     {
       "id": "C011",
       "category": "adoption_metrics",
       "framework": "AutoGen",
-      "claim": "AutoGen has 890,000+ downloads of the Python package and 290+ contributors",
+      "claim": "AutoGen has 890,000+ downloads of the Python package",
       "sources": ["S017"],
-      "confidence": "MEDIUM-HIGH"
+      "confidence": "MEDIUM",
+      "verification_notes": "Microsoft Research figure from May 2024, may be outdated"
     },
     {
       "id": "C012",
       "category": "enterprise_adoption",
       "framework": "AutoGen",
-      "claim": "AutoGen adopted by over 40% of Fortune 100 firms for internal agentic systems",
+      "claim": "AutoGen adopted by over 40% of Fortune 100 firms",
       "sources": ["S019"],
-      "confidence": "MEDIUM"
+      "confidence": "LOW",
+      "verification_notes": "UNVERIFIED: Single source claim (Arcade.dev). Could not find corroboration from Microsoft or independent sources. Treat with caution."
     },
     {
       "id": "C013",
       "category": "capabilities",
       "framework": "AutoGen",
       "claim": "AutoGen excels at autonomous code generation with self-correction capabilities",
-      "sources": ["S001", "S002"],
-      "confidence": "HIGH"
+      "sources": ["S001", "S002", "S022"],
+      "confidence": "HIGH",
+      "verification_notes": "Consistent across multiple technical comparisons and HackerNews discussions"
     },
     {
       "id": "C014",
@@ -116,15 +129,17 @@
       "framework": "AutoGen",
       "claim": "AutoGen achieved No. 1 accuracy on GAIA benchmark in all three levels (March 2024)",
       "sources": ["S017"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verified via Microsoft Research announcement"
     },
     {
       "id": "C015",
       "category": "adoption_metrics",
       "framework": "OpenAI Agents SDK",
-      "claim": "OpenAI Agents SDK has approximately 9.3K GitHub stars",
+      "claim": "OpenAI Agents SDK has approximately 9-10K GitHub stars",
       "sources": ["S005", "S018"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verifiable via GitHub repository"
     },
     {
       "id": "C016",
@@ -132,7 +147,8 @@
       "framework": "OpenAI Agents SDK",
       "claim": "OpenAI Agents SDK is provider-agnostic, supporting 100+ LLMs",
       "sources": ["S003", "S004"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verified via official OpenAI documentation"
     },
     {
       "id": "C017",
@@ -140,7 +156,8 @@
       "framework": "OpenAI Agents SDK",
       "claim": "Core primitives include Agents, Handoffs, Guardrails, Sessions, and Function Tools",
       "sources": ["S003", "S004"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verified via official OpenAI documentation"
     },
     {
       "id": "C018",
@@ -148,7 +165,8 @@
       "framework": "Claude Agent SDK",
       "claim": "Claude Agent SDK provides context management with automatic compaction, rich tool ecosystem, and MCP extensibility",
       "sources": ["S006", "S007"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verified via official Anthropic documentation"
     },
     {
       "id": "C019",
@@ -156,15 +174,17 @@
       "framework": "Claude Agent SDK",
       "claim": "Claude Agent SDK design principle is to give agents a computer, enabling human-like work patterns",
       "sources": ["S006"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verified via official Anthropic engineering blog"
     },
     {
       "id": "C020",
       "category": "capabilities",
       "framework": "AWS Bedrock Agents",
       "claim": "AWS Bedrock AgentCore offers Runtime, Gateway, Memory, Identity, Browser, Code Interpreter, Observability, Evaluations, and Policy services",
-      "sources": ["S009", "S010"],
-      "confidence": "HIGH"
+      "sources": ["S009", "S010", "S034"],
+      "confidence": "HIGH",
+      "verification_notes": "Verified via official AWS documentation and GA announcement"
     },
     {
       "id": "C021",
@@ -172,7 +192,8 @@
       "framework": "AWS Bedrock Agents",
       "claim": "AWS Bedrock Agents support multi-agent collaboration with supervisor agent coordination",
       "sources": ["S010"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verified via official AWS documentation"
     },
     {
       "id": "C022",
@@ -180,7 +201,8 @@
       "framework": "AWS Bedrock Agents",
       "claim": "Robinhood scaled from 500M to 5B tokens daily using Amazon Bedrock, cutting AI costs by 80%",
       "sources": ["S009"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verified - direct quote from Robinhood Head of AI in AWS announcement"
     },
     {
       "id": "C023",
@@ -188,7 +210,8 @@
       "framework": "general",
       "claim": "79% of organizations report AI agent adoption; market projected to reach $199B by 2034",
       "sources": ["S019", "S020"],
-      "confidence": "HIGH"
+      "confidence": "MEDIUM",
+      "verification_notes": "Multiple sources cite similar figures, but underlying methodology varies"
     },
     {
       "id": "C024",
@@ -196,39 +219,62 @@
       "framework": "general",
       "claim": "Gartner predicts 33% of enterprise software will have agentic AI by 2028",
       "sources": ["S019"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verified Gartner prediction widely cited"
     },
     {
       "id": "C025",
       "category": "market_data",
       "framework": "general",
-      "claim": "75% of DIY agentic AI projects report prolonged development cycles, many failing to reach production",
+      "claim": "Gartner predicts 40% of agentic AI projects will be canceled by 2027",
       "sources": ["S019"],
-      "confidence": "MEDIUM"
+      "confidence": "HIGH",
+      "verification_notes": "Verified via Gartner press release, widely cited and accepted by industry"
     },
     {
       "id": "C026",
       "category": "developer_experience",
       "framework": "CrewAI",
       "claim": "CrewAI prioritizes simplicity with role-based design, easiest for beginners",
-      "sources": ["S001", "S002"],
-      "confidence": "HIGH"
+      "sources": ["S001", "S002", "S030"],
+      "confidence": "HIGH",
+      "verification_notes": "Consistent across multiple independent comparisons and community feedback"
     },
     {
       "id": "C027",
       "category": "developer_experience",
       "framework": "LangChain",
-      "claim": "LangChain offers most resources but has highest learning curve",
-      "sources": ["S001"],
-      "confidence": "MEDIUM-HIGH"
+      "claim": "LangChain has significant criticism for complexity, documentation issues, and breaking changes, but also strong defenders citing ecosystem breadth",
+      "sources": ["S025", "S026", "S027", "S028", "S029"],
+      "confidence": "DISPUTED",
+      "verification_notes": "Strong evidence for both criticism AND defense. v0.1.0 (Jan 2024) addressed some stability concerns. Critics cite bloat, abstraction layers; defenders cite integrations, ecosystem"
     },
     {
       "id": "C028",
       "category": "capabilities",
       "framework": "LangGraph",
-      "claim": "LangGraph has 11.7K GitHub stars and 4.2M monthly downloads, best for enterprise state management",
+      "claim": "LangGraph has ~12K GitHub stars and 4.2M monthly downloads, best for enterprise state management",
       "sources": ["S018"],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "verification_notes": "Verifiable via GitHub and package registry"
+    },
+    {
+      "id": "C029",
+      "category": "market_data",
+      "framework": "general",
+      "claim": "AWS Bedrock AgentCore SDK downloaded over 1 million times by enterprise customers",
+      "sources": ["S034"],
+      "confidence": "HIGH",
+      "verification_notes": "Verified via AWS GA announcement blog post"
+    },
+    {
+      "id": "C030",
+      "category": "enterprise_adoption",
+      "framework": "AutoGen",
+      "claim": "Microsoft has announced Agent Framework to replace AutoGen and Semantic Kernel for new development",
+      "sources": ["S016"],
+      "confidence": "HIGH",
+      "verification_notes": "Verified via VentureBeat and Microsoft announcements - AutoGen/Semantic Kernel in maintenance mode"
     }
   ]
 }
