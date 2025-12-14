@@ -1,5 +1,176 @@
 {
-  "claims": [],
+  "claims": [
+    {
+      "id": "C001",
+      "category": "compliance",
+      "claim": "Amazon Bedrock achieved FedRAMP High authorization in AWS GovCloud (US-West) Region in August 2024",
+      "source_ids": ["S003"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C002",
+      "category": "compliance",
+      "claim": "Claude 3.5 Sonnet v1 and Claude 3 Haiku achieved FedRAMP High and DoD IL4/5 approval in Amazon Bedrock GovCloud in June 2025",
+      "source_ids": ["S001", "S002"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C003",
+      "category": "compliance",
+      "claim": "AWS is the first cloud provider to achieve FedRAMP High and DoD IL4/5 authorization for Anthropic's Claude and Meta's Llama models",
+      "source_ids": ["S001"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C004",
+      "category": "feature_parity",
+      "claim": "Anthropic direct API provides immediate access to new features, while Bedrock historically had 6-8 week feature cycles with staggered model support",
+      "source_ids": ["S004"],
+      "confidence": "MEDIUM",
+      "verification_status": "partially_confirmed",
+      "notes": "Recent releases (Claude 4.x) appear to have simultaneous availability"
+    },
+    {
+      "id": "C005",
+      "category": "feature_parity",
+      "claim": "Claude Opus 4 and Sonnet 4 were made generally available in Amazon Bedrock simultaneously with Anthropic's own platform",
+      "source_ids": ["S010", "S011"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C006",
+      "category": "pricing",
+      "claim": "Direct Claude API access saves 15-22% versus Bedrock pricing, but loses AWS integration benefits",
+      "source_ids": ["S004", "S008"],
+      "confidence": "MEDIUM",
+      "verification_status": "partially_confirmed",
+      "notes": "Varies by usage volume; at scale (10M+ tokens), Bedrock offers volume discounts"
+    },
+    {
+      "id": "C007",
+      "category": "pricing",
+      "claim": "At 5M tokens/month, Bedrock becomes 12-18% cheaper than direct API due to volume discounts",
+      "source_ids": ["S008"],
+      "confidence": "MEDIUM",
+      "verification_status": "claimed"
+    },
+    {
+      "id": "C008",
+      "category": "pricing",
+      "claim": "Bedrock batch inference offers up to 50% lower costs compared to on-demand pricing",
+      "source_ids": ["S007"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C009",
+      "category": "security_features",
+      "claim": "Bedrock Guardrails blocks up to 88% of harmful content with 99% accuracy in validation explanations",
+      "source_ids": ["S006"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C010",
+      "category": "security_features",
+      "claim": "Bedrock Guardrails provides six configurable safeguards: content moderation, prompt attack detection, topic classification, PII redaction, contextual grounding, and automated reasoning checks",
+      "source_ids": ["S006", "S013"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C011",
+      "category": "security_features",
+      "claim": "Bedrock Guardrails' ApplyGuardrail API works across Bedrock models, self-hosted models, and third-party providers (OpenAI, Google Gemini)",
+      "source_ids": ["S006"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C012",
+      "category": "enterprise_value",
+      "claim": "Bedrock provides native VPC integration, AWS PrivateLink support, IAM-based authentication, and CloudWatch monitoring out of the box",
+      "source_ids": ["S004", "S012"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C013",
+      "category": "limitations",
+      "claim": "Bedrock lacks CloudFormation support for many resources, requiring 'ClickOps' through AWS Console",
+      "source_ids": ["S009"],
+      "confidence": "MEDIUM",
+      "verification_status": "claimed",
+      "notes": "May have improved since publication"
+    },
+    {
+      "id": "C014",
+      "category": "limitations",
+      "claim": "Bedrock lacks higher-level tools for agent orchestration, RAG, and workflow automation compared to Azure AI Foundry and Vertex AI Agent Builder",
+      "source_ids": ["S005"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C015",
+      "category": "limitations",
+      "claim": "Enterprises cannot access OpenAI models through Bedrock, requiring separate API integration with data egress fees and latency overhead",
+      "source_ids": ["S005"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C016",
+      "category": "limitations",
+      "claim": "AWS Strands Agents SDK lacks native Bedrock integration, creating fragmented platform experience",
+      "source_ids": ["S005"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C017",
+      "category": "setup_complexity",
+      "claim": "Initial Bedrock setup requires understanding IAM permissions, service quotas, VPC networking, and Bedrock-specific API formats - what takes 5 minutes with Anthropic API can take an afternoon with Bedrock",
+      "source_ids": ["S004"],
+      "confidence": "MEDIUM",
+      "verification_status": "claimed"
+    },
+    {
+      "id": "C018",
+      "category": "feature_parity",
+      "claim": "Claude Sonnet 4 and 4.5 support 1M token context window on Amazon Bedrock (beta/preview)",
+      "source_ids": ["S010", "S011"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C019",
+      "category": "compliance",
+      "claim": "DoD IL4/5 and FedRAMP High represent the highest levels of cloud security certification for unclassified and controlled unclassified information",
+      "source_ids": ["S001", "S002"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "C020",
+      "category": "enterprise_adoption",
+      "claim": "Companies using Bedrock Guardrails include Chime Financial, KONE, PwC, Strava, and Remitly",
+      "source_ids": ["S006"],
+      "confidence": "HIGH",
+      "verification_status": "confirmed"
+    }
+  ],
   "last_updated": "2024-12-14",
-  "status": "initialized"
+  "status": "active_research",
+  "total_claims": 20,
+  "confidence_summary": {
+    "HIGH": 14,
+    "MEDIUM": 6,
+    "LOW": 0,
+    "DISPUTED": 0
+  }
 }

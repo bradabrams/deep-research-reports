@@ -1,5 +1,147 @@
 {
-  "sources": [],
+  "sources": [
+    {
+      "id": "S001",
+      "title": "Amazon Bedrock models get FedRAMP High and DoD IL-4/5 approval in AWS GovCloud (US)",
+      "url": "https://aws.amazon.com/blogs/publicsector/accelerating-government-innovation-amazon-bedrock-models-get-fedramp-high-and-dod-il-4-5-approval-in-aws-govcloud-us/",
+      "type": "official_blog",
+      "publisher": "AWS Public Sector Blog",
+      "date": "2025-05",
+      "credibility": "HIGH",
+      "key_topics": ["FedRAMP High", "IL4/5", "GovCloud", "compliance"]
+    },
+    {
+      "id": "S002",
+      "title": "Claude in Amazon Bedrock: FedRAMP High",
+      "url": "https://www.anthropic.com/news/claude-in-amazon-bedrock-fedramp-high",
+      "type": "official_announcement",
+      "publisher": "Anthropic",
+      "date": "2025-06-11",
+      "credibility": "HIGH",
+      "key_topics": ["FedRAMP High", "IL4/5", "Claude models", "federal compliance"]
+    },
+    {
+      "id": "S003",
+      "title": "Amazon Bedrock achieves FedRAMP High authorization",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2024/08/amazon-bedrock-achieves-fedramp-high-authorization/",
+      "type": "official_announcement",
+      "publisher": "AWS",
+      "date": "2024-08",
+      "credibility": "HIGH",
+      "key_topics": ["FedRAMP High", "initial authorization"]
+    },
+    {
+      "id": "S004",
+      "title": "Anthropic API vs. AWS Bedrock for Claude Model usage",
+      "url": "https://medium.com/@joohan224/anthropic-api-vs-aws-bedrock-for-claude-model-usage-0f37acd0a588",
+      "type": "technical_blog",
+      "publisher": "Medium",
+      "date": "2025-10",
+      "credibility": "MEDIUM",
+      "key_topics": ["API comparison", "feature differences", "pricing", "setup complexity"]
+    },
+    {
+      "id": "S005",
+      "title": "Amazon Bedrock faces revamp pressure amid rising enterprise demands",
+      "url": "https://www.infoworld.com/article/4008135/amazon-bedrock-faces-revamp-pressure-amid-rising-enterprise-demands.html",
+      "type": "industry_analysis",
+      "publisher": "InfoWorld",
+      "date": "2024",
+      "credibility": "HIGH",
+      "key_topics": ["enterprise limitations", "criticisms", "competitive analysis"]
+    },
+    {
+      "id": "S006",
+      "title": "Amazon Bedrock Guardrails",
+      "url": "https://aws.amazon.com/bedrock/guardrails/",
+      "type": "official_documentation",
+      "publisher": "AWS",
+      "date": "current",
+      "credibility": "HIGH",
+      "key_topics": ["guardrails", "content filtering", "security features", "compliance"]
+    },
+    {
+      "id": "S007",
+      "title": "Amazon Bedrock Pricing",
+      "url": "https://aws.amazon.com/bedrock/pricing/",
+      "type": "official_documentation",
+      "publisher": "AWS",
+      "date": "current",
+      "credibility": "HIGH",
+      "key_topics": ["pricing", "on-demand", "provisioned throughput", "batch inference"]
+    },
+    {
+      "id": "S008",
+      "title": "Claude API vs Amazon Bedrock pricing structure",
+      "url": "https://4idiotz.com/tech/artificial-intelligence/claude-api-vs-amazon-bedrock-pricing-structure/",
+      "type": "technical_comparison",
+      "publisher": "4idiotz",
+      "date": "2024",
+      "credibility": "MEDIUM",
+      "key_topics": ["pricing comparison", "cost optimization", "hidden costs"]
+    },
+    {
+      "id": "S009",
+      "title": "Amazon Bedrock Shortcomings (For Now)",
+      "url": "https://medium.com/@christoh/amazon-bedrock-shortcomings-for-now-37761461e7de",
+      "type": "technical_blog",
+      "publisher": "Medium",
+      "date": "2024",
+      "credibility": "MEDIUM",
+      "key_topics": ["CloudFormation limitations", "infrastructure tooling gaps"]
+    },
+    {
+      "id": "S010",
+      "title": "Claude by Anthropic - Models in Amazon Bedrock",
+      "url": "https://aws.amazon.com/bedrock/anthropic/",
+      "type": "official_documentation",
+      "publisher": "AWS",
+      "date": "current",
+      "credibility": "HIGH",
+      "key_topics": ["Claude models", "capabilities", "availability"]
+    },
+    {
+      "id": "S011",
+      "title": "Claude Opus 4.5 now in Amazon Bedrock",
+      "url": "https://aws.amazon.com/blogs/machine-learning/claude-opus-4-5-now-in-amazon-bedrock/",
+      "type": "official_blog",
+      "publisher": "AWS Machine Learning Blog",
+      "date": "2025-11",
+      "credibility": "HIGH",
+      "key_topics": ["model availability", "simultaneous release"]
+    },
+    {
+      "id": "S012",
+      "title": "What is the difference between Amazon Bedrock and direct API",
+      "url": "https://zilliz.com/ai-faq/what-is-the-difference-between-using-amazon-bedrock-and-calling-an-api-from-a-model-provider-directly-like-using-openais-or-ai21s-api",
+      "type": "technical_faq",
+      "publisher": "Zilliz",
+      "date": "2024",
+      "credibility": "MEDIUM",
+      "key_topics": ["API differences", "multi-model flexibility", "unified interface"]
+    },
+    {
+      "id": "S013",
+      "title": "Guardrails for Amazon Bedrock: AI Safety & Compliance Guide",
+      "url": "https://www.lasso.security/blog/guardrails-for-amazon-bedrock",
+      "type": "technical_analysis",
+      "publisher": "Lasso Security",
+      "date": "2024",
+      "credibility": "MEDIUM",
+      "key_topics": ["guardrails", "security implementation", "compliance"]
+    },
+    {
+      "id": "S014",
+      "title": "FedRAMP Compliance - AWS Services in Scope",
+      "url": "https://aws.amazon.com/compliance/services-in-scope/FedRAMP/",
+      "type": "official_documentation",
+      "publisher": "AWS",
+      "date": "current",
+      "credibility": "HIGH",
+      "key_topics": ["FedRAMP services", "compliance scope"]
+    }
+  ],
   "last_updated": "2024-12-14",
-  "status": "initialized"
+  "status": "active_research",
+  "total_sources": 14
 }
