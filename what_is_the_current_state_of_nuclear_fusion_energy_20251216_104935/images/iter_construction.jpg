@@ -1,0 +1,37 @@
+
+
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+		<html xmlns="http://www.w3.org/1999/xhtml"> 
+		<head> 
+			<meta http-equiv="Content-type" content="text/html; charset=utf-8"> 
+		<title>Error 404: File not found</title> 
+		</head> 
+		<style type="text/css">
+		body{background-color:#DDD;} 
+		hr{color:#DDD;background-color:#DDD;height:1px;border:0;} #centerLayout{position:absolute;top:50%;min-height:470px;height:470px;width:100%;margin-top:-230px;left:0;padding:0;} 
+		#container{width:488px;height:auto;margin:0 auto;padding:0;} 
+		#header{position:relative;background-image:url('/error_pages/error_top.gif');background-position:center left;background-repeat:no-repeat;height:152px;width:488px;} 
+		#footer{position:relative;background-image:url('/error_pages/error_bottom.gif');background-position:center left;background-repeat:no-repeat;height:86px;width:488px;} #main{position:relative;background-color:#fff;color:#4d4d4d;font-family:arial;font-size:12px;padding:5px 20px;} 
+		.error{color:#c00;font-size:16px;} 
+		.contact{font-size:10px;} 
+		.contact a{text-decoration:underline;cursor:pointer;color:#704F0D;}
+		</style>
+		<body>
+			<div id="centerLayout">
+				<div id="container">
+					<div id="header"></div>
+					<div id="main">
+						<span class="error"><strong>HTTP Error 404</strong> : File not found</span>
+							<hr />
+							<p>Unfortunately, the page or file that you requested <strong>could not be found</strong>.</p><p>It may not exist, or it may be temporarily unavailable.
+							</p><p>We apologize for the inconvenience.</p>
+						</span>
+						<hr />
+						<p><span class="contact">If you need additional assistance, please send an e-mail to <a href="mailto:webmaster@iter.org?subject=Error%20404%20-%20File%20not%20found%20-%20www.iter.org/img/resize-1000-90/all/content/com/gallery/construction/west_view/2024/2024_west_view_1.jpg">webmaster@iter.org</a>.<span></p>
+					</div>
+					<div id="footer"></div>
+				</div>
+			</div>
+		</body> 
+		</html>
+	

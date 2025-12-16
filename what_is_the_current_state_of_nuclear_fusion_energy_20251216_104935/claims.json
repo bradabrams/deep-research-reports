@@ -1,5 +1,182 @@
 {
-  "claims": [],
+  "claims": [
+    {
+      "id": 1,
+      "category": "Investment",
+      "claim": "Global private investment in fusion energy exceeds $9.7 billion across approximately 50 projects",
+      "sources": [1, 18],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 2,
+      "category": "Investment",
+      "claim": "Commonwealth Fusion Systems has raised approximately $3 billion total, representing about one-third of all private fusion investment",
+      "sources": [7, 8],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 3,
+      "category": "ITER",
+      "claim": "ITER first plasma delayed to 2033 (from original 2025 target), with D-T operations now expected in 2039",
+      "sources": [2, 3, 4],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 4,
+      "category": "ITER",
+      "claim": "ITER costs have ballooned from original €5 billion estimate to over $22 billion, with additional $5.2 billion needed",
+      "sources": [2, 3],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 5,
+      "category": "NIF",
+      "claim": "NIF achieved record Q-factor of 4.13, producing 8.6 MJ from 2.08 MJ laser energy",
+      "sources": [13, 14],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 6,
+      "category": "NIF",
+      "claim": "NIF has achieved ignition seven times since December 2022 breakthrough",
+      "sources": [13],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 7,
+      "category": "China",
+      "claim": "China's EAST tokamak achieved 1,066 seconds of H-mode plasma at 100 million degrees Celsius on January 20, 2025",
+      "sources": [5, 6],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 8,
+      "category": "China",
+      "claim": "EAST previous record was 403 seconds, set in 2023",
+      "sources": [5, 6],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 9,
+      "category": "Technology",
+      "claim": "CFS/MIT achieved 20 tesla magnetic field strength with HTS magnets in September 2021 - described as most important fusion development in 30 years",
+      "sources": [9],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 10,
+      "category": "Technology",
+      "claim": "CFS successfully tested Central Solenoid Model Coil in November 2024, validating both HTS magnet types needed for SPARC",
+      "sources": [10],
+      "confidence": "MEDIUM",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 11,
+      "category": "Commercial",
+      "claim": "CFS plans SPARC first plasma in 2026, with ARC power plant delivering grid power in early 2030s",
+      "sources": [10],
+      "confidence": "MEDIUM",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 12,
+      "category": "Commercial",
+      "claim": "Helion signed world's first fusion PPA with Microsoft in May 2023 for 50 MW by 2028",
+      "sources": [11],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 13,
+      "category": "Commercial",
+      "claim": "Helion began construction of Orion plant in Chelan County, Washington in July 2025",
+      "sources": [12],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 14,
+      "category": "Commercial",
+      "claim": "Google signed 200 MW power purchase agreement with CFS for ARC plant",
+      "sources": [8],
+      "confidence": "MEDIUM",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 15,
+      "category": "Policy",
+      "claim": "DOE Fusion Energy Strategy 2024 targets demonstrating pilot fusion plant in the 2030s via public-private partnership",
+      "sources": [15],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 16,
+      "category": "Global",
+      "claim": "More than 160 fusion facilities are operational, under construction, or planned worldwide",
+      "sources": [1],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 17,
+      "category": "Global",
+      "claim": "ITER involves 33 nations collaborating on world's largest tokamak",
+      "sources": [1, 2],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 18,
+      "category": "Challenges",
+      "claim": "ITER thermal shields have defects requiring removal and replacement of approximately 20-23 km of cooling pipes",
+      "sources": [2],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 19,
+      "category": "Challenges",
+      "claim": "NIF requires 400 MJ to power full facility while producing 3.15 MJ fusion output - still far from practical energy production",
+      "sources": [17],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 20,
+      "category": "Records",
+      "claim": "Highest tokamak Q-factor remains JET's Q=0.67 from 1997; no tokamak has achieved net energy gain",
+      "sources": [14],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 21,
+      "category": "Investment",
+      "claim": "TAE Technologies has raised $1.2 billion with ~$5 billion valuation, partnering with Google for AI/engineering",
+      "sources": [18],
+      "confidence": "MEDIUM",
+      "date_verified": "2025-12-16"
+    },
+    {
+      "id": 22,
+      "category": "Investment",
+      "claim": "Helion Energy has $1 billion in funding with major investor Sam Altman contributing $375 million",
+      "sources": [12],
+      "confidence": "HIGH",
+      "date_verified": "2025-12-16"
+    }
+  ],
   "last_updated": "2025-12-16",
   "topic": "Nuclear Fusion Energy Research 2024-2025"
 }

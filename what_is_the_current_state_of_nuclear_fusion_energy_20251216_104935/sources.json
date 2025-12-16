@@ -1,5 +1,168 @@
 {
-  "sources": [],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Fusion Energy in 2025: Six Global Trends to Watch",
+      "url": "https://www.iaea.org/newscenter/news/fusion-energy-in-2025-six-global-trends-to-watch",
+      "type": "government/international",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["160+ fusion facilities globally", "$10B+ private investment", "IAEA World Fusion Energy Group established 2024"]
+    },
+    {
+      "id": 2,
+      "title": "World's Largest Fusion Project Is in Big Trouble",
+      "url": "https://www.scientificamerican.com/article/worlds-largest-fusion-project-is-in-big-trouble-new-documents-reveal/",
+      "type": "news/investigative",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["ITER cost now $22B+", "First plasma delayed to 2033", "Defects in thermal shields"]
+    },
+    {
+      "id": 3,
+      "title": "ITER delays first plasma for world's biggest tokamak",
+      "url": "https://www.theregister.com/2024/07/04/iter_new_baseline_project_delays/",
+      "type": "news",
+      "date_accessed": "2025-12-16",
+      "reliability": "MEDIUM",
+      "key_claims": ["First plasma 2033", "DT operations 2039", "Additional $5.2B needed"]
+    },
+    {
+      "id": 4,
+      "title": "Max Planck Institute - ITER Baseline 2024",
+      "url": "https://www.ipp.mpg.de/5434926/ITER_baseline_2024",
+      "type": "academic",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["New ITER schedule July 2024", "Full plasma current 2034", "D-D plasma 2035"]
+    },
+    {
+      "id": 5,
+      "title": "China's 'artificial sun' shatters nuclear fusion record",
+      "url": "https://www.livescience.com/planet-earth/nuclear-energy/chinas-artificial-sun-shatters-nuclear-fusion-record-by-generating-steady-loop-of-plasma-for-1-000-seconds",
+      "type": "news/science",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["EAST 1,066 seconds H-mode plasma", "100M degrees Celsius", "Previous record 403 seconds"]
+    },
+    {
+      "id": 6,
+      "title": "Chinese Academy of Sciences - EAST Record",
+      "url": "https://english.cas.cn/newsroom/cas_media/202501/t20250121_899052.shtml",
+      "type": "government/research",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["January 20, 2025 achievement", "Doubled heating power", "Next-gen artificial sun design complete"]
+    },
+    {
+      "id": 7,
+      "title": "Commonwealth Fusion Systems Raises $863 Million Series B2",
+      "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/",
+      "type": "company/press",
+      "date_accessed": "2025-12-16",
+      "reliability": "MEDIUM",
+      "key_claims": ["$863M raised August 2025", "~$3B total funding", "Nvidia and Morgan Stanley investors"]
+    },
+    {
+      "id": 8,
+      "title": "Commonwealth Fusion pulls in $1.8B for novel nuclear tech",
+      "url": "https://www.canarymedia.com/articles/nuclear/commonwealth-fusion-pulls-in-colossal-1-8b-for-novel-nuclear-tech",
+      "type": "news",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["$1.8B Series B 2021", "One-third of total fusion investment", "Google and Breakthrough Energy backing"]
+    },
+    {
+      "id": 9,
+      "title": "MIT News - HTS Magnets Ready for Fusion",
+      "url": "https://news.mit.edu/2024/tests-show-high-temperature-superconducting-magnets-fusion-ready-0304",
+      "type": "academic/research",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["20 tesla magnet achieved 2021", "6 peer-reviewed papers March 2024", "Most important fusion development in 30 years"]
+    },
+    {
+      "id": 10,
+      "title": "CFS Central Solenoid Model Coil Success",
+      "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-magnet-success-propels-fusion-energy-toward-the-grid/",
+      "type": "company/press",
+      "date_accessed": "2025-12-16",
+      "reliability": "MEDIUM",
+      "key_claims": ["CSMC success November 2024", "SPARC first plasma 2026", "ARC power plant early 2030s"]
+    },
+    {
+      "id": 11,
+      "title": "Helion announces world's first fusion PPA with Microsoft",
+      "url": "https://www.helionenergy.com/articles/helion-announces-worlds-first-fusion-ppa-with-microsoft/",
+      "type": "company/press",
+      "date_accessed": "2025-12-16",
+      "reliability": "MEDIUM",
+      "key_claims": ["PPA signed May 2023", "Target 50 MW by 2028", "Constellation as power marketer"]
+    },
+    {
+      "id": 12,
+      "title": "Helion Begins Building Orion Plant",
+      "url": "https://www.helionenergy.com/articles/helion-secures-land-and-begins-building-site-of-worlds-first-fusion-power-plant/",
+      "type": "company/press",
+      "date_accessed": "2025-12-16",
+      "reliability": "MEDIUM",
+      "key_claims": ["Orion construction started July 2025", "Location: Chelan County, Washington", "$1B private funding"]
+    },
+    {
+      "id": 13,
+      "title": "NIF News 2024 - Lawrence Livermore",
+      "url": "https://lasers.llnl.gov/news/news-2024",
+      "type": "government/research",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["Multiple ignition achievements", "Q=4.13 record", "8.6 MJ output"]
+    },
+    {
+      "id": 14,
+      "title": "Fusion Energy Gain Factor - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fusion_energy_gain_factor",
+      "type": "reference",
+      "date_accessed": "2025-12-16",
+      "reliability": "MEDIUM",
+      "key_claims": ["NIF Q=4.13 highest gain", "JET tokamak Q=0.67 1997", "ITER target Q=10"]
+    },
+    {
+      "id": 15,
+      "title": "DOE Fusion Energy Strategy 2024",
+      "url": "https://www.energy.gov/doe-fusion-energy-strategy-2024-executive-summary",
+      "type": "government",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["Pilot plant goal 2030s", "White House Bold Decadal Vision", "Public-private partnership focus"]
+    },
+    {
+      "id": 16,
+      "title": "Global Investment in Private Fusion Sector - F4E",
+      "url": "https://fusionforenergy.europa.eu/wp-content/uploads/2025/06/F4E_Observatory_Report_1_Private_Sector.pdf",
+      "type": "government/report",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["€9.9B total funding 2025", "€6.7B private capital", "Growth from €1.5B in 2020"]
+    },
+    {
+      "id": 17,
+      "title": "Yale E360 - Tech Breakthroughs and Fusion Energy",
+      "url": "https://e360.yale.edu/features/nuclear-fusion-research-startups",
+      "type": "news/analysis",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["Skepticism about timelines", "NIF requires 400 MJ to run facility", "12-15 years to build power plant"]
+    },
+    {
+      "id": 18,
+      "title": "Fusion Industry Association Survey",
+      "url": "https://www.fusionindustryassociation.org/",
+      "type": "industry",
+      "date_accessed": "2025-12-16",
+      "reliability": "MEDIUM",
+      "key_claims": ["$9.7B total private investment", "$2.6B raised in last year", "~50 fusion projects"]
+    }
+  ],
   "last_updated": "2025-12-16",
   "topic": "Nuclear Fusion Energy Research 2024-2025"
 }
