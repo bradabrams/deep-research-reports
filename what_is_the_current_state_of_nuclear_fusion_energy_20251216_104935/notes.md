@@ -10,6 +10,12 @@
 - 18 sources collected and verified
 - 22 claims documented with confidence levels
 
+### December 16, 2025 - Social/Community Insights
+- Collected community perspectives from Hacker News, Reddit references
+- Added 11 new sources (total: 29)
+- Documented skepticism, criticism, and praise from tech community
+- Added climate scientist perspectives on timeline concerns
+
 ---
 
 ## Key Findings Summary
@@ -69,6 +75,68 @@
 
 ---
 
+## Social & Community Perspectives
+
+### Hacker News Sentiment
+
+**ITER Discussions:**
+- Recurring joke: "Practical fusion power remains 10 years in the future. As is tradition."
+- Analogies made: "Wright brothers plane unsuitable for transatlantic travel" - highlighting early-stage nature
+- Concerns raised about tritium supply: "ITER will use all existing supplies"
+- Debate: Is ITER obsolete given private sector progress?
+
+**Private Company Discussions:**
+- Helion skepticism: "Not 50MW in 2021, but 500MW in 2030. In 2027 they will announce 5GW in 2035"
+- CFS viewed more favorably due to MIT pedigree and HTS magnet validation
+- Interest in Helion's unique approach: direct electricity generation, He-3 fuel
+
+**Common Technical Questions:**
+- Materials science: "Neutrons will change material properties of walls over time"
+- Engineering vs physics: "Laboratory success doesn't mean engineered systems will work"
+- Heat flux management challenges
+
+### Climate Community Perspective
+
+**"Too Late for Climate" Argument:**
+- Aneeqa Khan (U. Manchester): "Fusion is already too late to deal with the climate crisis"
+- Stefan Rahmstorf (Potsdam Institute): "All resources should be spent on renewables"
+- Consensus: If scaling begins late 2030s, fusion misses 2050 climate goals
+
+**Resource Allocation Debate:**
+- Critics argue fusion hype "risks diverting resources from actual solutions"
+- Scientific American: Calling NIF a "breakthrough to limitless power" is like "calling discovery of fire a milestone to electricity"
+
+### Tech Industry Voices
+
+**Sam Altman (OpenAI):**
+- Suggests fusion can power AI data centers
+- Critics call this "wishful thinking" (Alex de Vries)
+- $375M invested in Helion
+
+**Elon Musk:**
+- Called fusion reactors "incredibly foolish" and "super dumb"
+- Argument: "Sun is already a massive free fusion reactor"
+- Advocates for solar instead
+
+### Investment Bubble Concerns
+
+**Wall Street Analysts:**
+- Bank of America downgraded Oklo from "buy" to "neutral"
+- NuScale downgraded to "underperform"
+- Bottlenecks identified: fuel supply chains, permitting, grid interconnection
+
+**Historical Comparisons:**
+- Critics compare to "dot-com bubble, optical switching bubble, biofuel bubble"
+- Pattern noted: "Wildly aspirational language, unachievable targets, investor herd mentality"
+
+### Insider Criticism
+
+**Michel Claessens (Former ITER Comms Head):**
+- Warned industry is "engaging in risky and potentially deceptive hype"
+- Alleged ITER was "silencing employees who spoke out about problems" (2021)
+
+---
+
 ## Critical Perspectives & Challenges
 
 ### Skepticism Points
@@ -106,6 +174,10 @@
 - **MEDIUM confidence** (2 sources): 6 claims
 - Government/academic sources: 10
 - Company press releases: 5 (treated with appropriate skepticism)
-- News/analysis: 3
+- News/analysis: 7
+- Community/forum sources: 4 (LOW reliability, valuable for sentiment)
+- Insider/whistleblower: 1
+
+**Total Sources: 29**
 
 ---

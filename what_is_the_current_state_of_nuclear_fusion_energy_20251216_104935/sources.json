@@ -161,6 +161,105 @@
       "date_accessed": "2025-12-16",
       "reliability": "MEDIUM",
       "key_claims": ["$9.7B total private investment", "$2.6B raised in last year", "~50 fusion projects"]
+    },
+    {
+      "id": 19,
+      "title": "Hacker News - ITER is a showcase for drawbacks of fusion",
+      "url": "https://news.ycombinator.com/item?id=16380338",
+      "type": "community/forum",
+      "date_accessed": "2025-12-16",
+      "reliability": "LOW",
+      "key_claims": ["Community skepticism about ITER timeline", "Debate on engineering vs research", "Tritium supply concerns"]
+    },
+    {
+      "id": 20,
+      "title": "Hacker News - CFS Commercial Fusion Plant Discussion",
+      "url": "https://news.ycombinator.com/item?id=42495205",
+      "type": "community/forum",
+      "date_accessed": "2025-12-16",
+      "reliability": "LOW",
+      "key_claims": ["Fusion always 10 years away joke", "Private sector vs ITER debate", "Technical skepticism"]
+    },
+    {
+      "id": 21,
+      "title": "Hacker News - Helion Washington Plant",
+      "url": "https://news.ycombinator.com/item?id=44745067",
+      "type": "community/forum",
+      "date_accessed": "2025-12-16",
+      "reliability": "LOW",
+      "key_claims": ["Skepticism of 2028 timeline", "Direct electricity generation approach", "He-3 fuel uniqueness"]
+    },
+    {
+      "id": 22,
+      "title": "Scientific American - Why Fusion Won't Solve Climate Crisis",
+      "url": "https://www.scientificamerican.com/article/why-nuclear-fusion-wont-solve-the-climate-crisis/",
+      "type": "news/analysis",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["Fusion too late for climate", "Hype risks diverting resources", "Timeline mismatch with 2050 goals"]
+    },
+    {
+      "id": 23,
+      "title": "The Conversation - Fusion arriving too late to decarbonize",
+      "url": "https://theconversation.com/limitless-power-arriving-too-late-why-fusion-wont-help-us-decarbonise-176974",
+      "type": "academic/opinion",
+      "date_accessed": "2025-12-16",
+      "reliability": "MEDIUM",
+      "key_claims": ["Aneeqa Khan: fusion too late for climate crisis", "Need existing low-carbon tech now", "Timeline concerns"]
+    },
+    {
+      "id": 24,
+      "title": "Semafor - Nuclear Startups Look Like a Bubble",
+      "url": "https://www.semafor.com/article/10/02/2025/nuclear-power-startups-are-starting-to-look-like-a-bubble",
+      "type": "news/analysis",
+      "date_accessed": "2025-12-16",
+      "reliability": "MEDIUM",
+      "key_claims": ["Wall Street bubble warnings", "Oklo stock surge concerns", "Supply chain bottlenecks"]
+    },
+    {
+      "id": 25,
+      "title": "Washington Post - Fusion Skepticism: Century of Genius, Fraud, Hype",
+      "url": "https://www.washingtonpost.com/business/energy/fusion-skepticism-follows-a-century-of-genius-fraud-and-hype/2022/12/15/02011d04-7c75-11ed-bb97-f47d47466b9a_story.html",
+      "type": "news/analysis",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["Historical pattern of missed targets", "Investor herd mentality warning", "Comparison to previous bubbles"]
+    },
+    {
+      "id": 26,
+      "title": "Science|Business - Stop Fusion Energy Hype (Former ITER Comms Head)",
+      "url": "https://sciencebusiness.net/news/nuclear-fusion/stop-fusion-energy-hype-says-former-head-communications-iter",
+      "type": "news/insider",
+      "date_accessed": "2025-12-16",
+      "reliability": "HIGH",
+      "key_claims": ["ITER insider warning on hype", "Industry engaging in deceptive practices", "Silencing of employee concerns alleged"]
+    },
+    {
+      "id": 27,
+      "title": "CNN - Sam Altman Fusion for AI Energy",
+      "url": "https://edition.cnn.com/2024/03/26/climate/ai-energy-nuclear-fusion-climate-intl",
+      "type": "news",
+      "date_accessed": "2025-12-16",
+      "reliability": "MEDIUM",
+      "key_claims": ["Altman suggests fusion for AI power", "Expert criticism: wishful thinking", "Focus on existing solutions instead"]
+    },
+    {
+      "id": 28,
+      "title": "MIT PSFC Reddit AMA",
+      "url": "https://www.psfc.mit.edu/events/2016/mit-talks-fusion-on-ama",
+      "type": "community/academic",
+      "date_accessed": "2025-12-16",
+      "reliability": "MEDIUM",
+      "key_claims": ["High-field approach explanation", "Alcator C-Mod pressure records", "Practitioner perspectives"]
+    },
+    {
+      "id": 29,
+      "title": "Elon Musk Criticizes Fusion Reactors",
+      "url": "https://news.futunn.com/en/post/66183755/elon-musk-publicly-expressed-skepticism-about-nuclear-fusion-calling-the",
+      "type": "news",
+      "date_accessed": "2025-12-16",
+      "reliability": "MEDIUM",
+      "key_claims": ["Musk calls fusion reactors foolish", "Sun already provides fusion", "Economic waste argument"]
     }
   ],
   "last_updated": "2025-12-16",
