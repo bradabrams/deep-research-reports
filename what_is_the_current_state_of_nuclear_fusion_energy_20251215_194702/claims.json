@@ -1,9 +1,241 @@
 {
-  "claims": [],
+  "claims": [
+    {
+      "id": "C001",
+      "claim": "ITER first plasma has been delayed to at least 2033, with full deuterium-tritium operations expected in 2039",
+      "sources": ["S002", "S003"],
+      "confidence": "HIGH",
+      "category": "ITER Status",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C002",
+      "claim": "ITER's total cost has risen to €18-20 billion, with the July 2024 delay adding an extra €5 billion",
+      "sources": ["S002", "S003"],
+      "confidence": "HIGH",
+      "category": "ITER Status",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C003",
+      "claim": "NIF achieved 5.2 MJ fusion energy output in February 2024 experiment, with a gain of approximately 2.36",
+      "sources": ["S004", "S005"],
+      "confidence": "HIGH",
+      "category": "NIF Achievements",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C004",
+      "claim": "NIF achieved 8.6 MJ yield in April 2025, setting new records for energy yield and target gain",
+      "sources": ["S004", "S005"],
+      "confidence": "HIGH",
+      "category": "NIF Achievements",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C005",
+      "claim": "Five ignition shots have been achieved at NIF since December 2022 (Dec 2022, July 2023, Oct 2023 x2, Feb 2024)",
+      "sources": ["S004", "S008"],
+      "confidence": "HIGH",
+      "category": "NIF Achievements",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C006",
+      "claim": "Global private investment in fusion has surpassed $9.7-10 billion across approximately 50 projects",
+      "sources": ["S001", "S016"],
+      "confidence": "HIGH",
+      "category": "Investment",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C007",
+      "claim": "Commonwealth Fusion Systems has raised close to $3 billion total, about one-third of all private fusion investment",
+      "sources": ["S006", "S007", "S015"],
+      "confidence": "HIGH",
+      "category": "Investment",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C008",
+      "claim": "CFS announced plans for ARC fusion power plant in Chesterfield County, Virginia, expected online in early 2030s with ~400 MW capacity",
+      "sources": ["S006"],
+      "confidence": "HIGH",
+      "category": "Private Sector",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C009",
+      "claim": "Google has agreed to purchase 200 MW of fusion power from CFS's planned ARC plant",
+      "sources": ["S006", "S007"],
+      "confidence": "HIGH",
+      "category": "Private Sector",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C010",
+      "claim": "SPARC tokamak assembly began in 2025, with first plasma expected in 2026 and net power (Q>1) demonstration in 2027",
+      "sources": ["S009", "S010", "S020"],
+      "confidence": "HIGH",
+      "category": "Private Sector",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C011",
+      "claim": "SPARC cryostat base is 24 feet in diameter and weighs 75 tons",
+      "sources": ["S010"],
+      "confidence": "HIGH",
+      "category": "Private Sector",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C012",
+      "claim": "SPARC is designed to achieve Q ≈ 11 and up to 140 MW of fusion power for 10-second bursts",
+      "sources": ["S020"],
+      "confidence": "MEDIUM",
+      "category": "Private Sector",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C013",
+      "claim": "Helion Energy has started construction of its 50 MW Orion reactor in Washington state",
+      "sources": ["S015"],
+      "confidence": "HIGH",
+      "category": "Private Sector",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C014",
+      "claim": "Helion has a power purchase agreement with Microsoft and $375 million investment from Sam Altman",
+      "sources": ["S015"],
+      "confidence": "HIGH",
+      "category": "Private Sector",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C015",
+      "claim": "TAE Technologies has raised over $1.2 billion with a valuation near $5 billion",
+      "sources": ["S015"],
+      "confidence": "HIGH",
+      "category": "Private Sector",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C016",
+      "claim": "China's HL-3 tokamak achieved 1 million amperes plasma current in high-confinement mode",
+      "sources": ["S008", "S012"],
+      "confidence": "HIGH",
+      "category": "China",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C017",
+      "claim": "China's fusion budget is approximately $1.5 billion per year, nearly double the US government allocation",
+      "sources": ["S011"],
+      "confidence": "MEDIUM",
+      "category": "China",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C018",
+      "claim": "CFETR (China Fusion Engineering Test Reactor) expected to begin construction by late 2020s, operational in 2030s",
+      "sources": ["S011", "S012"],
+      "confidence": "HIGH",
+      "category": "China",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C019",
+      "claim": "China's EAST tokamak achieved 101-second H-mode discharge, leading in long-pulse operation",
+      "sources": ["S011"],
+      "confidence": "HIGH",
+      "category": "China",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C020",
+      "claim": "French WEST tokamak maintained hydrogen plasma for over 20 minutes with 2 MW heating power",
+      "sources": ["S018"],
+      "confidence": "HIGH",
+      "category": "Research Records",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C021",
+      "claim": "University of Wisconsin's WHAM experiment achieved 17 Tesla magnetic field, strongest ever for such a device",
+      "sources": ["S008"],
+      "confidence": "HIGH",
+      "category": "Research Records",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C022",
+      "claim": "NRC will regulate fusion under byproduct material framework, separating it from fission regulation (ADVANCE Act 2024)",
+      "sources": ["S013", "S014"],
+      "confidence": "HIGH",
+      "category": "Regulation",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C023",
+      "claim": "NRC proposed rule for fusion regulation scheduled for Federal Register publication May 28, 2025",
+      "sources": ["S014"],
+      "confidence": "HIGH",
+      "category": "Regulation",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C024",
+      "claim": "Over 160 fusion facilities are operational, under construction, or planned globally",
+      "sources": ["S001", "S017"],
+      "confidence": "HIGH",
+      "category": "Global Status",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C025",
+      "claim": "UK government announced £2.5 billion investment in fusion over five years",
+      "sources": ["S001"],
+      "confidence": "HIGH",
+      "category": "Investment",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C026",
+      "claim": "Fusion Industry Association has 45 members who have collectively raised over $7 billion",
+      "sources": ["S001"],
+      "confidence": "HIGH",
+      "category": "Investment",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C027",
+      "claim": "MIT modeling shows fusion could reach 10-50% of electricity generation by 2100 depending on cost scenarios",
+      "sources": ["S001"],
+      "confidence": "MEDIUM",
+      "category": "Projections",
+      "date_verified": "2024-12-16"
+    },
+    {
+      "id": "C028",
+      "claim": "Chinese AI research achieved plasma parameter measurements 10x faster than traditional methods",
+      "sources": ["S008"],
+      "confidence": "HIGH",
+      "category": "Technology",
+      "date_verified": "2024-12-16"
+    }
+  ],
   "metadata": {
     "created": "2024-12-15",
     "topic": "Nuclear Fusion Energy Research 2024-2025",
     "confidence_levels": ["HIGH", "MEDIUM", "LOW", "DISPUTED"],
-    "last_updated": "2024-12-15"
+    "last_updated": "2024-12-16",
+    "total_claims": 28,
+    "claims_by_confidence": {
+      "HIGH": 24,
+      "MEDIUM": 4,
+      "LOW": 0,
+      "DISPUTED": 0
+    }
   }
 }

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <radialGradient id="g" cx="-228" cy="236" r="25" gradientTransform="matrix(1.76,0,0,1.76,860,93.5)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#e00000" offset="1"/>
+  </radialGradient>
+  <radialGradient id="f" cx="-228" cy="236" r="25" gradientTransform="matrix(1.76,0,0,1.76,860,146)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop offset="1"/>
+  </radialGradient>
+  <filter id="h" x="-.35294" y="-.35294" width="1.7059" height="1.7059" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="5"/>
+  </filter>
+  <marker id="c" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.72 4.03-10.9-4.02 10.9-4.02c-1.75 2.37-1.74 5.62 0 8.04z" stroke="#000"/>
+  </marker>
+ </defs>
+ <g id="e" transform="translate(41.8,-257)">
+  <use transform="translate(-318,-185)" xlink:href="#a"/>
+  <use transform="translate(-345,-208)" xlink:href="#b"/>
+ </g>
+ <circle id="a" cx="467" cy="515" r="25" fill="url(#g)"/>
+ <circle id="b" cx="467" cy="568" r="25" fill="url(#f)"/>
+ <circle transform="rotate(180,28.5,160)" cx="-190" cy="138" r="17" fill="#f99" filter="url(#h)"/>
+ <path d="m238 161 9 17 9-17-6 19 19-6-17 9 17 9-19-6 6 19-9-17-9 17 6-19-19 6 17-9-17-9 19 6z" fill="#f2f200" stroke="#c7c700" stroke-width=".5"/>
+ <use transform="translate(-351,-182)" xlink:href="#b"/>
+ <g id="d" transform="rotate(15.1 1341 296)">
+  <use transform="translate(101,257)" xlink:href="#e"/>
+  <use transform="translate(-162,-209)" xlink:href="#b"/>
+ </g>
+ <use transform="rotate(-18.3 988.36 107.12)" xlink:href="#d"/>
+ <use transform="rotate(-18.3 -187.64 836.09)" xlink:href="#a"/>
+ <g stroke="#000" stroke-linecap="round" stroke-width="3">
+  <path d="m296 111.6-29 46.8" marker-end="url(#c)"/>
+  <path d="m198 111.6 29 46.8" marker-end="url(#c)"/>
+  <path d="m229 202.6-94.4 152" marker-end="url(#c)"/>
+  <path d="m267 206.6 29 46.8" marker-end="url(#c)"/>
+ </g>
+ <g font-family="'DejaVu Sans'">
+  <text font-size="40px" text-anchor="end"><tspan x="160" y="75"><tspan baseline-shift="super" font-size="65%">2</tspan> H</tspan></text>
+  <text font-size="40px"><tspan x="350" y="84"><tspan baseline-shift="super" font-size="65%">3</tspan> H</tspan></text>
+  <g font-size="30px">
+   <switch transform="translate(437,526)" text-anchor="end">
+    <text systemLanguage="ca">Protó</text>
+    <text systemLanguage="de, en, fr, no, pl, sv">Proton</text>
+    <text systemLanguage="el">Πρωτόνιο</text>
+    <text systemLanguage="es">Protón</text>
+    <text systemLanguage="hu">proton</text>
+    <text systemLanguage="it">Protone</text>
+    <text systemLanguage="ja">陽子</text>
+    <text systemLanguage="mk, ru, uk">Протон</text>
+    <text systemLanguage="tr">Önelcik</text>
+    <text systemLanguage="zh">質子/质子</text>
+    <text systemLanguage="zh-Hant,zh-hant,zh-HK,zh-hk,zh-TW,zh-tw">質子</text>
+    <text systemLanguage="zh-Hans,zh-hans,zh-CN,zh-cn">质子</text>
+    <text>Proton</text>
+   </switch>
+   <switch transform="translate(437,578)" text-anchor="end">
+    <text systemLanguage="ca">Neutró</text>
+    <text systemLanguage="de,en,fr,pl,sv">Neutron</text>
+    <text systemLanguage="el">Νετρόνιο</text>
+    <text systemLanguage="es">Neutrón</text>
+    <text systemLanguage="hu">neutron</text>
+    <text systemLanguage="it">Neutrone</text>
+    <text systemLanguage="ja">中性子</text>
+    <text systemLanguage="mk">Неутрон</text>
+    <text systemLanguage="no">Nøytron</text>
+    <text systemLanguage="ru, uk">Нейтрон</text>
+    <text systemLanguage="tr">Ilıncık</text>
+    <text systemLanguage="zh,zh-Hans,zh-hans,zh-Hant,zh-hant,zh-CN,zh-cn,zh-HK,zh-hk,zh-TW,zh-tw">中子</text>
+    <text>Neutron</text>
+   </switch>
+   <switch transform="translate(340,389)" text-anchor="middle">
+    <text systemLanguage="en"><tspan baseline-shift="super" font-size="65%">4</tspan> He + 3.5 MeV</text>
+    <text systemLanguage="de,ca,eo,fr,it,mk,pl"><tspan baseline-shift="super" font-size="65%">4</tspan> He + 3,5 MeV</text>
+    <text systemLanguage="be,cv,kk,ru,tt"><tspan baseline-shift="super" font-size="65%">4</tspan> He + 3,5 МэВ</text>
+    <text><tspan baseline-shift="super" font-size="65%">4</tspan> He + 3.5 MeV</text>
+   </switch>
+   <switch transform="translate(148,445)" text-anchor="middle">
+    <text systemLanguage="en">n + 14.1 MeV</text>
+    <text systemLanguage="de,ca,eo,fr,it,mk,pl">n + 14,1 MeV</text>
+    <text systemLanguage="be,cv,kk,ru,tt">n + 14,1 МэВ</text>
+    <text>n + 14.1 MeV</text>
+   </switch>
+  </g>
+ </g>
+</svg>

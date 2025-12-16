@@ -1,8 +1,190 @@
 {
-  "sources": [],
+  "sources": [
+    {
+      "id": "S001",
+      "title": "Fusion Energy in 2025: Six Global Trends to Watch",
+      "url": "https://www.iaea.org/newscenter/news/fusion-energy-in-2025-six-global-trends-to-watch",
+      "publisher": "IAEA",
+      "date_accessed": "2024-12-16",
+      "type": "institutional",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S002",
+      "title": "ITER fusion reactor hit by massive decade-long delay and €5bn price hike",
+      "url": "https://physicsworld.com/a/iter-fusion-reactor-hit-by-massive-decade-long-delay-and-e5bn-price-hike/",
+      "publisher": "Physics World",
+      "date_accessed": "2024-12-16",
+      "type": "news",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S003",
+      "title": "The implications of the new ITER schedule",
+      "url": "https://www.ipp.mpg.de/5434926/ITER_baseline_2024",
+      "publisher": "Max Planck Institute for Plasma Physics",
+      "date_accessed": "2024-12-16",
+      "type": "institutional",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S004",
+      "title": "National Ignition Facility - 2024 Annual Report",
+      "url": "https://annual.llnl.gov/fy-2024/national-ignition-facility-2024",
+      "publisher": "Lawrence Livermore National Laboratory",
+      "date_accessed": "2024-12-16",
+      "type": "institutional",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S005",
+      "title": "NIF Sets Power and Energy Records",
+      "url": "https://lasers.llnl.gov/about/keys-to-success/nif-sets-power-energy-records",
+      "publisher": "NIF/LLNL",
+      "date_accessed": "2024-12-16",
+      "type": "institutional",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S006",
+      "title": "MIT spinout Commonwealth Fusion Systems unveils plans for world's first fusion power plant",
+      "url": "https://news.mit.edu/2024/commonwealth-fusion-systems-unveils-worlds-first-fusion-power-plant-1217",
+      "publisher": "MIT News",
+      "date_accessed": "2024-12-16",
+      "type": "institutional",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S007",
+      "title": "Commonwealth Fusion pulls in a colossal $1.8B for novel nuclear tech",
+      "url": "https://www.canarymedia.com/articles/nuclear/commonwealth-fusion-pulls-in-colossal-1-8b-for-novel-nuclear-tech",
+      "publisher": "Canary Media",
+      "date_accessed": "2024-12-16",
+      "type": "news",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S008",
+      "title": "Top 7 nuclear fusion stories of 2024",
+      "url": "https://interestingengineering.com/energy/top-7-nuclear-fusion-stories-of-2024",
+      "publisher": "Interesting Engineering",
+      "date_accessed": "2024-12-16",
+      "type": "news",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S009",
+      "title": "CFS takes its next step toward fusion energy: assembling the SPARC tokamak",
+      "url": "https://blog.cfs.energy/cfs-takes-its-next-step-toward-fusion-energy-assembling-the-sparc-tokamak/",
+      "publisher": "Commonwealth Fusion Systems",
+      "date_accessed": "2024-12-16",
+      "type": "company",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S010",
+      "title": "Assembly starts of SPARC, as ITER cryopumps completed",
+      "url": "https://www.world-nuclear-news.org/articles/assembly-starts-of-sparc-as-iter-cryopumps-completed",
+      "publisher": "World Nuclear News",
+      "date_accessed": "2024-12-16",
+      "type": "news",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S011",
+      "title": "Fusion and China's Quest for Energy Independence",
+      "url": "https://ucigcc.org/blog/fusion-and-chinas-quest-for-energy-independence/",
+      "publisher": "UC Institute on Global Conflict and Cooperation",
+      "date_accessed": "2024-12-16",
+      "type": "academic",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S012",
+      "title": "More fusion progress for China",
+      "url": "https://www.neimagazine.com/news/more-fusion-progress-for-china-11124388/",
+      "publisher": "Nuclear Engineering International",
+      "date_accessed": "2024-12-16",
+      "type": "news",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S013",
+      "title": "NRC Decision Separates Fusion Energy Regulation from Nuclear Fission",
+      "url": "https://www.fusionindustryassociation.org/nrc-decision-separates-fusion-energy-regulation-from-nuclear-fission/",
+      "publisher": "Fusion Industry Association",
+      "date_accessed": "2024-12-16",
+      "type": "industry",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S014",
+      "title": "NRC Fusion Machine Regulatory Page",
+      "url": "https://www.nrc.gov/materials/fusion-machine",
+      "publisher": "US Nuclear Regulatory Commission",
+      "date_accessed": "2024-12-16",
+      "type": "government",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S015",
+      "title": "Top 3 Fusion Energy Players: Investments, Partnerships, and Path to Commercialization",
+      "url": "https://www.nuclearbusiness-platform.com/media/insights/top-3-fusion-energy-players-investments",
+      "publisher": "Nuclear Business Platform",
+      "date_accessed": "2024-12-16",
+      "type": "industry",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S016",
+      "title": "Global Investment in the Private Fusion Sector",
+      "url": "https://fusionforenergy.europa.eu/wp-content/uploads/2025/06/F4E_Observatory_Report_1_Private_Sector.pdf",
+      "publisher": "Fusion for Energy (EU)",
+      "date_accessed": "2024-12-16",
+      "type": "institutional",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S017",
+      "title": "IAEA World Fusion Outlook 2024",
+      "url": "https://www.iaea.org/publications/15777/iaea-world-fusion-outlook-2024",
+      "publisher": "IAEA",
+      "date_accessed": "2024-12-16",
+      "type": "institutional",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S018",
+      "title": "French WEST reactor breaks record in nuclear fusion",
+      "url": "https://www.advancedsciencenews.com/french-west-reactor-breaks-record-in-nuclear-fusion/",
+      "publisher": "Advanced Science News",
+      "date_accessed": "2024-12-16",
+      "type": "news",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "S019",
+      "title": "Private companies aim to demonstrate working fusion reactors in 2025",
+      "url": "https://www.science.org/content/article/private-companies-aim-demonstrate-working-fusion-reactors-2025",
+      "publisher": "Science/AAAS",
+      "date_accessed": "2024-12-16",
+      "type": "news",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "S020",
+      "title": "SPARC (tokamak) Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/SPARC_(tokamak)",
+      "publisher": "Wikipedia",
+      "date_accessed": "2024-12-16",
+      "type": "reference",
+      "reliability": "MEDIUM"
+    }
+  ],
   "metadata": {
     "created": "2024-12-15",
     "topic": "Nuclear Fusion Energy Research 2024-2025",
-    "last_updated": "2024-12-15"
+    "last_updated": "2024-12-16",
+    "total_sources": 20
   }
 }
