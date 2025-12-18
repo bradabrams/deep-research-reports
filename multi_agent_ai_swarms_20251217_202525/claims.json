@@ -199,19 +199,136 @@
       "source_ids": ["S009"],
       "confidence": "MEDIUM",
       "notes": "2024 market analysis - single source"
+    },
+    {
+      "id": "C026",
+      "category": "failures",
+      "claim": "UC Berkeley's MASFT taxonomy identifies three equal failure categories: Specification/System Design, Inter-Agent Misalignment, and Task Verification/Termination",
+      "source_ids": ["S023"],
+      "confidence": "HIGH",
+      "notes": "Academic research based on 150+ execution traces"
+    },
+    {
+      "id": "C027",
+      "category": "failures",
+      "claim": "Agents disobeying task constraints is the most frequent single failure issue at 15.2%",
+      "source_ids": ["S023"],
+      "confidence": "HIGH",
+      "notes": "UC Berkeley MASFT study"
+    },
+    {
+      "id": "C028",
+      "category": "failures",
+      "claim": "Incorrect verification accounts for 13.6% of multi-agent system failures",
+      "source_ids": ["S023"],
+      "confidence": "HIGH",
+      "notes": "UC Berkeley MASFT study"
+    },
+    {
+      "id": "C029",
+      "category": "failures",
+      "claim": "95% of generative AI pilots are either failing outright or severely underperforming expectations according to MIT and McKinsey research",
+      "source_ids": ["S025"],
+      "confidence": "MEDIUM",
+      "notes": "Reported statistic - needs primary source verification"
+    },
+    {
+      "id": "C030",
+      "category": "community",
+      "claim": "67% of teams using multiple AI tools report significant coordination issues according to Stack Overflow 2024 Developer Survey",
+      "source_ids": ["S025"],
+      "confidence": "MEDIUM",
+      "notes": "Stack Overflow survey data"
+    },
+    {
+      "id": "C031",
+      "category": "community",
+      "claim": "LangGraph leads in production adoption with ~6.17M monthly downloads vs CrewAI's ~1.38M",
+      "source_ids": ["S030"],
+      "confidence": "HIGH",
+      "notes": "Download statistics - may change over time"
+    },
+    {
+      "id": "C032",
+      "category": "community",
+      "claim": "AutoGen shows higher latency in production (500-800ms) due to research-oriented architecture",
+      "source_ids": ["S029"],
+      "confidence": "LOW",
+      "notes": "Community observation - lacks rigorous benchmarking"
+    },
+    {
+      "id": "C033",
+      "category": "community",
+      "claim": "CrewAI logging is a major pain point - normal print and log functions don't work well inside Tasks",
+      "source_ids": ["S026", "S027"],
+      "confidence": "MEDIUM",
+      "notes": "Multiple developer reports"
+    },
+    {
+      "id": "C034",
+      "category": "community",
+      "claim": "LangGraph's learning curve is steep - requires understanding graphs and states for even simple agents",
+      "source_ids": ["S026", "S030"],
+      "confidence": "MEDIUM",
+      "notes": "Multiple developer reports"
+    },
+    {
+      "id": "C035",
+      "category": "community",
+      "claim": "Community recommends 'Prototype with Crews, produce with Graphs' hybrid approach",
+      "source_ids": ["S030"],
+      "confidence": "LOW",
+      "notes": "Emerging best practice - not yet validated at scale"
+    },
+    {
+      "id": "C036",
+      "category": "community",
+      "claim": "OpenAI Swarm criticized as 'not truly bottom-up' but rather top-down with task handoffs to sub-agents",
+      "source_ids": ["S021"],
+      "confidence": "LOW",
+      "notes": "HackerNews community criticism"
+    },
+    {
+      "id": "C037",
+      "category": "debugging",
+      "claim": "LLM-as-a-Judge pipeline achieves 94% accuracy in detecting multi-agent failure modes against human experts",
+      "source_ids": ["S023"],
+      "confidence": "HIGH",
+      "notes": "UC Berkeley research finding"
+    },
+    {
+      "id": "C038",
+      "category": "technical",
+      "claim": "LangGraph 1.0 released October 2025 with API stability guarantee through version 2.0",
+      "source_ids": ["S030"],
+      "confidence": "HIGH",
+      "notes": "Official release"
     }
   ],
   "metadata": {
     "topic": "Multi-Agent AI Swarms",
     "created": "2024-12-17",
     "last_updated": "2024-12-17",
-    "phase": "collection_1",
-    "total_claims": 25,
+    "phase": "social_insights",
+    "total_claims": 38,
     "confidence_summary": {
-      "HIGH": 16,
-      "MEDIUM": 9,
-      "LOW": 0,
+      "HIGH": 22,
+      "MEDIUM": 12,
+      "LOW": 4,
       "DISPUTED": 0
+    },
+    "category_breakdown": {
+      "market": 5,
+      "adoption": 3,
+      "investment": 1,
+      "roi": 1,
+      "history": 3,
+      "technical": 8,
+      "safety": 3,
+      "challenges": 2,
+      "failures": 4,
+      "community": 6,
+      "debugging": 1
     }
   }
 }

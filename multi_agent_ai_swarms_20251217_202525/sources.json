@@ -161,13 +161,131 @@
       "date_accessed": "2024-12-17",
       "reliability": "HIGH",
       "key_topics": ["software engineering", "LLM agents", "code generation"]
+    },
+    {
+      "id": "S019",
+      "title": "Swarm, a new agent framework by OpenAI - Hacker News Discussion",
+      "url": "https://news.ycombinator.com/item?id=41815173",
+      "type": "community",
+      "date_accessed": "2024-12-17",
+      "reliability": "LOW",
+      "key_topics": ["OpenAI Swarm", "developer opinions", "criticism", "community reaction"]
+    },
+    {
+      "id": "S020",
+      "title": "Show HN: Durable Swarm - Reliable Multi-Agent Orchestration",
+      "url": "https://news.ycombinator.com/item?id=41870877",
+      "type": "community",
+      "date_accessed": "2024-12-17",
+      "reliability": "LOW",
+      "key_topics": ["durable execution", "fault tolerance", "production reliability"]
+    },
+    {
+      "id": "S021",
+      "title": "We've been building Swarm agents incorrectly - Hacker News",
+      "url": "https://news.ycombinator.com/item?id=44856850",
+      "type": "community",
+      "date_accessed": "2024-12-17",
+      "reliability": "LOW",
+      "key_topics": ["swarm architecture criticism", "top-down vs bottom-up", "true swarm design"]
+    },
+    {
+      "id": "S022",
+      "title": "Ten Reasons Your Multi-Agent Workflows Fail - QCon SF 2024",
+      "url": "https://www.infoq.com/news/2024/11/qconsf-multiagent-fail/",
+      "type": "conference",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["failure modes", "Victor Dibia", "Microsoft Research", "production pitfalls"]
+    },
+    {
+      "id": "S023",
+      "title": "Why Do Multi-Agent LLM Systems Fail? - UC Berkeley Research",
+      "url": "https://arxiv.org/html/2503.13657v2",
+      "type": "academic_paper",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["MASFT taxonomy", "failure categories", "verification failures"]
+    },
+    {
+      "id": "S024",
+      "title": "7 Multi-Agent Debugging Challenges Every AI Team Faces",
+      "url": "https://galileo.ai/blog/debug-multi-agent-ai-systems",
+      "type": "industry_article",
+      "date_accessed": "2024-12-17",
+      "reliability": "MEDIUM",
+      "key_topics": ["debugging", "observability", "tracing", "production challenges"]
+    },
+    {
+      "id": "S025",
+      "title": "Why Your Multi-Agent AI Keeps Failing - Gradient Flow",
+      "url": "https://gradientflow.com/why-your-multi-agent-ai-keeps-failing/",
+      "type": "industry_article",
+      "date_accessed": "2024-12-17",
+      "reliability": "MEDIUM",
+      "key_topics": ["failure analysis", "production issues", "best practices"]
+    },
+    {
+      "id": "S026",
+      "title": "First hand comparison of LangGraph, CrewAI and AutoGen - Aaron Yu",
+      "url": "https://aaronyuqi.medium.com/first-hand-comparison-of-langgraph-crewai-and-autogen-30026e60b563",
+      "type": "community",
+      "date_accessed": "2024-12-17",
+      "reliability": "LOW",
+      "key_topics": ["firsthand experience", "learning curve", "practical comparison"]
+    },
+    {
+      "id": "S027",
+      "title": "AutoGen vs. LangGraph vs. CrewAI: A Production Engineer's Honest Comparison",
+      "url": "https://python.plainenglish.io/autogen-vs-langgraph-vs-crewai-a-production-engineers-honest-comparison-d557b3b9262c",
+      "type": "community",
+      "date_accessed": "2024-12-17",
+      "reliability": "LOW",
+      "key_topics": ["production experience", "honest assessment", "framework selection"]
+    },
+    {
+      "id": "S028",
+      "title": "I Managed a Swarm of 20 AI Agents for a Week - Zach Wills",
+      "url": "https://zachwills.net/i-managed-a-swarm-of-20-ai-agents-for-a-week-here-are-the-8-rules-i-learned/",
+      "type": "community",
+      "date_accessed": "2024-12-17",
+      "reliability": "LOW",
+      "key_topics": ["real-world experience", "8 rules", "practical lessons", "agent management"]
+    },
+    {
+      "id": "S029",
+      "title": "CrewAI vs. AutoGen: Comparing AI Agent Frameworks - Oxylabs",
+      "url": "https://oxylabs.io/blog/crewai-vs-autogen",
+      "type": "industry_article",
+      "date_accessed": "2024-12-17",
+      "reliability": "MEDIUM",
+      "key_topics": ["framework comparison", "limitations", "use cases"]
+    },
+    {
+      "id": "S030",
+      "title": "LangGraph vs CrewAI: Comparison Guide for Production Agents 2025",
+      "url": "https://xcelore.com/blog/langgraph-vs-crewai/",
+      "type": "industry_article",
+      "date_accessed": "2024-12-17",
+      "reliability": "MEDIUM",
+      "key_topics": ["production comparison", "state management", "enterprise deployment"]
     }
   ],
   "metadata": {
     "topic": "Multi-Agent AI Swarms",
     "created": "2024-12-17",
     "last_updated": "2024-12-17",
-    "phase": "collection_1",
-    "total_sources": 18
+    "phase": "social_insights",
+    "total_sources": 30,
+    "source_breakdown": {
+      "academic_paper": 5,
+      "official_documentation": 6,
+      "market_report": 2,
+      "industry_article": 6,
+      "research_report": 2,
+      "encyclopedia": 2,
+      "community": 6,
+      "conference": 1
+    }
   }
 }
