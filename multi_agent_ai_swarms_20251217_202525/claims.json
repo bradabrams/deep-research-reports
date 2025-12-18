@@ -1,8 +1,217 @@
 {
-  "claims": [],
+  "claims": [
+    {
+      "id": "C001",
+      "category": "market",
+      "claim": "The global enterprise agentic AI market was valued at USD 2.58 billion in 2024 and is projected to reach USD 24.50 billion by 2030",
+      "source_ids": ["S005"],
+      "confidence": "HIGH",
+      "notes": "Grand View Research market report"
+    },
+    {
+      "id": "C002",
+      "category": "market",
+      "claim": "The agentic AI market is growing at a CAGR of 46.2% from 2025 to 2030",
+      "source_ids": ["S005"],
+      "confidence": "HIGH",
+      "notes": "Grand View Research projection"
+    },
+    {
+      "id": "C003",
+      "category": "market",
+      "claim": "The broader AI agents market was USD 5.9 billion in 2024, projected to reach USD 105.6 billion by 2034 (CAGR 38.5%)",
+      "source_ids": ["S006"],
+      "confidence": "HIGH",
+      "notes": "GM Insights market analysis"
+    },
+    {
+      "id": "C004",
+      "category": "adoption",
+      "claim": "Approximately 85% of enterprises are expected to implement AI agents by the end of 2025",
+      "source_ids": ["S015", "S016"],
+      "confidence": "MEDIUM",
+      "notes": "Industry survey data"
+    },
+    {
+      "id": "C005",
+      "category": "adoption",
+      "claim": "66.4% of AI agent implementations use multi-agent system designs",
+      "source_ids": ["S015"],
+      "confidence": "MEDIUM",
+      "notes": "Industry statistics"
+    },
+    {
+      "id": "C006",
+      "category": "adoption",
+      "claim": "79% of organizations have implemented AI agents at some level according to PwC survey",
+      "source_ids": ["S016"],
+      "confidence": "MEDIUM",
+      "notes": "PwC survey data"
+    },
+    {
+      "id": "C007",
+      "category": "investment",
+      "claim": "AI agent startups raised $3.8 billion in 2024, nearly tripling investments from the previous year",
+      "source_ids": ["S015", "S016"],
+      "confidence": "HIGH",
+      "notes": "Multiple sources confirm investment surge"
+    },
+    {
+      "id": "C008",
+      "category": "roi",
+      "claim": "Companies report average ROI of 171% from AI agents, with U.S. enterprises achieving around 192%",
+      "source_ids": ["S016"],
+      "confidence": "MEDIUM",
+      "notes": "Industry survey - may have selection bias"
+    },
+    {
+      "id": "C009",
+      "category": "history",
+      "claim": "The term 'Swarm Intelligence' was first introduced by Gerardo Beni and Jing Wang in 1989",
+      "source_ids": ["S009"],
+      "confidence": "HIGH",
+      "notes": "Well-established historical fact"
+    },
+    {
+      "id": "C010",
+      "category": "history",
+      "claim": "Ant Colony Optimization was initially proposed by Marco Dorigo in 1992 in his PhD thesis",
+      "source_ids": ["S010"],
+      "confidence": "HIGH",
+      "notes": "Well-documented academic history"
+    },
+    {
+      "id": "C011",
+      "category": "history",
+      "claim": "Particle Swarm Optimization was developed by James Kennedy and Russell Eberhart in 1995",
+      "source_ids": ["S009"],
+      "confidence": "HIGH",
+      "notes": "Well-documented academic history"
+    },
+    {
+      "id": "C012",
+      "category": "technical",
+      "claim": "AutoGen v0.4 adopts an actor model with event-driven, asynchronous architecture for distributed agent systems",
+      "source_ids": ["S011", "S012"],
+      "confidence": "HIGH",
+      "notes": "Official Microsoft documentation"
+    },
+    {
+      "id": "C013",
+      "category": "technical",
+      "claim": "AutoGen uses a three-layer architecture: Core API, AgentChat API, and Extensions API",
+      "source_ids": ["S012"],
+      "confidence": "HIGH",
+      "notes": "Official GitHub documentation"
+    },
+    {
+      "id": "C014",
+      "category": "technical",
+      "claim": "CrewAI uses role-based agent design with three attributes: role, goal, and backstory",
+      "source_ids": ["S013", "S014"],
+      "confidence": "HIGH",
+      "notes": "Official CrewAI documentation"
+    },
+    {
+      "id": "C015",
+      "category": "technical",
+      "claim": "OpenAI Swarm is built on two primitives: agents and handoffs, with stateless architecture",
+      "source_ids": ["S002"],
+      "confidence": "HIGH",
+      "notes": "Official OpenAI GitHub repo"
+    },
+    {
+      "id": "C016",
+      "category": "technical",
+      "claim": "OpenAI Swarm has been succeeded by the OpenAI Agents SDK for production use cases",
+      "source_ids": ["S002"],
+      "confidence": "HIGH",
+      "notes": "Official OpenAI announcement"
+    },
+    {
+      "id": "C017",
+      "category": "technical",
+      "claim": "CrewAI has reached 30.5K GitHub stars and 1M monthly downloads",
+      "source_ids": ["S014"],
+      "confidence": "HIGH",
+      "notes": "GitHub statistics - may change over time"
+    },
+    {
+      "id": "C018",
+      "category": "safety",
+      "claim": "Multi-agent systems have three key failure modes: miscoordination, conflict, and collusion",
+      "source_ids": ["S008", "S017"],
+      "confidence": "HIGH",
+      "notes": "Cooperative AI Foundation research report"
+    },
+    {
+      "id": "C019",
+      "category": "safety",
+      "claim": "GPT-4 can transmit covert steganographic messages 26% of the time without detection in multi-agent scenarios",
+      "source_ids": ["S008"],
+      "confidence": "MEDIUM",
+      "notes": "Specific research finding - needs replication"
+    },
+    {
+      "id": "C020",
+      "category": "safety",
+      "claim": "Emergent behavior in MAS can cause severe performance deviations and catastrophic failures if not properly handled",
+      "source_ids": ["S007"],
+      "confidence": "HIGH",
+      "notes": "Academic paper on MAS safety"
+    },
+    {
+      "id": "C021",
+      "category": "challenges",
+      "claim": "80% of enterprise IT leaders report facing significant challenges in AI agent adoption",
+      "source_ids": ["S016"],
+      "confidence": "MEDIUM",
+      "notes": "Industry survey"
+    },
+    {
+      "id": "C022",
+      "category": "challenges",
+      "claim": "Top barriers to AI agent adoption: cybersecurity (35%), data privacy (30%), regulatory clarity (21%)",
+      "source_ids": ["S016"],
+      "confidence": "MEDIUM",
+      "notes": "Industry survey data"
+    },
+    {
+      "id": "C023",
+      "category": "market",
+      "claim": "45% of organizations are most interested in multiagent systems as a GenAI development according to Deloitte",
+      "source_ids": ["S015"],
+      "confidence": "HIGH",
+      "notes": "Deloitte State of Generative AI in Enterprise Report 2025"
+    },
+    {
+      "id": "C024",
+      "category": "technical",
+      "claim": "LangGraph treats workflows as graphs where each node represents a specific task or function",
+      "source_ids": ["S001"],
+      "confidence": "HIGH",
+      "notes": "Framework documentation"
+    },
+    {
+      "id": "C025",
+      "category": "market",
+      "claim": "ACO-based solutions account for roughly 45% of swarm intelligence market share",
+      "source_ids": ["S009"],
+      "confidence": "MEDIUM",
+      "notes": "2024 market analysis - single source"
+    }
+  ],
   "metadata": {
     "topic": "Multi-Agent AI Swarms",
     "created": "2024-12-17",
-    "phase": "planning"
+    "last_updated": "2024-12-17",
+    "phase": "collection_1",
+    "total_claims": 25,
+    "confidence_summary": {
+      "HIGH": 16,
+      "MEDIUM": 9,
+      "LOW": 0,
+      "DISPUTED": 0
+    }
   }
 }

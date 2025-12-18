@@ -1,8 +1,173 @@
 {
-  "sources": [],
+  "sources": [
+    {
+      "id": "S001",
+      "title": "Let's compare AutoGen, crewAI, LangGraph and OpenAI Swarm",
+      "url": "https://www.gettingstarted.ai/best-multi-agent-ai-framework/",
+      "type": "industry_article",
+      "date_accessed": "2024-12-17",
+      "reliability": "MEDIUM",
+      "key_topics": ["framework comparison", "AutoGen", "CrewAI", "LangGraph", "OpenAI Swarm"]
+    },
+    {
+      "id": "S002",
+      "title": "GitHub - openai/swarm: Educational framework exploring ergonomic, lightweight multi-agent orchestration",
+      "url": "https://github.com/openai/swarm",
+      "type": "official_documentation",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["OpenAI Swarm", "agent handoffs", "routines", "stateless architecture"]
+    },
+    {
+      "id": "S003",
+      "title": "Large Language Model based Multi-Agents: A Survey of Progress and Challenges (IJCAI 2024)",
+      "url": "https://arxiv.org/abs/2402.01680",
+      "type": "academic_paper",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["LLM multi-agents", "survey", "benchmarks", "challenges"]
+    },
+    {
+      "id": "S004",
+      "title": "A Survey on LLM-based Multi-Agent System: Recent Advances and New Frontiers",
+      "url": "https://arxiv.org/abs/2412.17481",
+      "type": "academic_paper",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["LLM-MAS", "applications", "complex tasks", "simulation"]
+    },
+    {
+      "id": "S005",
+      "title": "Enterprise Agentic AI Market Size | Industry Report, 2030",
+      "url": "https://www.grandviewresearch.com/industry-analysis/enterprise-agentic-ai-market-report",
+      "type": "market_report",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["market size", "CAGR", "enterprise adoption", "growth projections"]
+    },
+    {
+      "id": "S006",
+      "title": "AI Agents Market Size & Share, Growth Opportunity 2025-2034",
+      "url": "https://www.gminsights.com/industry-analysis/ai-agents-market",
+      "type": "market_report",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["AI agents market", "market forecast", "industry segments"]
+    },
+    {
+      "id": "S007",
+      "title": "Emergence in Multi-Agent Systems: A Safety Perspective",
+      "url": "https://arxiv.org/html/2408.04514v1",
+      "type": "academic_paper",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["emergent behavior", "safety", "alignment", "MAS"]
+    },
+    {
+      "id": "S008",
+      "title": "Multi-Agent Risks from Advanced AI",
+      "url": "https://arxiv.org/abs/2502.14143",
+      "type": "research_report",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["multi-agent risks", "miscoordination", "conflict", "collusion"]
+    },
+    {
+      "id": "S009",
+      "title": "Swarm Intelligence - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Swarm_intelligence",
+      "type": "encyclopedia",
+      "date_accessed": "2024-12-17",
+      "reliability": "MEDIUM",
+      "key_topics": ["swarm intelligence history", "Beni and Wang", "collective behavior"]
+    },
+    {
+      "id": "S010",
+      "title": "Ant Colony Optimization Algorithms - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms",
+      "type": "encyclopedia",
+      "date_accessed": "2024-12-17",
+      "reliability": "MEDIUM",
+      "key_topics": ["ACO", "Marco Dorigo", "optimization algorithms"]
+    },
+    {
+      "id": "S011",
+      "title": "AutoGen - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/project/autogen/",
+      "type": "official_documentation",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["AutoGen", "Microsoft", "multi-agent framework", "conversational agents"]
+    },
+    {
+      "id": "S012",
+      "title": "GitHub - microsoft/autogen: A programming framework for agentic AI",
+      "url": "https://github.com/microsoft/autogen",
+      "type": "official_documentation",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["AutoGen architecture", "layered design", "asynchronous messaging"]
+    },
+    {
+      "id": "S013",
+      "title": "CrewAI - The Leading Multi-Agent Platform",
+      "url": "https://www.crewai.com/",
+      "type": "official_documentation",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["CrewAI", "role-based agents", "task orchestration"]
+    },
+    {
+      "id": "S014",
+      "title": "GitHub - crewAIInc/crewAI: Framework for orchestrating role-playing AI agents",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "type": "official_documentation",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["CrewAI framework", "crews", "flows", "agent collaboration"]
+    },
+    {
+      "id": "S015",
+      "title": "35+ Powerful AI Agents Statistics: Adoption & Insights",
+      "url": "https://www.warmly.ai/p/blog/ai-agents-statistics",
+      "type": "industry_report",
+      "date_accessed": "2024-12-17",
+      "reliability": "MEDIUM",
+      "key_topics": ["adoption statistics", "enterprise AI", "market trends"]
+    },
+    {
+      "id": "S016",
+      "title": "Agentic AI Adoption Trends & Enterprise ROI Statistics for 2025",
+      "url": "https://blog.arcade.dev/agentic-framework-adoption-trends",
+      "type": "industry_report",
+      "date_accessed": "2024-12-17",
+      "reliability": "MEDIUM",
+      "key_topics": ["adoption trends", "ROI", "enterprise implementation"]
+    },
+    {
+      "id": "S017",
+      "title": "Cooperative AI Foundation - Multi-Agent Risks from Advanced AI",
+      "url": "https://www.cooperativeai.com/post/new-report-multi-agent-risks-from-advanced-ai",
+      "type": "research_report",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["cooperative AI", "multi-agent risks", "safety research"]
+    },
+    {
+      "id": "S018",
+      "title": "LLM-Based Multi-Agent Systems for Software Engineering (ACM TOSEM)",
+      "url": "https://dl.acm.org/doi/10.1145/3712003",
+      "type": "academic_paper",
+      "date_accessed": "2024-12-17",
+      "reliability": "HIGH",
+      "key_topics": ["software engineering", "LLM agents", "code generation"]
+    }
+  ],
   "metadata": {
     "topic": "Multi-Agent AI Swarms",
     "created": "2024-12-17",
-    "phase": "planning"
+    "last_updated": "2024-12-17",
+    "phase": "collection_1",
+    "total_sources": 18
   }
 }
