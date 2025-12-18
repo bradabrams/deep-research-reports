@@ -2,7 +2,250 @@
   "metadata": {
     "topic": "Multi-Agent AI Swarms",
     "created": "2024-12-18",
-    "status": "planning"
+    "updated": "2024-12-18",
+    "status": "research_iteration_1",
+    "total_claims": 30
   },
-  "claims": []
+  "claims": [
+    {
+      "id": 1,
+      "category": "market",
+      "claim": "The AI Agents market was valued at USD 7.84 billion in 2025 and is projected to grow to USD 52.62 billion by 2030 at a CAGR of 46.3%",
+      "source_ids": [8],
+      "confidence": "MEDIUM",
+      "notes": "Industry report projection, single source"
+    },
+    {
+      "id": 2,
+      "category": "market",
+      "claim": "The global enterprise agentic AI market was estimated at USD 2.58 billion in 2024 and is projected to reach USD 24.50 billion by 2030",
+      "source_ids": [9],
+      "confidence": "MEDIUM",
+      "notes": "Grand View Research projection"
+    },
+    {
+      "id": 3,
+      "category": "adoption",
+      "claim": "79% of organizations now report AI agent adoption",
+      "source_ids": [13],
+      "confidence": "MEDIUM",
+      "notes": "Industry statistics compilation"
+    },
+    {
+      "id": 4,
+      "category": "adoption",
+      "claim": "Approximately 85% of enterprises are expected to implement AI agents by end of 2025",
+      "source_ids": [13],
+      "confidence": "LOW",
+      "notes": "Projection, not verified data"
+    },
+    {
+      "id": 5,
+      "category": "adoption",
+      "claim": "66.4% of implementations use multi-agent system designs rather than single-agent approaches",
+      "source_ids": [13],
+      "confidence": "MEDIUM",
+      "notes": "Reflects enterprise workflow complexity needs"
+    },
+    {
+      "id": 6,
+      "category": "adoption",
+      "claim": "23% of organizations are scaling agentic AI systems, with additional 39% experimenting with AI agents",
+      "source_ids": [14],
+      "confidence": "HIGH",
+      "notes": "McKinsey survey data"
+    },
+    {
+      "id": 7,
+      "category": "market",
+      "claim": "Multi-agent systems adoption is expected to grow at CAGR of 44.8% during 2024-2030",
+      "source_ids": [8, 12],
+      "confidence": "MEDIUM",
+      "notes": "Multiple industry reports cite similar growth"
+    },
+    {
+      "id": 8,
+      "category": "framework",
+      "claim": "OpenAI Swarm is an educational/experimental framework, not production-ready, now replaced by OpenAI Agents SDK",
+      "source_ids": [1],
+      "confidence": "HIGH",
+      "notes": "Primary source - OpenAI documentation"
+    },
+    {
+      "id": 9,
+      "category": "framework",
+      "claim": "Swarm uses two primary abstractions: Agents and Handoffs, operating statelessly via Chat Completions API",
+      "source_ids": [1],
+      "confidence": "HIGH",
+      "notes": "Primary source - OpenAI documentation"
+    },
+    {
+      "id": 10,
+      "category": "framework",
+      "claim": "CrewAI raised $18M Series A funding, reached $3.2M revenue by July 2025, with 150+ enterprise customers",
+      "source_ids": [5, 23],
+      "confidence": "HIGH",
+      "notes": "Company and investor sources"
+    },
+    {
+      "id": 11,
+      "category": "framework",
+      "claim": "CrewAI executes 10 million+ agents per month and is used by nearly half of Fortune 500",
+      "source_ids": [5, 17],
+      "confidence": "MEDIUM",
+      "notes": "Company claim, difficult to independently verify"
+    },
+    {
+      "id": 12,
+      "category": "framework",
+      "claim": "LangGraph is running in production at LinkedIn, Uber, and 400+ other companies",
+      "source_ids": [4, 18],
+      "confidence": "HIGH",
+      "notes": "LangChain company claims with named customers"
+    },
+    {
+      "id": 13,
+      "category": "framework",
+      "claim": "LangChain team recommends LangGraph for agents over LangChain itself",
+      "source_ids": [4, 12],
+      "confidence": "HIGH",
+      "notes": "Official LangChain position"
+    },
+    {
+      "id": 14,
+      "category": "framework",
+      "claim": "AutoGen v0.4 adopts actor model architecture for multi-agent systems with event-driven design",
+      "source_ids": [3, 19],
+      "confidence": "HIGH",
+      "notes": "Microsoft documentation"
+    },
+    {
+      "id": 15,
+      "category": "framework",
+      "claim": "MetaGPT achieves 85.9% and 87.7% Pass@1 on code generation benchmarks, 100% task completion rate",
+      "source_ids": [2, 20],
+      "confidence": "HIGH",
+      "notes": "Academic paper with benchmarks"
+    },
+    {
+      "id": 16,
+      "category": "framework",
+      "claim": "MetaGPT defines five roles: product manager, architect, project manager, engineer, QA engineer",
+      "source_ids": [2, 22],
+      "confidence": "HIGH",
+      "notes": "Multiple sources confirm architecture"
+    },
+    {
+      "id": 17,
+      "category": "historical",
+      "claim": "Ant Colony Optimization was proposed by Marco Dorigo in 1992 in his PhD thesis",
+      "source_ids": [10, 11],
+      "confidence": "HIGH",
+      "notes": "Well-documented historical fact"
+    },
+    {
+      "id": 18,
+      "category": "historical",
+      "claim": "Particle Swarm Optimization was introduced by Kennedy and Eberhart in 1995",
+      "source_ids": [10],
+      "confidence": "HIGH",
+      "notes": "Well-documented historical fact"
+    },
+    {
+      "id": 19,
+      "category": "historical",
+      "claim": "Swarm intelligence concept was first proposed in the 1980s",
+      "source_ids": [10],
+      "confidence": "HIGH",
+      "notes": "Wikipedia with academic sources"
+    },
+    {
+      "id": 20,
+      "category": "safety",
+      "claim": "Multi-agent risks report had contributions from 50+ researchers including DeepMind, Anthropic, Carnegie Mellon, Harvard",
+      "source_ids": [7],
+      "confidence": "HIGH",
+      "notes": "Cooperative AI Foundation report"
+    },
+    {
+      "id": 21,
+      "category": "safety",
+      "claim": "Three key failure modes identified: miscoordination, conflict, and collusion",
+      "source_ids": [7],
+      "confidence": "HIGH",
+      "notes": "Academic consensus in safety research"
+    },
+    {
+      "id": 22,
+      "category": "safety",
+      "claim": "75% of tech leaders cite governance as primary deployment challenge for agent systems",
+      "source_ids": [13],
+      "confidence": "MEDIUM",
+      "notes": "Survey data"
+    },
+    {
+      "id": 23,
+      "category": "safety",
+      "claim": "Nearly 60% of enterprises cite non-compliance risks and data governance concerns as key adoption barriers",
+      "source_ids": [13],
+      "confidence": "MEDIUM",
+      "notes": "Survey data"
+    },
+    {
+      "id": 24,
+      "category": "technical",
+      "claim": "LLM agents exhibit human-like social behaviors including conformity and consensus reaching",
+      "source_ids": [6],
+      "confidence": "MEDIUM",
+      "notes": "Academic research finding, ACL 2024"
+    },
+    {
+      "id": 25,
+      "category": "technical",
+      "claim": "AutoGen treats workflows as conversations between agents; LangGraph represents them as graphs with nodes and edges",
+      "source_ids": [3, 4, 12],
+      "confidence": "HIGH",
+      "notes": "Multiple sources confirm architectural difference"
+    },
+    {
+      "id": 26,
+      "category": "business",
+      "claim": "Coding and Software Development agent role is experiencing fastest adoption in enterprise",
+      "source_ids": [13],
+      "confidence": "MEDIUM",
+      "notes": "Industry trend analysis"
+    },
+    {
+      "id": 27,
+      "category": "business",
+      "claim": "North America dominated AI agents market with 39.63% revenue share in 2025",
+      "source_ids": [8, 9],
+      "confidence": "MEDIUM",
+      "notes": "Market research reports"
+    },
+    {
+      "id": 28,
+      "category": "business",
+      "claim": "Asia Pacific anticipated to register fastest CAGR for AI agents market",
+      "source_ids": [9],
+      "confidence": "MEDIUM",
+      "notes": "Market projection"
+    },
+    {
+      "id": 29,
+      "category": "technical",
+      "claim": "Key challenges include hallucinated plans, premature termination, redundant actions due to limited teammate awareness",
+      "source_ids": [6],
+      "confidence": "HIGH",
+      "notes": "Academic research findings"
+    },
+    {
+      "id": 30,
+      "category": "framework",
+      "claim": "AutoGen original creators Chi Wang and Qingyun Wu departed Microsoft in late 2024 to establish AG2 community fork",
+      "source_ids": [3],
+      "confidence": "HIGH",
+      "notes": "Reported development affecting framework"
+    }
+  ]
 }
