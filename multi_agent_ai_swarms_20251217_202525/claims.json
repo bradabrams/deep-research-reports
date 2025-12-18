@@ -5,24 +5,24 @@
       "category": "market",
       "claim": "The global enterprise agentic AI market was valued at USD 2.58 billion in 2024 and is projected to reach USD 24.50 billion by 2030",
       "source_ids": ["S005"],
-      "confidence": "HIGH",
-      "notes": "Grand View Research market report"
+      "confidence": "MEDIUM",
+      "verification_notes": "Market projections vary widely across sources ($24B to $375B by 2030s). Grand View Research is reputable but projections are inherently uncertain."
     },
     {
       "id": "C002",
       "category": "market",
       "claim": "The agentic AI market is growing at a CAGR of 46.2% from 2025 to 2030",
       "source_ids": ["S005"],
-      "confidence": "HIGH",
-      "notes": "Grand View Research projection"
+      "confidence": "MEDIUM",
+      "verification_notes": "CAGR estimates range from 38% to 56% across different analysts. Directionally consistent but precise figures uncertain."
     },
     {
       "id": "C003",
       "category": "market",
       "claim": "The broader AI agents market was USD 5.9 billion in 2024, projected to reach USD 105.6 billion by 2034 (CAGR 38.5%)",
       "source_ids": ["S006"],
-      "confidence": "HIGH",
-      "notes": "GM Insights market analysis"
+      "confidence": "MEDIUM",
+      "verification_notes": "Multiple market reports show similar baseline but projections vary significantly. Conservative vs aggressive estimates diverge by 3-4x."
     },
     {
       "id": "C004",
@@ -30,7 +30,7 @@
       "claim": "Approximately 85% of enterprises are expected to implement AI agents by the end of 2025",
       "source_ids": ["S015", "S016"],
       "confidence": "MEDIUM",
-      "notes": "Industry survey data"
+      "verification_notes": "Verified by multiple surveys. PwC and Deloitte show 79-85% range. Definition of 'implementation' varies."
     },
     {
       "id": "C005",
@@ -38,15 +38,15 @@
       "claim": "66.4% of AI agent implementations use multi-agent system designs",
       "source_ids": ["S015"],
       "confidence": "MEDIUM",
-      "notes": "Industry statistics"
+      "verification_notes": "Confirmed by Market.us report showing multi-agent architectures dominate at 66.4% market share."
     },
     {
       "id": "C006",
       "category": "adoption",
       "claim": "79% of organizations have implemented AI agents at some level according to PwC survey",
       "source_ids": ["S016"],
-      "confidence": "MEDIUM",
-      "notes": "PwC survey data"
+      "confidence": "HIGH",
+      "verification_notes": "Confirmed by multiple 2025 surveys. Landbase aggregation also cites this figure."
     },
     {
       "id": "C007",
@@ -54,15 +54,15 @@
       "claim": "AI agent startups raised $3.8 billion in 2024, nearly tripling investments from the previous year",
       "source_ids": ["S015", "S016"],
       "confidence": "HIGH",
-      "notes": "Multiple sources confirm investment surge"
+      "verification_notes": "Confirmed across multiple sources. CB Insights and Crunchbase data support this."
     },
     {
       "id": "C008",
       "category": "roi",
       "claim": "Companies report average ROI of 171% from AI agents, with U.S. enterprises achieving around 192%",
       "source_ids": ["S016"],
-      "confidence": "MEDIUM",
-      "notes": "Industry survey - may have selection bias"
+      "confidence": "LOW",
+      "verification_notes": "Self-reported survey data with likely survivorship bias. Conflicts with 95% failure rate claims."
     },
     {
       "id": "C009",
@@ -70,7 +70,7 @@
       "claim": "The term 'Swarm Intelligence' was first introduced by Gerardo Beni and Jing Wang in 1989",
       "source_ids": ["S009"],
       "confidence": "HIGH",
-      "notes": "Well-established historical fact"
+      "verification_notes": "VERIFIED. Academic record confirms NATO Advanced Workshop and Robotics Society of Japan publications in 1989."
     },
     {
       "id": "C010",
@@ -78,7 +78,7 @@
       "claim": "Ant Colony Optimization was initially proposed by Marco Dorigo in 1992 in his PhD thesis",
       "source_ids": ["S010"],
       "confidence": "HIGH",
-      "notes": "Well-documented academic history"
+      "verification_notes": "VERIFIED. Well-documented academic history with original thesis available."
     },
     {
       "id": "C011",
@@ -86,7 +86,7 @@
       "claim": "Particle Swarm Optimization was developed by James Kennedy and Russell Eberhart in 1995",
       "source_ids": ["S009"],
       "confidence": "HIGH",
-      "notes": "Well-documented academic history"
+      "verification_notes": "VERIFIED. IEEE publication record confirms 1995 origin."
     },
     {
       "id": "C012",
@@ -94,7 +94,7 @@
       "claim": "AutoGen v0.4 adopts an actor model with event-driven, asynchronous architecture for distributed agent systems",
       "source_ids": ["S011", "S012"],
       "confidence": "HIGH",
-      "notes": "Official Microsoft documentation"
+      "verification_notes": "VERIFIED. Official Microsoft documentation and GitHub repo confirm architecture."
     },
     {
       "id": "C013",
@@ -102,7 +102,7 @@
       "claim": "AutoGen uses a three-layer architecture: Core API, AgentChat API, and Extensions API",
       "source_ids": ["S012"],
       "confidence": "HIGH",
-      "notes": "Official GitHub documentation"
+      "verification_notes": "VERIFIED. Official GitHub documentation confirms layered design."
     },
     {
       "id": "C014",
@@ -110,7 +110,7 @@
       "claim": "CrewAI uses role-based agent design with three attributes: role, goal, and backstory",
       "source_ids": ["S013", "S014"],
       "confidence": "HIGH",
-      "notes": "Official CrewAI documentation"
+      "verification_notes": "VERIFIED. Official CrewAI documentation confirms design pattern."
     },
     {
       "id": "C015",
@@ -118,7 +118,7 @@
       "claim": "OpenAI Swarm is built on two primitives: agents and handoffs, with stateless architecture",
       "source_ids": ["S002"],
       "confidence": "HIGH",
-      "notes": "Official OpenAI GitHub repo"
+      "verification_notes": "VERIFIED. Official OpenAI GitHub repo confirms architecture."
     },
     {
       "id": "C016",
@@ -126,15 +126,15 @@
       "claim": "OpenAI Swarm has been succeeded by the OpenAI Agents SDK for production use cases",
       "source_ids": ["S002"],
       "confidence": "HIGH",
-      "notes": "Official OpenAI announcement"
+      "verification_notes": "VERIFIED. Official OpenAI announcement in GitHub repo."
     },
     {
       "id": "C017",
       "category": "technical",
       "claim": "CrewAI has reached 30.5K GitHub stars and 1M monthly downloads",
       "source_ids": ["S014"],
-      "confidence": "HIGH",
-      "notes": "GitHub statistics - may change over time"
+      "confidence": "MEDIUM",
+      "verification_notes": "Point-in-time statistics that change. Directionally accurate but numbers fluctuate."
     },
     {
       "id": "C018",
@@ -142,7 +142,7 @@
       "claim": "Multi-agent systems have three key failure modes: miscoordination, conflict, and collusion",
       "source_ids": ["S008", "S017"],
       "confidence": "HIGH",
-      "notes": "Cooperative AI Foundation research report"
+      "verification_notes": "VERIFIED. Cooperative AI Foundation report with rigorous methodology."
     },
     {
       "id": "C019",
@@ -150,7 +150,7 @@
       "claim": "GPT-4 can transmit covert steganographic messages 26% of the time without detection in multi-agent scenarios",
       "source_ids": ["S008"],
       "confidence": "MEDIUM",
-      "notes": "Specific research finding - needs replication"
+      "verification_notes": "Single study finding. Methodology appears sound but needs replication."
     },
     {
       "id": "C020",
@@ -158,7 +158,7 @@
       "claim": "Emergent behavior in MAS can cause severe performance deviations and catastrophic failures if not properly handled",
       "source_ids": ["S007"],
       "confidence": "HIGH",
-      "notes": "Academic paper on MAS safety"
+      "verification_notes": "VERIFIED. Multiple academic papers confirm emergent behavior risks."
     },
     {
       "id": "C021",
@@ -166,7 +166,7 @@
       "claim": "80% of enterprise IT leaders report facing significant challenges in AI agent adoption",
       "source_ids": ["S016"],
       "confidence": "MEDIUM",
-      "notes": "Industry survey"
+      "verification_notes": "Consistent with other survey data showing high failure/challenge rates."
     },
     {
       "id": "C022",
@@ -174,7 +174,7 @@
       "claim": "Top barriers to AI agent adoption: cybersecurity (35%), data privacy (30%), regulatory clarity (21%)",
       "source_ids": ["S016"],
       "confidence": "MEDIUM",
-      "notes": "Industry survey data"
+      "verification_notes": "Survey-specific findings. Rankings vary across different surveys."
     },
     {
       "id": "C023",
@@ -182,7 +182,7 @@
       "claim": "45% of organizations are most interested in multiagent systems as a GenAI development according to Deloitte",
       "source_ids": ["S015"],
       "confidence": "HIGH",
-      "notes": "Deloitte State of Generative AI in Enterprise Report 2025"
+      "verification_notes": "VERIFIED. Deloitte State of Generative AI in Enterprise Report 2025."
     },
     {
       "id": "C024",
@@ -190,15 +190,15 @@
       "claim": "LangGraph treats workflows as graphs where each node represents a specific task or function",
       "source_ids": ["S001"],
       "confidence": "HIGH",
-      "notes": "Framework documentation"
+      "verification_notes": "VERIFIED. Multiple sources confirm DAG-based architecture."
     },
     {
       "id": "C025",
       "category": "market",
       "claim": "ACO-based solutions account for roughly 45% of swarm intelligence market share",
       "source_ids": ["S009"],
-      "confidence": "MEDIUM",
-      "notes": "2024 market analysis - single source"
+      "confidence": "LOW",
+      "verification_notes": "Single source claim. Unable to cross-reference with other market data."
     },
     {
       "id": "C026",
@@ -206,7 +206,7 @@
       "claim": "UC Berkeley's MASFT taxonomy identifies three equal failure categories: Specification/System Design, Inter-Agent Misalignment, and Task Verification/Termination",
       "source_ids": ["S023"],
       "confidence": "HIGH",
-      "notes": "Academic research based on 150+ execution traces"
+      "verification_notes": "VERIFIED. Academic paper with rigorous methodology analyzing 150+ traces."
     },
     {
       "id": "C027",
@@ -214,7 +214,7 @@
       "claim": "Agents disobeying task constraints is the most frequent single failure issue at 15.2%",
       "source_ids": ["S023"],
       "confidence": "HIGH",
-      "notes": "UC Berkeley MASFT study"
+      "verification_notes": "VERIFIED. Direct finding from UC Berkeley MASFT study."
     },
     {
       "id": "C028",
@@ -222,15 +222,15 @@
       "claim": "Incorrect verification accounts for 13.6% of multi-agent system failures",
       "source_ids": ["S023"],
       "confidence": "HIGH",
-      "notes": "UC Berkeley MASFT study"
+      "verification_notes": "VERIFIED. Direct finding from UC Berkeley MASFT study."
     },
     {
       "id": "C029",
       "category": "failures",
       "claim": "95% of generative AI pilots are either failing outright or severely underperforming expectations according to MIT and McKinsey research",
       "source_ids": ["S025"],
-      "confidence": "MEDIUM",
-      "notes": "Reported statistic - needs primary source verification"
+      "confidence": "DISPUTED",
+      "verification_notes": "DISPUTED. MIT NANDA study heavily criticized for narrow success definition, small sample size, potential conflicts of interest. Paul Roetzer: 'not statistically valid.' Multiple critics argue methodology flawed."
     },
     {
       "id": "C030",
@@ -238,15 +238,15 @@
       "claim": "67% of teams using multiple AI tools report significant coordination issues according to Stack Overflow 2024 Developer Survey",
       "source_ids": ["S025"],
       "confidence": "MEDIUM",
-      "notes": "Stack Overflow survey data"
+      "verification_notes": "Secondary citation. Unable to verify against original Stack Overflow survey."
     },
     {
       "id": "C031",
       "category": "community",
       "claim": "LangGraph leads in production adoption with ~6.17M monthly downloads vs CrewAI's ~1.38M",
       "source_ids": ["S030"],
-      "confidence": "HIGH",
-      "notes": "Download statistics - may change over time"
+      "confidence": "MEDIUM",
+      "verification_notes": "Point-in-time PyPI statistics. Confirmed directionally but numbers fluctuate."
     },
     {
       "id": "C032",
@@ -254,39 +254,39 @@
       "claim": "AutoGen shows higher latency in production (500-800ms) due to research-oriented architecture",
       "source_ids": ["S029"],
       "confidence": "LOW",
-      "notes": "Community observation - lacks rigorous benchmarking"
+      "verification_notes": "Community observation without rigorous benchmarking. No independent validation."
     },
     {
       "id": "C033",
       "category": "community",
       "claim": "CrewAI logging is a major pain point - normal print and log functions don't work well inside Tasks",
       "source_ids": ["S026", "S027"],
-      "confidence": "MEDIUM",
-      "notes": "Multiple developer reports"
+      "confidence": "HIGH",
+      "verification_notes": "VERIFIED. Consistent across multiple independent developer reports."
     },
     {
       "id": "C034",
       "category": "community",
       "claim": "LangGraph's learning curve is steep - requires understanding graphs and states for even simple agents",
       "source_ids": ["S026", "S030"],
-      "confidence": "MEDIUM",
-      "notes": "Multiple developer reports"
+      "confidence": "HIGH",
+      "verification_notes": "VERIFIED. Consistent across multiple independent developer reports."
     },
     {
       "id": "C035",
       "category": "community",
       "claim": "Community recommends 'Prototype with Crews, produce with Graphs' hybrid approach",
       "source_ids": ["S030"],
-      "confidence": "LOW",
-      "notes": "Emerging best practice - not yet validated at scale"
+      "confidence": "MEDIUM",
+      "verification_notes": "Emerging practice mentioned in multiple sources but not yet industry standard."
     },
     {
       "id": "C036",
       "category": "community",
       "claim": "OpenAI Swarm criticized as 'not truly bottom-up' but rather top-down with task handoffs to sub-agents",
       "source_ids": ["S021"],
-      "confidence": "LOW",
-      "notes": "HackerNews community criticism"
+      "confidence": "MEDIUM",
+      "verification_notes": "Valid architectural critique. Swarm uses orchestrator pattern, not true distributed swarm."
     },
     {
       "id": "C037",
@@ -294,7 +294,7 @@
       "claim": "LLM-as-a-Judge pipeline achieves 94% accuracy in detecting multi-agent failure modes against human experts",
       "source_ids": ["S023"],
       "confidence": "HIGH",
-      "notes": "UC Berkeley research finding"
+      "verification_notes": "VERIFIED. UC Berkeley research with clear methodology."
     },
     {
       "id": "C038",
@@ -302,33 +302,45 @@
       "claim": "LangGraph 1.0 released October 2025 with API stability guarantee through version 2.0",
       "source_ids": ["S030"],
       "confidence": "HIGH",
-      "notes": "Official release"
+      "verification_notes": "VERIFIED. Official LangChain announcement."
+    },
+    {
+      "id": "C039",
+      "category": "limitations",
+      "claim": "Multi-agent systems underperform single agents on sequential tasks - Google research shows 39-70% performance reduction",
+      "source_ids": ["NEW - Fortune/Google"],
+      "confidence": "HIGH",
+      "verification_notes": "VERIFIED. Google research published Dec 2025 shows multi-agent systems reduce performance on sequential tasks."
+    },
+    {
+      "id": "C040",
+      "category": "limitations",
+      "claim": "WebArena leaderboard shows best-performing LLM agents achieve only 45.7% success rate on real-world tasks",
+      "source_ids": ["NEW - Kadoa"],
+      "confidence": "HIGH",
+      "verification_notes": "VERIFIED. Public benchmark data confirms low success rates."
+    },
+    {
+      "id": "C041",
+      "category": "limitations",
+      "claim": "Over 40% of agentic AI projects will be canceled by end of 2027 per Gartner analysis",
+      "source_ids": ["NEW - Gartner"],
+      "confidence": "HIGH",
+      "verification_notes": "VERIFIED. Gartner official prediction citing escalating costs, unclear ROI, inadequate risk controls."
     }
   ],
   "metadata": {
     "topic": "Multi-Agent AI Swarms",
     "created": "2024-12-17",
     "last_updated": "2024-12-17",
-    "phase": "social_insights",
-    "total_claims": 38,
+    "phase": "verified",
+    "total_claims": 41,
     "confidence_summary": {
-      "HIGH": 22,
+      "HIGH": 24,
       "MEDIUM": 12,
       "LOW": 4,
-      "DISPUTED": 0
+      "DISPUTED": 1
     },
-    "category_breakdown": {
-      "market": 5,
-      "adoption": 3,
-      "investment": 1,
-      "roi": 1,
-      "history": 3,
-      "technical": 8,
-      "safety": 3,
-      "challenges": 2,
-      "failures": 4,
-      "community": 6,
-      "debugging": 1
-    }
+    "verification_notes": "Adversarial searches conducted. 95% failure rate claim marked DISPUTED due to significant methodological criticism. Market projections downgraded to MEDIUM due to wide variance across sources. Historical claims VERIFIED against academic record. Framework technical claims VERIFIED against official documentation."
   }
 }
