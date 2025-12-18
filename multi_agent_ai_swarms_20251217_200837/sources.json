@@ -3,8 +3,8 @@
     "topic": "Multi-Agent AI Swarms",
     "created": "2024-12-18",
     "updated": "2024-12-18",
-    "status": "research_iteration_1",
-    "total_sources": 25
+    "status": "social_insights_complete",
+    "total_sources": 40
   },
   "sources": [
     {
@@ -256,6 +256,156 @@
       "accessed": "2024-12-18",
       "reliability": "HIGH",
       "key_topics": ["software engineering", "LLM agents", "literature review"]
+    },
+    {
+      "id": 26,
+      "title": "HackerNews: Swarm, a new agent framework by OpenAI",
+      "url": "https://news.ycombinator.com/item?id=41815173",
+      "type": "community",
+      "category": "social_discussion",
+      "accessed": "2024-12-18",
+      "reliability": "LOW",
+      "key_topics": ["OpenAI Swarm", "community reaction", "developer opinions"]
+    },
+    {
+      "id": 27,
+      "title": "HackerNews: I built a production app with 20 AI agents",
+      "url": "https://news.ycombinator.com/item?id=45041906",
+      "type": "community",
+      "category": "social_discussion",
+      "accessed": "2024-12-18",
+      "reliability": "LOW",
+      "key_topics": ["production experience", "AI swarms", "real-world usage"]
+    },
+    {
+      "id": 28,
+      "title": "HackerNews: More Agents Is All You Need",
+      "url": "https://news.ycombinator.com/item?id=39955725",
+      "type": "community",
+      "category": "social_discussion",
+      "accessed": "2024-12-18",
+      "reliability": "LOW",
+      "key_topics": ["scaling agents", "performance", "skepticism"]
+    },
+    {
+      "id": 29,
+      "title": "First hand comparison of LangGraph, CrewAI and AutoGen - Medium",
+      "url": "https://aaronyuqi.medium.com/first-hand-comparison-of-langgraph-crewai-and-autogen-30026e60b563",
+      "type": "practitioner",
+      "category": "framework_comparison",
+      "accessed": "2024-12-18",
+      "reliability": "LOW",
+      "key_topics": ["hands-on experience", "framework comparison", "debugging issues"]
+    },
+    {
+      "id": 30,
+      "title": "AI Agents 2024 Rewind - Victor Dibia Newsletter",
+      "url": "https://newsletter.victordibia.com/p/ai-agents-2024-rewind-a-year-of-building",
+      "type": "practitioner",
+      "category": "year_review",
+      "accessed": "2024-12-18",
+      "reliability": "MEDIUM",
+      "key_topics": ["2024 trends", "practitioner insights", "AutoGen contributor"]
+    },
+    {
+      "id": 31,
+      "title": "MIT Technology Review: Don't let hype about AI agents get ahead of reality",
+      "url": "https://www.technologyreview.com/2025/07/03/1119545/dont-let-hype-about-ai-agents-get-ahead-of-reality/",
+      "type": "news",
+      "category": "critical_analysis",
+      "accessed": "2024-12-18",
+      "reliability": "HIGH",
+      "key_topics": ["hype vs reality", "criticism", "limitations"]
+    },
+    {
+      "id": 32,
+      "title": "Gary Marcus: AI Agents Hype versus Reality redux",
+      "url": "https://garymarcus.substack.com/p/ai-agents-hype-versus-reality-redux",
+      "type": "expert_opinion",
+      "category": "critical_analysis",
+      "accessed": "2024-12-18",
+      "reliability": "MEDIUM",
+      "key_topics": ["AI criticism", "hype cycle", "limitations"]
+    },
+    {
+      "id": 33,
+      "title": "IBM: AI Agents in 2025 Expectations vs Reality",
+      "url": "https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality",
+      "type": "industry_analysis",
+      "category": "critical_analysis",
+      "accessed": "2024-12-18",
+      "reliability": "HIGH",
+      "key_topics": ["enterprise reality", "expectations", "deployment challenges"]
+    },
+    {
+      "id": 34,
+      "title": "Fortune: Some AI agent customers say reality doesn't match the hype",
+      "url": "https://fortune.com/2025/03/20/ai-agents-not-living-up-to-the-hype-eye-on-ai/",
+      "type": "news",
+      "category": "critical_analysis",
+      "accessed": "2024-12-18",
+      "reliability": "HIGH",
+      "key_topics": ["customer feedback", "reliability issues", "integration challenges"]
+    },
+    {
+      "id": 35,
+      "title": "10 Multi-Agent AI Frameworks Tested: Tier List",
+      "url": "https://langcopilot.com/posts/2025-11-01-top-multi-agent-ai-frameworks-2024-guide",
+      "type": "practitioner",
+      "category": "framework_comparison",
+      "accessed": "2024-12-18",
+      "reliability": "MEDIUM",
+      "key_topics": ["framework testing", "tier ranking", "production readiness"]
+    },
+    {
+      "id": 36,
+      "title": "LLM Multi-Agent Systems: Challenges and Open Problems - arXiv",
+      "url": "https://arxiv.org/html/2402.03578v2",
+      "type": "academic",
+      "category": "research_paper",
+      "accessed": "2024-12-18",
+      "reliability": "HIGH",
+      "key_topics": ["challenges", "open problems", "research directions"]
+    },
+    {
+      "id": 37,
+      "title": "Challenges and Best Practices in Multi-Agent AI Applications",
+      "url": "https://alidarbehani.com/2024/07/22/challenges-and-best-practices-in-developing-multi-agent-ai-applications/",
+      "type": "practitioner",
+      "category": "best_practices",
+      "accessed": "2024-12-18",
+      "reliability": "LOW",
+      "key_topics": ["development challenges", "best practices", "coordination"]
+    },
+    {
+      "id": 38,
+      "title": "DataCamp: CrewAI vs LangGraph vs AutoGen Comparison",
+      "url": "https://www.datacamp.com/tutorial/crewai-vs-langgraph-vs-autogen",
+      "type": "tutorial",
+      "category": "framework_comparison",
+      "accessed": "2024-12-18",
+      "reliability": "MEDIUM",
+      "key_topics": ["framework selection", "use cases", "learning resources"]
+    },
+    {
+      "id": 39,
+      "title": "Composio: OpenAI Agents SDK vs LangGraph vs Autogen vs CrewAI",
+      "url": "https://composio.dev/blog/openai-agents-sdk-vs-langgraph-vs-autogen-vs-crewai",
+      "type": "analysis",
+      "category": "framework_comparison",
+      "accessed": "2024-12-18",
+      "reliability": "MEDIUM",
+      "key_topics": ["OpenAI Agents SDK", "framework comparison", "production use"]
+    },
+    {
+      "id": 40,
+      "title": "MIT Technology Review: The great AI hype correction of 2025",
+      "url": "https://www.technologyreview.com/2025/12/15/1129174/the-great-ai-hype-correction-of-2025/",
+      "type": "news",
+      "category": "critical_analysis",
+      "accessed": "2024-12-18",
+      "reliability": "HIGH",
+      "key_topics": ["hype correction", "Gartner cycle", "maturation"]
     }
   ]
 }
