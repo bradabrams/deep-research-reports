@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="900" viewBox="0 0 600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for the background - deep blue to black, like late night -->
+    <linearGradient id="nightGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0a0a12"/>
+    </linearGradient>
+
+    <!-- Subtle blue glow effect for the screen pulse -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="900" fill="url(#nightGradient)"/>
+
+  <!-- Horizontal line suggesting a desk surface -->
+  <line x1="50" y1="580" x2="550" y2="580" stroke="#2a2a3a" stroke-width="1"/>
+
+  <!-- Paper sheets on desk - Zhou's manuscript pages -->
+  <g opacity="0.9">
+    <!-- First page, slightly angled -->
+    <rect x="180" y="420" width="120" height="160" fill="#f5f5f0" transform="rotate(-3 240 500)"/>
+    <!-- Second page, different angle -->
+    <rect x="280" y="425" width="120" height="160" fill="#f0f0e8" transform="rotate(2 340 505)"/>
+    <!-- Third page -->
+    <rect x="220" y="415" width="120" height="160" fill="#faf9f5" transform="rotate(-1 280 495)"/>
+
+    <!-- Chinese character marks on pages (abstract, suggesting text) -->
+    <g stroke="#2a2a3a" stroke-width="0.5" fill="none" opacity="0.3">
+      <!-- Page 1 text marks -->
+      <line x1="195" y1="450" x2="280" y2="448"/>
+      <line x1="195" y1="465" x2="275" y2="464"/>
+      <line x1="195" y1="480" x2="260" y2="479"/>
+      <line x1="195" y1="495" x2="270" y2="494"/>
+      <line x1="195" y1="510" x2="250" y2="509"/>
+
+      <!-- Page 2 text marks -->
+      <line x1="295" y1="455" x2="380" y2="456"/>
+      <line x1="295" y1="470" x2="375" y2="471"/>
+      <line x1="295" y1="485" x2="360" y2="486"/>
+      <line x1="295" y1="500" x2="370" y2="501"/>
+    </g>
+  </g>
+
+  <!-- A single pen, resting on paper -->
+  <g transform="translate(350, 520) rotate(25)">
+    <rect x="0" y="-3" width="80" height="6" fill="#1a1a1a" rx="1"/>
+    <polygon points="80,-3 95,0 80,3" fill="#1a1a1a"/>
+    <rect x="-5" y="-4" width="15" height="8" fill="#3a3a3a" rx="1"/>
+  </g>
+
+  <!-- The blue glow - subtle, above, suggesting a closed laptop or fading screen -->
+  <ellipse cx="300" cy="280" rx="150" ry="80" fill="#3498db" opacity="0.08" filter="url(#glow)"/>
+  <ellipse cx="300" cy="280" rx="100" ry="50" fill="#5dade2" opacity="0.05"/>
+
+  <!-- Title -->
+  <text x="300" y="120" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#e8e8e8" text-anchor="middle" letter-spacing="4">THE LAST</text>
+  <text x="300" y="175" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#e8e8e8" text-anchor="middle" letter-spacing="4">TRANSLATOR</text>
+
+  <!-- Author name -->
+  <text x="300" y="850" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#888888" text-anchor="middle" letter-spacing="2">MIRA CLAUDINE VOSS</text>
+
+  <!-- A single Chinese character floating above - 忘 (wàng - to forget) - connecting to jadegone -->
+  <text x="300" y="340" font-family="'Noto Serif SC', 'SimSun', serif" font-size="48" fill="#555555" text-anchor="middle" opacity="0.4">忘</text>
+
+</svg>
