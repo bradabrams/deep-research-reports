@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <!-- Background: deep charcoal -->
+  <rect width="400" height="600" fill="#1a1a1a"/>
+
+  <!-- Subtle grid pattern suggesting office floor/cubicles -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#252525" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="600" fill="url(#grid)" opacity="0.5"/>
+
+  <!-- The notification chime: concentric circles, pulsing outward -->
+  <!-- Represents both the AI's constant presence and the ripple of solidarity -->
+  <circle cx="200" cy="260" r="120" fill="none" stroke="#3d5a80" stroke-width="1" opacity="0.3"/>
+  <circle cx="200" cy="260" r="90" fill="none" stroke="#3d5a80" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="200" cy="260" r="60" fill="none" stroke="#3d5a80" stroke-width="2" opacity="0.6"/>
+  <circle cx="200" cy="260" r="30" fill="none" stroke="#98c1d9" stroke-width="2.5" opacity="0.8"/>
+
+  <!-- Center point: the moment of decision -->
+  <circle cx="200" cy="260" r="6" fill="#e0fbfc"/>
+
+  <!-- Empty desk silhouettes at bottom - the ghost desks -->
+  <rect x="60" y="480" width="50" height="30" fill="#252525" rx="2"/>
+  <rect x="130" y="480" width="50" height="30" fill="#252525" rx="2"/>
+  <rect x="200" y="480" width="50" height="30" fill="#252525" rx="2"/>
+  <rect x="270" y="480" width="50" height="30" fill="#252525" rx="2"/>
+
+  <!-- One desk slightly brighter - occupied, still working -->
+  <rect x="200" y="480" width="50" height="30" fill="#3d5a80" rx="2" opacity="0.8"/>
+  <circle cx="225" cy="490" r="3" fill="#98c1d9"/>
+
+  <!-- Title -->
+  <text x="200" y="90" font-family="Georgia, serif" font-size="42" fill="#e0fbfc" text-anchor="middle" letter-spacing="4">THE CHIME</text>
+
+  <!-- Author -->
+  <text x="200" y="560" font-family="Georgia, serif" font-size="16" fill="#98c1d9" text-anchor="middle" letter-spacing="2">CLAUDIA VANCE</text>
+
+  <!-- Thin accent line -->
+  <line x1="140" y1="110" x2="260" y2="110" stroke="#3d5a80" stroke-width="1"/>
+</svg>
