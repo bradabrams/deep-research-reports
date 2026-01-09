@@ -1,0 +1,211 @@
+{
+  "sources": [
+    {
+      "id": "IEA-2025",
+      "title": "Energy and AI - Energy Demand from AI",
+      "organization": "International Energy Agency (IEA)",
+      "url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+      "type": "government_report",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "IEA-NEWS-2025",
+      "title": "AI is set to drive surging electricity demand from data centres",
+      "organization": "International Energy Agency (IEA)",
+      "url": "https://www.iea.org/news/ai-is-set-to-drive-surging-electricity-demand-from-data-centres-while-offering-the-potential-to-transform-how-the-energy-sector-works",
+      "type": "government_report",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "GARTNER-2025",
+      "title": "Gartner Says Electricity Demand for Data Centers to Grow 16% in 2025 and Double by 2030",
+      "organization": "Gartner",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-11-17-gartner-says-electricity-demand-for-data-centers-to-grow-16-percent-in-2025-and-double-by-2030",
+      "type": "industry_analysis",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "GS-2025-A",
+      "title": "AI to drive 165% increase in data center power demand by 2030",
+      "organization": "Goldman Sachs",
+      "url": "https://www.goldmansachs.com/insights/articles/ai-to-drive-165-increase-in-data-center-power-demand-by-2030",
+      "type": "financial_analysis",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "GS-2025-B",
+      "title": "Data Center Power Demand: The 6 Ps Driving Growth and Constraints",
+      "organization": "Goldman Sachs",
+      "url": "https://www.goldmansachs.com/insights/goldman-sachs-research/data-center-power-demand-the-6-ps-driving-growth-and-constraints",
+      "type": "financial_analysis",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "GS-2025-C",
+      "title": "How AI Is Transforming Data Centers and Ramping Up Power Demand",
+      "organization": "Goldman Sachs",
+      "url": "https://www.goldmansachs.com/insights/articles/how-ai-is-transforming-data-centers-and-ramping-up-power-demand",
+      "type": "financial_analysis",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "DELOITTE-2025",
+      "title": "GenAI Power Consumption Creates Need for More Sustainable Data Centers",
+      "organization": "Deloitte",
+      "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/genai-power-consumption-creates-need-for-more-sustainable-data-centers.html",
+      "type": "industry_analysis",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "PEW-2025",
+      "title": "What we know about energy use at U.S. data centers amid the AI boom",
+      "organization": "Pew Research Center",
+      "url": "https://www.pewresearch.org/short-reads/2025/10/24/what-we-know-about-energy-use-at-us-data-centers-amid-the-ai-boom/",
+      "type": "research_report",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "SPG-2025",
+      "title": "Data center grid-power demand to rise 22% in 2025, nearly triple by 2030",
+      "organization": "S&P Global",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/electric-power/101425-data-center-grid-power-demand-to-rise-22-in-2025-nearly-triple-by-2030",
+      "type": "industry_analysis",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "YAHOO-GOOGLE-MS",
+      "title": "Google, Microsoft electricity demand jumps over 25% for second year in a row",
+      "organization": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/google-microsoft-electricity-demand-jumps-114149075.html",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM"
+    },
+    {
+      "id": "TECHCRUNCH-GOOGLE",
+      "title": "Google's data center energy use doubled in 4 years",
+      "organization": "TechCrunch",
+      "url": "https://techcrunch.com/2025/07/01/googles-data-center-energy-use-doubled-in-four-years/",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM"
+    },
+    {
+      "id": "DCD-ALTMAN",
+      "title": "Sam Altman: ChatGPT queries consume 0.34 watt-hours of electricity",
+      "organization": "Data Center Dynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/sam-altman-chatgpt-queries-consume-034-watt-hours-of-electricity-and-0000085-gallons-of-water/",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM"
+    },
+    {
+      "id": "EPOCH-AI",
+      "title": "How much energy does ChatGPT use?",
+      "organization": "Epoch AI",
+      "url": "https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use",
+      "type": "research_report",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "TRG-H100",
+      "title": "NVIDIA H100 Power Consumption Guide",
+      "organization": "TRG Datacenters",
+      "url": "https://www.trgdatacenters.com/resource/nvidia-h100-power-consumption/",
+      "type": "industry_analysis",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM"
+    },
+    {
+      "id": "TOMSHW-H100",
+      "title": "Nvidia's H100 GPUs will consume more power than some countries",
+      "organization": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/nvidias-h100-gpus-will-consume-more-power-than-some-countries-each-gpu-consumes-700w-of-power-35-million-are-expected-to-be-sold-in-the-coming-year",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM"
+    },
+    {
+      "id": "GOOGLE-PUE",
+      "title": "Power usage effectiveness – Google Data Centers",
+      "organization": "Google",
+      "url": "https://datacenters.google/efficiency/",
+      "type": "company_report",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "LBNL-2024",
+      "title": "2024 United States Data Center Energy Usage Report",
+      "organization": "Lawrence Berkeley National Laboratory",
+      "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf",
+      "type": "government_report",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "ARXIV-GRID",
+      "title": "Electricity Demand and Grid Impacts of AI Data Centers: Challenges and Prospects",
+      "organization": "arXiv",
+      "url": "https://arxiv.org/html/2509.07218v1",
+      "type": "academic",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "CANARY-2025",
+      "title": "In 2025, data centers forced an energy reckoning",
+      "organization": "Canary Media",
+      "url": "https://www.canarymedia.com/articles/data-centers/solutions-ai-power-demand-2025-grid",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM"
+    },
+    {
+      "id": "TRELLIS-NUCLEAR",
+      "title": "Amazon, Google, Meta and Microsoft go nuclear",
+      "organization": "Trellis",
+      "url": "https://trellis.net/article/amazon-google-meta-and-microsoft-go-nuclear/",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM"
+    },
+    {
+      "id": "DCD-LIQUID",
+      "title": "Liquid cooling: the future of data center architecture and operations",
+      "organization": "Data Center Dynamics",
+      "url": "https://www.datacenterdynamics.com/en/opinions/liquid-cooling-the-future-of-data-center-architecture-and-operations/",
+      "type": "industry_analysis",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM"
+    },
+    {
+      "id": "CARBONBRIEF-2025",
+      "title": "AI: Five charts that put data-centre energy use – and emissions – into context",
+      "organization": "Carbon Brief",
+      "url": "https://www.carbonbrief.org/ai-five-charts-that-put-data-centre-energy-use-and-emissions-into-context/",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH"
+    },
+    {
+      "id": "LIGHTLY-B200",
+      "title": "NVIDIA Blackwell B200 vs H100: Real-World Benchmarks",
+      "organization": "Lightly.ai",
+      "url": "https://www.lightly.ai/blog/nvidia-b200-vs-h100",
+      "type": "industry_analysis",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM"
+    }
+  ]
+}

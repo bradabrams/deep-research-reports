@@ -1,0 +1,260 @@
+{
+  "claims": [
+    {
+      "id": "C001",
+      "category": "Global Consumption - 2024 Baseline",
+      "claim": "Global data center electricity consumption was approximately 415 TWh in 2024, representing about 1.5% of global electricity consumption",
+      "sources": ["IEA-2025"],
+      "confidence": "HIGH",
+      "notes": "IEA official estimate"
+    },
+    {
+      "id": "C002",
+      "category": "Global Consumption - 2025",
+      "claim": "Global data center electricity consumption is estimated at 448-536 TWh in 2025",
+      "sources": ["GARTNER-2025", "DELOITTE-2025"],
+      "confidence": "HIGH",
+      "notes": "Gartner: 448 TWh, Deloitte: 536 TWh (about 2% of global consumption)"
+    },
+    {
+      "id": "C003",
+      "category": "Global Consumption - 2030 Projection",
+      "claim": "Global data center electricity consumption projected to reach 945-1,000 TWh by 2030 (doubling from 2024)",
+      "sources": ["IEA-2025", "DELOITTE-2025", "GARTNER-2025"],
+      "confidence": "HIGH",
+      "notes": "IEA: 945 TWh, Gartner: 980 TWh, Deloitte: ~1,000 TWh base case"
+    },
+    {
+      "id": "C004",
+      "category": "Growth Rate",
+      "claim": "Data center electricity consumption has grown at 12% per year over the last five years (2019-2024)",
+      "sources": ["IEA-2025"],
+      "confidence": "HIGH",
+      "notes": "IEA official statistic"
+    },
+    {
+      "id": "C005",
+      "category": "AI Share of Data Center Power",
+      "claim": "AI workloads currently account for 5-15% of data center power use (2024) but could increase to 35-50% by 2030",
+      "sources": ["IEA-2025", "CARBONBRIEF-2025"],
+      "confidence": "HIGH",
+      "notes": "Consistent across multiple authoritative sources"
+    },
+    {
+      "id": "C006",
+      "category": "AI Server Power Growth",
+      "claim": "AI-optimized servers' electricity usage projected to rise from 93 TWh in 2025 to 432 TWh in 2030 (nearly 5x increase)",
+      "sources": ["GARTNER-2025"],
+      "confidence": "HIGH",
+      "notes": "Gartner projection"
+    },
+    {
+      "id": "C007",
+      "category": "US Consumption - 2024",
+      "claim": "U.S. data centers consumed 183 TWh of electricity in 2024, more than 4% of total U.S. electricity consumption",
+      "sources": ["PEW-2025"],
+      "confidence": "HIGH",
+      "notes": "Pew Research citing government data"
+    },
+    {
+      "id": "C008",
+      "category": "US Consumption - 2030 Projection",
+      "claim": "U.S. data center electricity consumption projected to reach 426 TWh by 2030 (133% increase from 2024)",
+      "sources": ["PEW-2025", "IEA-2025"],
+      "confidence": "HIGH",
+      "notes": "Multiple authoritative sources agree"
+    },
+    {
+      "id": "C009",
+      "category": "Regional Distribution",
+      "claim": "China and the US account for nearly 80% of global data center electricity consumption growth to 2030",
+      "sources": ["IEA-2025"],
+      "confidence": "HIGH",
+      "notes": "US: +240 TWh (130% growth), China: +175 TWh (170% growth)"
+    },
+    {
+      "id": "C010",
+      "category": "Goldman Sachs Projection",
+      "claim": "Goldman Sachs projects overall data center power consumption to jump 175% from 2023 levels by 2030",
+      "sources": ["GS-2025-A", "GS-2025-B"],
+      "confidence": "HIGH",
+      "notes": "Upward revision from previous 165% forecast"
+    },
+    {
+      "id": "C011",
+      "category": "Current Global Capacity",
+      "claim": "Today's global data center market uses around 55GW of electricity, with AI workloads at 14% of total",
+      "sources": ["GS-2025-C"],
+      "confidence": "HIGH",
+      "notes": "Goldman Sachs estimate"
+    },
+    {
+      "id": "C012",
+      "category": "Grid Investment",
+      "claim": "Approximately $720 billion will need to be spent on grid upgrades through 2030 to support data center growth",
+      "sources": ["GS-2025-B"],
+      "confidence": "MEDIUM",
+      "notes": "Goldman Sachs estimate"
+    },
+    {
+      "id": "C013",
+      "category": "Tech Company Energy - Google",
+      "claim": "Google's data center electricity usage reached approximately 32 TWh in 2025, up 27% year-over-year and doubled from 2020",
+      "sources": ["YAHOO-GOOGLE-MS", "TECHCRUNCH-GOOGLE"],
+      "confidence": "HIGH",
+      "notes": "From Google's 2025 Sustainability Report"
+    },
+    {
+      "id": "C014",
+      "category": "Tech Company Energy - Microsoft",
+      "claim": "Microsoft reported approximately 30 TWh electricity usage in fiscal year 2024, up 27% year-over-year",
+      "sources": ["YAHOO-GOOGLE-MS"],
+      "confidence": "HIGH",
+      "notes": "From Microsoft's sustainability reporting"
+    },
+    {
+      "id": "C015",
+      "category": "ChatGPT Energy Per Query",
+      "claim": "A ChatGPT query consumes approximately 0.34 watt-hours of electricity (OpenAI official figure)",
+      "sources": ["DCD-ALTMAN", "EPOCH-AI"],
+      "confidence": "MEDIUM",
+      "notes": "OpenAI's first official datapoint, not peer reviewed. Independent estimates range from 0.3 Wh to 3+ Wh"
+    },
+    {
+      "id": "C016",
+      "category": "AI vs Search Energy",
+      "claim": "AI queries use approximately 10x more energy than traditional Google searches (2.9 Wh vs 0.3 Wh)",
+      "sources": ["IEA-2025"],
+      "confidence": "HIGH",
+      "notes": "IEA comparison figure"
+    },
+    {
+      "id": "C017",
+      "category": "NVIDIA H100 Power",
+      "claim": "NVIDIA H100 GPU consumes approximately 700W per unit, nearly double the A100's 400W",
+      "sources": ["TRG-H100", "TOMSHW-H100"],
+      "confidence": "HIGH",
+      "notes": "Widely confirmed specification"
+    },
+    {
+      "id": "C018",
+      "category": "H100 Total Energy Impact",
+      "claim": "NVIDIA H100 GPUs projected to consume over 13,000 GWh (13.8 TWh) annually, exceeding energy consumption of some countries",
+      "sources": ["TOMSHW-H100"],
+      "confidence": "MEDIUM",
+      "notes": "Based on projected sales of 3.5 million units at 61% utilization"
+    },
+    {
+      "id": "C019",
+      "category": "GPU Efficiency Improvement",
+      "claim": "NVIDIA H100 offers approximately 2x the energy efficiency of A100, with 4x faster training for GPT-3 class models",
+      "sources": ["TRG-H100"],
+      "confidence": "HIGH",
+      "notes": "NVIDIA marketing claim, verified by benchmarks"
+    },
+    {
+      "id": "C020",
+      "category": "Blackwell B200 Performance",
+      "claim": "NVIDIA B200 demonstrates up to 57% faster model training vs H100, with actual power draw around 600W (below 1000W spec)",
+      "sources": ["LIGHTLY-B200"],
+      "confidence": "MEDIUM",
+      "notes": "Early benchmark data from one source"
+    },
+    {
+      "id": "C021",
+      "category": "PUE - Industry Average",
+      "claim": "Industry average PUE is approximately 1.56, while top-performing facilities target 1.2 or lower",
+      "sources": ["GOOGLE-PUE"],
+      "confidence": "HIGH",
+      "notes": "Widely cited benchmark"
+    },
+    {
+      "id": "C022",
+      "category": "PUE - Google",
+      "claim": "Google's TTM energy-weighted average PUE is 1.20, using 84% less overhead energy than industry average",
+      "sources": ["GOOGLE-PUE"],
+      "confidence": "HIGH",
+      "notes": "Google official reporting"
+    },
+    {
+      "id": "C023",
+      "category": "Liquid Cooling Efficiency",
+      "claim": "Liquid cooling can deliver up to 45% improvement in PUE compared to air cooling, achieving values below 1.2",
+      "sources": ["DCD-LIQUID"],
+      "confidence": "MEDIUM",
+      "notes": "Industry analysis"
+    },
+    {
+      "id": "C024",
+      "category": "High-Density Rack Power",
+      "claim": "AI-optimized servers push power densities beyond 50kW per rack, up to 100kW or more, beyond air cooling capability",
+      "sources": ["DCD-LIQUID"],
+      "confidence": "HIGH",
+      "notes": "Widely confirmed industry trend"
+    },
+    {
+      "id": "C025",
+      "category": "Energy Source Mix - US",
+      "claim": "Natural gas supplies over 40% of U.S. data center electricity, renewables ~24%, nuclear ~20%, coal ~15%",
+      "sources": ["PEW-2025"],
+      "confidence": "HIGH",
+      "notes": "2024 data"
+    },
+    {
+      "id": "C026",
+      "category": "Renewable Energy Procurement",
+      "claim": "US data center sector contracted 50GW of clean energy by end of Q3 2024 (29GW solar, 13GW wind)",
+      "sources": ["YAHOO-GOOGLE-MS"],
+      "confidence": "HIGH",
+      "notes": "S&P Global data"
+    },
+    {
+      "id": "C027",
+      "category": "Nuclear Investments",
+      "claim": "Microsoft signed 20-year PPA with Constellation for 837MW from Three Mile Island; Meta seeking 1.4GW nuclear capacity",
+      "sources": ["TRELLIS-NUCLEAR"],
+      "confidence": "HIGH",
+      "notes": "Announced deals in 2024"
+    },
+    {
+      "id": "C028",
+      "category": "Grid Strain - PJM",
+      "claim": "PJM Interconnection projects 6GW shortfall in reliability requirements by 2027",
+      "sources": ["ARXIV-GRID"],
+      "confidence": "HIGH",
+      "notes": "Largest US grid operator serving 65 million people"
+    },
+    {
+      "id": "C029",
+      "category": "State Concentration",
+      "claim": "Virginia data centers consumed 26% of state's total electricity in 2023; North Dakota 15%, Nebraska 12%",
+      "sources": ["PEW-2025"],
+      "confidence": "HIGH",
+      "notes": "Pew Research data"
+    },
+    {
+      "id": "C030",
+      "category": "Investment Scale",
+      "claim": "Global investment in data centers nearly doubled since 2022, reaching half a trillion dollars in 2024",
+      "sources": ["IEA-2025"],
+      "confidence": "HIGH",
+      "notes": "IEA official data"
+    },
+    {
+      "id": "C031",
+      "category": "US Grid Demand Growth",
+      "claim": "US data center grid-power demand will rise to 61.8 GW in 2025, 75.8 GW in 2026, and 134.4 GW by 2030",
+      "sources": ["SPG-2025"],
+      "confidence": "HIGH",
+      "notes": "S&P Global projection"
+    },
+    {
+      "id": "C032",
+      "category": "Inference vs Training Energy",
+      "claim": "Generative AI queries estimated at 15 TWh in 2025, projected to reach 347 TWh by 2030, mostly driven by inference",
+      "sources": ["EPOCH-AI"],
+      "confidence": "MEDIUM",
+      "notes": "Schneider Electric report cited by Epoch AI"
+    }
+  ]
+}
