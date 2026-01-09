@@ -1,0 +1,208 @@
+{
+  "sources": [
+    {
+      "id": "S001",
+      "title": "What Is Quantum Computing? | IBM",
+      "url": "https://www.ibm.com/think/topics/quantum-computing",
+      "type": "primary",
+      "publisher": "IBM",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Official IBM documentation on quantum computing fundamentals"
+    },
+    {
+      "id": "S002",
+      "title": "What is Quantum Computing? [Everything You Need to Know]",
+      "url": "https://thequantuminsider.com/2024/02/02/what-is-quantum-computing/",
+      "type": "industry_publication",
+      "publisher": "The Quantum Insider",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Comprehensive industry resource on quantum computing"
+    },
+    {
+      "id": "S003",
+      "title": "6 Types of Quantum Computers You Need to Know in 2025",
+      "url": "https://www.spinquanta.com/news-detail/types-of-quantum-computers-you-need-to-know-in20250226071709",
+      "type": "industry_publication",
+      "publisher": "SpinQ",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "Hardware comparison across quantum computing approaches"
+    },
+    {
+      "id": "S004",
+      "title": "Top quantum breakthroughs of 2025",
+      "url": "https://www.networkworld.com/article/4088709/top-quantum-breakthroughs-of-2025.html",
+      "type": "news",
+      "publisher": "Network World",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Summary of major 2025 quantum advancements"
+    },
+    {
+      "id": "S005",
+      "title": "Quantum Computing Market Size | Industry Report, 2030",
+      "url": "https://www.grandviewresearch.com/industry-analysis/quantum-computing-market",
+      "type": "market_research",
+      "publisher": "Grand View Research",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Market analysis and growth projections"
+    },
+    {
+      "id": "S006",
+      "title": "IBM Delivers New Quantum Processors, Software, and Algorithm Breakthroughs",
+      "url": "https://newsroom.ibm.com/2025-11-12-ibm-delivers-new-quantum-processors,-software,-and-algorithm-breakthroughs-on-path-to-advantage-and-fault-tolerance",
+      "type": "press_release",
+      "publisher": "IBM Newsroom",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Official IBM announcements for November 2025"
+    },
+    {
+      "id": "S007",
+      "title": "IonQ's 2025 Roadmap: Toward a Cryptographically Relevant Quantum Computer by 2028",
+      "url": "https://postquantum.com/industry-news/ionqroadmap-crqc/",
+      "type": "industry_news",
+      "publisher": "Post Quantum",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "IonQ roadmap and strategic direction"
+    },
+    {
+      "id": "S008",
+      "title": "NIST Releases First 3 Finalized Post-Quantum Encryption Standards",
+      "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+      "type": "government",
+      "publisher": "NIST",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Official NIST post-quantum cryptography standards"
+    },
+    {
+      "id": "S009",
+      "title": "Quantum Error Correction: Our 2025 trends and 2026 predictions",
+      "url": "https://www.riverlane.com/blog/quantum-error-correction-our-2025-trends-and-2026-predictions",
+      "type": "industry_blog",
+      "publisher": "Riverlane",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Expert analysis on quantum error correction progress"
+    },
+    {
+      "id": "S010",
+      "title": "The History of Quantum Computing: A Complete Timeline",
+      "url": "https://www.techtarget.com/searchcio/feature/The-history-of-quantum-computing-A-complete-timeline",
+      "type": "educational",
+      "publisher": "TechTarget",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Comprehensive history of quantum computing"
+    },
+    {
+      "id": "S011",
+      "title": "Quantum Algorithms Guide: Principles, Types, and Use Cases",
+      "url": "https://www.spinquanta.com/news-detail/the-ultimate-guide-to-quantum-algorithms",
+      "type": "educational",
+      "publisher": "SpinQ",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "Overview of key quantum algorithms"
+    },
+    {
+      "id": "S012",
+      "title": "Google and IBM Clash Over Quantum Supremacy Claim",
+      "url": "https://www.quantamagazine.org/google-and-ibm-clash-over-quantum-supremacy-claim-20191023/",
+      "type": "news",
+      "publisher": "Quanta Magazine",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Analysis of the quantum supremacy debate"
+    },
+    {
+      "id": "S013",
+      "title": "Quantum computing over the next five years: Scenario planning",
+      "url": "https://www.deloitte.com/us/en/insights/topics/emerging-technologies/quantum-computing-futures.html",
+      "type": "consulting_report",
+      "publisher": "Deloitte",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Strategic outlook on quantum computing"
+    },
+    {
+      "id": "S014",
+      "title": "Quantum Computing Trends in 2025",
+      "url": "https://thequantuminsider.com/2025/12/29/quantum-computing-trends-in-2025-data-reveals-hardware-bets-cloud-growth-and-security-focus/",
+      "type": "industry_analysis",
+      "publisher": "The Quantum Insider",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "2025 year-end industry analysis"
+    },
+    {
+      "id": "S015",
+      "title": "Quantum Computing Moves from Theoretical to Inevitable",
+      "url": "https://www.bain.com/insights/quantum-computing-moves-from-theoretical-to-inevitable-technology-report-2025/",
+      "type": "consulting_report",
+      "publisher": "Bain & Company",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Strategic analysis of quantum computing maturation"
+    },
+    {
+      "id": "S016",
+      "title": "Quantum error correction below the surface code threshold",
+      "url": "https://www.nature.com/articles/s41586-024-08449-y",
+      "type": "academic",
+      "publisher": "Nature",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Google's Willow error correction breakthrough"
+    },
+    {
+      "id": "S017",
+      "title": "Bloch sphere - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bloch_sphere",
+      "type": "reference",
+      "publisher": "Wikipedia",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "Reference for qubit visualization"
+    },
+    {
+      "id": "S018",
+      "title": "Noisy intermediate-scale quantum computing - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Noisy_intermediate-scale_quantum_era",
+      "type": "reference",
+      "publisher": "Wikipedia",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "Reference for NISQ era definition"
+    },
+    {
+      "id": "S019",
+      "title": "QuEra Computing Marks Record 2025",
+      "url": "https://www.quera.com/press-releases/quera-computing-marks-record-2025-as-the-year-of-fault-tolerance-and-over-230m-of-new-capital-to-accelerate-industrial-deployment",
+      "type": "press_release",
+      "publisher": "QuEra Computing",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "QuEra achievements in fault tolerance"
+    },
+    {
+      "id": "S020",
+      "title": "IBM lays out clear path to fault-tolerant quantum computing",
+      "url": "https://www.ibm.com/quantum/blog/large-scale-ftqc",
+      "type": "company_blog",
+      "publisher": "IBM Quantum",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "IBM's fault-tolerant computing roadmap"
+    }
+  ],
+  "total_sources": 20,
+  "high_credibility_count": 16,
+  "medium_credibility_count": 4,
+  "low_credibility_count": 0
+}

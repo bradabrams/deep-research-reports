@@ -1,0 +1,307 @@
+{
+  "claims": [
+    {
+      "id": "C001",
+      "category": "fundamentals",
+      "claim": "Quantum computing is a computing model based on quantum mechanics that uses qubits as the basic information unit, leveraging superposition, entanglement, and quantum interference.",
+      "confidence": "HIGH",
+      "sources": ["S001", "S002", "S003"],
+      "notes": "Foundational definition agreed upon by all sources"
+    },
+    {
+      "id": "C002",
+      "category": "fundamentals",
+      "claim": "A qubit can exist in a superposition of states 0 and 1 simultaneously, and n qubits can represent 2^n states at once, enabling exponential computational parallelism.",
+      "confidence": "HIGH",
+      "sources": ["S001", "S002", "S017"],
+      "notes": "Core principle of quantum advantage"
+    },
+    {
+      "id": "C003",
+      "category": "fundamentals",
+      "claim": "Quantum entanglement allows qubits to correlate their states such that measuring one instantly determines information about others, even over large distances.",
+      "confidence": "HIGH",
+      "sources": ["S001", "S002"],
+      "notes": "Einstein called this 'spooky action at a distance'"
+    },
+    {
+      "id": "C004",
+      "category": "hardware",
+      "claim": "Superconducting qubits excel at fast gate operation times but struggle to maintain quantum coherence beyond 300 microseconds.",
+      "confidence": "HIGH",
+      "sources": ["S003", "S004"],
+      "notes": "Used by IBM, Google, Rigetti"
+    },
+    {
+      "id": "C005",
+      "category": "hardware",
+      "claim": "Trapped ion qubits show impressive coherence times ranging from 0.2 seconds to 600 seconds in hyperfine qubits, making them one of the most accurate approaches.",
+      "confidence": "HIGH",
+      "sources": ["S003", "S007"],
+      "notes": "Used by IonQ, Quantinuum"
+    },
+    {
+      "id": "C006",
+      "category": "hardware",
+      "claim": "Photonic quantum computers can operate at room temperature, unlike superconducting systems that require cooling to near absolute zero.",
+      "confidence": "HIGH",
+      "sources": ["S003", "S014"],
+      "notes": "Key advantage of photonic approach"
+    },
+    {
+      "id": "C007",
+      "category": "market",
+      "claim": "The global quantum computing market was valued at approximately $1.4-3.5 billion in 2024-2025 and is projected to reach $12-20 billion by 2030, with CAGRs ranging from 20-42%.",
+      "confidence": "MEDIUM",
+      "sources": ["S005", "S013", "S014"],
+      "notes": "Market estimates vary across research firms"
+    },
+    {
+      "id": "C008",
+      "category": "market",
+      "claim": "Quantum computing could unlock as much as $250 billion of market value across industries like pharmaceuticals, finance, logistics, and materials science.",
+      "confidence": "MEDIUM",
+      "sources": ["S015"],
+      "notes": "Bain & Company projection"
+    },
+    {
+      "id": "C009",
+      "category": "breakthroughs_2025",
+      "claim": "Google's Willow chip achieved quantum error correction below threshold, with the logical error rate suppressed by a factor of 2.14 when increasing code distance.",
+      "confidence": "HIGH",
+      "sources": ["S004", "S016"],
+      "notes": "Published in Nature"
+    },
+    {
+      "id": "C010",
+      "category": "breakthroughs_2025",
+      "claim": "Google demonstrated verifiable quantum advantage with its Quantum Echoes algorithm, achieving a 13,000x speedup compared to the best classical algorithms.",
+      "confidence": "HIGH",
+      "sources": ["S004"],
+      "notes": "Significant milestone for practical quantum advantage"
+    },
+    {
+      "id": "C011",
+      "category": "breakthroughs_2025",
+      "claim": "IonQ achieved world-record 99.99% two-qubit gate accuracy and announced a 222% year-over-year revenue increase in Q3 2025, reaching $39.9 million.",
+      "confidence": "HIGH",
+      "sources": ["S004", "S007"],
+      "notes": "Demonstrates commercial momentum"
+    },
+    {
+      "id": "C012",
+      "category": "breakthroughs_2025",
+      "claim": "IBM unveiled the Nighthawk processor with 120 qubits and 218 tunable couplers, enabling 30% more complex circuits with low error rates.",
+      "confidence": "HIGH",
+      "sources": ["S006"],
+      "notes": "From IBM Quantum Developer Conference November 2025"
+    },
+    {
+      "id": "C013",
+      "category": "breakthroughs_2025",
+      "claim": "Quantinuum achieved a system with 50 entangled logical qubits with two-qubit logical gate fidelity over 98%.",
+      "confidence": "HIGH",
+      "sources": ["S002", "S014"],
+      "notes": "Major trapped-ion milestone"
+    },
+    {
+      "id": "C014",
+      "category": "roadmaps",
+      "claim": "IBM plans to deliver a fault-tolerant quantum computer by 2029 with 200 logical qubits capable of running circuits with 100 million quantum gates.",
+      "confidence": "HIGH",
+      "sources": ["S006", "S020"],
+      "notes": "IBM Quantum Starling roadmap"
+    },
+    {
+      "id": "C015",
+      "category": "roadmaps",
+      "claim": "IonQ plans to scale from tens of qubits to ~20,000 physical qubits by 2028 and ~2,000,000 physical qubits by 2030.",
+      "confidence": "MEDIUM",
+      "sources": ["S007"],
+      "notes": "Ambitious roadmap dependent on acquisitions"
+    },
+    {
+      "id": "C016",
+      "category": "algorithms",
+      "claim": "Shor's algorithm can factor large integers in polynomial time, potentially breaking RSA and ECC encryption, which has triggered the development of post-quantum cryptography.",
+      "confidence": "HIGH",
+      "sources": ["S008", "S010", "S011"],
+      "notes": "Key cryptographic implication"
+    },
+    {
+      "id": "C017",
+      "category": "algorithms",
+      "claim": "Grover's algorithm provides a quadratic speedup (√N queries vs N) for searching unstructured databases.",
+      "confidence": "HIGH",
+      "sources": ["S010", "S011"],
+      "notes": "Important for search and optimization"
+    },
+    {
+      "id": "C018",
+      "category": "algorithms",
+      "claim": "VQE and QAOA are hybrid quantum-classical algorithms promising for near-term NISQ applications in chemistry simulation and optimization problems.",
+      "confidence": "HIGH",
+      "sources": ["S011", "S018"],
+      "notes": "Most practical near-term algorithms"
+    },
+    {
+      "id": "C019",
+      "category": "applications",
+      "claim": "HSBC is using IBM's Heron quantum computer to improve bond trading predictions by 34% compared to classical computing.",
+      "confidence": "HIGH",
+      "sources": ["S004", "S006"],
+      "notes": "Real-world financial application"
+    },
+    {
+      "id": "C020",
+      "category": "applications",
+      "claim": "Ford Otosan used D-Wave's quantum annealing to reduce scheduling times from 30 minutes to less than 5 minutes in production deployment.",
+      "confidence": "HIGH",
+      "sources": ["S004"],
+      "notes": "Real-world logistics optimization"
+    },
+    {
+      "id": "C021",
+      "category": "applications",
+      "claim": "IonQ achieved quantum advantage in drug discovery and engineering applications, surpassing classical methods in chemistry simulations in October 2025.",
+      "confidence": "HIGH",
+      "sources": ["S004"],
+      "notes": "Drug discovery breakthrough"
+    },
+    {
+      "id": "C022",
+      "category": "cryptography",
+      "claim": "NIST released three finalized post-quantum cryptography standards in August 2024: ML-KEM (FIPS 203), ML-DSA (FIPS 204), and SLH-DSA (FIPS 205).",
+      "confidence": "HIGH",
+      "sources": ["S008"],
+      "notes": "Official government standards"
+    },
+    {
+      "id": "C023",
+      "category": "cryptography",
+      "claim": "A cryptographically relevant quantum computer could potentially break RSA-2048 in hours using Shor's algorithm, with experts suggesting this could be possible by 2030.",
+      "confidence": "MEDIUM",
+      "sources": ["S008"],
+      "notes": "Timeline estimates vary widely"
+    },
+    {
+      "id": "C024",
+      "category": "challenges",
+      "claim": "Current NISQ devices contain 50-1,000 physical qubits but suffer from decoherence, gate errors (95-99% fidelity for 2-qubit gates), and measurement errors.",
+      "confidence": "HIGH",
+      "sources": ["S018"],
+      "notes": "Fundamental NISQ limitations"
+    },
+    {
+      "id": "C025",
+      "category": "challenges",
+      "claim": "Quantum error correction requires approximately 1,000 physical qubits for each logical qubit, creating significant scaling challenges.",
+      "confidence": "HIGH",
+      "sources": ["S009", "S018"],
+      "notes": "Major engineering challenge"
+    },
+    {
+      "id": "C026",
+      "category": "history",
+      "claim": "Richard Feynman proposed using quantum computers to simulate physics in 1981-1982, sparking the field of quantum computing.",
+      "confidence": "HIGH",
+      "sources": ["S010"],
+      "notes": "Founding moment of the field"
+    },
+    {
+      "id": "C027",
+      "category": "history",
+      "claim": "Peter Shor published his factoring algorithm in 1994, providing the first major example of quantum computational advantage over classical computers.",
+      "confidence": "HIGH",
+      "sources": ["S010"],
+      "notes": "Key theoretical breakthrough"
+    },
+    {
+      "id": "C028",
+      "category": "history",
+      "claim": "Google claimed quantum supremacy in October 2019 with a 53-qubit Sycamore processor completing a task in 200 seconds that would take classical supercomputers 10,000 years.",
+      "confidence": "HIGH",
+      "sources": ["S012"],
+      "notes": "IBM disputed this, claiming 2.5 days on Summit"
+    },
+    {
+      "id": "C029",
+      "category": "industry",
+      "claim": "81% of industry leaders say they've reached the limit of what classical computers can do, and 53% are planning to build quantum computing into their workflows.",
+      "confidence": "MEDIUM",
+      "sources": ["S014"],
+      "notes": "Survey data from 2025"
+    },
+    {
+      "id": "C030",
+      "category": "industry",
+      "claim": "The quantum computing industry transitioned from theoretical promise to tangible commercial reality in 2025, marking an inflection point.",
+      "confidence": "HIGH",
+      "sources": ["S004", "S014", "S015"],
+      "notes": "Multiple sources agree on this characterization"
+    },
+    {
+      "id": "C031",
+      "category": "error_correction",
+      "claim": "QuEra demonstrated fault-tolerant architecture with up to 96 logical qubits where logical error rates improved as the system scaled.",
+      "confidence": "HIGH",
+      "sources": ["S009", "S019"],
+      "notes": "Major neutral atom achievement"
+    },
+    {
+      "id": "C032",
+      "category": "error_correction",
+      "claim": "Microsoft's four-dimensional geometric codes demonstrated a 1,000-fold reduction in error rates with very few physical qubits per logical qubit.",
+      "confidence": "HIGH",
+      "sources": ["S009"],
+      "notes": "Novel approach to error correction"
+    },
+    {
+      "id": "C033",
+      "category": "investment",
+      "claim": "Quantum companies attracted substantial valuations in 2025: Quantinuum at $10B, PsiQuantum at $7B (with $1B Series E), SandboxAQ at $5.75B, and IQM over $1B.",
+      "confidence": "HIGH",
+      "sources": ["S009", "S014"],
+      "notes": "Major funding rounds"
+    },
+    {
+      "id": "C034",
+      "category": "workforce",
+      "claim": "Analysts estimate 250,000 quantum computing jobs will be needed by 2030, though global quantum job postings only increased 4.4% in the 12 months to April 2025.",
+      "confidence": "MEDIUM",
+      "sources": ["S005"],
+      "notes": "Potential skills gap emerging"
+    },
+    {
+      "id": "C035",
+      "category": "fundamentals",
+      "claim": "The Bloch sphere is a geometric representation of a single qubit state, with the north pole representing |0⟩ and the south pole representing |1⟩, and all other points representing superpositions.",
+      "confidence": "HIGH",
+      "sources": ["S017"],
+      "notes": "Standard visualization tool"
+    }
+  ],
+  "total_claims": 35,
+  "confidence_summary": {
+    "HIGH": 29,
+    "MEDIUM": 6,
+    "LOW": 0,
+    "DISPUTED": 0
+  },
+  "categories": [
+    "fundamentals",
+    "hardware",
+    "market",
+    "breakthroughs_2025",
+    "roadmaps",
+    "algorithms",
+    "applications",
+    "cryptography",
+    "challenges",
+    "history",
+    "industry",
+    "error_correction",
+    "investment",
+    "workforce"
+  ]
+}
