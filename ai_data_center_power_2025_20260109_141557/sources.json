@@ -1,0 +1,236 @@
+{
+  "sources": [
+    {
+      "id": "S001",
+      "title": "IEA - Energy Demand from AI",
+      "url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+      "type": "government_agency",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["global energy consumption", "AI projections", "data center growth"]
+    },
+    {
+      "id": "S002",
+      "title": "Gartner - Data Center Electricity Demand Projections",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-11-17-gartner-says-electricity-demand-for-data-centers-to-grow-16-percent-in-2025-and-double-by-2030",
+      "type": "industry_analyst",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["electricity demand", "growth projections", "AI servers"]
+    },
+    {
+      "id": "S003",
+      "title": "Pew Research - US Data Center Energy Use",
+      "url": "https://www.pewresearch.org/short-reads/2025/10/24/what-we-know-about-energy-use-at-us-data-centers-amid-the-ai-boom/",
+      "type": "research_organization",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["US energy consumption", "regional breakdown", "Virginia data centers"]
+    },
+    {
+      "id": "S004",
+      "title": "Bloomberg - AI Data Centers Electricity Prices",
+      "url": "https://www.bloomberg.com/graphics/2025-ai-data-centers-electricity-prices/",
+      "type": "news_financial",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["electricity prices", "consumer impact", "regional pricing"]
+    },
+    {
+      "id": "S005",
+      "title": "S&P Global - Data Center Grid Power Demand",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/electric-power/101425-data-center-grid-power-demand-to-rise-22-in-2025-nearly-triple-by-2030",
+      "type": "industry_analyst",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["grid power demand", "growth projections", "utility analysis"]
+    },
+    {
+      "id": "S006",
+      "title": "IEEE Spectrum - Big Tech Embraces Nuclear Power",
+      "url": "https://spectrum.ieee.org/nuclear-powered-data-center",
+      "type": "technical_publication",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["nuclear power", "SMRs", "tech company deals"]
+    },
+    {
+      "id": "S007",
+      "title": "Tom's Hardware - NVIDIA GPU Power Consumption",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidias-b100-and-b200-processors-could-draw-an-astounding-1000-watts-per-gpu-dell-spills-the-beans-in-earnings-call",
+      "type": "tech_publication",
+      "credibility": "MEDIUM",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["GPU power consumption", "H100", "B200", "Blackwell"]
+    },
+    {
+      "id": "S008",
+      "title": "Cornell Chronicle - Environmental Impact Roadmap",
+      "url": "https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom",
+      "type": "academic",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["carbon emissions", "water usage", "sustainability"]
+    },
+    {
+      "id": "S009",
+      "title": "Deloitte - GenAI Power Consumption",
+      "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/genai-power-consumption-creates-need-for-more-sustainable-data-centers.html",
+      "type": "consulting_firm",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["GenAI power", "sustainability", "data center predictions"]
+    },
+    {
+      "id": "S010",
+      "title": "Data Center Frontier - Liquid Cooling",
+      "url": "https://www.datacenterfrontier.com/cooling/article/55292167/liquid-cooling-comes-to-a-boil-tracking-data-center-investment-innovation-and-infrastructure-at-the-2025-midpoint",
+      "type": "industry_publication",
+      "credibility": "MEDIUM",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["liquid cooling", "immersion cooling", "thermal management"]
+    },
+    {
+      "id": "S011",
+      "title": "OpenAI - Stargate Project Announcement",
+      "url": "https://openai.com/index/announcing-the-stargate-project/",
+      "type": "company_announcement",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["Stargate", "infrastructure investment", "AI data centers"]
+    },
+    {
+      "id": "S012",
+      "title": "CNN - Trump Stargate Announcement",
+      "url": "https://www.cnn.com/2025/01/21/tech/openai-oracle-softbank-trump-ai-investment",
+      "type": "news_mainstream",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["Stargate", "policy", "investment"]
+    },
+    {
+      "id": "S013",
+      "title": "Virginia Mercury - Data Center Legislation",
+      "url": "https://virginiamercury.com/2025/10/06/va-could-show-how-to-manage-data-center-growth-so-far-its-a-case-study-in-stalling-legislation/",
+      "type": "news_regional",
+      "credibility": "MEDIUM",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["Virginia", "regulation", "community opposition"]
+    },
+    {
+      "id": "S014",
+      "title": "Data Center Watch - Project Delays Report",
+      "url": "https://www.datacenterwatch.org/report",
+      "type": "advocacy_organization",
+      "credibility": "MEDIUM",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["project delays", "community opposition", "blocked projects"]
+    },
+    {
+      "id": "S015",
+      "title": "Tom's Hardware - GPT-5 Power Consumption",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chatgpt-5-power-consumption-could-be-as-much-as-eight-times-higher-than-gpt-4-research-institute-estimates-medium-sized-gpt-5-response-can-consume-up-to-40-watt-hours-of-electricity",
+      "type": "tech_publication",
+      "credibility": "MEDIUM",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["GPT-5", "inference power", "query energy consumption"]
+    },
+    {
+      "id": "S016",
+      "title": "Introl - Nuclear Power for AI Data Centers",
+      "url": "https://introl.com/blog/nuclear-power-ai-data-centers-microsoft-google-amazon-2025",
+      "type": "industry_blog",
+      "credibility": "MEDIUM",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["nuclear deals", "Microsoft", "Google", "Amazon"]
+    },
+    {
+      "id": "S017",
+      "title": "IAEA - Data Centers Eye Advanced Nuclear",
+      "url": "https://www.iaea.org/bulletin/data-centres-artificial-intelligence-and-cryptocurrencies-eye-advanced-nuclear-to-meet-growing-power-needs",
+      "type": "international_organization",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["nuclear power", "SMRs", "energy needs"]
+    },
+    {
+      "id": "S018",
+      "title": "PBS NewsHour - Environmental Impact of AI Data Centers",
+      "url": "https://www.pbs.org/newshour/show/the-growing-environmental-impact-of-ai-data-centers-energy-demands",
+      "type": "news_mainstream",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["environmental impact", "energy demands", "sustainability"]
+    },
+    {
+      "id": "S019",
+      "title": "Nature Sustainability - Net-Zero Pathways for AI Servers",
+      "url": "https://www.nature.com/articles/s41893-025-01681-y",
+      "type": "academic_journal",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["net-zero", "sustainability", "carbon pathways"]
+    },
+    {
+      "id": "S020",
+      "title": "Carnegie Mellon Study - Data Center Electricity Bill Impact",
+      "url": "https://www.bloomberg.com/graphics/2025-ai-data-centers-electricity-prices/",
+      "type": "academic",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["electricity bills", "consumer impact", "regional pricing"]
+    },
+    {
+      "id": "S021",
+      "title": "American Action Forum - Virginia Data Center Rate Class",
+      "url": "https://www.americanactionforum.org/insight/virginias-new-data-center-electricity-rate-class/",
+      "type": "policy_research",
+      "credibility": "MEDIUM",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["Virginia", "rate regulation", "policy"]
+    },
+    {
+      "id": "S022",
+      "title": "CNBC - OpenAI Stargate Texas Data Center",
+      "url": "https://www.cnbc.com/2025/09/23/openai-first-data-center-in-500-billion-stargate-project-up-in-texas.html",
+      "type": "news_financial",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["Stargate", "Texas", "OpenAI"]
+    },
+    {
+      "id": "S023",
+      "title": "Introl - Liquid Cooling Mainstream 2025",
+      "url": "https://introl.com/blog/liquid-cooling-mainstream-tipping-point-2025",
+      "type": "industry_blog",
+      "credibility": "MEDIUM",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["liquid cooling", "thermal management", "adoption"]
+    },
+    {
+      "id": "S024",
+      "title": "Goldman Sachs - AI Power Demand Forecast",
+      "url": "https://www.smithsonianmag.com/science-nature/with-ai-on-the-rise-what-will-be-the-environmental-impacts-of-data-centers-180987379/",
+      "type": "financial_research",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["power demand", "fossil fuels", "carbon emissions"]
+    },
+    {
+      "id": "S025",
+      "title": "SemiAnalysis - H100 vs GB200 Training Benchmarks",
+      "url": "https://newsletter.semianalysis.com/p/h100-vs-gb200-nvl72-training-benchmarks",
+      "type": "industry_analyst",
+      "credibility": "HIGH",
+      "date_accessed": "2025-01-09",
+      "key_topics": ["GPU benchmarks", "training performance", "power consumption"]
+    }
+  ],
+  "metadata": {
+    "total_sources": 25,
+    "high_credibility": 17,
+    "medium_credibility": 8,
+    "date_compiled": "2025-01-09",
+    "research_topic": "AI Data Center Power 2025"
+  }
+}

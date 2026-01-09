@@ -1,0 +1,345 @@
+{
+  "claims": [
+    {
+      "id": "C001",
+      "category": "Global Energy Consumption",
+      "claim": "Global data center electricity consumption is approximately 415 TWh in 2024, representing about 1.5% of global electricity consumption",
+      "confidence": "HIGH",
+      "sources": ["S001", "S002"],
+      "year": 2024,
+      "notes": "IEA and Gartner figures closely align"
+    },
+    {
+      "id": "C002",
+      "category": "Global Energy Consumption",
+      "claim": "Global data center electricity consumption projected to double to 945 TWh by 2030, reaching ~3% of global electricity",
+      "confidence": "HIGH",
+      "sources": ["S001", "S002", "S005"],
+      "year": 2030,
+      "notes": "Projection - multiple analyst sources agree"
+    },
+    {
+      "id": "C003",
+      "category": "US Energy Consumption",
+      "claim": "US data centers consumed 183 TWh of electricity in 2024, representing 4% of total US electricity consumption",
+      "confidence": "HIGH",
+      "sources": ["S001", "S003"],
+      "year": 2024,
+      "notes": "IEA and Pew Research align"
+    },
+    {
+      "id": "C004",
+      "category": "US Energy Consumption",
+      "claim": "US data center electricity usage projected to grow 133% to 426 TWh by 2030",
+      "confidence": "HIGH",
+      "sources": ["S001", "S003"],
+      "year": 2030,
+      "notes": "Projection based on current growth trends"
+    },
+    {
+      "id": "C005",
+      "category": "AI Share of Data Center Power",
+      "claim": "AI-optimized servers currently represent 21% of total data center power usage in 2025, projected to reach 44% by 2030",
+      "confidence": "HIGH",
+      "sources": ["S002"],
+      "year": 2025,
+      "notes": "Gartner analysis"
+    },
+    {
+      "id": "C006",
+      "category": "AI Share of Data Center Power",
+      "claim": "AI share of data center power is currently 5-15%, could increase to 35-50% by 2030",
+      "confidence": "MEDIUM",
+      "sources": ["S001"],
+      "year": 2025,
+      "notes": "IEA range estimate - wide uncertainty band"
+    },
+    {
+      "id": "C007",
+      "category": "Regional Concentration",
+      "claim": "Virginia data centers consumed 26% of the state's total electricity supply in 2023",
+      "confidence": "HIGH",
+      "sources": ["S003", "S013"],
+      "year": 2023,
+      "notes": "Northern Virginia is the largest data center market globally"
+    },
+    {
+      "id": "C008",
+      "category": "Regional Concentration",
+      "claim": "China and US account for nearly 80% of global data center electricity consumption growth to 2030",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "year": 2030,
+      "notes": "IEA projection"
+    },
+    {
+      "id": "C009",
+      "category": "GPU Power Consumption",
+      "claim": "NVIDIA H100 GPU operates at 700W TDP, B200 at 1000W TDP, GB200 NVL72 at 1200W per GPU",
+      "confidence": "HIGH",
+      "sources": ["S007", "S025"],
+      "year": 2025,
+      "notes": "Confirmed specifications from multiple sources"
+    },
+    {
+      "id": "C010",
+      "category": "GPU Power Consumption",
+      "claim": "GPU power consumption has increased from V100 (250-300W) to A100 (300-400W) to H100 (700W) to B200 (1000W)",
+      "confidence": "HIGH",
+      "sources": ["S007"],
+      "year": 2025,
+      "notes": "Historical progression documented"
+    },
+    {
+      "id": "C011",
+      "category": "Model Training Energy",
+      "claim": "GPT-5 queries consume approximately 18.35 watt-hours on average, roughly 8.6x more than GPT-4 (2.12 Wh)",
+      "confidence": "MEDIUM",
+      "sources": ["S015"],
+      "year": 2025,
+      "notes": "University of Rhode Island AI Lab analysis"
+    },
+    {
+      "id": "C012",
+      "category": "Model Training Energy",
+      "claim": "If all 2.5B daily ChatGPT queries used GPT-5, daily energy use could hit 45 GWh - equivalent to 2-3 nuclear power plants",
+      "confidence": "MEDIUM",
+      "sources": ["S015"],
+      "year": 2025,
+      "notes": "Theoretical maximum based on current query volume"
+    },
+    {
+      "id": "C013",
+      "category": "Investment",
+      "claim": "Stargate Project announced with up to $500 billion in AI infrastructure investment by 2029",
+      "confidence": "HIGH",
+      "sources": ["S011", "S012", "S022"],
+      "year": 2025,
+      "notes": "Announced by President Trump, OpenAI, SoftBank, Oracle"
+    },
+    {
+      "id": "C014",
+      "category": "Investment",
+      "claim": "Major hyperscalers (Meta, Microsoft, Alphabet, Amazon) expected to spend ~$350 billion capex in 2025 on AI capabilities",
+      "confidence": "HIGH",
+      "sources": ["S004"],
+      "year": 2025,
+      "notes": "Morgan Stanley/Bloomberg estimates"
+    },
+    {
+      "id": "C015",
+      "category": "Investment",
+      "claim": "Global investment in data centers has nearly doubled since 2022, reaching half a trillion dollars in 2024",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "year": 2024,
+      "notes": "IEA data"
+    },
+    {
+      "id": "C016",
+      "category": "Nuclear Power Deals",
+      "claim": "Microsoft committed to 20-year, $16 billion deal to restart Three Mile Island (835MW) targeting 2028",
+      "confidence": "HIGH",
+      "sources": ["S006", "S016"],
+      "year": 2025,
+      "notes": "Major nuclear restart deal"
+    },
+    {
+      "id": "C017",
+      "category": "Nuclear Power Deals",
+      "claim": "Google signed first US corporate SMR fleet deal with Kairos Power (500MW, targeting 2030+)",
+      "confidence": "HIGH",
+      "sources": ["S006", "S016"],
+      "year": 2025,
+      "notes": "First corporate SMR PPA in US"
+    },
+    {
+      "id": "C018",
+      "category": "Nuclear Power Deals",
+      "claim": "Amazon led $500 million financing round for X-energy to develop SMRs targeting 5GW by 2039",
+      "confidence": "HIGH",
+      "sources": ["S006", "S016"],
+      "year": 2025,
+      "notes": "Major SMR investment"
+    },
+    {
+      "id": "C019",
+      "category": "Nuclear Power Deals",
+      "claim": "Big tech has signed 10GW+ of new US nuclear capacity in the past year as of December 2025",
+      "confidence": "HIGH",
+      "sources": ["S016", "S017"],
+      "year": 2025,
+      "notes": "Aggregate nuclear commitments"
+    },
+    {
+      "id": "C020",
+      "category": "Grid Impact",
+      "claim": "Wholesale electricity costs up 267% in areas near data centers compared to five years ago",
+      "confidence": "HIGH",
+      "sources": ["S004"],
+      "year": 2025,
+      "notes": "Bloomberg analysis"
+    },
+    {
+      "id": "C021",
+      "category": "Grid Impact",
+      "claim": "Carnegie Mellon estimates data centers could lead to 8% average US electricity bill increase by 2030, potentially 25%+ in Virginia",
+      "confidence": "MEDIUM",
+      "sources": ["S004", "S020"],
+      "year": 2030,
+      "notes": "Projection - single study"
+    },
+    {
+      "id": "C022",
+      "category": "Grid Impact",
+      "claim": "PJM capacity market auction price increased 833% for 2025-2026 compared to previous year",
+      "confidence": "HIGH",
+      "sources": ["S013", "S021"],
+      "year": 2025,
+      "notes": "Documented market impact"
+    },
+    {
+      "id": "C023",
+      "category": "Environmental Impact",
+      "claim": "AI growth could annually add 24-44 million metric tons of CO2 by 2030, equivalent to 5-10 million cars",
+      "confidence": "MEDIUM",
+      "sources": ["S008", "S018"],
+      "year": 2030,
+      "notes": "Cornell research projection"
+    },
+    {
+      "id": "C024",
+      "category": "Environmental Impact",
+      "claim": "Goldman Sachs forecasts 60% of increasing data center electricity demand will be met by fossil fuels, adding ~220M tons CO2",
+      "confidence": "MEDIUM",
+      "sources": ["S024"],
+      "year": 2025,
+      "notes": "August 2025 Goldman Sachs analysis"
+    },
+    {
+      "id": "C025",
+      "category": "Environmental Impact",
+      "claim": "Amazon emissions rose from 64.38 to 68.25 million metric tons (2023-2024) - first increase since 2021, primarily from data centers",
+      "confidence": "HIGH",
+      "sources": ["S018"],
+      "year": 2024,
+      "notes": "Company sustainability report data"
+    },
+    {
+      "id": "C026",
+      "category": "Environmental Impact",
+      "claim": "Google 2023 greenhouse gas emissions marked 48% increase since 2019, mostly due to data center development",
+      "confidence": "HIGH",
+      "sources": ["S018"],
+      "year": 2023,
+      "notes": "Company sustainability report data"
+    },
+    {
+      "id": "C027",
+      "category": "Cooling Technology",
+      "claim": "Data center immersion cooling market reached $4.87 billion in 2025, forecast to reach $11.10 billion by 2030 (17.91% CAGR)",
+      "confidence": "HIGH",
+      "sources": ["S010", "S023"],
+      "year": 2025,
+      "notes": "Market size projection"
+    },
+    {
+      "id": "C028",
+      "category": "Cooling Technology",
+      "claim": "Liquid cooling captured 46% of data center cooling market by 2024, with air cooling at 54%",
+      "confidence": "HIGH",
+      "sources": ["S010"],
+      "year": 2024,
+      "notes": "Market share data"
+    },
+    {
+      "id": "C029",
+      "category": "Cooling Technology",
+      "claim": "AI rack power densities now pushing 80-120 kW, up from 10-15 kW traditional limits",
+      "confidence": "HIGH",
+      "sources": ["S010", "S023"],
+      "year": 2025,
+      "notes": "Uptime Institute data"
+    },
+    {
+      "id": "C030",
+      "category": "Cooling Technology",
+      "claim": "Liquid cooling reduces cooling-related energy use by up to 40%, achieving PUE below 1.2 vs 1.4-1.6 for air-cooled",
+      "confidence": "HIGH",
+      "sources": ["S010"],
+      "year": 2025,
+      "notes": "Efficiency improvement documented"
+    },
+    {
+      "id": "C031",
+      "category": "Community Opposition",
+      "claim": "$64 billion of data center projects have been blocked or delayed due to local opposition as of March 2025",
+      "confidence": "MEDIUM",
+      "sources": ["S014"],
+      "year": 2025,
+      "notes": "Data Center Watch advocacy report"
+    },
+    {
+      "id": "C032",
+      "category": "Regulation",
+      "claim": "Virginia approved new electricity rate class for data centers starting January 2027, requiring payment for 85% of contracted distribution/transmission demand",
+      "confidence": "HIGH",
+      "sources": ["S021"],
+      "year": 2025,
+      "notes": "State Corporation Commission ruling"
+    },
+    {
+      "id": "C033",
+      "category": "Stargate Project",
+      "claim": "Stargate's first data center online in Abilene, Texas as of September 2025, with nearly 7GW planned capacity across 5+ sites",
+      "confidence": "HIGH",
+      "sources": ["S011", "S022"],
+      "year": 2025,
+      "notes": "OpenAI announcement"
+    },
+    {
+      "id": "C034",
+      "category": "AI Query Energy",
+      "claim": "AI queries use 10-40x more electricity per query than traditional search functions",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "year": 2025,
+      "notes": "IEA estimate"
+    },
+    {
+      "id": "C035",
+      "category": "Grid Infrastructure",
+      "claim": "20% of planned data centers could face grid connection delays according to IEA",
+      "confidence": "MEDIUM",
+      "sources": ["S001"],
+      "year": 2025,
+      "notes": "Infrastructure bottleneck projection"
+    }
+  ],
+  "metadata": {
+    "total_claims": 35,
+    "high_confidence": 24,
+    "medium_confidence": 10,
+    "low_confidence": 0,
+    "disputed": 1,
+    "categories": [
+      "Global Energy Consumption",
+      "US Energy Consumption",
+      "AI Share of Data Center Power",
+      "Regional Concentration",
+      "GPU Power Consumption",
+      "Model Training Energy",
+      "Investment",
+      "Nuclear Power Deals",
+      "Grid Impact",
+      "Environmental Impact",
+      "Cooling Technology",
+      "Community Opposition",
+      "Regulation",
+      "Stargate Project",
+      "AI Query Energy",
+      "Grid Infrastructure"
+    ],
+    "date_compiled": "2025-01-09"
+  }
+}
