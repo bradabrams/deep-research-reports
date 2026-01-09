@@ -1,0 +1,252 @@
+{
+  "claims": [
+    {
+      "id": "claim_001",
+      "category": "OpenAI Files API",
+      "claim": "OpenAI Files API allows individual files up to 512 MB, with total organization storage up to 1 TB",
+      "confidence": "HIGH",
+      "sources": ["src_001", "src_013"],
+      "verified": true
+    },
+    {
+      "id": "claim_002",
+      "category": "OpenAI Files API",
+      "claim": "OpenAI Files API supports purpose types: assistants, batch, fine-tune, vision, user_data, evals, assistants_output, batch_output, fine-tune-results",
+      "confidence": "HIGH",
+      "sources": ["src_001"],
+      "verified": true
+    },
+    {
+      "id": "claim_003",
+      "category": "OpenAI Files API",
+      "claim": "Files with purpose=batch expire after 30 days by default; all other files persist until manually deleted",
+      "confidence": "HIGH",
+      "sources": ["src_001", "src_013"],
+      "verified": true
+    },
+    {
+      "id": "claim_004",
+      "category": "OpenAI Files API",
+      "claim": "OpenAI Uploads API supports large files up to 8 GB total, with parts uploaded incrementally",
+      "confidence": "HIGH",
+      "sources": ["src_020"],
+      "verified": true
+    },
+    {
+      "id": "claim_005",
+      "category": "OpenAI Files API",
+      "claim": "OpenAI Fine-tuning API only supports .jsonl files; Batch API supports .jsonl up to 200 MB",
+      "confidence": "HIGH",
+      "sources": ["src_001"],
+      "verified": true
+    },
+    {
+      "id": "claim_006",
+      "category": "Anthropic Files API",
+      "claim": "Anthropic Files API requires beta header: anthropic-beta: files-api-2025-04-14",
+      "confidence": "HIGH",
+      "sources": ["src_002", "src_008"],
+      "verified": true
+    },
+    {
+      "id": "claim_007",
+      "category": "Anthropic Files API",
+      "claim": "Anthropic announced Files API, code execution tool, MCP connector, and extended prompt caching on May 22, 2025",
+      "confidence": "HIGH",
+      "sources": ["src_008"],
+      "verified": true
+    },
+    {
+      "id": "claim_008",
+      "category": "Anthropic Files API",
+      "claim": "Anthropic Files API maximum file size is 500 MB per file with 100 GB total storage per organization",
+      "confidence": "HIGH",
+      "sources": ["src_002"],
+      "verified": true
+    },
+    {
+      "id": "claim_009",
+      "category": "Anthropic Files API",
+      "claim": "Anthropic Files API is not supported on Amazon Bedrock or Google Vertex AI",
+      "confidence": "HIGH",
+      "sources": ["src_002"],
+      "verified": true
+    },
+    {
+      "id": "claim_010",
+      "category": "Anthropic Files API",
+      "claim": "Claude supports images in all Claude 3+ models, PDFs in Claude 3.5+ models, and code execution file types in Claude Haiku 4.5 and Claude 3.7+ models",
+      "confidence": "HIGH",
+      "sources": ["src_002", "src_015"],
+      "verified": true
+    },
+    {
+      "id": "claim_011",
+      "category": "Anthropic Files API",
+      "claim": "Files uploaded to Anthropic can only be downloaded if created by skills or code execution tool; user uploads cannot be downloaded",
+      "confidence": "HIGH",
+      "sources": ["src_002"],
+      "verified": true
+    },
+    {
+      "id": "claim_012",
+      "category": "Google Gemini Files API",
+      "claim": "Gemini Files API stores up to 20 GB per project with per-file maximum of 2 GB",
+      "confidence": "MEDIUM",
+      "sources": ["src_003", "src_014"],
+      "notes": "Recent updates may have increased to 50 GB project storage and 5 GB per file"
+    },
+    {
+      "id": "claim_013",
+      "category": "Google Gemini Files API",
+      "claim": "Gemini Files are stored for 48 hours and automatically deleted",
+      "confidence": "HIGH",
+      "sources": ["src_003", "src_014"],
+      "verified": true
+    },
+    {
+      "id": "claim_014",
+      "category": "Google Gemini Files API",
+      "claim": "Gemini Files API is available at no cost in all regions where Gemini API is available",
+      "confidence": "HIGH",
+      "sources": ["src_003"],
+      "verified": true
+    },
+    {
+      "id": "claim_015",
+      "category": "Google Gemini Files API",
+      "claim": "Gemini inline uploads have 20 MB limit vs 2 GB with Files API",
+      "confidence": "HIGH",
+      "sources": ["src_014"],
+      "verified": true
+    },
+    {
+      "id": "claim_016",
+      "category": "W3C File API",
+      "claim": "W3C File API defines File, Blob, and FileReader interfaces for web browser file handling",
+      "confidence": "HIGH",
+      "sources": ["src_004", "src_005"],
+      "verified": true
+    },
+    {
+      "id": "claim_017",
+      "category": "W3C File API",
+      "claim": "FileReader provides three async read methods: readAsArrayBuffer, readAsText, readAsDataURL",
+      "confidence": "HIGH",
+      "sources": ["src_004", "src_006"],
+      "verified": true
+    },
+    {
+      "id": "claim_018",
+      "category": "W3C File API",
+      "claim": "FileReader browser compatibility score is 97/100, with full support in modern browsers",
+      "confidence": "HIGH",
+      "sources": ["src_018"],
+      "verified": true
+    },
+    {
+      "id": "claim_019",
+      "category": "W3C File API",
+      "claim": "Blob interface name originated from Google Gears and represents immutable raw binary data",
+      "confidence": "HIGH",
+      "sources": ["src_004", "src_005"],
+      "verified": true
+    },
+    {
+      "id": "claim_020",
+      "category": "File System Access API",
+      "claim": "File System Access API allows reading and writing to local files with explicit user permission",
+      "confidence": "HIGH",
+      "sources": ["src_010"],
+      "verified": true
+    },
+    {
+      "id": "claim_021",
+      "category": "File System Access API",
+      "claim": "Chrome 122+ supports persistent file permissions without repeated prompts",
+      "confidence": "HIGH",
+      "sources": ["src_010"],
+      "verified": true
+    },
+    {
+      "id": "claim_022",
+      "category": "File System Access API",
+      "claim": "File System Access API is only supported in Chromium-based browsers; Safari and Firefox do not support it",
+      "confidence": "HIGH",
+      "sources": ["src_010"],
+      "verified": true
+    },
+    {
+      "id": "claim_023",
+      "category": "OpenAI Vector Stores",
+      "claim": "OpenAI Vector Store and file_search tool implement RAG with automatic chunking, embedding, and retrieval",
+      "confidence": "HIGH",
+      "sources": ["src_007", "src_009", "src_017"],
+      "verified": true
+    },
+    {
+      "id": "claim_024",
+      "category": "OpenAI Vector Stores",
+      "claim": "OpenAI file_search runs both keyword and semantic searches across assistant and thread vector stores",
+      "confidence": "HIGH",
+      "sources": ["src_009"],
+      "verified": true
+    },
+    {
+      "id": "claim_025",
+      "category": "OpenAI Vector Stores",
+      "claim": "Maximum 128 tools per OpenAI assistant, including code_interpreter, file_search, and function types",
+      "confidence": "HIGH",
+      "sources": ["src_009"],
+      "verified": true
+    },
+    {
+      "id": "claim_026",
+      "category": "Market Analysis",
+      "claim": "Anthropic earns 40% of enterprise LLM spend (up from 12% in 2023); OpenAI fell from 50% to 27%; Google increased from 7% to 21%",
+      "confidence": "MEDIUM",
+      "sources": ["src_012"],
+      "notes": "Market data from industry analysis, may vary by source"
+    },
+    {
+      "id": "claim_027",
+      "category": "Pricing",
+      "claim": "Anthropic Prompt Caching reduces input costs by 90% for cached tokens",
+      "confidence": "HIGH",
+      "sources": ["src_011"],
+      "verified": true
+    },
+    {
+      "id": "claim_028",
+      "category": "Pricing",
+      "claim": "Claude Opus pricing is approximately $15 input / $75 output per million tokens; Sonnet is $3 input / $15 output",
+      "confidence": "MEDIUM",
+      "sources": ["src_011"],
+      "notes": "Pricing may change; verify with official sources"
+    },
+    {
+      "id": "claim_029",
+      "category": "Use Cases",
+      "claim": "RAG (Retrieval-Augmented Generation) allows LLMs to reference external knowledge bases without retraining",
+      "confidence": "HIGH",
+      "sources": ["src_016"],
+      "verified": true
+    },
+    {
+      "id": "claim_030",
+      "category": "Anthropic Code Execution",
+      "claim": "Anthropic code execution tool beta header is code-execution-2025-08-25; legacy version is code_execution_20250522",
+      "confidence": "HIGH",
+      "sources": ["src_019"],
+      "verified": true
+    }
+  ],
+  "metadata": {
+    "total_claims": 30,
+    "high_confidence": 25,
+    "medium_confidence": 5,
+    "disputed": 0,
+    "collection_date": "2026-01-09",
+    "topic": "Files API"
+  }
+}

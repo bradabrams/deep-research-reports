@@ -1,0 +1,210 @@
+{
+  "sources": [
+    {
+      "id": "src_001",
+      "title": "OpenAI Files API Reference",
+      "url": "https://platform.openai.com/docs/api-reference/files",
+      "type": "official_documentation",
+      "provider": "OpenAI",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_002",
+      "title": "Anthropic Claude Files API Documentation",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/files",
+      "type": "official_documentation",
+      "provider": "Anthropic",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_003",
+      "title": "Google Gemini Files API Documentation",
+      "url": "https://ai.google.dev/gemini-api/docs/files",
+      "type": "official_documentation",
+      "provider": "Google",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_004",
+      "title": "W3C File API Specification",
+      "url": "https://www.w3.org/TR/FileAPI/",
+      "type": "specification",
+      "provider": "W3C",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_005",
+      "title": "MDN Web Docs - File API",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_API",
+      "type": "reference_documentation",
+      "provider": "Mozilla",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_006",
+      "title": "MDN Web Docs - FileReader",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/FileReader",
+      "type": "reference_documentation",
+      "provider": "Mozilla",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_007",
+      "title": "OpenAI Vector Stores API Reference",
+      "url": "https://platform.openai.com/docs/api-reference/vector-stores",
+      "type": "official_documentation",
+      "provider": "OpenAI",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_008",
+      "title": "Anthropic Agent Capabilities Announcement",
+      "url": "https://www.anthropic.com/news/agent-capabilities-api",
+      "type": "press_release",
+      "provider": "Anthropic",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_009",
+      "title": "OpenAI Assistants File Search Documentation",
+      "url": "https://platform.openai.com/docs/assistants/tools/file-search",
+      "type": "official_documentation",
+      "provider": "OpenAI",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_010",
+      "title": "Chrome File System Access API Documentation",
+      "url": "https://developer.chrome.com/docs/capabilities/web-apis/file-system-access",
+      "type": "official_documentation",
+      "provider": "Google Chrome",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_011",
+      "title": "LLM API Pricing Comparison 2025 - IntuitionLabs",
+      "url": "https://intuitionlabs.ai/articles/llm-api-pricing-comparison-2025",
+      "type": "industry_analysis",
+      "provider": "IntuitionLabs",
+      "accessed": "2026-01-09",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "src_012",
+      "title": "OpenAI API vs Anthropic API vs Gemini API Guide",
+      "url": "https://www.eesel.ai/blog/openai-api-vs-anthropic-api-vs-gemini-api",
+      "type": "industry_analysis",
+      "provider": "eesel.ai",
+      "accessed": "2026-01-09",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "src_013",
+      "title": "OpenAI Files API Complete Guide - Ragwalla",
+      "url": "https://ragwalla.com/docs/guides/openai-files-api-complete-guide-to-upload-manage-delete-files",
+      "type": "tutorial",
+      "provider": "Ragwalla",
+      "accessed": "2026-01-09",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "src_014",
+      "title": "Google Gemini File Upload Limits - DataStudios",
+      "url": "https://www.datastudios.org/post/google-gemini-file-upload-limits-and-supported-file-types-updated-capabilities",
+      "type": "article",
+      "provider": "DataStudios",
+      "accessed": "2026-01-09",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "src_015",
+      "title": "Claude Supported File Types - DataStudios",
+      "url": "https://www.datastudios.org/post/supported-file-types-you-can-upload-to-claude",
+      "type": "article",
+      "provider": "DataStudios",
+      "accessed": "2026-01-09",
+      "reliability": "MEDIUM"
+    },
+    {
+      "id": "src_016",
+      "title": "AWS RAG Explanation",
+      "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+      "type": "official_documentation",
+      "provider": "AWS",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_017",
+      "title": "OpenAI Cookbook - File Search with Responses API",
+      "url": "https://cookbook.openai.com/examples/file_search_responses",
+      "type": "tutorial",
+      "provider": "OpenAI",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_018",
+      "title": "LambdaTest FileReader Browser Compatibility",
+      "url": "https://www.lambdatest.com/web-technologies/filereader",
+      "type": "compatibility_data",
+      "provider": "LambdaTest",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_019",
+      "title": "Anthropic Code Execution Tool Documentation",
+      "url": "https://docs.claude.com/en/docs/agents-and-tools/tool-use/code-execution-tool",
+      "type": "official_documentation",
+      "provider": "Anthropic",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_020",
+      "title": "OpenAI Uploads API Reference",
+      "url": "https://platform.openai.com/docs/api-reference/uploads",
+      "type": "official_documentation",
+      "provider": "OpenAI",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_021",
+      "title": "MDN File System API",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_System_API",
+      "type": "reference_documentation",
+      "provider": "Mozilla",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    },
+    {
+      "id": "src_022",
+      "title": "OpenAI for Developers 2025",
+      "url": "https://developers.openai.com/blog/openai-for-developers-2025",
+      "type": "press_release",
+      "provider": "OpenAI",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH"
+    }
+  ],
+  "metadata": {
+    "total_sources": 22,
+    "high_reliability": 16,
+    "medium_reliability": 6,
+    "low_reliability": 0,
+    "collection_date": "2026-01-09",
+    "topic": "Files API"
+  }
+}
