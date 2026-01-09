@@ -1,0 +1,214 @@
+{
+  "sources": [
+    {
+      "id": "S001",
+      "title": "Files API - Claude Docs",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/files",
+      "type": "primary",
+      "category": "official_documentation",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official Anthropic documentation for Files API - primary authoritative source"
+    },
+    {
+      "id": "S002",
+      "title": "New capabilities for building agents on the Anthropic API",
+      "url": "https://www.anthropic.com/news/agent-capabilities-api",
+      "type": "primary",
+      "category": "announcement",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official Anthropic announcement of agent capabilities including Files API"
+    },
+    {
+      "id": "S003",
+      "title": "Code execution tool - Claude Docs",
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool",
+      "type": "primary",
+      "category": "official_documentation",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official documentation for code execution tool that integrates with Files API"
+    },
+    {
+      "id": "S004",
+      "title": "GitHub - anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "type": "primary",
+      "category": "repository",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official Anthropic repository for Agent Skills including document processing"
+    },
+    {
+      "id": "S005",
+      "title": "Upload File - Claude API Reference",
+      "url": "https://docs.claude.com/en/api/files-create",
+      "type": "primary",
+      "category": "api_reference",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official API reference for file upload endpoint"
+    },
+    {
+      "id": "S006",
+      "title": "Download File - Claude API Reference",
+      "url": "https://docs.claude.com/en/api/files-content",
+      "type": "primary",
+      "category": "api_reference",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official API reference for file download endpoint"
+    },
+    {
+      "id": "S007",
+      "title": "Get File Metadata - Anthropic",
+      "url": "https://docs.anthropic.com/en/api/files-metadata",
+      "type": "primary",
+      "category": "api_reference",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official API reference for file metadata endpoint"
+    },
+    {
+      "id": "S008",
+      "title": "Delete a File - Anthropic",
+      "url": "https://docs.anthropic.com/en/api/files-delete",
+      "type": "primary",
+      "category": "api_reference",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official API reference for file deletion endpoint"
+    },
+    {
+      "id": "S009",
+      "title": "Agent Skills - Claude Docs",
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
+      "type": "primary",
+      "category": "official_documentation",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official documentation for Agent Skills that create files"
+    },
+    {
+      "id": "S010",
+      "title": "GitHub - anthropics/anthropic-sdk-python",
+      "url": "https://github.com/anthropics/anthropic-sdk-python",
+      "type": "primary",
+      "category": "repository",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official Python SDK repository with Files API support"
+    },
+    {
+      "id": "S011",
+      "title": "GitHub - anthropics/anthropic-sdk-typescript",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "type": "primary",
+      "category": "repository",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official TypeScript SDK repository with Files API support"
+    },
+    {
+      "id": "S012",
+      "title": "Pricing - Claude Docs",
+      "url": "https://docs.claude.com/en/docs/about-claude/pricing",
+      "type": "primary",
+      "category": "official_documentation",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official pricing documentation"
+    },
+    {
+      "id": "S013",
+      "title": "Using Anthropic File API with LiteLLM Proxy",
+      "url": "https://docs.litellm.ai/docs/tutorials/anthropic_file_usage",
+      "type": "secondary",
+      "category": "tutorial",
+      "accessed": "2026-01-09",
+      "reliability": "MEDIUM",
+      "notes": "Third-party integration guide for Files API"
+    },
+    {
+      "id": "S014",
+      "title": "OpenAI API vs Anthropic API: The 2025 developer's guide",
+      "url": "https://www.eesel.ai/blog/openai-api-vs-anthropic-api",
+      "type": "secondary",
+      "category": "comparison",
+      "accessed": "2026-01-09",
+      "reliability": "MEDIUM",
+      "notes": "Comparative analysis of API features"
+    },
+    {
+      "id": "S015",
+      "title": "Anthropic API Pricing: Complete Guide and Cost Optimization Strategies (2025)",
+      "url": "https://www.finout.io/blog/anthropic-api-pricing",
+      "type": "secondary",
+      "category": "analysis",
+      "accessed": "2026-01-09",
+      "reliability": "MEDIUM",
+      "notes": "Third-party pricing analysis"
+    },
+    {
+      "id": "S016",
+      "title": "Anthropic Files API - Bubble Forum",
+      "url": "https://forum.bubble.io/t/anthropic-files-api/376952",
+      "type": "secondary",
+      "category": "community",
+      "accessed": "2026-01-09",
+      "reliability": "LOW",
+      "notes": "Community discussion about Files API implementation"
+    },
+    {
+      "id": "S017",
+      "title": "How to use Claude with the Anthropic API for document analysis",
+      "url": "https://www.datastudios.org/post/how-to-use-claude-with-the-anthropic-api-for-document-analysis-tool-use-and-data-workflows-full-g",
+      "type": "secondary",
+      "category": "tutorial",
+      "accessed": "2026-01-09",
+      "reliability": "MEDIUM",
+      "notes": "Third-party developer tutorial"
+    },
+    {
+      "id": "S018",
+      "title": "Introducing Agent Skills | Claude",
+      "url": "https://www.anthropic.com/news/skills",
+      "type": "primary",
+      "category": "announcement",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official Anthropic announcement of Agent Skills"
+    },
+    {
+      "id": "S019",
+      "title": "Building agents with the Claude Agent SDK",
+      "url": "https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk",
+      "type": "primary",
+      "category": "engineering_blog",
+      "accessed": "2026-01-09",
+      "reliability": "HIGH",
+      "notes": "Official Anthropic engineering blog on Agent SDK"
+    },
+    {
+      "id": "S020",
+      "title": "Postman - Anthropic API Documentation",
+      "url": "https://www.postman.com/ai-engineer/generative-ai-apis/documentation/lqv1fm6/anthropic-api",
+      "type": "secondary",
+      "category": "api_collection",
+      "accessed": "2026-01-09",
+      "reliability": "MEDIUM",
+      "notes": "Postman API collection for Anthropic API"
+    }
+  ],
+  "metadata": {
+    "total_sources": 20,
+    "primary_sources": 13,
+    "secondary_sources": 7,
+    "high_reliability": 13,
+    "medium_reliability": 5,
+    "low_reliability": 2,
+    "collection_date": "2026-01-09",
+    "topic": "Anthropic Files API in Agent API"
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "claims": [
+    {
+      "id": "C001",
+      "category": "definition",
+      "claim": "The Files API lets you upload and manage files to use with the Claude API without re-uploading content with each request",
+      "confidence": "HIGH",
+      "sources": ["S001", "S002"],
+      "verified": true
+    },
+    {
+      "id": "C002",
+      "category": "status",
+      "claim": "The Files API is currently in beta and requires the header: anthropic-beta: files-api-2025-04-14",
+      "confidence": "HIGH",
+      "sources": ["S001", "S005"],
+      "verified": true
+    },
+    {
+      "id": "C003",
+      "category": "technical",
+      "claim": "Upload endpoint is POST /v1/files which returns a unique file_id for referencing in Messages requests",
+      "confidence": "HIGH",
+      "sources": ["S005", "S001"],
+      "verified": true
+    },
+    {
+      "id": "C004",
+      "category": "technical",
+      "claim": "Download endpoint is GET /v1/files/{file_id}/content for files created by code execution tool or skills",
+      "confidence": "HIGH",
+      "sources": ["S006", "S001"],
+      "verified": true
+    },
+    {
+      "id": "C005",
+      "category": "limitation",
+      "claim": "Files you uploaded cannot be downloaded; only files created by skills or code execution tool can be downloaded",
+      "confidence": "HIGH",
+      "sources": ["S001", "S006"],
+      "verified": true
+    },
+    {
+      "id": "C006",
+      "category": "limits",
+      "claim": "Maximum file size is 500 MB per file",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "verified": true
+    },
+    {
+      "id": "C007",
+      "category": "limits",
+      "claim": "Organization storage limit is 100 GB total",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "verified": true
+    },
+    {
+      "id": "C008",
+      "category": "limits",
+      "claim": "Filename must be 1-255 characters and cannot contain characters: <, >, :, \", |, ?, *, \\, /, or unicode 0-31",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "verified": true
+    },
+    {
+      "id": "C009",
+      "category": "pricing",
+      "claim": "File API operations (upload, download, list, retrieve, delete) are free; file content used in Messages requests is priced as input tokens",
+      "confidence": "HIGH",
+      "sources": ["S001", "S012"],
+      "verified": true
+    },
+    {
+      "id": "C010",
+      "category": "scope",
+      "claim": "Files are scoped to the workspace of the API key; other API keys in the same workspace can use files created by any key",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "verified": true
+    },
+    {
+      "id": "C011",
+      "category": "model_support",
+      "claim": "Images are supported in all Claude 3+ models",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "verified": true
+    },
+    {
+      "id": "C012",
+      "category": "model_support",
+      "claim": "PDFs are supported in all Claude 3.5+ models",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "verified": true
+    },
+    {
+      "id": "C013",
+      "category": "model_support",
+      "claim": "Various file types for code execution tool are supported in Claude Haiku 4.5 and all Claude 3.7+ models",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "verified": true
+    },
+    {
+      "id": "C014",
+      "category": "platform",
+      "claim": "The Files API is NOT supported on Amazon Bedrock or Google Vertex AI",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "verified": true
+    },
+    {
+      "id": "C015",
+      "category": "file_types",
+      "claim": "Supported document formats include: PDF, DOCX, TXT, RTF, ODT, HTML",
+      "confidence": "HIGH",
+      "sources": ["S001", "S017"],
+      "verified": true
+    },
+    {
+      "id": "C016",
+      "category": "file_types",
+      "claim": "Supported image formats include: JPEG, PNG, GIF, WebP",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "verified": true
+    },
+    {
+      "id": "C017",
+      "category": "integration",
+      "claim": "The Files API integrates with the code execution tool for providing inputs (datasets/documents) and downloading outputs (charts)",
+      "confidence": "HIGH",
+      "sources": ["S001", "S003"],
+      "verified": true
+    },
+    {
+      "id": "C018",
+      "category": "context",
+      "claim": "Files API was announced as one of four new agent capabilities in October 2025 alongside code execution tool, MCP connector, and prompt caching",
+      "confidence": "HIGH",
+      "sources": ["S002"],
+      "verified": true
+    },
+    {
+      "id": "C019",
+      "category": "technical",
+      "claim": "The upload response includes: id, type, filename, mime_type, size_bytes, created_at, and downloadable fields",
+      "confidence": "HIGH",
+      "sources": ["S005"],
+      "verified": true
+    },
+    {
+      "id": "C020",
+      "category": "technical",
+      "claim": "Files can be referenced in Messages requests using content blocks with type 'document' and source type 'file' with the file_id",
+      "confidence": "HIGH",
+      "sources": ["S001", "S005"],
+      "verified": true
+    },
+    {
+      "id": "C021",
+      "category": "sdk",
+      "claim": "Python SDK supports file uploads via client.beta.files.upload(file=Path('/path/to/file'))",
+      "confidence": "HIGH",
+      "sources": ["S010"],
+      "verified": true
+    },
+    {
+      "id": "C022",
+      "category": "sdk",
+      "claim": "TypeScript SDK supports various file input methods including File objects, fetch Response, fs.ReadStream, and toFile helper",
+      "confidence": "HIGH",
+      "sources": ["S011"],
+      "verified": true
+    },
+    {
+      "id": "C023",
+      "category": "skills",
+      "claim": "Agent Skills for document processing include: pptx, xlsx, docx, and pdf skills",
+      "confidence": "HIGH",
+      "sources": ["S004", "S009"],
+      "verified": true
+    },
+    {
+      "id": "C024",
+      "category": "skills",
+      "claim": "Files created by Agent Skills must be downloaded via the Files API; they are not automatically saved locally",
+      "confidence": "HIGH",
+      "sources": ["S004", "S009"],
+      "verified": true
+    },
+    {
+      "id": "C025",
+      "category": "code_execution",
+      "claim": "The code execution tool gives Claude ability to run Python code in a sandboxed environment to produce computational results and data visualizations",
+      "confidence": "HIGH",
+      "sources": ["S002", "S003"],
+      "verified": true
+    },
+    {
+      "id": "C026",
+      "category": "code_execution",
+      "claim": "Code execution environment includes libraries: pyarrow, openpyxl, xlsxwriter, pillow, python-pptx, python-docx, pypdf, matplotlib, pandas, polars",
+      "confidence": "HIGH",
+      "sources": ["S003"],
+      "verified": true
+    },
+    {
+      "id": "C027",
+      "category": "pricing",
+      "claim": "Code execution tool provides 50 free hours per organization per day, then $0.05 per hour per container",
+      "confidence": "HIGH",
+      "sources": ["S003"],
+      "verified": true
+    },
+    {
+      "id": "C028",
+      "category": "data_retention",
+      "claim": "Files are inaccessible via the API shortly after deletion but may persist in active Messages API calls",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "verified": true
+    },
+    {
+      "id": "C029",
+      "category": "errors",
+      "claim": "Common error codes: 400 (invalid file type/filename), 403 (storage limit exceeded), 413 (file exceeds 500MB limit)",
+      "confidence": "HIGH",
+      "sources": ["S001"],
+      "verified": true
+    },
+    {
+      "id": "C030",
+      "category": "workflow",
+      "claim": "The Files API provides a create-once, use-many-times approach: upload once, receive file_id, reference across multiple conversations",
+      "confidence": "HIGH",
+      "sources": ["S001", "S002"],
+      "verified": true
+    }
+  ],
+  "metadata": {
+    "total_claims": 30,
+    "high_confidence": 30,
+    "medium_confidence": 0,
+    "low_confidence": 0,
+    "disputed": 0,
+    "categories": {
+      "definition": 1,
+      "status": 1,
+      "technical": 4,
+      "limitation": 1,
+      "limits": 3,
+      "pricing": 2,
+      "scope": 1,
+      "model_support": 3,
+      "platform": 1,
+      "file_types": 2,
+      "integration": 1,
+      "context": 1,
+      "sdk": 2,
+      "skills": 2,
+      "code_execution": 2,
+      "data_retention": 1,
+      "errors": 1,
+      "workflow": 1
+    },
+    "collection_date": "2026-01-09",
+    "topic": "Anthropic Files API in Agent API"
+  }
+}
