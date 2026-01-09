@@ -220,9 +220,9 @@
       "id": "C028",
       "category": "Grid Strain - PJM",
       "claim": "PJM Interconnection projects 6GW shortfall in reliability requirements by 2027",
-      "sources": ["ARXIV-GRID"],
+      "sources": ["ARXIV-GRID", "COMMONDREAMS-CRISIS"],
       "confidence": "HIGH",
-      "notes": "Largest US grid operator serving 65 million people"
+      "notes": "Largest US grid operator serving 65 million people. Quote: 'PJM has never been this short'"
     },
     {
       "id": "C029",
@@ -255,6 +255,110 @@
       "sources": ["EPOCH-AI"],
       "confidence": "MEDIUM",
       "notes": "Schneider Electric report cited by Epoch AI"
+    },
+    {
+      "id": "C033",
+      "category": "Community Opposition - Project Delays",
+      "claim": "$64 billion of data center projects blocked or delayed; 20 proposals worth $98B blocked/delayed in Q2 2025 alone in 11 states",
+      "sources": ["DCWATCH-BLOCKED"],
+      "confidence": "MEDIUM",
+      "notes": "Data Center Watch tracking report"
+    },
+    {
+      "id": "C034",
+      "category": "Community Opposition - Legislation",
+      "claim": "238 data center-related bills considered across all 50 states in 2025; 40+ enacted in 21 states; moratoriums passed in 14+ states",
+      "sources": ["PROSPECT-MORATORIUM"],
+      "confidence": "MEDIUM",
+      "notes": "American Prospect reporting on legislative response"
+    },
+    {
+      "id": "C035",
+      "category": "Consumer Electricity Costs",
+      "claim": "Electricity prices in regions with concentrated data centers up 250% over 5 years; US energy costs projected to increase 8% by 2030 due to AI/crypto",
+      "sources": ["FORTUNE-TOWNHALLS"],
+      "confidence": "MEDIUM",
+      "notes": "Community impact reporting"
+    },
+    {
+      "id": "C036",
+      "category": "Consumer Electricity Costs - Regional",
+      "claim": "Power bills increasing up to 20% for customers in MD, OH, PA, NJ, WV; Baltimore area average annual increase of $192",
+      "sources": ["SLASHDOT-BILLS", "COMMONDREAMS-CRISIS"],
+      "confidence": "MEDIUM",
+      "notes": "Regional utility rate impact data"
+    },
+    {
+      "id": "C037",
+      "category": "Grid Quality Issues",
+      "claim": "More than 75% of highly distorted power readings (bad harmonics) in US are within 50 miles of large data center activity",
+      "sources": ["DCD-HARMONICS"],
+      "confidence": "MEDIUM",
+      "notes": "Bloomberg investigation cited by DCD"
+    },
+    {
+      "id": "C038",
+      "category": "Grid Emergency Incident",
+      "claim": "In Summer 2024, 60 data centers dropped off utility grid suddenly, triggering huge surge requiring emergency power plant cutbacks",
+      "sources": ["DCD-HARMONICS"],
+      "confidence": "MEDIUM",
+      "notes": "Near-miss grid emergency event"
+    },
+    {
+      "id": "C039",
+      "category": "Greenwashing Concerns",
+      "claim": "Google's GHG emissions rose 48% from 2019-2024 despite net-zero 2030 pledge; actual emissions may be 50%+ higher than reported using location-based accounting",
+      "sources": ["POLICYREVIEW-GREENWASH", "MIT-FOOTPRINT"],
+      "confidence": "MEDIUM",
+      "notes": "Discrepancy between market-based vs location-based emissions accounting"
+    },
+    {
+      "id": "C040",
+      "category": "Transparency Concerns",
+      "claim": "Tech companies providing 'black box' on AI energy data; Google, OpenAI, Microsoft declined to share inference energy numbers",
+      "sources": ["MIT-FOOTPRINT"],
+      "confidence": "HIGH",
+      "notes": "MIT Technology Review investigation"
+    },
+    {
+      "id": "C041",
+      "category": "Alternative Power Solutions",
+      "claim": "xAI using gas turbine generators to power Memphis Supercluster without grid power; first at this scale",
+      "sources": ["TOMSHW-GRID"],
+      "confidence": "HIGH",
+      "notes": "Elon Musk's approach to data center power"
+    },
+    {
+      "id": "C042",
+      "category": "Water Consumption",
+      "claim": "Data centers will require up to 720 billion gallons of water annually by 2028; nearly 80% of Google's US AI data center water from drinking water sources",
+      "sources": ["NPR-BOOM"],
+      "confidence": "MEDIUM",
+      "notes": "Environmental impact beyond electricity"
+    },
+    {
+      "id": "C043",
+      "category": "Community Debate - Hacker News",
+      "claim": "Community debate: Data center power was flat for a decade until 2022, now projected to reach 8-10%+ of US electricity by 2030",
+      "sources": ["HN-FLAT", "HN-EXHAUST"],
+      "confidence": "LOW",
+      "notes": "Community discussion perspective - corroborated by official sources"
+    },
+    {
+      "id": "C044",
+      "category": "Skeptical Perspective",
+      "claim": "Some argue AI energy projections are overstated, but counter-argument: billions in real dollars being spent on real power capacity",
+      "sources": ["HN-SKEPTIC"],
+      "confidence": "LOW",
+      "notes": "Community debate on projection accuracy"
+    },
+    {
+      "id": "C045",
+      "category": "Grid Infrastructure Investment",
+      "claim": "$3.1 trillion in grid infrastructure investments required before 2030 for renewable integration and large-load connections",
+      "sources": ["TOMSHW-GRID"],
+      "confidence": "MEDIUM",
+      "notes": "Rystad Energy estimate"
     }
   ]
 }

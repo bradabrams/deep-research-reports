@@ -69,6 +69,103 @@
 
 ---
 
+## Collection 2 - Social & Community Insights
+
+### Community Opposition & Political Backlash
+
+#### Project Delays & Moratoriums
+- **$64 billion** of data center projects blocked or delayed nationwide
+- **20 proposals worth $98 billion** blocked/delayed in Q2 2025 alone (11 states)
+- **238 data center bills** considered across all 50 states in 2025
+- **40+ bills enacted** in 21 states
+- **14+ states** have cities/towns with data center moratoriums
+- Microsoft SEC filing acknowledges "community opposition, local moratoriums, and hyper-local dissent" as operational risk
+
+#### Notable Opposition Cases
+- Google withdrew 450-acre Franklin, Indiana proposal after resident opposition
+- Town halls across South Carolina, Pennsylvania, Mississippi, Michigan, Arizona, Texas filled with opposition
+- More than 230 organizations (including Greenpeace, Physicians for Social Responsibility) calling for national moratorium
+
+### Consumer Electricity Cost Impacts
+
+#### Regional Price Increases
+- Electricity prices up **250% over 5 years** in data center-concentrated regions
+- US energy costs projected to increase **8% by 2030** due to AI/crypto
+- Power bills increasing up to **20%** for customers in MD, OH, PA, NJ, WV
+- Baltimore area: average annual increase of **$192**
+
+#### Cost Distribution Concerns
+- Residential consumers subsidize infrastructure for data centers
+- New costs passed to consumers under formulas that charge households higher rates
+- California PG&E rule (Aug 2025): large projects must now cover transmission line costs
+
+### Grid Reliability Concerns
+
+#### Crisis Indicators
+- **"It's at a crisis stage right now"** - Joe Bowring, PJM market monitor
+- PJM projects **6GW reliability shortfall by 2027** - "never been this short"
+- **Summer 2024 incident**: 60 data centers dropped off grid suddenly, causing near-cascading outage
+
+#### Power Quality Issues ("Bad Harmonics")
+- **75%+ of highly distorted power readings** within 50 miles of large data centers
+- Erratic voltage spikes/dips causing sparks, potential home fires
+- Grid operators had to cut power plant output to "protect grid infrastructure"
+
+### Sustainability & Greenwashing Debates
+
+#### Transparency Concerns
+- Tech companies described as providing **"black box"** on AI energy data (MIT Tech Review)
+- Google, OpenAI, Microsoft **declined to share inference energy numbers**
+- Boris Gamazaychikov (Salesforce): "closed AI model providers are serving up a total black box"
+
+#### Emissions Accounting Controversy
+- Google's GHG emissions rose **48% from 2019-2024** despite net-zero 2030 pledge
+- Using location-based vs market-based accounting:
+  - Microsoft actual emissions: **~25.2M metric tons CO₂** (not 15.5M reported)
+  - Google actual emissions: **~23.4M metric tons CO₂** (not 15.2M marketed)
+- Described as **"obfuscation-by-complexity"** rather than classic greenwashing
+- 16 Republican state AGs probing Amazon, Google, Meta, Microsoft REC usage
+
+#### 24/7 Carbon-Free vs Annual Matching
+- Google: 100% annual matching since 2017, but only **66% 24/7 carbon-free** in 2024
+- Gap between claims and reality drawing scrutiny
+
+### Alternative Power Solutions
+
+#### On-Site Generation
+- xAI using **gas turbines at Memphis Supercluster** - first at this scale without grid power
+- Data centers "increasingly require on-site systems as power demands outpace grid capacity"
+- Options: retired nuclear, new natural gas, battery storage, renewables, hybrids
+
+#### Infrastructure Investment Needs
+- **$720 billion** grid upgrades through 2030 (Goldman Sachs)
+- **$3.1 trillion** grid infrastructure before 2030 for renewable integration (Rystad Energy)
+
+### Water Consumption Concerns
+- Data centers will require up to **720 billion gallons annually by 2028**
+- Enough to supply **18.5 million American households**
+- **Nearly 80%** of Google's US AI data center water from drinking water sources
+
+---
+
+## Hacker News Community Perspectives
+
+### Key Discussion Themes
+
+1. **Historical Context**: Data center power was relatively flat for a decade until 2022; AI changed the trajectory dramatically
+
+2. **Scale Comparisons**: AI data center consumption compared to US aluminum industry (90B kWh/yr in 2003 = ~10GW continuous)
+
+3. **Skeptics vs Believers**:
+   - Some argue projections are overstated
+   - Counter: "billions of real dollars being spent on real power capacity"
+
+4. **Carbon-Neutral Concerns**: If carbon-neutral sources go to AI/crypto, they aren't available for other industries
+
+5. **Three Mile Island Discussion**: Microsoft investment seen as example of big tech being "part of the solution"
+
+---
+
 ## Key Tensions & Debates
 
 1. **Forecast Divergence**: Wide range in projections (600-1,300 TWh by 2030)
@@ -76,6 +173,9 @@
 3. **Renewable Claims**: State AGs investigating RECs/carbon accounting
 4. **Grid Readiness**: Supply infrastructure lagging demand growth
 5. **Carbon-Free Claims**: Google at 66% 24/7 carbon-free vs 100% annual matching
+6. **Who Pays?**: Residential consumers subsidizing infrastructure
+7. **Local vs National**: Community opposition vs federal economic incentives
+8. **Transparency**: Tech companies not disclosing AI-specific energy data
 
 ---
 
@@ -86,8 +186,11 @@
 3. SMR deployment timelines and capacity
 4. Water usage trends (cooling)
 5. Embodied carbon in hardware manufacturing
+6. Impact of community opposition on deployment timelines
+7. Effectiveness of different regulatory approaches
+8. Long-term grid reliability with increasing AI load
 
 ---
 
 *Last Updated: 2026-01-09*
-*Collection: 1 of 2*
+*Collections: 1 & 2 (Social Insights) Complete*

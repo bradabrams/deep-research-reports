@@ -206,6 +206,186 @@
       "type": "industry_analysis",
       "date_accessed": "2026-01-09",
       "credibility": "MEDIUM"
+    },
+    {
+      "id": "HN-CITIES",
+      "title": "AI Data Centers May Consume More Electricity Than Entire Cities",
+      "organization": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=42221756",
+      "type": "community",
+      "date_accessed": "2026-01-09",
+      "credibility": "LOW",
+      "notes": "Community discussion comparing AI data center consumption to US aluminum industry (90B kWh/yr in 2003)"
+    },
+    {
+      "id": "HN-EXHAUST",
+      "title": "AI is exhausting the power grid",
+      "organization": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=40761606",
+      "type": "community",
+      "date_accessed": "2026-01-09",
+      "credibility": "LOW",
+      "notes": "Discussion noting all DC power at 3-4% US electricity, expected to grow to 8% in 6 years"
+    },
+    {
+      "id": "HN-BILLS",
+      "title": "Big Tech's A.I. Data Centers Are Driving Up Electricity Bills for Everyone",
+      "organization": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=44905595",
+      "type": "community",
+      "date_accessed": "2026-01-09",
+      "credibility": "LOW",
+      "notes": "Discussion on carbon-neutral energy displacement and consumer impact"
+    },
+    {
+      "id": "HN-FLAT",
+      "title": "Data center power usage has been fairly flat for the last decade",
+      "organization": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=46392930",
+      "type": "community",
+      "date_accessed": "2026-01-09",
+      "credibility": "LOW",
+      "notes": "Historical context - AI changed previous flat growth trajectory"
+    },
+    {
+      "id": "HN-SKEPTIC",
+      "title": "AI won't use as much electricity as we are told",
+      "organization": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=45346761",
+      "type": "community",
+      "date_accessed": "2026-01-09",
+      "credibility": "LOW",
+      "notes": "Skeptical perspective; counter-argument that real dollars are being spent on real capacity"
+    },
+    {
+      "id": "SLASHDOT-BILLS",
+      "title": "As Data Centers for AI Strain the Power Grid, Bills Rise for Everyday Customers",
+      "organization": "Slashdot",
+      "url": "https://hardware.slashdot.org/story/24/11/02/0427238/as-data-centers-for-ai-strain-the-power-grid-bills-rise-for-everyday-customers",
+      "type": "community",
+      "date_accessed": "2026-01-09",
+      "credibility": "LOW",
+      "notes": "Discussion on residential electricity bill impacts"
+    },
+    {
+      "id": "COMMONDREAMS-CRISIS",
+      "title": "US Electric Grid Heading Toward 'Crisis' Thanks to AI Data Centers",
+      "organization": "Common Dreams",
+      "url": "https://www.commondreams.org/news/data-centers-electric-grid",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "Quote from Joe Bowring: 'PJM has never been this short'"
+    },
+    {
+      "id": "TOMSHW-GRID",
+      "title": "U.S. electricity grid stretches thin as data centers rush to turn on onsite generators",
+      "organization": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/u-s-electricity-grid-stretches-thin-as-data-centers-rush-to-turn-on-onsite-generators-meta-xai-and-other-tech-giants-race-to-solve-ais-insatiable-power-appetite",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "xAI using gas turbines at Memphis Supercluster"
+    },
+    {
+      "id": "DCD-HARMONICS",
+      "title": "AI data centers causing distortions in US power grid - Bloomberg",
+      "organization": "Data Center Dynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/ai-data-centers-causing-distortions-in-us-power-grid-bloomberg/",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "Bad harmonics issue - 75%+ distorted readings within 50mi of large DC activity"
+    },
+    {
+      "id": "MIT-FOOTPRINT",
+      "title": "We did the math on AI's energy footprint. Here's the story you haven't heard.",
+      "organization": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2025/05/20/1116327/ai-energy-usage-climate-footprint-big-tech/",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Tech companies described as providing 'black box' on energy data"
+    },
+    {
+      "id": "POLICYREVIEW-GREENWASH",
+      "title": "Not greenwashing, but still… A closer look at big tech's 2025 sustainability reports",
+      "organization": "Policy Review",
+      "url": "https://policyreview.info/articles/news/big-techs-2025-sustainability-reports/2027",
+      "type": "analysis",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "Describes 'obfuscation-by-complexity' in sustainability reporting"
+    },
+    {
+      "id": "NPR-BOOM",
+      "title": "Data centers are booming. But there are big energy and environmental risks",
+      "organization": "NPR",
+      "url": "https://www.npr.org/2025/10/14/nx-s1-5565147/google-ai-data-centers-growth-environment-electricity",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "HIGH",
+      "notes": "Coverage of Google Franklin, Indiana project opposition"
+    },
+    {
+      "id": "RESTOFWORLD-PUSHBACK",
+      "title": "AI data centers are booming but locals are pushing back",
+      "organization": "Rest of World",
+      "url": "https://restofworld.org/2025/ai-data-centers-fallout/",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "Global perspective on community opposition"
+    },
+    {
+      "id": "FORTUNE-TOWNHALLS",
+      "title": "Angry town halls nationwide find a new villain: the data center",
+      "organization": "Fortune",
+      "url": "https://fortune.com/2026/01/03/data-centers-town-halls-angry-citizens-affordability-zoning-utility/",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "Coverage of nationwide community opposition"
+    },
+    {
+      "id": "DCWATCH-BLOCKED",
+      "title": "$64 billion of data center projects have been blocked or delayed amid local opposition",
+      "organization": "Data Center Watch",
+      "url": "https://www.datacenterwatch.org/report",
+      "type": "industry_analysis",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "20 proposals valued at $98B blocked/delayed in Q2 2025 alone"
+    },
+    {
+      "id": "CALMATTERS-RATES",
+      "title": "It proved hard to shield California electricity rates from data centers",
+      "organization": "CalMatters",
+      "url": "https://calmatters.org/environment/2025/09/data-centers-california-electricity-rates/",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "PG&E rule requiring large customers to cover transmission costs"
+    },
+    {
+      "id": "NRDC-GRID",
+      "title": "The AI Boom Is Stressing the Grid—but It Doesn't Have to Be This Way",
+      "organization": "Natural Resources Defense Council",
+      "url": "https://www.nrdc.org/stories/ai-boom-stressing-grid-it-doesnt-have-be-way",
+      "type": "advocacy",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "Environmental advocacy perspective on solutions"
+    },
+    {
+      "id": "PROSPECT-MORATORIUM",
+      "title": "Demands for Data Center Moratoriums Surge",
+      "organization": "The American Prospect",
+      "url": "https://prospect.org/2025/12/22/demands-for-data-center-moratoriums-surge/",
+      "type": "news",
+      "date_accessed": "2026-01-09",
+      "credibility": "MEDIUM",
+      "notes": "Cities in 14+ states passed moratoriums; 238 bills considered in 2025"
     }
   ]
 }
