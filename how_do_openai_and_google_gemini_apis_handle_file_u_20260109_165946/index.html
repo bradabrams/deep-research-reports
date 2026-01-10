@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI File APIs Compared: OpenAI vs Gemini vs Anthropic</title>
+    <style>
+        :root {
+            --openai: #10a37f;
+            --gemini: #4285f4;
+            --anthropic: #cc785c;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --warning: #ff6b6b;
+            --success: #6bcb77;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, rgba(16,163,127,0.1), rgba(66,133,244,0.1), rgba(204,120,92,0.1));
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, var(--openai), var(--gemini), var(--anthropic));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        /* TL;DR Box */
+        .tldr {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 900px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .tldr h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .tldr-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .tldr-item {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .tldr-item .provider {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .tldr-item .verdict {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .tldr-item.openai .provider { color: var(--openai); }
+        .tldr-item.gemini .provider { color: var(--gemini); }
+        .tldr-item.anthropic .provider { color: var(--anthropic); }
+
+        /* Critical Alert */
+        .alert {
+            background: linear-gradient(90deg, rgba(255,107,107,0.2), rgba(255,107,107,0.05));
+            border-left: 4px solid var(--warning);
+            padding: 20px 25px;
+            margin: 30px auto;
+            max-width: 900px;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .alert-title {
+            font-weight: 600;
+            color: var(--warning);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Provider Cards */
+        .providers {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 40px 0;
+        }
+
+        .provider-card {
+            background: rgba(255,255,255,0.03);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .provider-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .provider-card.openai { border-top: 3px solid var(--openai); }
+        .provider-card.gemini { border-top: 3px solid var(--gemini); }
+        .provider-card.anthropic { border-top: 3px solid var(--anthropic); }
+
+        .provider-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .provider-card.openai h3 { color: var(--openai); }
+        .provider-card.gemini h3 { color: var(--gemini); }
+        .provider-card.anthropic h3 { color: var(--anthropic); }
+
+        .provider-card .tagline {
+            color: #888;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .stat-value {
+            font-weight: 600;
+        }
+
+        .stat-value.warning {
+            color: var(--warning);
+        }
+
+        .stat-value.success {
+            color: var(--success);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge.deprecated {
+            background: rgba(255,107,107,0.2);
+            color: var(--warning);
+        }
+
+        .badge.beta {
+            background: rgba(255,217,61,0.2);
+            color: #ffd93d;
+        }
+
+        .badge.stable {
+            background: rgba(107,203,119,0.2);
+            color: var(--success);
+        }
+
+        /* Decision Matrix */
+        .section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255,255,255,0.02);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .comparison-table th {
+            background: rgba(255,255,255,0.05);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+        }
+
+        .comparison-table th:nth-child(2) { color: var(--openai); }
+        .comparison-table th:nth-child(3) { color: var(--gemini); }
+        .comparison-table th:nth-child(4) { color: var(--anthropic); }
+
+        .comparison-table td:first-child {
+            font-weight: 500;
+            color: #ccc;
+        }
+
+        .check { color: var(--success); }
+        .cross { color: var(--warning); }
+        .partial { color: #ffd93d; }
+
+        /* Charts Section */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .chart-card {
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .chart-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .chart-card .caption {
+            padding: 15px;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* Decision Helper */
+        .decision-helper {
+            background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .decision-helper h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
+
+        .use-cases {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .use-case {
+            background: rgba(0,0,0,0.2);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .use-case-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .use-case h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .use-case p {
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        .use-case .recommend {
+            font-weight: 600;
+            margin-top: 8px;
+            font-size: 0.9rem;
+        }
+
+        .use-case .recommend.openai { color: var(--openai); }
+        .use-case .recommend.gemini { color: var(--gemini); }
+        .use-case .recommend.anthropic { color: var(--anthropic); }
+
+        /* Visual Comparison Bar */
+        .visual-compare {
+            margin: 50px 0;
+        }
+
+        .compare-item {
+            margin-bottom: 25px;
+        }
+
+        .compare-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .compare-bars {
+            display: flex;
+            gap: 4px;
+            height: 30px;
+            border-radius: 6px;
+            overflow: hidden;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #fff;
+            transition: width 0.5s ease;
+        }
+
+        .bar.openai { background: var(--openai); }
+        .bar.gemini { background: var(--gemini); }
+        .bar.anthropic { background: var(--anthropic); }
+
+        /* Key Insight Callouts */
+        .insight {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            background: rgba(255,255,255,0.03);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+        }
+
+        .insight-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .insight-content h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .insight-content p {
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Sources */
+        .sources {
+            background: rgba(0,0,0,0.3);
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .sources h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .source-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .source-list a {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.85rem;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .source-list a:hover {
+            background: rgba(255,255,255,0.05);
+            color: #fff;
+        }
+
+        .source-list a span {
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #555;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .providers, .charts-grid, .use-cases, .source-list {
+                grid-template-columns: 1fr;
+            }
+
+            .tldr-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .comparison-table {
+                font-size: 0.85rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>AI File Upload APIs Compared</h1>
+            <p class="subtitle">How OpenAI, Google Gemini, and Anthropic handle file uploads—and which one fits your use case</p>
+
+            <!-- TL;DR -->
+            <div class="tldr">
+                <h2>⚡ 30-Second Summary</h2>
+                <div class="tldr-grid">
+                    <div class="tldr-item openai">
+                        <div class="provider">OpenAI</div>
+                        <div class="verdict">Permanent storage, mature ecosystem<br><strong>but Assistants API shutting down Aug 2026</strong></div>
+                    </div>
+                    <div class="tldr-item gemini">
+                        <div class="provider">Gemini</div>
+                        <div class="verdict">Best multimodal + free storage<br><strong>but files auto-delete after 48 hours</strong></div>
+                    </div>
+                    <div class="tldr-item anthropic">
+                        <div class="provider">Anthropic</div>
+                        <div class="verdict">Most flexible retention (0-365 days)<br><strong>but beta-only, no cloud marketplace</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Critical Alerts -->
+    <div class="container">
+        <div class="alert">
+            <div class="alert-title">⚠️ Critical Finding: Retention Policies Are the Biggest Differentiator</div>
+            <p>Gemini's mandatory 48-hour file deletion makes it <strong>unsuitable for RAG/knowledge base applications</strong> that need persistent document storage. Choose OpenAI or Anthropic for those use cases.</p>
+        </div>
+    </div>
+
+    <!-- Provider Cards -->
+    <div class="container">
+        <div class="providers">
+            <!-- OpenAI -->
+            <div class="provider-card openai">
+                <h3>OpenAI</h3>
+                <p class="tagline">Purpose-driven file architecture</p>
+                <span class="badge deprecated">Assistants Deprecated</span>
+
+                <div class="stat-row">
+                    <span class="stat-label">Max File Size</span>
+                    <span class="stat-value">512 MB / 8 GB*</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Storage Quota</span>
+                    <span class="stat-value">~10 GB</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Retention</span>
+                    <span class="stat-value success">Permanent</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Audio/Video</span>
+                    <span class="stat-value">Whisper API only</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Cloud Available</span>
+                    <span class="stat-value success">Azure ✓</span>
+                </div>
+                <p style="font-size: 0.75rem; color: #666; margin-top: 15px;">*8GB via Uploads API with 64MB parts</p>
+            </div>
+
+            <!-- Gemini -->
+            <div class="provider-card gemini">
+                <h3>Google Gemini</h3>
+                <p class="tagline">Multimodal-native, cost-efficient</p>
+                <span class="badge stable">Stable</span>
+
+                <div class="stat-row">
+                    <span class="stat-label">Max File Size</span>
+                    <span class="stat-value">5 GB</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Storage Quota</span>
+                    <span class="stat-value">50 GB</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Retention</span>
+                    <span class="stat-value warning">48 hours only</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Audio/Video</span>
+                    <span class="stat-value success">Native ✓</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Cloud Available</span>
+                    <span class="stat-value success">Vertex AI ✓</span>
+                </div>
+                <p style="font-size: 0.75rem; color: #666; margin-top: 15px;">Free storage—only pay for processing</p>
+            </div>
+
+            <!-- Anthropic -->
+            <div class="provider-card anthropic">
+                <h3>Anthropic</h3>
+                <p class="tagline">Developer-friendly, flexible</p>
+                <span class="badge beta">Beta</span>
+
+                <div class="stat-row">
+                    <span class="stat-label">Max File Size</span>
+                    <span class="stat-value">500 MB</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Storage Quota</span>
+                    <span class="stat-value success">100 GB</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Retention</span>
+                    <span class="stat-value success">0-365 days</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Audio/Video</span>
+                    <span class="stat-value warning">Not supported</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Cloud Available</span>
+                    <span class="stat-value warning">Direct API only</span>
+                </div>
+                <p style="font-size: 0.75rem; color: #666; margin-top: 15px;">Files API not available on Bedrock/Vertex</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visual Comparisons -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">📊 Visual Comparison</h2>
+
+            <div class="visual-compare">
+                <div class="compare-item">
+                    <div class="compare-label">
+                        <span>Max File Size</span>
+                        <span style="color: #888;">OpenAI leads with Uploads API</span>
+                    </div>
+                    <div class="compare-bars">
+                        <div class="bar openai" style="width: 100%;">8 GB</div>
+                        <div class="bar gemini" style="width: 62%;">5 GB</div>
+                        <div class="bar anthropic" style="width: 6%;">500 MB</div>
+                    </div>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">
+                        <span>Organization Storage</span>
+                        <span style="color: #888;">Anthropic offers the most</span>
+                    </div>
+                    <div class="compare-bars">
+                        <div class="bar openai" style="width: 10%;">10 GB</div>
+                        <div class="bar gemini" style="width: 50%;">50 GB</div>
+                        <div class="bar anthropic" style="width: 100%;">100 GB</div>
+                    </div>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">
+                        <span>File Retention</span>
+                        <span style="color: #888;">Gemini's limit is a dealbreaker for many</span>
+                    </div>
+                    <div class="compare-bars">
+                        <div class="bar openai" style="width: 100%;">Permanent</div>
+                        <div class="bar gemini" style="width: 1%;">48h</div>
+                        <div class="bar anthropic" style="width: 100%;">365 days</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <img src="images/file_size_limits.png" alt="File Size Limits Comparison">
+                    <div class="caption">Maximum file sizes across providers and API types</div>
+                </div>
+                <div class="chart-card">
+                    <img src="images/storage_retention.png" alt="Storage and Retention Policies">
+                    <div class="caption">Storage quotas and retention periods compared</div>
+                </div>
+                <div class="chart-card">
+                    <img src="images/feature_matrix.png" alt="Feature Support Matrix">
+                    <div class="caption">Feature availability: Y = Full, ~ = Partial, X = None</div>
+                </div>
+                <div class="chart-card">
+                    <img src="images/pdf_limits.png" alt="PDF Processing Limits">
+                    <div class="caption">PDF-specific limits: size and page counts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison Table -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">📋 Feature Matrix</h2>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>OpenAI</th>
+                        <th>Gemini</th>
+                        <th>Anthropic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PDF Documents</td>
+                        <td><span class="check">✓</span> Up to 512MB</td>
+                        <td><span class="check">✓</span> Up to 50MB/1000pg</td>
+                        <td><span class="check">✓</span> Up to 32MB/100pg</td>
+                    </tr>
+                    <tr>
+                        <td>Word/Excel/PowerPoint</td>
+                        <td><span class="check">✓</span> Full support</td>
+                        <td><span class="check">✓</span> Full support</td>
+                        <td><span class="partial">~</span> Convert to PDF/text</td>
+                    </tr>
+                    <tr>
+                        <td>Images</td>
+                        <td><span class="check">✓</span> PNG/JPEG/GIF/WebP</td>
+                        <td><span class="check">✓</span> PNG/JPEG/GIF/WebP</td>
+                        <td><span class="check">✓</span> PNG/JPEG/GIF/WebP</td>
+                    </tr>
+                    <tr>
+                        <td>Audio Files</td>
+                        <td><span class="partial">~</span> Via Whisper API</td>
+                        <td><span class="check">✓</span> Native MP3/WAV/M4A</td>
+                        <td><span class="cross">✗</span> Not supported</td>
+                    </tr>
+                    <tr>
+                        <td>Video Files</td>
+                        <td><span class="cross">✗</span> Not supported</td>
+                        <td><span class="check">✓</span> Up to 2GB</td>
+                        <td><span class="cross">✗</span> Not supported</td>
+                    </tr>
+                    <tr>
+                        <td>Persistent Storage</td>
+                        <td><span class="check">✓</span> Until deleted</td>
+                        <td><span class="cross">✗</span> 48h max</td>
+                        <td><span class="check">✓</span> Configurable</td>
+                    </tr>
+                    <tr>
+                        <td>Free Storage</td>
+                        <td><span class="cross">✗</span></td>
+                        <td><span class="check">✓</span> Yes</td>
+                        <td><span class="cross">✗</span></td>
+                    </tr>
+                    <tr>
+                        <td>File Reference System</td>
+                        <td><span class="check">✓</span> file_id</td>
+                        <td><span class="check">✓</span> file URI</td>
+                        <td><span class="check">✓</span> file_id</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Marketplace</td>
+                        <td><span class="check">✓</span> Azure OpenAI</td>
+                        <td><span class="check">✓</span> Vertex AI</td>
+                        <td><span class="cross">✗</span> Direct API only</td>
+                    </tr>
+                    <tr>
+                        <td>API Status</td>
+                        <td><span class="cross">⚠</span> Assistants deprecated</td>
+                        <td><span class="check">✓</span> Stable</td>
+                        <td><span class="partial">~</span> Beta</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Decision Helper -->
+    <section class="section">
+        <div class="container">
+            <div class="decision-helper">
+                <h3>🎯 Which Should You Choose?</h3>
+
+                <div class="use-cases">
+                    <div class="use-case">
+                        <div class="use-case-icon">📚</div>
+                        <div>
+                            <h4>RAG / Knowledge Bases</h4>
+                            <p>Need persistent document storage for retrieval-augmented generation</p>
+                            <div class="recommend openai">→ OpenAI or Anthropic</div>
+                        </div>
+                    </div>
+
+                    <div class="use-case">
+                        <div class="use-case-icon">🎬</div>
+                        <div>
+                            <h4>Audio/Video Processing</h4>
+                            <p>Transcription, video analysis, multimedia understanding</p>
+                            <div class="recommend gemini">→ Gemini (only native support)</div>
+                        </div>
+                    </div>
+
+                    <div class="use-case">
+                        <div class="use-case-icon">📊</div>
+                        <div>
+                            <h4>Batch Document Processing</h4>
+                            <p>High-volume, process-and-discard workflows</p>
+                            <div class="recommend gemini">→ Gemini (free storage)</div>
+                        </div>
+                    </div>
+
+                    <div class="use-case">
+                        <div class="use-case-icon">🏢</div>
+                        <div>
+                            <h4>Enterprise Compliance</h4>
+                            <p>Strict data retention and residency requirements</p>
+                            <div class="recommend anthropic">→ Anthropic (configurable retention)</div>
+                        </div>
+                    </div>
+
+                    <div class="use-case">
+                        <div class="use-case-icon">☁️</div>
+                        <div>
+                            <h4>Cloud Marketplace Deployment</h4>
+                            <p>Need Azure or GCP billing/governance</p>
+                            <div class="recommend openai">→ OpenAI or Gemini</div>
+                        </div>
+                    </div>
+
+                    <div class="use-case">
+                        <div class="use-case-icon">🚀</div>
+                        <div>
+                            <h4>Rapid Prototyping</h4>
+                            <p>Simple API, generous quotas, quick iteration</p>
+                            <div class="recommend anthropic">→ Anthropic (100GB, simple API)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Insights -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">💡 Key Insights</h2>
+
+            <div class="insight">
+                <div class="insight-icon">🗂️</div>
+                <div class="insight-content">
+                    <h4>PDF Processing Is Vision-Based (Gemini & Anthropic)</h4>
+                    <p>Both Gemini and Anthropic convert PDF pages to images, enabling understanding of layouts, charts, and diagrams—not just text extraction. OpenAI focuses on text extraction and embeddings.</p>
+                </div>
+            </div>
+
+            <div class="insight">
+                <div class="insight-icon">⏰</div>
+                <div class="insight-content">
+                    <h4>Gemini's 48-Hour Limit Is Non-Negotiable</h4>
+                    <p>Despite community requests, there's no way to extend file retention in Gemini. Developers working around this use cron jobs to re-upload files every 24 hours—a fragile solution at scale.</p>
+                </div>
+            </div>
+
+            <div class="insight">
+                <div class="insight-icon">📅</div>
+                <div class="insight-content">
+                    <h4>OpenAI's Assistants API Has an Expiration Date</h4>
+                    <p>The Assistants API—OpenAI's primary file-based workflow tool—shuts down August 26, 2026. Plan your migration to the Responses API now.</p>
+                </div>
+            </div>
+
+            <div class="insight">
+                <div class="insight-icon">🔒</div>
+                <div class="insight-content">
+                    <h4>Anthropic's Files API Is Direct-Only</h4>
+                    <p>Unlike OpenAI (Azure) and Gemini (Vertex AI), Anthropic's Files API isn't available through cloud marketplaces. This affects enterprise procurement and governance workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sources -->
+    <section class="sources">
+        <div class="container">
+            <h3>📚 Sources & Documentation</h3>
+            <div class="source-list">
+                <a href="https://platform.openai.com/docs/api-reference/files" target="_blank">OpenAI Files API Reference <span>• Official</span></a>
+                <a href="https://ai.google.dev/gemini-api/docs/files" target="_blank">Gemini Files API Documentation <span>• Official</span></a>
+                <a href="https://docs.anthropic.com/en/docs/build-with-claude/files" target="_blank">Anthropic Files API <span>• Official</span></a>
+                <a href="https://platform.openai.com/docs/assistants/tools/file-search/supported-files" target="_blank">OpenAI Assistants Supported Files <span>• Official</span></a>
+                <a href="https://ai.google.dev/gemini-api/docs/document-processing" target="_blank">Gemini Document Processing <span>• Official</span></a>
+                <a href="https://docs.anthropic.com/en/docs/build-with-claude/pdf-support" target="_blank">Anthropic PDF Support <span>• Official</span></a>
+                <a href="https://docs.anthropic.com/en/docs/build-with-claude/vision" target="_blank">Anthropic Vision Documentation <span>• Official</span></a>
+                <a href="https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/file-search" target="_blank">Azure OpenAI File Search <span>• Microsoft</span></a>
+                <a href="https://community.openai.com/t/what-file-types-are-actually-supported/929529" target="_blank">OpenAI Community: File Types Discussion <span>• Community</span></a>
+                <a href="https://discuss.ai.google.dev/t/what-happens-to-my-uploaded-files-when-using-google-api-with-gemini-2-0-flash-storage-limits-and-default-behavior-explained/74763" target="_blank">Gemini Forum: File Storage Behavior <span>• Community</span></a>
+                <a href="https://github.com/googleapis/python-genai/issues/1172" target="_blank">Gemini GitHub: TTL Feature Request <span>• Community</span></a>
+                <a href="https://www.datastudios.org/post/google-gemini-file-upload-and-reading-supported-formats-limits-and-enterprise-use" target="_blank">DataStudios: Gemini File Upload Guide <span>• Third-party</span></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            Research compiled January 2025 • Data from official documentation and community sources
+        </div>
+    </footer>
+</body>
+</html>
