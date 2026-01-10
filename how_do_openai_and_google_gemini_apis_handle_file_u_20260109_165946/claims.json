@@ -1,0 +1,267 @@
+{
+  "claims": [
+    {
+      "id": "openai-file-size-limit",
+      "claim": "OpenAI Files API has a 512MB per file limit for Assistants and GPT conversations",
+      "provider": "OpenAI",
+      "category": "file_limits",
+      "confidence": "HIGH",
+      "sources": ["openai-file-uploads-faq", "openai-help-file-types"],
+      "notes": "Token cap of 2M tokens per file also applies"
+    },
+    {
+      "id": "openai-upload-api-limit",
+      "claim": "OpenAI Uploads API supports files up to 8GB total with 64MB per part",
+      "provider": "OpenAI",
+      "category": "file_limits",
+      "confidence": "HIGH",
+      "sources": ["openai-uploads-api-ref"],
+      "notes": "Designed for large file uploads in multiple parts"
+    },
+    {
+      "id": "openai-fine-tune-format",
+      "claim": "OpenAI fine-tuning only supports JSONL format with 1GB max size",
+      "provider": "OpenAI",
+      "category": "supported_formats",
+      "confidence": "HIGH",
+      "sources": ["openai-files-api-ref", "openai-help-file-types"],
+      "notes": "Specific format requirements for fine-tuning chat/completions models"
+    },
+    {
+      "id": "openai-file-purposes",
+      "claim": "OpenAI Files API supports purposes: assistants, assistants_output, batch, batch_output, fine-tune, fine-tune-results, vision, user_data, evals",
+      "provider": "OpenAI",
+      "category": "api_design",
+      "confidence": "HIGH",
+      "sources": ["openai-files-api-ref"],
+      "notes": "Purpose determines accepted formats"
+    },
+    {
+      "id": "openai-assistants-file-limit",
+      "claim": "OpenAI Assistants support maximum 20 files per assistant, 512MB each",
+      "provider": "OpenAI",
+      "category": "file_limits",
+      "confidence": "HIGH",
+      "sources": ["openai-community-file-limits", "openai-file-search-supported"],
+      "notes": "5,000,000 tokens per file computed automatically"
+    },
+    {
+      "id": "openai-supported-formats-assistants",
+      "claim": "OpenAI Assistants file search supports: .pdf, .md, .docx, .pptx, .xlsx, .csv, .json, .txt, .html",
+      "provider": "OpenAI",
+      "category": "supported_formats",
+      "confidence": "HIGH",
+      "sources": ["openai-file-search-supported", "openai-help-file-types"],
+      "notes": "Some formats like CSV may have issues in practice per community reports"
+    },
+    {
+      "id": "openai-vision-formats",
+      "claim": "OpenAI vision supports PNG, JPEG, GIF, WEBP images up to 20MB",
+      "provider": "OpenAI",
+      "category": "supported_formats",
+      "confidence": "HIGH",
+      "sources": ["openai-files-api-ref"],
+      "notes": "For vision fine-tuning purpose"
+    },
+    {
+      "id": "openai-batch-expiry",
+      "claim": "OpenAI batch files expire after 30 days; other files persist until manually deleted",
+      "provider": "OpenAI",
+      "category": "retention",
+      "confidence": "HIGH",
+      "sources": ["openai-files-api-ref"],
+      "notes": "Default retention behavior"
+    },
+    {
+      "id": "openai-assistants-deprecated",
+      "claim": "OpenAI Assistants API is deprecated, shutting down August 26, 2026; replaced by Responses API",
+      "provider": "OpenAI",
+      "category": "api_lifecycle",
+      "confidence": "HIGH",
+      "sources": ["openai-file-search-supported"],
+      "notes": "Migration guide available"
+    },
+    {
+      "id": "gemini-file-size-limit",
+      "claim": "Gemini Files API supports up to 2GB per file (increased to 5GB recently) and 20GB per project (increased to 50GB)",
+      "provider": "Google",
+      "category": "file_limits",
+      "confidence": "HIGH",
+      "sources": ["gemini-files-api", "google-forum-file-storage"],
+      "notes": "Limits recently increased"
+    },
+    {
+      "id": "gemini-retention-48h",
+      "claim": "Gemini Files API stores files for 48 hours, then automatically deletes them",
+      "provider": "Google",
+      "category": "retention",
+      "confidence": "HIGH",
+      "sources": ["gemini-files-api", "google-forum-file-storage"],
+      "notes": "No manual deletion needed; re-upload required for longer retention"
+    },
+    {
+      "id": "gemini-files-api-free",
+      "claim": "Gemini Files API is available at no cost in all regions where Gemini API is available",
+      "provider": "Google",
+      "category": "pricing",
+      "confidence": "HIGH",
+      "sources": ["gemini-files-api"],
+      "notes": "Storage is free; only processing incurs costs"
+    },
+    {
+      "id": "gemini-upload-methods",
+      "claim": "Gemini supports inline uploads (<20MB) and Files API (media.upload) for larger files",
+      "provider": "Google",
+      "category": "api_design",
+      "confidence": "HIGH",
+      "sources": ["gemini-files-api", "firebase-input-requirements"],
+      "notes": "Two distinct upload patterns"
+    },
+    {
+      "id": "gemini-pdf-limits",
+      "claim": "Gemini supports PDFs up to 50MB or 1000 pages; each page equals ~258 tokens",
+      "provider": "Google",
+      "category": "file_limits",
+      "confidence": "HIGH",
+      "sources": ["gemini-document-processing", "firebase-input-requirements"],
+      "notes": "PDFs treated as images internally"
+    },
+    {
+      "id": "gemini-supported-formats",
+      "claim": "Gemini supports: PDFs, DOCX, TXT, XLSX, CSV, MP3, M4A, WAV, images (PNG, JPEG, GIF, WebP), video files",
+      "provider": "Google",
+      "category": "supported_formats",
+      "confidence": "HIGH",
+      "sources": ["gemini-files-api", "firebase-input-requirements", "datastudios-gemini-files"],
+      "notes": "Broad multimodal support including audio and video"
+    },
+    {
+      "id": "gemini-document-vision",
+      "claim": "Gemini uses native vision to understand PDFs including text, images, diagrams, charts, and tables",
+      "provider": "Google",
+      "category": "capabilities",
+      "confidence": "HIGH",
+      "sources": ["gemini-document-processing"],
+      "notes": "Goes beyond text extraction"
+    },
+    {
+      "id": "gemini-enterprise-regions",
+      "claim": "Gemini enterprise users can select US, EU, or APAC storage regions for compliance",
+      "provider": "Google",
+      "category": "compliance",
+      "confidence": "MEDIUM",
+      "sources": ["datastudios-gemini-files"],
+      "notes": "Enterprise feature"
+    },
+    {
+      "id": "anthropic-files-api-beta",
+      "claim": "Anthropic Files API is in beta, requires header: anthropic-beta: files-api-2025-04-14",
+      "provider": "Anthropic",
+      "category": "api_status",
+      "confidence": "HIGH",
+      "sources": ["anthropic-files-api"],
+      "notes": "Beta feature with dedicated header"
+    },
+    {
+      "id": "anthropic-storage-limits",
+      "claim": "Anthropic offers 100GB storage per organization, 500MB max per file",
+      "provider": "Anthropic",
+      "category": "file_limits",
+      "confidence": "HIGH",
+      "sources": ["anthropic-files-api"],
+      "notes": "Generous org-level storage"
+    },
+    {
+      "id": "anthropic-pdf-limits",
+      "claim": "Anthropic PDF support: 32MB max file size, 100 pages max per document",
+      "provider": "Anthropic",
+      "category": "file_limits",
+      "confidence": "HIGH",
+      "sources": ["anthropic-pdf-support"],
+      "notes": "Each page converted to image"
+    },
+    {
+      "id": "anthropic-supported-formats",
+      "claim": "Anthropic Files API supports: PDF, DOCX, TXT, CSV, Excel (XLSX), Markdown, images (JPEG, PNG, GIF, WebP)",
+      "provider": "Anthropic",
+      "category": "supported_formats",
+      "confidence": "HIGH",
+      "sources": ["anthropic-files-api", "anthropic-pdf-support", "anthropic-vision"],
+      "notes": "Some formats must be converted to plain text"
+    },
+    {
+      "id": "anthropic-image-limits",
+      "claim": "Anthropic rejects images larger than 8000x8000px; 20+ images triggers 2000x2000px limit",
+      "provider": "Anthropic",
+      "category": "file_limits",
+      "confidence": "HIGH",
+      "sources": ["anthropic-vision"],
+      "notes": "Optimal: 1.15 megapixels, 1568px max dimension"
+    },
+    {
+      "id": "anthropic-images-per-request",
+      "claim": "Anthropic supports up to 100 images per API request (5 per turn on claude.ai)",
+      "provider": "Anthropic",
+      "category": "file_limits",
+      "confidence": "HIGH",
+      "sources": ["anthropic-vision"],
+      "notes": "API has higher limits than web interface"
+    },
+    {
+      "id": "anthropic-file-reference",
+      "claim": "Anthropic uses file_id system: upload once, reference many times via document content blocks",
+      "provider": "Anthropic",
+      "category": "api_design",
+      "confidence": "HIGH",
+      "sources": ["anthropic-files-api"],
+      "notes": "Create-once, use-many-times pattern"
+    },
+    {
+      "id": "anthropic-pdf-processing",
+      "claim": "Anthropic converts PDF pages to images for processing, enabling visual understanding",
+      "provider": "Anthropic",
+      "category": "capabilities",
+      "confidence": "HIGH",
+      "sources": ["anthropic-pdf-support"],
+      "notes": "Vision-based PDF processing"
+    },
+    {
+      "id": "anthropic-retention-configurable",
+      "claim": "Anthropic file retention is configurable from 0-365 days for enterprise/tenant accounts",
+      "provider": "Anthropic",
+      "category": "retention",
+      "confidence": "MEDIUM",
+      "sources": ["anthropic-files-api"],
+      "notes": "Flexible retention policy"
+    },
+    {
+      "id": "anthropic-no-bedrock-vertex",
+      "claim": "Anthropic Files API is not supported on Amazon Bedrock or Google Vertex AI",
+      "provider": "Anthropic",
+      "category": "platform_availability",
+      "confidence": "HIGH",
+      "sources": ["anthropic-files-api"],
+      "notes": "Direct API only"
+    },
+    {
+      "id": "context-window-comparison",
+      "claim": "Gemini offers 1M token context window; ChatGPT offers ~32K for most users; Claude offers large context windows",
+      "provider": "comparison",
+      "category": "capabilities",
+      "confidence": "HIGH",
+      "sources": ["comparison-djamware"],
+      "notes": "Gemini significantly larger context"
+    }
+  ],
+  "metadata": {
+    "research_topic": "File Upload and Retrieval API Comparison",
+    "collection_date": "2025-01-10",
+    "total_claims": 28,
+    "confidence_distribution": {
+      "HIGH": 25,
+      "MEDIUM": 3,
+      "LOW": 0,
+      "DISPUTED": 0
+    }
+  }
+}

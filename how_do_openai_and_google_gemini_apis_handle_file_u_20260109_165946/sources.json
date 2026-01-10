@@ -1,0 +1,198 @@
+{
+  "sources": [
+    {
+      "id": "openai-files-api-ref",
+      "title": "Files | OpenAI API Reference",
+      "url": "https://platform.openai.com/docs/api-reference/files",
+      "type": "official_documentation",
+      "provider": "OpenAI",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "openai-uploads-api-ref",
+      "title": "Uploads | OpenAI API Reference",
+      "url": "https://platform.openai.com/docs/api-reference/uploads",
+      "type": "official_documentation",
+      "provider": "OpenAI",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "openai-file-search-supported",
+      "title": "Assistants File Search - Supported Files",
+      "url": "https://platform.openai.com/docs/assistants/tools/file-search/supported-files",
+      "type": "official_documentation",
+      "provider": "OpenAI",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "openai-help-file-types",
+      "title": "What types of files are supported? | OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/8983675-what-types-of-files-are-supported",
+      "type": "official_documentation",
+      "provider": "OpenAI",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "openai-file-uploads-faq",
+      "title": "File Uploads FAQ | OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/8555545-file-uploads-faq",
+      "type": "official_documentation",
+      "provider": "OpenAI",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "openai-community-file-types",
+      "title": "What file types are *actually* supported? - OpenAI Community",
+      "url": "https://community.openai.com/t/what-file-types-are-actually-supported/929529",
+      "type": "community_discussion",
+      "provider": "OpenAI",
+      "credibility": "medium",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "openai-community-file-limits",
+      "title": "AI assistants file limits - OpenAI Community",
+      "url": "https://community.openai.com/t/ai-assistants-file-limits/566434",
+      "type": "community_discussion",
+      "provider": "OpenAI",
+      "credibility": "medium",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "gemini-files-api",
+      "title": "Files API | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/files",
+      "type": "official_documentation",
+      "provider": "Google",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "gemini-document-processing",
+      "title": "Document understanding | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/document-processing",
+      "type": "official_documentation",
+      "provider": "Google",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "firebase-input-requirements",
+      "title": "Supported input files and requirements | Firebase AI Logic",
+      "url": "https://firebase.google.com/docs/ai-logic/input-file-requirements",
+      "type": "official_documentation",
+      "provider": "Google",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "gemini-cookbook-file-api",
+      "title": "File_API.ipynb - Google Gemini Cookbook",
+      "url": "https://github.com/google-gemini/cookbook/blob/main/quickstarts/File_API.ipynb",
+      "type": "official_example",
+      "provider": "Google",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "google-forum-file-storage",
+      "title": "What Happens to My Uploaded Files - Google AI Forum",
+      "url": "https://discuss.ai.google.dev/t/what-happens-to-my-uploaded-files-when-using-google-api-with-gemini-2-0-flash-storage-limits-and-default-behavior-explained/74763",
+      "type": "community_discussion",
+      "provider": "Google",
+      "credibility": "medium",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "anthropic-files-api",
+      "title": "Files API - Claude Docs",
+      "url": "https://docs.anthropic.com/en/docs/build-with-claude/files",
+      "type": "official_documentation",
+      "provider": "Anthropic",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "anthropic-pdf-support",
+      "title": "PDF support - Claude Docs",
+      "url": "https://docs.anthropic.com/en/docs/build-with-claude/pdf-support",
+      "type": "official_documentation",
+      "provider": "Anthropic",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "anthropic-vision",
+      "title": "Vision - Claude Docs",
+      "url": "https://docs.anthropic.com/en/docs/build-with-claude/vision",
+      "type": "official_documentation",
+      "provider": "Anthropic",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "anthropic-files-create",
+      "title": "Upload File - Claude API Reference",
+      "url": "https://platform.claude.com/docs/en/api/files-create",
+      "type": "official_documentation",
+      "provider": "Anthropic",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "datastudios-gemini-files",
+      "title": "Google Gemini File Upload and Reading",
+      "url": "https://www.datastudios.org/post/google-gemini-file-upload-and-reading-supported-formats-limits-and-enterprise-use",
+      "type": "third_party_analysis",
+      "provider": "DataStudios",
+      "credibility": "medium",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "datastudios-claude-api",
+      "title": "How to use Claude with the Anthropic API",
+      "url": "https://www.datastudios.org/post/how-to-use-claude-with-the-anthropic-api-for-document-analysis-tool-use-and-data-workflows-full-g",
+      "type": "third_party_analysis",
+      "provider": "DataStudios",
+      "credibility": "medium",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "azure-openai-file-types",
+      "title": "Azure OpenAI Assistants file search - Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/file-search",
+      "type": "official_documentation",
+      "provider": "Microsoft",
+      "credibility": "high",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "comparison-djamware",
+      "title": "Comparing OpenAI vs Claude vs Gemini: Which AI API Is Best",
+      "url": "https://www.djamware.com/post/689e8836a378ff6175921d4a/comparing-openai-vs-claude-vs-gemini-which-ai-api-is-best-for-developers",
+      "type": "third_party_analysis",
+      "provider": "DjamWare",
+      "credibility": "medium",
+      "accessed": "2025-01-10"
+    },
+    {
+      "id": "ragwalla-openai-files",
+      "title": "OpenAI Files API: Complete Guide",
+      "url": "https://ragwalla.com/docs/guides/openai-files-api-complete-guide-to-upload-manage-delete-files",
+      "type": "third_party_tutorial",
+      "provider": "Ragwalla",
+      "credibility": "medium",
+      "accessed": "2025-01-10"
+    }
+  ],
+  "metadata": {
+    "research_topic": "How do OpenAI and Google Gemini APIs handle file uploads and retrieval compared to Anthropic",
+    "collection_date": "2025-01-10",
+    "total_sources": 21
+  }
+}
